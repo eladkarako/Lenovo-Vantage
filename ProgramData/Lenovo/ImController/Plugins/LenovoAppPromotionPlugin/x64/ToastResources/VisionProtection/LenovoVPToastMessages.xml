@@ -1,0 +1,41 @@
+<ToastMessages>
+<Message>
+    <Notification>ColorTemperatureChange</Notification>
+    <Descriptions>
+	 <Description lang="en" button="Launch Lenovo Settings">Night Mode is active. Your display will automatically adjust the viewing experience for day and night.</Description>
+	 <Description lang="ar" button="تشغيل Lenovo Settings">الوضع الليلي نشط. سيقوم جهاز العرض بشكل تلقائي بضبط تجربة المشاهدة للنهار والليل</Description>
+	 <Description lang="pt-br" button="Iniciar o Lenovo Settings">O modo noturno está ativo. O monitor ajustará automaticamente a experiência de exibição para dia e noite.
+</Description>
+	 <Description lang="hr" button="Pokreni Lenovo Settings">Aktivan je noćni način rada. Zaslon će se automatski prilagoditi doživljaju gledanja danju i noću.</Description>
+	 <Description lang="cs" button="Spustit program Lenovo Settings">Noční režim je aktivní. Displej počítače se bude automaticky přizpůsobovat denním a nočním podmínkám.</Description>
+	 <Description lang="da" button="Start Lenovo Settings">Nattilstand er aktiv. Skærmen justerer automatisk din visuelle oplevelse til dag og nat.</Description>
+	 <Description lang="fi" button="Käynnistä Lenovo Settings">Yötila on aktiivisena. Näyttö säätää katselukokemusta automaattisesti päivällä ja yöllä.</Description>
+	 <Description lang="fr" button="Lancer Lenovo Settings">Le mode Nuit est activé. Votre écran réglera automatiquement votre expérience d'affichage selon le moment de la journée.</Description>
+	 <Description lang="el" button="Ανοίξτε την εφαρμογή Lenovo Settings">Η νυχτερινή λειτουργία είναι ενεργή. Η οθόνη σας θα ρυθμίζει αυτόματα την εμπειρία θέασης για ημέρα και νύχτα.</Description>
+	 <Description lang="de" button="Lenovo Settings starten">Nachtmodus ist aktiv. Die Anzeige passt das Bild automatisch zwischen Tag und Nacht an.</Description>
+	 <Description lang="he" button="הפעלת Lenovo Settings">מצב לילה פעיל. הצג יתאים באופן אוטומטי את חוויית התצוגה ליום וללילה.</Description>
+	 <Description lang="hu" button="A Lenovo Settings indítása">Az éjszakai mód aktív. A rendszer éjjel, illetve nappal automatikusan beállítja a képernyő képét.</Description>
+	 <Description lang="it" button="Avvia Lenovo Settings">La Modalità notturna è attiva. Lo schermo regolerà automaticamente l'esperienza di visione in base alla luce diurna e notturna.</Description>
+	 <Description lang="ja" button="Lenovo Settings を起動">ナイト・モードがアクティブです。ディスプレイは昼と夜で自動的に見やすさが調整されます。</Description>
+	 <Description lang="ko" button="Lenovo Settings 시작">야간 모드가 활성화되었습니다. 주간 및 야간의 시청 환경에 맞게 디스플레이가 자동으로 조정됩니다.</Description>
+	 <Description lang="nl" button="Lenovo Settings starten">Nachtmodus is actief. Uw beeldscherm wordt automatisch aangepast aan de weergave voor dag of nacht.</Description>
+	 <Description lang="nb" button="Start Lenovo Settings">Nattmodus er aktiv. Skjermen vil automatisk justere opplevelsen for dag og natt.</Description>
+	 <Description lang="pl" button="Uruchom aplikację Lenovo Settings">Tryb nocny jest aktywny. Parametry ekranu będą automatycznie dostosowywane do dnia i nocy.</Description>
+	 <Description lang="pt" button="Iniciar o Lenovo Settings">O Modo Noturno está ativado. O ecrã irá ajustar automaticamente a experiência de visualização para dia e noite.</Description>
+	 <Description lang="ro" button="Lansaţi Lenovo Settings">Modul Noapte este activ. Ecranul va ajusta automat experienţa de vizualizare pentru noapte şi pentru zi.</Description>
+	 <Description lang="ru" button="Запустить Lenovo Settings">Ночной режим активен. Настройки экрана будут автоматически корректироваться днем и ночью для повышения качества изображения.</Description>
+	 <Description lang="zh-cn" button="启动 Lenovo Settings">夜晚模式已开启。您的显示屏将针对日间和夜间自动调整视觉体验。</Description>
+         <Description lang="zh-sg" button="启动 Lenovo Settings">夜晚模式已开启。您的显示屏将针对日间和夜间自动调整视觉体验。</Description>
+	 <Description lang="sr" button="Pokreni Lenovo Settings">Noćni režim je aktivan. Ekran će automatski podešavati doživljaj prikazivanja danju i noću.</Description>
+	 <Description lang="sk" button="Spustiť program Lenovo Settings">Nočný režim je aktivovaný. Obrazovka bude automaticky upravovať zobrazenie na denné a nočné.</Description>
+	 <Description lang="sl" button="Zaženite Lenovo Settings">Nočni način je vklopljen. Prikaz barv na zaslonu se bo samodejno prilagodil za uporabo podnevi in ponoči.</Description>
+	 <Description lang="es" button="Iniciar Lenovo Settings">El modo Noche está activo. La experiencia de pantalla ajustará automáticamente la experiencia de visualización para el día y la noche.</Description>
+	 <Description lang="sv" button="Starta Lenovo Settings">Nattläge är aktiverat. Färgerna på bildskärmen justeras automatiskt för dag och natt.</Description>
+	 <Description lang="zh-hk" button="啟動 Lenovo Settings">夜間模式作用中。您的顯示器將自動調整白天和夜晚的視覺體驗。</Description>
+         <Description lang="zh-tw" button="啟動 Lenovo Settings">夜間模式作用中。您的顯示器將自動調整白天和夜晚的視覺體驗。</Description>
+         <Description lang="zh-mo" button="啟動 Lenovo Settings">夜間模式作用中。您的顯示器將自動調整白天和夜晚的視覺體驗。</Description>
+	 <Description lang="tr" button="Lenovo Settings'i Başlat">Gece Kipi etkin. Ekranınız gündüz ve gece için görüntüleme deneyiminizi otomatik olarak ayarlar.</Description>
+	 <Description lang="uk" button="Запустити Lenovo Settings">Нічний режим активовано. Зображення на екрані автоматично регулюватиметься залежно від часу доби.</Description>
+    </Descriptions>
+  </Message>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>vrHxCU2shVHlB/IHsj2Fzox0T34=</DigestValue></Reference></SignedInfo><SignatureValue>rqA5XAYey2NtoE7VTHp09eCTnVPNXx1Nt8SEsqhw8YNi849f/U6zxcMxP+cXwl5HL9uUCSPktNPQA9J+aIbX53AAC48AhykN5tsFocQzMWTDr3ZeDu8pfhove8HB8iIrv9nNE2LZWzVLebSyfnXlHdcNElQmp1Ep1n11bZVNovaeCaImHDdRPsMKXwsbdTQS6e5ZDy+Y88hdiGTwG6jD3UzYNmVo9N+wZJSj0aI63nq5EuaW9UpYiw+RaE3JUZGOzkmcB4eUCpFK/Mj3xxaQ1WTKuJF4Q4CjsZSfpR9fdHkevuB8EN9YmIJAB4qm2a5LO5aX0VMj+uqUQqLVPXvLqw==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIE5jCCA86gAwIBAgIQRjqDp6eX8wmErBqoLyATjDANBgkqhkiG9w0BAQsFADCBhDELMAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVjIENvcnBvcmF0aW9uMR8wHQYDVQQLExZTeW1hbnRlYyBUcnVzdCBOZXR3b3JrMTUwMwYDVQQDEyxTeW1hbnRlYyBDbGFzcyAzIFNIQTI1NiBDb2RlIFNpZ25pbmcgQ0EgLSBHMjAeFw0xNzAyMDgwMDAwMDBaFw0xODAyMDkyMzU5NTlaMGwxCzAJBgNVBAYTAlVTMRcwFQYDVQQIDA5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEBwwLTW9ycmlzdmlsbGUxDzANBgNVBAoMBkxlbm92bzEMMAoGA1UECwwDRzA4MQ8wDQYDVQQDDAZMZW5vdm8wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCxRt8ld9FNmjglJwTclvTCqXikAjgMxm11Occ+Z3p7LzQPciUeFmkFBycy79BTaaN9WECRb+aDoJy53mBgDmfJ/t1NQnai0VxVS7TwVEYa2A6/VD9dWwmMkca8ZdfZDKtyG2vKBCKajYH8xEzzrchkCujTn197l4F9OhyEP2027xJ4UYc1j7ZeLPIhZV24q5EdBkqjfDqqYveGL+0OffHKDfEP7dDBjXDYi/bCTAcvzct56Qc4Pji5s7Zyljp1PcgWBZGaFwNnbyNlVCSenWzA506mMeSeZNiaWK2V2b2ayJGqEhgRjR2lKhAczjEhDsflV2N2xSmClXo1rfdm70d7AgMBAAGjggFpMIIBZTAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzBhBgNVHSAEWjBYMFYGBmeBDAEEATBMMCMGCCsGAQUFBwIBFhdodHRwczovL2Quc3ltY2IuY29tL2NwczAlBggrBgEFBQcCAjAZDBdodHRwczovL2Quc3ltY2IuY29tL3JwYTAfBgNVHSMEGDAWgBTUwAYiSes5S92T4lyhuEd2CXIDWDArBgNVHR8EJDAiMCCgHqAchhpodHRwOi8vcmIuc3ltY2IuY29tL3JiLmNybDBXBggrBgEFBQcBAQRLMEkwHwYIKwYBBQUHMAGGE2h0dHA6Ly9yYi5zeW1jZC5jb20wJgYIKwYBBQUHMAKGGmh0dHA6Ly9yYi5zeW1jYi5jb20vcmIuY3J0MBEGCWCGSAGG+EIBAQQEAwIEEDAWBgorBgEEAYI3AgEbBAgwBgEBAAEB/zANBgkqhkiG9w0BAQsFAAOCAQEAgVJHiDMb7A/I2OgwDsdPmTMTnvw6ffdTvXH6kS2142gBfCYZ2YBfIM5Yme4G9nAjZkOG6mjLk9QVdblNbLsy3AH52XMVDrcxvfSrezCHzCuZkBOb9rJX7tFUvEGOfjsPmoIxT0Hw3h/4Mq6PQDkRH6y+W5OdwF79eq3P2iWnfAuq0w7D4JpzyZuFnhGLn5YA2WP/myVMWJ1MHwCkoYpSx8wwSmOk+1pLmcGNNLL/CH+3GASKKpLLh/8h82X7oyer3dpoKoMjh0zj6AN1dx/lji62q4AH1fih9U1+udoXFUUR4V3R85iXxKXLxeTaaEu9SHDIVcOYPvJbuCp5hZj8/w==</X509Certificate></X509Data></KeyInfo></Signature></ToastMessages>

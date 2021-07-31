@@ -1,0 +1,201 @@
+﻿<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <instrumentation
+      xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <events xmlns="http://schemas.microsoft.com/win/2004/08/events">      
+ <!-- 
+	Enable System and Admins to read&write.  Users can only write
+	isolation="Custom" access="O:BAG:SYD:(A;;0x7;;;SY)(A;;0x7;;;BA)(A;;0x2;;;BU)"
+	https://msdn.microsoft.com/en-us/library/windows/desktop/aa379570(v=vs.85).aspx
+-->	
+	<provider
+          guid="{71a9201e-73b0-43fe-9821-7e159a59bc71}"   
+          symbol="CompanionEventSource"
+          resourceFileName="%SYSTEMROOT%\lenovo\imcontroller\service\Lenovo.ImController.EventLogging.dll"
+          messageFileName="%SYSTEMROOT%\lenovo\imcontroller\service\Lenovo.ImController.EventLogging.dll"
+          name="Lenovo-Sif-Companion"
+          >
+      <channels>
+        <!--ImportChannels - System, Application, Security or Setup-->
+        <importChannel
+            chid="C1"
+            name="Application"
+              />
+        <!--Direct channels - type Analytic or Debug-->
+        <channel name="Lenovo-Sif-Companion/Operational" chid="C2" type="Admin" symbol="OPERATIONAL_CHANNEL" enabled="true" isolation="Custom" access="O:BAG:SYD:(A;;0x7;;;SY)(A;;0x7;;;BA)(A;;0x2;;;BU)">
+          <logging>
+            <retention>false</retention>
+            <maxSize>10485760</maxSize>
+          </logging>          
+        </channel>
+      </channels>
+      <!--Templates define event payloads. In this sample, simple data types such as Integer, Float, Boolean, String and GUID are considered. 
+        inType is the type of data that the provider logs to ETW session at run time. 
+        outType is the type of data that a consumer tool uses to interprete the log.
+        If outType is ommitted then it means it is the same as inType-->
+      <templates>        
+        <template tid="T_UnicodeString">
+          <data
+              inType="win:UnicodeString"
+              name="Prop_UnicodeString"
+                />
+        </template>       
+      </templates>
+      <events>       
+        <event
+            channel="C2"
+            level="win:Informational"
+            message="$(string.Pluginevent)"
+            symbol="SampleEvt_UnicodeString"
+            template="T_UnicodeString"
+            value="104"
+              />        
+      </events>
+    </provider>
+	<provider
+          guid="{34a9201e-73b0-43fe-9821-7e159a59bc71}"          
+          messageFileName="%SYSTEMROOT%\lenovo\imcontroller\service\Lenovo.ImController.EventLogging.dll"
+          name="Lenovo-Sif-Settings"
+          resourceFileName="%SYSTEMROOT%\lenovo\imcontroller\service\Lenovo.ImController.EventLogging.dll"
+          symbol="SettingsEventSource"
+          >
+      <channels>
+        <!--ImportChannels - System, Application, Security or Setup-->
+        <importChannel
+            chid="C1"
+            name="Application"
+              />
+        <!--Direct channels - type Analytic or Debug-->
+        <channel name="Lenovo-Sif-Settings/Operational" chid="C2" type="Admin" symbol="OPERATIONAL_CHANNEL" enabled="true" isolation="Custom" access="O:BAG:SYD:(A;;0x7;;;SY)(A;;0x7;;;BA)(A;;0x2;;;BU)">
+          <logging>
+            <retention>false</retention>
+            <maxSize>10485760</maxSize>
+          </logging>          
+        </channel>
+      </channels>
+      <!--Templates define event payloads. In this sample, simple data types such as Integer, Float, Boolean, String and GUID are considered. 
+        inType is the type of data that the provider logs to ETW session at run time. 
+        outType is the type of data that a consumer tool uses to interprete the log.
+        If outType is ommitted then it means it is the same as inType-->
+      <templates>        
+        <template tid="T_UnicodeString">
+          <data
+              inType="win:UnicodeString"
+              name="Prop_UnicodeString"
+                />
+        </template>       
+      </templates>
+      <events>        
+        <event
+            channel="C2"
+            level="win:Informational"
+            message="$(string.Pluginevent)"
+            symbol="SampleEvt_UnicodeString"
+            template="T_UnicodeString"
+            value="104"
+              />       
+      </events>
+    </provider>
+  <provider
+          guid="{809c33b3-ed18-4d42-8b60-19eb0049e77c}"   
+          symbol="DeviceEventSource"
+          resourceFileName="%SYSTEMROOT%\lenovo\imcontroller\service\Lenovo.ImController.EventLogging.dll"
+          messageFileName="%SYSTEMROOT%\lenovo\imcontroller\service\Lenovo.ImController.EventLogging.dll"
+          name="Lenovo-Sif-Device"
+          >
+      <channels>
+        <!--ImportChannels - System, Application, Security or Setup-->
+        <importChannel
+            chid="C1"
+            name="Application"
+              />
+        <!--Direct channels - type Analytic or Debug-->
+        <channel name="Lenovo-Sif-Device/Operational" chid="C2" type="Admin" symbol="OPERATIONAL_CHANNEL" enabled="true" isolation="Custom" access="O:BAG:SYD:(A;;0x7;;;SY)(A;;0x7;;;BA)(A;;0x2;;;BU)">
+          <logging>
+            <retention>false</retention>
+            <maxSize>10485760</maxSize>
+          </logging>          
+        </channel>
+      </channels>
+      <!--Templates define event payloads. In this sample, simple data types such as Integer, Float, Boolean, String and GUID are considered. 
+        inType is the type of data that the provider logs to ETW session at run time. 
+        outType is the type of data that a consumer tool uses to interprete the log.
+        If outType is ommitted then it means it is the same as inType-->
+      <templates>        
+        <template tid="T_UnicodeString">
+          <data
+              inType="win:UnicodeString"
+              name="Prop_UnicodeString"
+                />
+        </template>       
+      </templates>
+      <events>       
+        <event
+            channel="C2"
+            level="win:Informational"
+            message="$(string.Pluginevent)"
+            symbol="SampleEvt_UnicodeString"
+            template="T_UnicodeString"
+            value="104"
+              />        
+      </events>
+    </provider>
+	<provider
+          guid="{f0a12ecd-d276-4642-a90e-d7618eeeacdd}"   
+          symbol="CoreEventSource"
+          resourceFileName="%SYSTEMROOT%\lenovo\imcontroller\service\Lenovo.ImController.EventLogging.dll"
+          messageFileName="%SYSTEMROOT%\lenovo\imcontroller\service\Lenovo.ImController.EventLogging.dll"
+          name="Lenovo-Sif-Core"
+          >
+      <channels>
+        <!--ImportChannels - System, Application, Security or Setup-->
+        <importChannel
+            chid="C1"
+            name="Application"
+              />
+        <!--Direct channels - type Analytic or Debug-->
+        <channel name="Lenovo-Sif-Core/Operational" chid="C2" type="Admin" symbol="OPERATIONAL_CHANNEL" enabled="true" isolation="Custom" access="O:BAG:SYD:(A;;0x7;;;SY)(A;;0x7;;;BA)(A;;0x2;;;BU)">
+          <logging>
+            <retention>false</retention>
+            <maxSize>10485760</maxSize>
+          </logging>          
+        </channel>
+      </channels>
+      <!--Templates define event payloads. In this sample, simple data types such as Integer, Float, Boolean, String and GUID are considered. 
+        inType is the type of data that the provider logs to ETW session at run time. 
+        outType is the type of data that a consumer tool uses to interprete the log.
+        If outType is ommitted then it means it is the same as inType-->
+      <templates>        
+        <template tid="T_UnicodeString">
+          <data
+              inType="win:UnicodeString"
+              name="Prop_UnicodeString"
+                />
+        </template>       
+      </templates>
+      <events>       
+        <event
+            channel="C2"
+            level="win:Informational"
+            message="$(string.Pluginevent)"
+            symbol="SampleEvt_UnicodeString"
+            template="T_UnicodeString"
+            value="104"
+              />        
+      </events>
+    </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+    <stringTable>     
+      <string
+          id="Pluginevent"
+          value="%1"
+            />     
+    </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

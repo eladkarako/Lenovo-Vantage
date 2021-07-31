@@ -1,0 +1,1029 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+table,
+b,
+ul,
+li,
+div {
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+  -ms-user-select: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+span {
+  -webkit-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
+}
+
+body {
+  font-size: 12px;
+  font-family: 'Segoe UI';
+  line-height: 1.2;
+  width: 800px;
+  height: 600px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+h1,
+.h1 {
+  font-size: 24px;
+}
+
+h2,
+.h2 {
+  font-size: 22px;
+}
+
+h3,
+.h3 {
+  font-size: 20px;
+}
+
+h4,
+.h4 {
+  font-size: 18px;
+}
+
+h5,
+.h5 {
+  font-size: 16px;
+}
+
+h6,
+.h6 {
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.font-semilight {
+  font-family: 'Segoe UI semilight';
+}
+
+a {
+  cursor: pointer;
+}
+
+.a-link,
+.a-link:link,
+.a-link:visited {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 1px dotted;
+}
+
+.a-bg-blue,
+.a-bg-blue:link,
+.a-bg-blue:visited {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hyphens {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.wel-back {
+  position: absolute;
+  left: 20px;
+  top: 24px;
+  z-index: 2;
+}
+
+.wel-logo {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  width: 33px;
+  height: 100px;
+}
+
+.d-flex {
+  align-items: center;
+  display: -webkit-flex;
+  display: flex !important;
+  vertical-align: middle;
+}
+
+.d-media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.mt-0,
+.my-0 {
+  margin-top: 0 !important;
+}
+
+.mr-0,
+.mx-0 {
+  margin-right: 0 !important;
+}
+
+.mb-0,
+.my-0 {
+  margin-bottom: 0 !important;
+}
+
+.ml-0,
+.mx-0 {
+  margin-left: 0 !important;
+}
+
+.m-1 {
+  margin: 0.25rem !important;
+}
+
+.mt-1,
+.my-1 {
+  margin-top: 0.25rem !important;
+}
+
+.mr-1,
+.mx-1 {
+  margin-right: 0.25rem !important;
+}
+
+.mb-1,
+.my-1 {
+  margin-bottom: 0.25rem !important;
+}
+
+.ml-1,
+.mx-1 {
+  margin-left: 0.25rem !important;
+}
+
+.m-2 {
+  margin: 0.5rem !important;
+}
+
+.mt-2,
+.my-2 {
+  margin-top: 0.5rem !important;
+}
+
+.mr-2,
+.mx-2 {
+  margin-right: 0.5rem !important;
+}
+
+.mb-2,
+.my-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.ml-2,
+.mx-2 {
+  margin-left: 0.5rem !important;
+}
+
+.m-3 {
+  margin: 1rem !important;
+}
+
+.mt-3,
+.my-3 {
+  margin-top: 1rem !important;
+}
+
+.mr-3,
+.mx-3 {
+  margin-right: 1rem !important;
+}
+
+.mb-3,
+.my-3 {
+  margin-bottom: 1rem !important;
+}
+
+.ml-3,
+.mx-3 {
+  margin-left: 1rem !important;
+}
+
+.m-4 {
+  margin: 1.5rem !important;
+}
+
+.mt-4,
+.my-4 {
+  margin-top: 1.5rem !important;
+}
+
+.mr-4,
+.mx-4 {
+  margin-right: 1.5rem !important;
+}
+
+.mb-4,
+.my-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.ml-4,
+.mx-4 {
+  margin-left: 1.5rem !important;
+}
+
+.m-5 {
+  margin: 2rem !important;
+}
+
+.mt-5,
+.my-5 {
+  margin-top: 2rem !important;
+}
+
+.mr-5,
+.mx-5 {
+  margin-right: 2rem !important;
+}
+
+.mb-5,
+.my-5 {
+  margin-bottom: 2rem !important;
+}
+
+.ml-5,
+.mx-5 {
+  margin-left: 2rem !important;
+}
+
+.m-6 {
+  margin: 3rem !important;
+}
+
+.mt-6,
+.my-6 {
+  margin-top: 3rem !important;
+}
+
+.mr-6,
+.mx-6 {
+  margin-right: 3rem !important;
+}
+
+.mb-6,
+.my-6 {
+  margin-bottom: 3rem !important;
+}
+
+.ml-6,
+.mx-6 {
+  margin-left: 3rem !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.pt-0,
+.py-0 {
+  padding-top: 0 !important;
+}
+
+.pr-0,
+.px-0 {
+  padding-right: 0 !important;
+}
+
+.pb-0,
+.py-0 {
+  padding-bottom: 0 !important;
+}
+
+.pl-0,
+.px-0 {
+  padding-left: 0 !important;
+}
+
+.p-1 {
+  padding: 0.25rem !important;
+}
+
+.pt-1,
+.py-1 {
+  padding-top: 0.25rem !important;
+}
+
+.pr-1,
+.px-1 {
+  padding-right: 0.25rem !important;
+}
+
+.pb-1,
+.py-1 {
+  padding-bottom: 0.25rem !important;
+}
+
+.pl-1,
+.px-1 {
+  padding-left: 0.25rem !important;
+}
+
+.p-2 {
+  padding: 0.5rem !important;
+}
+
+.pt-2,
+.py-2 {
+  padding-top: 0.5rem !important;
+}
+
+.pr-2,
+.px-2 {
+  padding-right: 0.5rem !important;
+}
+
+.pb-2,
+.py-2 {
+  padding-bottom: 0.5rem !important;
+}
+
+.pl-2,
+.px-2 {
+  padding-left: 0.5rem !important;
+}
+
+.p-3 {
+  padding: 1rem !important;
+}
+
+.pt-3,
+.py-3 {
+  padding-top: 1rem !important;
+}
+
+.pr-3,
+.px-3 {
+  padding-right: 1rem !important;
+}
+
+.pb-3,
+.py-3 {
+  padding-bottom: 1rem !important;
+}
+
+.pl-3,
+.px-3 {
+  padding-left: 1rem !important;
+}
+
+.p-4 {
+  padding: 1.5rem !important;
+}
+
+.pt-4,
+.py-4 {
+  padding-top: 1.5rem !important;
+}
+
+.pr-4,
+.px-4 {
+  padding-right: 1.5rem !important;
+}
+
+.pb-4,
+.py-4 {
+  padding-bottom: 1.5rem !important;
+}
+
+.pl-4,
+.px-4 {
+  padding-left: 1.5rem !important;
+}
+
+.p-5 {
+  padding: 2rem !important;
+}
+
+.pt-5,
+.py-5 {
+  padding-top: 2rem !important;
+}
+
+.pr-5,
+.px-5 {
+  padding-right: 2rem !important;
+}
+
+.pb-5,
+.py-5 {
+  padding-bottom: 2rem !important;
+}
+
+.pl-5,
+.px-5 {
+  padding-left: 2rem !important;
+}
+
+.p-6 {
+  padding: 3rem !important;
+}
+
+.pt-6,
+.py-6 {
+  padding-top: 3rem !important;
+}
+
+.pr-5,
+.px-5 {
+  padding-right: 3rem !important;
+}
+
+.pb-6,
+.py-6 {
+  padding-bottom: 3rem !important;
+}
+
+.pl-6,
+.px-6 {
+  padding-left: 3rem !important;
+}
+
+.m-auto {
+  margin: auto !important;
+}
+
+.mt-auto,
+.my-auto {
+  margin-top: auto !important;
+}
+
+.mr-auto,
+.mx-auto {
+  margin-right: auto !important;
+}
+
+.mb-auto,
+.my-auto {
+  margin-bottom: auto !important;
+}
+
+.ml-auto,
+.mx-auto {
+  margin-left: auto !important;
+}
+
+.pl-normal {
+  padding-left: 70px;
+  padding-right: 70px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.line-height-2 {
+  line-height: 2rem;
+}
+
+.line-height-2b {
+  line-height: 2.5rem;
+}
+
+.line-height-3 {
+  line-height: 3rem;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.d-none {
+  display: none;
+}
+
+/* wel-btn-back can use class disable */
+.wel-btn-back {
+  display: block;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100% 700%;
+  background-position: 0 0;
+}
+
+.wel-btn-back:hover {
+  background-position: 0 -60px;
+}
+
+.wel-btn-back:active {
+  background-position: 0 -120px;
+}
+
+.wel-btn-back.disable, .wel-btn-back.disable:hover, .wel-btn-back.disable:active {
+  background-position: 0 -180px;
+}
+
+/* wel-btn can use class disable */
+.wel-btn {
+  border: none;
+  display: block;
+  width: 152px;
+  height: 32px;
+  line-height: 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+  font-size: 15px !important;
+  background-repeat: no-repeat;
+  background-size: 100% 700%;
+  background-position: 0 0;
+}
+
+.wel-btn:link, .wel-btn:visited {
+  text-decoration: none;
+}
+
+.wel-btn:hover {
+  background-position: 0 -64px;
+}
+
+.wel-btn:active {
+  background-position: 0 -128px;
+}
+
+.wel-btn.disable, .wel-btn.disable:hover, .wel-btn.disable:active {
+  background-position: 0 -192px;
+}
+
+.wel-btn.wel-btn-long {
+  width: 254px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.wel-btn.wel-btn-long:hover {
+  background-position: 0 -80px;
+}
+
+.wel-btn.wel-btn-long:active {
+  background-position: 0 -160px;
+}
+
+.wel-btn.wel-btn-long.disable, .wel-btn.wel-btn-long.disable:hover, .wel-btn.wel-btn-long.disable:active {
+  background-position: 0 -240px;
+}
+
+/* wel-btn-blue can use class disable */
+.wel-btn-blue {
+  display: block;
+  width: 255px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: 100% 700%;
+  background-position: 0 0;
+  user-select: none;
+}
+
+.wel-btn-blue:link, .wel-btn-blue:visited {
+  text-decoration: none;
+}
+
+.wel-btn-blue:hover {
+  background-position: 0 -80px;
+}
+
+.wel-btn-blue:active {
+  background-position: 0 -160px;
+  outline: none;
+}
+
+.wel-btn-blue.disable, .wel-btn-blue.disable:hover, .wel-btn-blue.disable:active {
+  background-position: 0 -240px;
+}
+
+.p-checkbox {
+  height: 15px;
+  line-height: 15px;
+}
+
+.p-checkbox span:first-child {
+  position: relative;
+  padding: 0 8px 0 0;
+  float: left;
+}
+
+.p-checkbox .input_check {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+}
+
+.p-checkbox .input_check:focus + label {
+  outline: 1px dotted;
+}
+
+.p-checkbox .input_check + label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid;
+}
+
+.p-checkbox .input_check + label a,
+.p-checkbox .input_check + label span {
+  display: none;
+}
+
+.p-checkbox .input_check:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  bottom: 8px;
+  width: 11px;
+  height: 7px;
+  border: 1px solid;
+  -webkit-transform: rotate(-50deg);
+  transform: rotate(-50deg);
+}
+
+.p-checkbox .input_check:checked + label {
+  border: none;
+}
+
+.p-checkbox input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+.p-checkbox input[type="radio"],
+.p-checkbox input[type="checkbox"] {
+  margin: 0;
+}
+
+/********** dialog start ************/
+.common-dialog {
+  display: none;
+}
+
+.common-dialog-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: 11;
+  opacity: 0.5;
+}
+
+.dialog-panel {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  z-index: 12;
+  display: none;
+}
+
+.dialog-panel.dialog-panel-error {
+  z-index: 13;
+}
+
+.dialog-panel .dialog-top {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: 7px 7px;
+  background-size: 16px 16px;
+}
+
+.dialog-panel .dialog-title {
+  float: left;
+  padding-left: 30px;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.dialog-panel .dialog-close {
+  float: right;
+  width: 40px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 100% 900%;
+}
+
+.dialog-panel .dialog-close:hover {
+  background-position: 0 -60px;
+}
+
+.dialog-panel .dialog-close:active {
+  background-position: 0 -120px;
+}
+
+.dialog-panel .dialog-close.disable, .dialog-panel .dialog-close.disable:hover, .dialog-panel .dialog-close.disable:active {
+  background-position: 0 -180px;
+}
+
+.dialog-panel .dialog-body {
+  width: 100%;
+  height: 100%;
+}
+
+.dialog-panel .dialog-content {
+  padding: 60px 10px 0;
+  width: 100%;
+  height: 270px;
+  overflow: hidden;
+  border: 1px solid;
+  border-top: none;
+  position: relative;
+}
+
+.dialog-panel .dialog-left {
+  width: 190px;
+  margin-right: 30px;
+  float: left;
+  height: 100%;
+  background-size: 190px 114px;
+  background-repeat: no-repeat;
+  background-position: 0 0px;
+}
+
+.dialog-panel .dialog-right {
+  width: 250px;
+  float: left;
+}
+
+.dialog-panel .dialog-right .line-height-2b {
+  line-height: 2.25rem;
+}
+
+.dialog-panel .dialog-right .download-apps-info {
+  max-height: 90px;
+  overflow-y: auto;
+  width: 106%;
+  padding-right: 6%;
+}
+
+.dialog-panel .dialog-right button {
+  float: left;
+}
+
+.dialog-panel .dialog-right .fz-12 {
+  font-size: 12px;
+}
+
+.dialog-panel .failed-text {
+  margin-bottom: 30px;
+}
+
+.dialog-panel .dialog-apps-cancel {
+  line-height: 30px;
+  margin-left: 20px;
+}
+
+.dialog-panel .dialog-bottom {
+  position: absolute;
+  width: 94%;
+  left: 3%;
+  top: 200px;
+  font-size: 12px;
+  line-height: 2rem;
+}
+
+/********** dialog end ************/
+/**************************** animation start *****************************************/
+.pt-page-moveToLeftFade {
+  -webkit-animation: moveToLeftFade .7s ease both;
+  -moz-animation: moveToLeftFade .7s ease both;
+  animation: moveToLeftFade .7s ease both;
+}
+
+.pt-page-moveFromLeftFade {
+  -webkit-animation: moveFromLeftFade .7s ease both;
+  -moz-animation: moveFromLeftFade .7s ease both;
+  animation: moveFromLeftFade .7s ease both;
+}
+
+.pt-page-moveToRightFade {
+  -webkit-animation: moveToRightFade .7s ease both;
+  -moz-animation: moveToRightFade .7s ease both;
+  animation: moveToRightFade .7s ease both;
+}
+
+.pt-page-moveFromRightFade {
+  -webkit-animation: moveFromRightFade .7s ease both;
+  -moz-animation: moveFromRightFade .7s ease both;
+  animation: moveFromRightFade .7s ease both;
+}
+
+/*********** keyframes *************/
+/* move from / to and fade */
+@-webkit-keyframes moveToLeftFade {
+  to {
+    opacity: 0.3;
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@-moz-keyframes moveToLeftFade {
+  to {
+    opacity: 0.3;
+    -moz-transform: translateX(-100%);
+  }
+}
+
+@keyframes moveToLeftFade {
+  to {
+    opacity: 0.3;
+    transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes moveFromLeftFade {
+  from {
+    opacity: 0.3;
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@-moz-keyframes moveFromLeftFade {
+  from {
+    opacity: 0.3;
+    -moz-transform: translateX(-100%);
+  }
+}
+
+@keyframes moveFromLeftFade {
+  from {
+    opacity: 0.3;
+    transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes moveToRightFade {
+  to {
+    opacity: 0.3;
+    -webkit-transform: translateX(100%);
+  }
+}
+
+@-moz-keyframes moveToRightFade {
+  to {
+    opacity: 0.3;
+    -moz-transform: translateX(100%);
+  }
+}
+
+@keyframes moveToRightFade {
+  to {
+    opacity: 0.3;
+    transform: translateX(100%);
+  }
+}
+
+@-webkit-keyframes moveFromRightFade {
+  from {
+    opacity: 0.3;
+    -webkit-transform: translateX(100%);
+  }
+}
+
+@-moz-keyframes moveFromRightFade {
+  from {
+    opacity: 0.3;
+    -moz-transform: translateX(100%);
+  }
+}
+
+@keyframes moveFromRightFade {
+  from {
+    opacity: 0.3;
+    transform: translateX(100%);
+  }
+}
+
+/**************************** animation end *****************************************/
+.page {
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.middle-to-left {
+  animation: 1s middleToLeft forwards;
+}
+
+.left-to-middle {
+  animation: 0.5s leftToMiddle forwards;
+}
+
+.middle-to-right {
+  animation: 1s middleToRight forwards;
+}
+
+.right-to-middle {
+  animation: 0.5s rightToMiddle forwards;
+}
+
+@keyframes rightToMiddle {
+  0% {
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+@keyframes leftToMiddle {
+  0% {
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+@keyframes middleToLeft {
+  0% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  50% {
+    transform: translateX(-100%);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: hidden;
+  }
+}
+
+@keyframes middleToRight {
+  0% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  50% {
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: hidden;
+  }
+}

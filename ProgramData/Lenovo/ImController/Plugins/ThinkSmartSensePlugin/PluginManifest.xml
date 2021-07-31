@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginManifest>
+  <PackageInformation name="ThinkSmartSensePlugin" version="1.0.0.0" location="ThinkSmartSensePlugin.cab" lastModified="2015-04-06T12:00:00" customEventMonitor="">
+  </PackageInformation>
+  <ApplicabilityFilter>
+        <Filter brand="think" enclosureType="notebook">true</Filter>
+        <Filter brand="think" enclosureType="handheld">true</Filter>
+        <Filter brand="think" family="*thinkpad*">true</Filter>
+        <Filter brand="think" enclosureType="notebook">true</Filter>
+        <Filter brand="idea" enclosureType="notebook">true</Filter>
+        <Filter brand="idea" enclosureType="handheld">true</Filter>
+        <Filter brand="lenovo" enclosureType="notebook">true</Filter>
+        <Filter brand="lenovo" enclosureType="handheld">true</Filter>
+    <Filter>false</Filter>
+  </ApplicabilityFilter>
+  <ContractMappingList>
+    <ContractMapping name="SystemManagement.SmartSense" version="1.0.0.0" runas="user" plugin="ThinkSmartSensePlugin" />
+  </ContractMappingList>
+  <EventSubscriptionList />
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>RPeUnTlDgYMDIf4EUe30j9y0Dpc=</DigestValue></Reference></SignedInfo><SignatureValue>H6TScEwRi4+bo6a+ZHMhtSDgU1rFlGvhIrDvgzstp1zv5Hd3ob2yrQPRrsi9osYfQ6H8MidBoHZqINBceL9AaOGc1Vcb9dpOI/a50mFrwFlyqXhlI1NeVo8N9ABmh8uRfmP4vrprsoZKieuvzimEAELHCidFI5umiba0dgjRR0lDKedQ4t2Hraf2+fLJsiGCMSgwGw3dlotmFca2HHeIcEdWG9z1s2gN09uf7SQJqXkZGI4DoWQDCkuJ+e15B2ih6UMjBqVC9kaGDHbf/XqcrNWNKm9v9w5EmjqhvB7p5yZOsD0YIyrxzKpakyQVvmgk/di9e1ZwAsND53gDx+1+jg==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIEuzCCA6OgAwIBAgIQR3ZVyInxomlCtfZfiBnjdzANBgkqhkiG9w0BAQsFADCBhDELMAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVjIENvcnBvcmF0aW9uMR8wHQYDVQQLExZTeW1hbnRlYyBUcnVzdCBOZXR3b3JrMTUwMwYDVQQDEyxTeW1hbnRlYyBDbGFzcyAzIFNIQTI1NiBDb2RlIFNpZ25pbmcgQ0EgLSBHMjAeFw0xOTA5MjcwMDAwMDBaFw0yMDExMjcyMzU5NTlaMGwxCzAJBgNVBAYTAlVTMRcwFQYDVQQIDA5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEBwwLTW9ycmlzdmlsbGUxDzANBgNVBAoMBkxlbm92bzEMMAoGA1UECwwDRzA4MQ8wDQYDVQQDDAZMZW5vdm8wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDHUhZm3P6QS2ul7w882Oh61NzqAmBNamYKRzm1wqwUhtWBEKmVCPQJIIwdSeiTofMzZbLo6Z7p8/JK8RIoOkvaOv1EKu4Ul6FueBPS4g3m8whaWFXBhg83U6NGGvqnB9U+50d9KxMnSPovSEwPs2dRuhKiG8DigGVuPUtNNmazl8QaUWpyojyHEETRfZwt53Pgu2jMCfIQsM+Y880zoEB+aW8+sJYHZgBlIUwokp6fWM9YOQoIQPQTo77uI3+RJrOan41uk/DjYkn5n7UKyQE8P+0Nlmx2T6UdJ/xAk0r036WNarYvWnQGnA5x/jQBtG/PrSafuRyEWMfC/kZGpWl5AgMBAAGjggE+MIIBOjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzBhBgNVHSAEWjBYMFYGBmeBDAEEATBMMCMGCCsGAQUFBwIBFhdodHRwczovL2Quc3ltY2IuY29tL2NwczAlBggrBgEFBQcCAjAZDBdodHRwczovL2Quc3ltY2IuY29tL3JwYTAfBgNVHSMEGDAWgBTUwAYiSes5S92T4lyhuEd2CXIDWDArBgNVHR8EJDAiMCCgHqAchhpodHRwOi8vcmIuc3ltY2IuY29tL3JiLmNybDBXBggrBgEFBQcBAQRLMEkwHwYIKwYBBQUHMAGGE2h0dHA6Ly9yYi5zeW1jZC5jb20wJgYIKwYBBQUHMAKGGmh0dHA6Ly9yYi5zeW1jYi5jb20vcmIuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQBK3zlAI2olZ3eHWmUWRRzjD/6J7Kp0ViFf5K+2qYfxK7b7XjotgLL/HS5rvadCKKwEFsSuzKdvSxI5/VXmChL1ggQKExGeSn3sDRDBivrkAhHQblZ8mYw9MI1Jqr5e+fnU40slyd2RGRObSVdPj7u0N8Ee7x3ujoJGpy+QSCd/pSrqeusoca95sH29YNv9yirsaZHZu7hMbnkU7RXwiyVALy6eHl/NvSa6s6PMq901fT2dJvR7Z3HHfgJe7+x6YvM1iklt8WPzdBfd9GT0iyee+wRbja6u6UT0uovWQBTmaN/nRPw15Dx5hcUueYNMnWNFa3WFKuPPZFElWvmykV/x</X509Certificate></X509Data></KeyInfo></Signature></PluginManifest>

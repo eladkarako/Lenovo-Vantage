@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginManifest>
+    <PackageInformation name="IdeaFanPlugin" version="1.0.0.0" location="IdeaFanPlugin.cab" lastModified="2015-09-16T10:52:17">
+    </PackageInformation>
+    <ApplicabilityFilter>
+        <Filter brand="idea" subbrand="ideapad">true</Filter>
+        <Filter>false</Filter>
+    </ApplicabilityFilter>
+    <ContractMappingList>
+        <ContractMapping name="SystemManagement.Fan" version="1.0.0.0" runas="user" plugin="IdeaFanPlugin" />
+    </ContractMappingList>
+    <EventSubscriptionList />
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+            <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+            <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+            <Reference URI="">
+                <Transforms>
+                    <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+                </Transforms>
+                <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+                <DigestValue>AVZt/C+PRV4U+shm1UlTpmRteFg=</DigestValue>
+            </Reference>
+        </SignedInfo>
+        <SignatureValue>qFDHRztlI7wwShNoHJpgx1FesqctfcTMoFAenAEJwQ/+mQ8/aEIzstrxNpdWnoEN9Tou8qrbCvs/14R5lacVH7LHk93OPXdUARH91GHG0MITJfCqoYD1SrQkyo7TzHZRBBNdylFIt4cvqED0WfLqBg5cj6VJOuKgFWwLc1nReHHAQIjf0942CBs+r/M0nXNC+Ljg82sEzinn3qlRwsVvjQY6Z/mPiPz7bWH9bD9/cd5fxjcG6ByVO/kppcbr3OfcMtRKq4Xz0CiPddlLm/g99Zpc643+Ie82bjUXD8YIqPx2HRaLthlp0/i5uQj+QQrTBIa+2L1RrferIYa6PvskPg==</SignatureValue>
+    </Signature>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>YBtLdII1NZ+10gSUv4FRMVl96h0=</DigestValue></Reference></SignedInfo><SignatureValue>olvNZ7Aqa7JcFMs6wT4/d8razKF24PLPhEXkh/IrWEptQytpPRu5QyOOjXfuArkUXkzbgUdiLvz9OYMnhYGq3fY2NFx54bmWIQoY2TGxuWDEW+F14hQTdCV2UHCZm5Xqdhj2TTT8VXWg0kMkpPwqyfg+kJb9dPZE6rHwcSQQq8MwPeqfCy2JvDbiclIes9d5QTBNTHDRMdcLzpiA5BL20Ruya+4VrKyf4B8xWuOqtX4OQ0Vr1JZrXgrvuMgG52mBW4ng80m8k0jeS7nEbZNuLsiTLCh+NIoZu2t/Zctx+nF9VgIWFuoNAOPSSKpa34WR43qP1nOCEvjRuWFZbDosoQ==</SignatureValue></Signature></PluginManifest>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" IgnorableNamespaces="uap">
+  <Identity Name="Microsoft.NET.Native.Framework.2.2" ProcessorArchitecture="x86" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="2.2.29512.0" />
+  <mp:PhoneIdentity PhoneProductId="6c443a49-654e-4c72-a316-fae371dc5ec1" PhonePublisherId="a8099e80-050d-411d-9b45-4ea107a7be6b" />
+  <Properties>
+    <Framework>true</Framework>
+    <DisplayName>Microsoft .Net Native Framework Package 2.2</DisplayName>
+    <PublisherDisplayName>Microsoft Corporation</PublisherDisplayName>
+    <Description>Microsoft .Net Native Framework Package 2.2</Description>
+    <Logo>logo.png</Logo>
+  </Properties>
+  <Resources>
+    <Resource Language="en-US" />
+  </Resources>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10049.0" MaxVersionTested="10.0.10049.0" />
+  </Dependencies>
+</Package>

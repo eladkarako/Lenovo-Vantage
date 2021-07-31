@@ -1,0 +1,724 @@
+.a-link,
+.a-link:link,
+.a-link:visited {
+  color: #007EE5;
+}
+
+.a-link:hover {
+  color: #2a9fff;
+}
+
+a:focus {
+  outline-color: #6f7a71;
+}
+
+.a-bg-blue,
+.a-bg-blue:link,
+.a-bg-blue:visited {
+  color: white;
+}
+
+.a-bg-blue:hover {
+  color: #dcf1b8;
+}
+
+.a-bg-blue:focus {
+  outline-color: white;
+}
+
+body {
+  color: #6f7a71;
+}
+
+input::-webkit-input-placeholder {
+  color: #aaa !important;
+}
+
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #aaa !important;
+}
+
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #aaa !important;
+}
+
+input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #aaa !important;
+}
+
+.wel-btn-back {
+  background-color: transparent;
+  background-image: url(../img/consumer/back-button.png);
+}
+
+.wel-btn-back.disable, .wel-btn-back.disable:hover, .wel-btn-back.disable:active {
+  color: #000;
+}
+
+.wel-btn {
+  color: #000000;
+  background-color: transparent;
+  background-image: url(../img/consumer/button-gray.png);
+}
+
+.wel-btn.disable, .wel-btn.disable:hover, .wel-btn.disable:active {
+  color: #000;
+}
+
+.wel-btn.wel-btn-long {
+  background-image: url(../img/consumer/button-gray-long.png);
+}
+
+.wel-btn.wel-btn-long.disable, .wel-btn.wel-btn-long.disable:hover, .wel-btn.wel-btn-long.disable:active {
+  color: #000;
+}
+
+.wel-btn-blue {
+  color: white;
+  background-color: transparent;
+  background-image: url(../img/consumer/dropbox-button.png);
+}
+
+.wel-btn-blue:link, .wel-btn-blue:visited {
+  color: white;
+}
+
+.wel-btn-blue.disable, .wel-btn-blue.disable:hover, .wel-btn-blue.disable:active {
+  color: #000;
+}
+
+.p-checkbox .input_check:focus + label {
+  outline-color: #6f7a71;
+}
+
+.p-checkbox .input_check + label {
+  border-color: #717171;
+}
+
+.p-checkbox .input_check:checked + label:after {
+  border-color: white;
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+
+.p-checkbox .input_check:checked + label {
+  background-color: #0078D6;
+}
+
+.common-dialog-back {
+  background-color: #000000;
+}
+
+.dialog-panel .dialog-top {
+  background-color: #D6D6D6;
+  background-image: url(../img/consumer/FRE-icon.png);
+}
+
+.dialog-panel .dialog-title {
+  color: #000000;
+}
+
+.dialog-panel .dialog-close {
+  background-image: url(../img/consumer/dialog-close.svg);
+}
+
+.dialog-panel .dialog-close.disable, .dialog-panel .dialog-close.disable:hover, .dialog-panel .dialog-close.disable:active {
+  color: #000;
+}
+
+.dialog-panel .dialog-content {
+  border-color: #D6D6D6;
+  background-color: #ffffff;
+}
+
+.dialog-panel .dialog-content-internet .dialog-left {
+  background-image: url(../img/consumer/no-internet.png);
+}
+
+.dialog-panel .dialog-content-apps .dialog-left {
+  background-image: url(../img/consumer/dialog-download-apps.png);
+}
+
+.dialog-panel .dialog-content-error .dialog-left {
+  background-image: url(../img/consumer/general-error.png);
+}
+
+.page {
+  background-color: #fff;
+}
+
+.page-welcome .top-view {
+  background-image: url(../img/consumer/banner-welcome-top.png);
+}
+
+.page-welcome .bottom-view-left {
+  background-image: url(../img/consumer/welcome-lenovo-vantage.png);
+}
+
+.page-welcome .bottom-view-center {
+  background-image: url(../img/consumer/welcome-dropbox.png);
+}
+
+.page-welcome .bottom-view-right {
+  background-image: url(../img/consumer/welcome-migration.png);
+}
+
+.page-premium-care .top-view {
+  background-image : url(../img/consumer/banner-vantage.jpg);
+}
+
+.page-vantage .top-view {
+  background-image: url(../img/consumer/banner-vantage.jpg);
+}
+
+.page-vantage .vs-most-list .icon-stay-up-to-date {
+  background-image: url(../img/consumer/icon-stay-up-to-date.png);
+}
+
+.page-vantage .vs-most-list .icon-hardware-settings {
+  background-image: url(../img/consumer/icon-hardware-settings.png);
+}
+
+.page-vantage .vs-most-list .icon-wifi-security {
+  background-image: url(../img/consumer/icon-wifi-security.png);
+}
+
+.page-vantage .vs-most-list .icon-exculsive-offer {
+  background-image: url(../img/consumer/icon-exculsive-offer.png);
+}
+
+.page-lenovoid .top-view {
+  background-image: url(../img/consumer/banner-lenovo-id.png);
+}
+
+.page-lenovoid .lenovo-bott-icon1 {
+  background-image: url(../img/consumer/lenovo-id-manage-your-account.png);
+}
+
+.page-lenovoid .lenovo-bott-icon2 {
+  background-image: url(../img/consumer/lenovo-id-get-faster-support.png);
+}
+
+.page-lenovoid .lenovo-bott-icon3 {
+  background-image: url(../img/consumer/lenovo-id-icon.png);
+}
+
+.page-lenovoid .lenovo-bott-icon4 {
+  background-image: url(../img/consumer/lenovo-id-lock.png);
+}
+
+.page-lenovoid .lenovo-bott-icon5 {
+  background-image: url(../img/consumer/lenovo-id-interaction-with-others.png);
+}
+
+.page-close-app .close-app-banner {
+  background-image: url(../img/consumer/banner-close-app.png);
+}
+
+.page-migrate .top-view {
+  background-image: url(../img/consumer/banner-migration.png);
+}
+
+.page-migrate .wel-btn .migrate-btn-img {
+  background-color: transparent;
+  background-image: url(../img/consumer/migration-windows-shield.png);
+}
+
+.page-apps-for-you .top-view {
+  background-image: url(../img/consumer/banner-apps-for-you.png);
+}
+
+.page-apps-for-you .apps-container .apps-amazon {
+  background-image: url(../img/consumer/Amazon.png);
+}
+
+.page-apps-for-you .apps-container .apps-deezer {
+  background-image: url(../img/consumer/Deezer.png);
+}
+
+.page-apps-for-you .apps-container .apps-winzip {
+  background-image: url(../img/consumer/Winzip.png);
+}
+
+.page-apps-for-you .apps-container .apps-kingsoft {
+  background-image: url(../img/consumer/WPS.png);
+}
+
+.page-apps-for-you .apps-container .apps-cyberlink {
+  background-image: url(../img/consumer/CyberLink-Power-DVD.png);
+}
+
+.page-apps-for-you .apps-container .apps-facebook {
+  background-image: url(../img/consumer/Facebook.png);
+}
+
+.page-apps-for-you .apps-container .apps-youTube {
+  background-image: url(../img/consumer/yt_icon_rgb.png);
+}
+
+.page-apps-for-you .apps-container .apps-alexaForPC {
+    background-image: url(../img/consumer/Alexa.png);
+}
+
+.page-apps-for-you .apps-container .tooltips {
+  border-color: #000;
+  background-color: #ffffff;
+}
+
+.tooltip-inner {
+  border: 1px solid #000 !important;
+  color: #000 !important;
+  background-color: #ffffff !important;
+}
+
+.page-dropbox .top-view {
+  background-image: url(../img/consumer/banner-dropbox.png);
+}
+
+.page-dropbox .wel-contain {
+  color: #6f7271;
+}
+
+.page-dropbox .row input,
+.page-dropbox .form-top input,
+.page-dropbox .form-down input {
+  color: #333333;
+  border: 2px solid #afb1b1;
+}
+
+.page-dropbox .row input:focus,
+.page-dropbox .form-top input:focus,
+.page-dropbox .form-down input:focus {
+  border: 2px solid #FF8308;
+}
+
+.page-dropbox .row input.error,
+.page-dropbox .form-top input.error,
+.page-dropbox .form-down input.error {
+  border: 2px solid #FF8308;
+}
+
+.page-dropbox .sign-form .error-1,
+.page-dropbox .sign-form .error-2 {
+  color: #ff8308;
+}
+
+.page-dropbox .sign-buttons .dropbox-loading {
+  background-color: transparent;
+  background-image: url(../img/consumer/loading.gif);
+}
+
+.page-all-done .top-view {
+  background-image: url(../img/consumer/banner-all-done.png);
+}
+
+.page-all-done .bottom-view-left {
+  background-image: url(../img/consumer/all-done-security-advisor.png);
+}
+
+.page-all-done .bottom-view-center {
+  background-image: url(../img/consumer/all-done-hardware-settings.png);
+}
+
+.page-all-done .bottom-view-right {
+  background-image: url(../img/consumer/all-done-discover-more.png);
+}
+
+.lenovo-logo {
+  width: 34px;
+  height: 100px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.welcome-title {
+  color: #636569;
+}
+
+.bottom-view-text {
+  color: #fff;
+}
+
+.bottom-view-text a {
+  color: #fff;
+}
+
+.download-line {
+  background-color: #0078D6;
+}
+
+.download-line-bg {
+  background-image: url(../img/consumer/download-line-bg.png);
+}
+
+.top-view-title {
+  color: #ffffff;
+}
+
+.next-btn {
+  background-color: #d0cfcd;
+}
+
+.next-btn:hover {
+  background-color: #E4E4E4;
+}
+
+.opening-animation {
+  background-color: #ffffff;
+}
+
+@media (-ms-high-contrast: black-on-white) {
+  .lenovo-logo {
+    background-image: url(../img/consumer/lenovo-black-on-white.png);
+  }
+  .wel-btn-back {
+    background-color: transparent;
+    background-image: url(../img/consumer/back-black-on-white.png);
+    background-size: 100% 100%;
+  }
+  .wel-btn-back, .wel-btn-back:hover, .wel-btn-back:active, .wel-btn-back.disable, .wel-btn-back.disable:hover, .wel-btn-back.disable:active {
+    background-position: 0 0;
+  }
+  .download-line {
+    background-color: black;
+  }
+  .download-line-bg {
+    background-image: url(../img/consumer/download-line-bg.png);
+  }
+  .wel-btn,
+  .wel-btn-blue {
+    color: #fff;
+    background-image: url(../img/consumer/next-button-black-on-white.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .wel-btn, .wel-btn:hover, .wel-btn:active, .wel-btn.disable, .wel-btn.disable:hover, .wel-btn.disable:active,
+  .wel-btn-blue,
+  .wel-btn-blue:hover,
+  .wel-btn-blue:active,
+  .wel-btn-blue.disable,
+  .wel-btn-blue.disable:hover,
+  .wel-btn-blue.disable:active {
+    background-position: 0 0;
+  }
+  .wel-btn.wel-btn-long,
+  .wel-btn-blue.wel-btn-long {
+    background-image: url(../img/consumer/next-button-black-on-white.png);
+  }
+  .wel-btn.wel-btn-long, .wel-btn.wel-btn-long:hover, .wel-btn.wel-btn-long:active, .wel-btn.wel-btn-long.disable, .wel-btn.wel-btn-long.disable:hover, .wel-btn.wel-btn-long.disable:active,
+  .wel-btn-blue.wel-btn-long,
+  .wel-btn-blue.wel-btn-long:hover,
+  .wel-btn-blue.wel-btn-long:active,
+  .wel-btn-blue.wel-btn-long.disable,
+  .wel-btn-blue.wel-btn-long.disable:hover,
+  .wel-btn-blue.wel-btn-long.disable:active {
+    background-position: 0 0;
+  }
+  .p-checkbox .input_check + label {
+    border: 2px solid #000;
+  }
+  .p-checkbox .input_check:checked + label:after {
+    border: 1px solid #000;
+    border-top-color: transparent;
+    border-right-color: transparent;
+  }
+  .p-checkbox .input_check:checked + label {
+    background-color: #fff;
+    border: 2px solid #000;
+  }
+  .page-welcome .top-view {
+    background-image: url(../img/consumer/banner-welcome-top.png);
+  }
+  .page-welcome .bottom-view-left {
+    background-image: url(../img/consumer/welcome-lenovo-vantage.png);
+  }
+  .page-welcome .bottom-view-center {
+    background-image: url(../img/consumer/welcome-dropbox.png);
+  }
+  .page-welcome .bottom-view-right {
+    background-image: url(../img/consumer/welcome-migration.png);
+  }
+  .page-premium-care .top-view {
+    background-image: url(../img/consumer/banner-vantage.jpg);
+  }
+  .page-vantage .top-view {
+    background-image: url(../img/consumer/banner-vantage.jpg);
+  }
+  .page-vantage .vs-most-list .icon-stay-up-to-date {
+    background-image: url(../img/consumer/icon-stay-up-to-date.png);
+  }
+  .page-vantage .vs-most-list .icon-hardware-settings {
+    background-image: url(../img/consumer/icon-hardware-settings.png);
+  }
+  .page-vantage .vs-most-list .icon-wifi-security {
+    background-image: url(../img/consumer/icon-wifi-security.png);
+  }
+  .page-vantage .vs-most-list .icon-exculsive-offer {
+    background-image: url(../img/consumer/icon-exculsive-offer.png);
+  }
+  .page-lenovoid .top-view {
+    background-image: url(../img/consumer/banner-lenovo-id.png);
+  }
+  .page-close-app .close-app-banner {
+    background-image: url(../img/consumer/banner-close-app.png);
+  }
+  .page-migrate .top-view {
+    background-image: url(../img/consumer/banner-migration.png);
+  }
+  .page-migrate .wel-btn .migrate-btn-img {
+    background-image: url(../img/consumer/migration-windows-shield-black-on-white.png);
+    background-color: transparent;
+  }
+  .page-apps-for-you .top-view {
+    background-image: url(../img/consumer/banner-apps-for-you.png);
+  }
+  .page-apps-for-you .apps-container .apps-amazon {
+    background-image: url(../img/consumer/Amazon.png);
+  }
+  .page-apps-for-you .apps-container .apps-deezer {
+    background-image: url(../img/consumer/Deezer.png);
+  }
+  .page-apps-for-you .apps-container .apps-winzip {
+    background-image: url(../img/consumer/Winzip.png);
+  }
+  .page-apps-for-you .apps-container .apps-kingsoft {
+    background-image: url(../img/consumer/WPS.png);
+  }
+  .page-apps-for-you .apps-container .apps-cyberlink {
+    background-image: url(../img/consumer/CyberLink-Power-DVD.png);
+  }
+  .page-apps-for-you .apps-container .apps-facebook {
+    background-image: url(../img/consumer/Facebook.png);
+  }
+  .page-apps-for-you .apps-container .apps-youTube {
+    background-image: url(../img/consumer/yt_icon_rgb.png);
+  }
+  .page-apps-for-you .apps-container .apps-alexaForPC {
+    background-image: url(../img/consumer/Alexa.png);
+  }
+  .page-dropbox .top-view {
+    background-image: url(../img/consumer/banner-dropbox.png);
+  }
+  .page-dropbox .sign-buttons .dropbox-loading {
+    background-image: url(../img/consumer/loading.gif);
+  }
+  .page-all-done .top-view {
+    background-image: url(../img/consumer/banner-all-done.png);
+  }
+  .page-all-done .bottom-view-left {
+    background-image: url(../img/consumer/all-done-security-advisor.png);
+  }
+  .page-all-done .bottom-view-center {
+    background-image: url(../img/consumer/all-done-hardware-settings.png);
+  }
+  .page-all-done .bottom-view-right {
+    background-image: url(../img/consumer/all-done-discover-more.png);
+  }
+  .lenovo-bott-icon1 {
+    background-image: url(../img/consumer/lenovo-id-manage-your-account.png);
+  }
+  .lenovo-bott-icon2 {
+    background-image: url(../img/consumer/lenovo-id-get-faster-support.png);
+  }
+  .lenovo-bott-icon3 {
+    background-image: url(../img/consumer/lenovo-id-icon.png);
+  }
+  .lenovo-bott-icon4 {
+    background-image: url(../img/consumer/lenovo-id-lock.png);
+  }
+  .lenovo-bott-icon5 {
+    background-image: url(../img/consumer/lenovo-id-interaction-with-others.png);
+  }
+  .dialog-panel .dialog-close {
+    background-image: url(../img/consumer/dialog-close.svg);
+  }
+  .dialog-panel .dialog-content-internet .dialog-left {
+    background-image: url(../img/consumer/no-internet.png);
+  }
+  .dialog-panel .dialog-content-error .dialog-left {
+    background-image: url(../img/consumer/general-error.png);
+  }
+  .dialog-panel .dialog-content-apps .dialog-left {
+    background-image: url(../img/consumer/dialog-download-apps.png);
+  }
+}
+
+@media (-ms-high-contrast: white-on-black) {
+  .lenovo-logo {
+    background-image: url(../img/consumer/lenovo-white-on-black.png);
+  }
+  .wel-btn-back {
+    background-color: transparent;
+    background-image: url(../img/consumer/back-white-on-black.png);
+    background-size: 100% 100%;
+  }
+  .wel-btn-back, .wel-btn-back:hover, .wel-btn-back:active, .wel-btn-back.disable, .wel-btn-back.disable:hover, .wel-btn-back.disable:active {
+    background-position: 0 0;
+  }
+  .download-line {
+    background-color: white;
+  }
+  .download-line-bg {
+    background-image: url(../img/consumer/download-line-bg.png);
+  }
+  .wel-btn,
+  .wel-btn-blue {
+    color: #000;
+    background-image: url(../img/consumer/next-button-white-on-black.png);
+    background-size: 100% 100%;
+  }
+  .wel-btn, .wel-btn:hover, .wel-btn:active, .wel-btn.disable, .wel-btn.disable:hover, .wel-btn.disable:active,
+  .wel-btn-blue,
+  .wel-btn-blue:hover,
+  .wel-btn-blue:active,
+  .wel-btn-blue.disable,
+  .wel-btn-blue.disable:hover,
+  .wel-btn-blue.disable:active {
+    background-position: 0 0;
+  }
+  .wel-btn.wel-btn-long,
+  .wel-btn-blue.wel-btn-long {
+    background-image: url(../img/consumer/next-button-white-on-black.png);
+    background-size: 100% 100%;
+  }
+  .wel-btn.wel-btn-long, .wel-btn.wel-btn-long:hover, .wel-btn.wel-btn-long:active, .wel-btn.wel-btn-long.disable, .wel-btn.wel-btn-long.disable:hover, .wel-btn.wel-btn-long.disable:active,
+  .wel-btn-blue.wel-btn-long,
+  .wel-btn-blue.wel-btn-long:hover,
+  .wel-btn-blue.wel-btn-long:active,
+  .wel-btn-blue.wel-btn-long.disable,
+  .wel-btn-blue.wel-btn-long.disable:hover,
+  .wel-btn-blue.wel-btn-long.disable:active {
+    background-position: 0 0;
+  }
+  .p-checkbox .input_check + label {
+    border: 2px solid #fff;
+  }
+  .p-checkbox .input_check:checked + label:after {
+    border: 1px solid #fff;
+    border-top-color: transparent;
+    border-right-color: transparent;
+  }
+  .p-checkbox .input_check:checked + label {
+    background-color: #000;
+    border: 2px solid #fff;
+  }
+  .page-welcome .top-view {
+    background-image: url(../img/consumer/banner-welcome-top.png);
+  }
+  .page-welcome .bottom-view-left {
+    background-image: url(../img/consumer/welcome-lenovo-vantage.png);
+  }
+  .page-welcome .bottom-view-center {
+    background-image: url(../img/consumer/welcome-dropbox.png);
+  }
+  .page-welcome .bottom-view-right {
+    background-image: url(../img/consumer/welcome-migration.png);
+  }
+  .page-premium-care .top-view {
+    background-image: url(../img/consumer/banner-vantage.jpg);
+  }
+  .page-vantage .top-view {
+    background-image: url(../img/consumer/banner-vantage.jpg);
+  }
+  .page-vantage .vs-most-list .icon-stay-up-to-date {
+    background-image: url(../img/consumer/icon-stay-up-to-date.png);
+  }
+  .page-vantage .vs-most-list .icon-hardware-settings {
+    background-image: url(../img/consumer/icon-hardware-settings.png);
+  }
+  .page-vantage .vs-most-list .icon-wifi-security {
+    background-image: url(../img/consumer/icon-wifi-security.png);
+  }
+  .page-vantage .vs-most-list .icon-exculsive-offer {
+    background-image: url(../img/consumer/icon-exculsive-offer.png);
+  }
+  .page-lenovoid .top-view {
+    background-image: url(../img/consumer/banner-lenovo-id.png);
+  }
+  .page-close-app .close-app-banner {
+    background-image: url(../img/consumer/banner-close-app.png);
+  }
+  .page-migrate .top-view {
+    background-image: url(../img/consumer/banner-migration.png);
+  }
+  .page-migrate .wel-btn .migrate-btn-img {
+    background-image: url(../img/consumer/migration-windows-shield-white-on-black.png);
+    background-color: transparent;
+  }
+  .page-apps-for-you .top-view {
+    background-image: url(../img/consumer/banner-apps-for-you.png);
+  }
+  .page-apps-for-you .apps-container .apps-amazon {
+    background-image: url(../img/consumer/Amazon.png);
+  }
+  .page-apps-for-you .apps-container .apps-deezer {
+    background-image: url(../img/consumer/Deezer.png);
+  }
+  .page-apps-for-you .apps-container .apps-winzip {
+    background-image: url(../img/consumer/Winzip.png);
+  }
+  .page-apps-for-you .apps-container .apps-kingsoft {
+    background-image: url(../img/consumer/WPS.png);
+  }
+  .page-apps-for-you .apps-container .apps-cyberlink {
+    background-image: url(../img/consumer/CyberLink-Power-DVD.png);
+  }
+  .page-apps-for-you .apps-container .apps-facebook {
+    background-image: url(../img/consumer/Facebook.png);
+  }
+  .page-apps-for-you .apps-container .apps-youTube {
+    background-image: url(../img/consumer/yt_icon_rgb.png);
+  }
+  .page-apps-for-you .apps-container .apps-alexaForPC {
+    background-image: url(../img/consumer/Alexa.png);
+  }
+  .page-dropbox .top-view {
+    background-image: url(../img/consumer/banner-dropbox.png);
+  }
+  .page-dropbox .sign-buttons .dropbox-loading {
+    background-image: url(../img/consumer/loading.gif);
+  }
+  .page-all-done .top-view {
+    background-image: url(../img/consumer/banner-all-done.png);
+  }
+  .page-all-done .bottom-view-left {
+    background-image: url(../img/consumer/all-done-security-advisor.png);
+  }
+  .page-all-done .bottom-view-center {
+    background-image: url(../img/consumer/all-done-hardware-settings.png);
+  }
+  .page-all-done .bottom-view-right {
+    background-image: url(../img/consumer/all-done-discover-more.png);
+  }
+  .lenovo-bott-icon1 {
+    background-image: url(../img/consumer/lenovo-id-manage-your-account.png);
+  }
+  .lenovo-bott-icon2 {
+    background-image: url(../img/consumer/lenovo-id-get-faster-support.png);
+  }
+  .lenovo-bott-icon3 {
+    background-image: url(../img/consumer/lenovo-id-icon.png);
+  }
+  .lenovo-bott-icon4 {
+    background-image: url(../img/consumer/lenovo-id-lock.png);
+  }
+  .lenovo-bott-icon5 {
+    background-image: url(../img/consumer/lenovo-id-interaction-with-others.png);
+  }
+  .dialog-panel .dialog-close {
+    background-image: url(../img/consumer/dialog-close.svg);
+    background-position: 0 -240px;
+  }
+  .dialog-panel .dialog-content-internet .dialog-left {
+    background-image: url(../img/consumer/no-internet.png);
+  }
+  .dialog-panel .dialog-content-error .dialog-left {
+    background-image: url(../img/consumer/general-error.png);
+  }
+  .dialog-panel .dialog-content-apps .dialog-left {
+    background-image: url(../img/consumer/dialog-download-apps.png);
+  }
+}

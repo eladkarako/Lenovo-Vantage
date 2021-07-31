@@ -1,0 +1,24 @@
+<VantageSettings>
+  <Setting key="LenovoVoiceFamilyName">
+    <Default>E046963F.LenovoVoiceWorldWide_k1h2ywk1493x8</Default>
+    <If geo="in(cn)">E046963F.LenovoVoice_k1h2ywk1493x8</If>
+  </Setting>
+  <Setting key="LenovoVoiceDownLoadLink">
+    <Default>ms-windows-store://pdp/?productid=9PBKQPS3BSW1</Default>
+    <If geo="in(cn)">ms-windows-store://pdp/?productid=9NF8GNW9H43H</If>
+  </Setting>
+  <Setting key="LenovoVoiceLaunchURI">
+    <Default>lenovo-voice:</Default>
+    <If geo="in(cn)">lenovo-voice-prcu:</If>
+  </Setting>
+  <Setting key="VantageCertHash">
+    <Default>
+      [stage] BkOZlK2szz+xtty/vGgvn0mP6cznjI5Owpah/n2Wzl8=
+      [beta] 4ybEzvTjVxUosBwmmEEF3iDMAiuh9hMnro96OwcT56A=
+      [prod] JrVEce/KmyGFYGNvle3k1ptt4khJ8v3jpMJds5V+4io=
+    </Default>
+  </Setting>
+  <Setting key="MicroFrontendsSupportedServers">
+    <Default>beta</Default>
+  </Setting>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>pAahHVCU1cHcuGM5a2doBlHujhg=</DigestValue></Reference></SignedInfo><SignatureValue>DaX598pdqBdfIKpjaNcyZcpX92vNilE79hs3NVYYFKx3kZS5XVScg3r2Gyb7bneG/ciuxkJbGcyWKh6Xx4yCN8bbOK3dViAJKNwGNc+R7PeyPY//C/7Rt8QlPSZMasitoHxG6vECo0MC6gCcFT3avG5mC5LgDO2nOzGkhcT5YWxnOebCv3eC08ypCAGcz+m7MCh8AUg8eetK1bWlONbpgcbLFvmH1+w1Khu7NvKnPXjGMS81+Z0ruwFaQYXDvUjy2mE0KjrOpgDUMKg+45KR/DJpPIku3VlPDfPHSo4eLdbQiVwUHZBqHUuSZmS8ELpVBUelfI3B91JAmFGBAFMcow==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIEmTCCA4GgAwIBAgIQTRZVIRqHpq7xFvuOuADBODANBgkqhkiG9w0BAQsFADCBhDELMAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVjIENvcnBvcmF0aW9uMR8wHQYDVQQLExZTeW1hbnRlYyBUcnVzdCBOZXR3b3JrMTUwMwYDVQQDEyxTeW1hbnRlYyBDbGFzcyAzIFNIQTI1NiBDb2RlIFNpZ25pbmcgQ0EgLSBHMjAeFw0yMDExMDYwMDAwMDBaFw0yMTExMDcyMzU5NTlaMGwxCzAJBgNVBAYTAlVTMRcwFQYDVQQIDA5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEBwwLTW9ycmlzdmlsbGUxDzANBgNVBAoMBkxlbm92bzEMMAoGA1UECwwDRzA4MQ8wDQYDVQQDDAZMZW5vdm8wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCmDlPP4JRmfcPuPV2bNEvRGMAYp2fHZ91kwXeLjJcEGBZrewcIKn5b4W11ztShKGvWmWT/m4AZ0UU4JzitD+33x/nofPLEqQRsS65IVwAfed33by5X52reneNueDewskkTazFOAhV/p6IXditMYE7BpktCndfIqc88E3O2rIqIGxODPSAubZ5YS157Z2Ls0kQWfiH6uXj6R+/P5zT3EgEbH9OM+u/siqsAN0MTalpU7oHzF+XZs1cJkWO1nhcOUfGmxIZS7fc9kA9ABNXNq+aTXz5gEAkIZeAqmjoF6Bh8wxVGf6ErCVNrSoGnePtNcdBxh/u9arYohym7t2BZkLYdAgMBAAGjggEcMIIBGDAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzA/BgNVHSAEODA2MDQGBmeBDAEEATAqMCgGCCsGAQUFBwIBFhxodHRwczovL3d3dy5kaWdpY2VydC5jb20vQ1BTMB8GA1UdIwQYMBaAFNTABiJJ6zlL3ZPiXKG4R3YJcgNYMCsGA1UdHwQkMCIwIKAeoByGGmh0dHA6Ly9yYi5zeW1jYi5jb20vcmIuY3JsMFcGCCsGAQUFBwEBBEswSTAfBggrBgEFBQcwAYYTaHR0cDovL3JiLnN5bWNkLmNvbTAmBggrBgEFBQcwAoYaaHR0cDovL3JiLnN5bWNiLmNvbS9yYi5jcnQwDQYJKoZIhvcNAQELBQADggEBAEeBH3C6r7hpIYHQFzhBJ8seuzo3Pft9P6qu/MffnAOnsxQAt241FXSp7kfKv/BSvvLFUQxoAh+O5OmdulYv7L1k75OhfrWT4c323C01gsAWgIFLPQ4W7K81QqgqycuwgstdVr+xSqfD2nImp5NSODAQ+/3FoUpXhRxP/tHLU7fS1Ju34sTSgeInQYE0sVJhu2iUs9MOwioOuqco+x+3KITRLjAh1FbQWVBGCCpnKlAvCXR0vuEbS1oKUf/fWpOKstuzJgow7gKXHiUpyr3TsT9X7yBCiFtdFqBltAkkfVxLXGkUZ9ABeAhy2IJH6GY3zWGpoMry5CKFWvZ2QV7CIdg=</X509Certificate></X509Data></KeyInfo></Signature></VantageSettings>

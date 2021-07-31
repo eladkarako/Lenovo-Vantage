@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CacheConfig>
+  <CacheFileConfig name="MachineInformation" isCapable="true" type="override" addition="request" handler="response" bak="root" fileName="MachineInformation.xml" CanBeNull="true">
+    <ContractRequestList>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemInformation.Machine">
+          <Command name="Get-MachineInformation" requestType="sync">
+            <Parameter><![CDATA[]]></Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+    </ContractRequestList>
+  </CacheFileConfig>
+	<CacheFileConfig name="PowerCapabillities" isCapable="true" type="override" addition="provider" handler="direct" bak="CustomCache" fileName="PowerCapabillities.xml" CanBeNull="true">
+		<ContractRequestList>
+      <ContractRequestWrapper isExclusive="false">
+			  <ContractRequest name="SystemManagement.BatteryMgmt">
+				  <Command name="Get-Capability">
+					  <Parameter><![CDATA[]]></Parameter>
+				  </Command>
+			  </ContractRequest>
+      </ContractRequestWrapper>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemManagement.BatteryStretch">
+          <Command name="Get-Capability">
+            <Parameter><![CDATA[]]></Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemManagement.Power">
+          <Command name="Get-Capability">
+            <Parameter><![CDATA[]]></Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemManagement.PowerProfile">
+          <Command name="Get-Capability">
+            <Parameter><![CDATA[]]></Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+		</ContractRequestList>
+	</CacheFileConfig>
+	<CacheFileConfig name="CameraCapabillities" isCapable="true" type="general" addition="request" handler="response" bak="CustomCache" fileName="CameraCapabillities.xml" CanBeNull="true">
+		<ContractRequestList>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemManagement.Camera">
+          <Command name="Get-Capability">
+            <Parameter><![CDATA[]]></Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+		</ContractRequestList>
+	</CacheFileConfig>
+  <CacheFileConfig name="BatteryChargeThreshold" isCapable="true" type="general" addition="request" handler="response" bak="CustomCache" fileName="BatteryChargeThreshold.xml" CanBeNull="true">
+		<ContractRequestList>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemManagement.BatteryMgmt">
+          <Command name="Get-BatteryChargeThreshold" requestType="sync">
+            <Parameter><![CDATA[]]></Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+		</ContractRequestList>
+	</CacheFileConfig>
+  <CacheFileConfig name="GenericDisplayCapabilities" isCapable="true" type="general" addition="request" handler="response" bak="CustomCache" fileName="GenericDisplayCapabilities.xml" CanBeNull="true">
+    <ContractRequestList>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemManagement.Display">
+          <Command name="Get-Capability">
+            <Parameter><![CDATA[]]></Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+    </ContractRequestList>
+  </CacheFileConfig>
+  <CacheFileConfig name="APSCapabilities" isCapable="true" type="general" addition="request" handler="response" bak="CustomCache" fileName="APSCapabilities.xml" CanBeNull="true">
+    <ContractRequestList>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemManagement.APS">
+          <Command name="Get-Capability">
+            <Parameter>
+              <![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<Empty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:nil="true" />]]>
+            </Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+    </ContractRequestList>
+  </CacheFileConfig>
+  <CacheFileConfig name="KeyboardInputCapabilities" isCapable="true" type="general" addition="request" handler="response" bak="CustomCache" fileName="KeyboardInputCapabilities.xml" CanBeNull="true">
+    <ContractRequestList>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemManagement.Keyboard">
+          <Command name="Get-Capability">
+            <Parameter>
+              <![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<Empty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:nil="true" />]]>
+            </Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+    </ContractRequestList>
+  </CacheFileConfig>
+  <CacheFileConfig name="PointingDeviceInputCapabilties" isCapable="true" type="general" addition="request" handler="response" bak="CustomCache" fileName="PointingDeviceInputCapabilties.xml" CanBeNull="true">
+    <ContractRequestList>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemManagement.PointingDevice">
+          <Command name="Get-Capability">
+            <Parameter>
+              <![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<Empty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:nil="true" />]]>
+            </Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+    </ContractRequestList>
+  </CacheFileConfig>
+  <CacheFileConfig name="DisplayOLEDSettingsCapabilities" isCapable="true" type="general" addition="request" handler="response" bak="CustomCache" fileName="DisplayOLEDSettingsCapabilities.xml" CanBeNull="true">
+    <ContractRequestList>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemManagement.Spectrum">
+          <Command name="Get-Capability">
+            <Parameter>
+              <![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<Empty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:nil="true" />]]>
+            </Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+    </ContractRequestList>
+  </CacheFileConfig>
+	<CacheFileConfig name="AudioMicMuteCapability" isCapable="true" type="override" addition="request" handler="direct" bak="CustomCache" fileName="AudioMicMuteCapability.xml" CanBeNull="true">
+		<ContractRequestList>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemManagement.Audio">
+          <Command name="Get-MicMuteCapability">
+            <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?><Empty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:nil="true" />]]></Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+		</ContractRequestList>
+	</CacheFileConfig>
+	<CacheFileConfig name="AudioProfileCapability" isCapable="true" type="general" addition="request" handler="response" bak="CustomCache" fileName="AudioProfileCapability.xml" CanBeNull="true">
+		<ContractRequestList>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemManagement.AudioProfile">
+          <Command name="Get-Capability">
+            <Parameter>
+              <![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<AudioProfileStateRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SettingList>
+    <Setting key="APIFirst">True</Setting>
+  </SettingList>
+</AudioProfileStateRequest>]]>
+            </Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+		</ContractRequestList>
+	</CacheFileConfig>
+  <CacheFileConfig name="CameraRegistry" isCapable="true" type="override" addition="provider" handler="response" bak="CustomCache" fileName="CameraRegistry.xml" CanBeNull="true">
+    <ContractRequestList>
+      <!--<ContractRequest name="SystemManagement.camera">
+				<Command name="Get-Capability">
+					<Parameter><![CDATA[]]></Parameter>
+				</Command>
+			</ContractRequest>-->
+    </ContractRequestList>
+  </CacheFileConfig>
+  <CacheFileConfig name="CameraPrivacyState" isCapable="true" type="override" addition="request" handler="response" bak="CustomCache" fileName="CameraPrivacyState.xml" CanBeNull="true">
+    <ContractRequestList>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemManagement.Camera">
+          <Command name="Get-Camera-Privacy">
+            <Parameter>
+              <![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<MmDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <KeyValueList>
+    <Item Key="Location" Value="front" />
+  </KeyValueList>
+</MmDictionary>]]>
+            </Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+    </ContractRequestList>
+  </CacheFileConfig>
+  <CacheFileConfig name="AllPowerSettings" isCapable="true" type="override" addition="request" handler="response" bak="CustomCache" fileName="AllPowerSettings.xml" CanBeNull="true">
+		<ContractRequestList>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemManagement.Power">
+          <Command name="Get-AllPowerSettings">
+            <Parameter><![CDATA[]]></Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemManagement.BatteryStretch">
+          <Command name="Get-BatteryStretchSettings">
+            <Parameter><![CDATA[]]></Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+		</ContractRequestList>
+	</CacheFileConfig>
+  <CacheFileConfig name="APSSettings" isCapable="true" type="general" addition="request" handler="response" bak="CustomCache" fileName="APSSettings.xml" CanBeNull="true">
+    <ContractRequestList>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemManagement.APS">
+          <Command name="Get-APSSetting">
+            <Parameter>
+              <![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<Empty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:nil="true" />]]>
+            </Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+    </ContractRequestList>
+  </CacheFileConfig>
+  <CacheFileConfig name="BatteryInfo" isCapable="true" type="general" addition="request" handler="response" bak="CustomCache" fileName="BatteryInfo.xml" CanBeNull="true">
+    <ContractRequestList>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemInformation.Battery">
+          <Command name="Get-BatteryInformation">
+            <Parameter><![CDATA[]]></Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+    </ContractRequestList>
+  </CacheFileConfig>
+	<CacheFileConfig name="PowerProfileSettings" isCapable="true" type="override" addition="request" handler="direct" bak="CustomCache" fileName="PowerProfileSettings.xml" CanBeNull="true">
+		<ContractRequestList>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemManagement.PowerProfile">
+          <Command name="Get-USBChargingMode">
+            <Parameter><![CDATA[]]></Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+		</ContractRequestList>
+	</CacheFileConfig> 
+  <CacheFileConfig name="BatteryMgmtChargeMode" isCapable="true" type="general" addition="request" handler="response" bak="CustomCache" fileName="BatteryMgmtChargeMode.xml" CanBeNull="true">
+    <ContractRequestList>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemManagement.BatteryMgmt">
+          <Command name="Get-BatteryChargeMode" requestType="sync">
+            <Parameter><![CDATA[]]></Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+    </ContractRequestList>
+  </CacheFileConfig>
+  <CacheFileConfig name="AppBasedSettings" isCapable="true" type="general" addition="request" handler="response" bak="CustomCache" fileName="AppBasedSettings.xml" CanBeNull="true">
+    <ContractRequestList>
+      <ContractRequestWrapper isExclusive="false">
+        <ContractRequest name="SystemManagement.AppScenario">
+          <Command name="Get-FeatureStatus">
+            <Parameter>
+              <![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<Empty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:nil="true" />]]>
+            </Parameter>
+          </Command>
+        </ContractRequest>
+      </ContractRequestWrapper>
+    </ContractRequestList>
+  </CacheFileConfig>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>Byj5SOzSLPL0zhM3VuyqaiipfAE=</DigestValue></Reference></SignedInfo><SignatureValue>A2i8RRvm4VSB8CoKJkakxTi7jNEbqTzCWdHcllPzt8dtDImNzRlQs9H4gNAyJI864cSGMU4m3SiL+l0UmTxiwHJ0N5+UilMq3osCDXTrSpO6pIDO+XZrKzFVcDPkwf4GpL/BLa0Yg3Pk3lzM/6ylGvgA6c/bzGcTA2af3GfzeIs7dasyOJFL+SXwbFpil7BTQ88uCywCXsjfh/zUuOnUN7O2u6fgM0TFtR1a50NsvmFfNlZAKfMRqnzxWrSPjaq7Z8Nvm88KaEEoXo4b9l9pLq/jOo/VhfbIeSd4PWp7tU1xCcFJFozzQVfGlra5w6DIi1t6Jv/M+5tG+ZEBMaKZtA==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIE5jCCA86gAwIBAgIQRjqDp6eX8wmErBqoLyATjDANBgkqhkiG9w0BAQsFADCBhDELMAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVjIENvcnBvcmF0aW9uMR8wHQYDVQQLExZTeW1hbnRlYyBUcnVzdCBOZXR3b3JrMTUwMwYDVQQDEyxTeW1hbnRlYyBDbGFzcyAzIFNIQTI1NiBDb2RlIFNpZ25pbmcgQ0EgLSBHMjAeFw0xNzAyMDgwMDAwMDBaFw0xODAyMDkyMzU5NTlaMGwxCzAJBgNVBAYTAlVTMRcwFQYDVQQIDA5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEBwwLTW9ycmlzdmlsbGUxDzANBgNVBAoMBkxlbm92bzEMMAoGA1UECwwDRzA4MQ8wDQYDVQQDDAZMZW5vdm8wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCxRt8ld9FNmjglJwTclvTCqXikAjgMxm11Occ+Z3p7LzQPciUeFmkFBycy79BTaaN9WECRb+aDoJy53mBgDmfJ/t1NQnai0VxVS7TwVEYa2A6/VD9dWwmMkca8ZdfZDKtyG2vKBCKajYH8xEzzrchkCujTn197l4F9OhyEP2027xJ4UYc1j7ZeLPIhZV24q5EdBkqjfDqqYveGL+0OffHKDfEP7dDBjXDYi/bCTAcvzct56Qc4Pji5s7Zyljp1PcgWBZGaFwNnbyNlVCSenWzA506mMeSeZNiaWK2V2b2ayJGqEhgRjR2lKhAczjEhDsflV2N2xSmClXo1rfdm70d7AgMBAAGjggFpMIIBZTAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzBhBgNVHSAEWjBYMFYGBmeBDAEEATBMMCMGCCsGAQUFBwIBFhdodHRwczovL2Quc3ltY2IuY29tL2NwczAlBggrBgEFBQcCAjAZDBdodHRwczovL2Quc3ltY2IuY29tL3JwYTAfBgNVHSMEGDAWgBTUwAYiSes5S92T4lyhuEd2CXIDWDArBgNVHR8EJDAiMCCgHqAchhpodHRwOi8vcmIuc3ltY2IuY29tL3JiLmNybDBXBggrBgEFBQcBAQRLMEkwHwYIKwYBBQUHMAGGE2h0dHA6Ly9yYi5zeW1jZC5jb20wJgYIKwYBBQUHMAKGGmh0dHA6Ly9yYi5zeW1jYi5jb20vcmIuY3J0MBEGCWCGSAGG+EIBAQQEAwIEEDAWBgorBgEEAYI3AgEbBAgwBgEBAAEB/zANBgkqhkiG9w0BAQsFAAOCAQEAgVJHiDMb7A/I2OgwDsdPmTMTnvw6ffdTvXH6kS2142gBfCYZ2YBfIM5Yme4G9nAjZkOG6mjLk9QVdblNbLsy3AH52XMVDrcxvfSrezCHzCuZkBOb9rJX7tFUvEGOfjsPmoIxT0Hw3h/4Mq6PQDkRH6y+W5OdwF79eq3P2iWnfAuq0w7D4JpzyZuFnhGLn5YA2WP/myVMWJ1MHwCkoYpSx8wwSmOk+1pLmcGNNLL/CH+3GASKKpLLh/8h82X7oyer3dpoKoMjh0zj6AN1dx/lji62q4AH1fih9U1+udoXFUUR4V3R85iXxKXLxeTaaEu9SHDIVcOYPvJbuCp5hZj8/w==</X509Certificate></X509Data></KeyInfo></Signature></CacheConfig>

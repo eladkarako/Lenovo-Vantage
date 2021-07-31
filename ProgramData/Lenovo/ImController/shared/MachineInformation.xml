@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<MachineInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <BiosVersion>GGCN26WW</BiosVersion>
+  <BiosDate>04252021</BiosDate>
+  <ECVersion>1.26</ECVersion>
+  <Brand>idea</Brand>
+  <Country>IL</Country>
+  <DateCreated>2021-07-28T01:00:38</DateCreated>
+  <EnclosureType>notebook</EnclosureType>
+  <Family>IdeaPad 3 15ITL6</Family>
+  <FirstRunDate>2021-07-28T00:10:01</FirstRunDate>
+  <Locale>en</Locale>
+  <MTM>82H8</MTM>
+  <Manufacturer>LENOVO</Manufacturer>
+  <OSBitness>64</OSBitness>
+  <OSVersionString>10.0.19044.1149</OSVersionString>
+  <OSName>Windows 10 Enterprise</OSName>
+  <OS>WIN10</OS>
+  <CPUAddressWidth>64</CPUAddressWidth>
+  <CPUArchitecture>x64</CPUArchitecture>
+  <PreloadTagList />
+  <Serialnumber>PF2W8H8R</Serialnumber>
+  <SKU>LENOVO_MT_82H8_BU_idea_FM_IdeaPad 3 15ITL6</SKU>
+  <SubBrand>IdeaPad</SubBrand>
+</MachineInformation>

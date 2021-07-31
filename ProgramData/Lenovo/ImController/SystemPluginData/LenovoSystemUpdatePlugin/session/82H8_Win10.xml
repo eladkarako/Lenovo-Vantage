@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?><packages count="27">
+  <package>
+    <location>https://download.lenovo.com/pccbbs/mobiles/suutspatchww01_2_.xml</location>
+    <category>Software and Utilities</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">af5240bb95c09bf1c04b23ad3344cdeab04b695661bdb6a0644d56a5d169bb7a</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/01lf02afar2w6jb0_s360_14itl_2_.xml</location>
+    <category>Mouse Pen and Keyboard</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">a3c02276531c4d155e209ecbe406c89d7fa4ccc15f896b1fe3f420c826d0f49c</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/ofln0a0f40m8a0_s360_14itl_2_.xml</location>
+    <category>Motherboard Devices core chipset onboard video PCIe switches</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">8682f541e23ce5c2ab126f3b7261b7e734b12126360a556c237db734a8f08d02</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bs3010fg0w7kjc0_r_s360_14itl_2_.xml</location>
+    <category>Camera and Card Reader</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">cbb7338716cc58d4052c11d89fce133d4d4b7c252c6970c4815b1bd02cea303f</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bs3010fg0w7kjc0_so_s360_14itl_2_.xml</location>
+    <category>Camera and Card Reader</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">58081d96d2ae2e854da562e468b7fd4c7ff31ad7298df79a2aaa9d4dac2066f4</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bs3010fg0w7kjc0_su_s360_14itl_2_.xml</location>
+    <category>Camera and Card Reader</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">b214a9106cb57c9194640f6de60e486624083a62ebcf5b0df8d70c4c805eaab7</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bs3010fk59kfjc0_s360_14itl_2_.xml</location>
+    <category>Audio</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">3c887be2a1e897ed4f3e20738b8fc5851a4fbade8d85dcc5cdbb391073620412</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bs3010fw7jnjjc0_i_s360_14itl_2_.xml</location>
+    <category>Bluetooth and Modem</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">895f4ed1b7dc41c77570ed69629bca4ff81f4a56a9f9637125103c4a0953c7b9</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bs3010fw7jnjjc0_r_s360_14itl_2_.xml</location>
+    <category>Bluetooth and Modem</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">6b8f2bdf043810269273ffcba888b05e2745d12c34ff437ee7828dae9edc8891</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bs301afflcq6jc0_s360_14itl_2_.xml</location>
+    <category>Motherboard Devices core chipset onboard video PCIe switches</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">d7e8d7c9fb14b8bf0018973d4d98904dc3c9b88c5089b96a73b4b25600cb564e</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bs301afk38j9jc0_s360_14itl_2_.xml</location>
+    <category>Motherboard Devices core chipset onboard video PCIe switches</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">aff90bed6ce05f0c21fe41c314973f3814b05e03fd1c440b1e5cc3b277831ee1</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bs3010fx4hsgjc0_g_s360_14itl_2_.xml</location>
+    <category>Camera and Card Reader</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">8ef27b6fcd1f85a28873639c8ac3945987c732fa0e01c6638ee25ae90449972c</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bs3010fx4hsgjc0_r_s360_14itl_2_.xml</location>
+    <category>Camera and Card Reader</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">c9a092ad2dae39b78ade28c1e70498c6dff795fcda6c1c6fa602aa9babade0d0</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bs3010f23hbljc0_e_s360_14itl_2_.xml</location>
+    <category>Fingerprint reader</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">7dab571b38e0442e6aa5ed1e3ecb8f15d69e46882172d00ea0417ae939a861d1</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bs3010f23hbljc0_g_s360_14itl_2_.xml</location>
+    <category>Fingerprint reader</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">6ae68e444124238eab9c3045a12d7a15c8f9fa09879cb75e043ad00888101441</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bsv010fr11rbjc0_s360_14itl_2_.xml</location>
+    <category>Graphics Processing Units and Server AI Accelerators</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">e55b5732870f6f733d502fec4230b941f5c677a14735d6edb2509f3163aaee19</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bs301afzca38jc0_s360_14itl_2_.xml</location>
+    <category>Motherboard Devices core chipset onboard video PCIe switches</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">3ed11f2d0e6a1355f713c12670de9dd4c8cd3aa0672fbb5ee90a1a304f454ef1</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bs3010fld8jcjc0_s360_14itl_2_.xml</location>
+    <category>Graphics Processing Units and Server AI Accelerators</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">168a9321f53439ab2c30631fb1b3a8131bea307c2812a785193369062a1ca057</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bs3010fclb1ejc0_s360_14itl_2_.xml</location>
+    <category>Graphics Processing Units and Server AI Accelerators</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">52311e95d149175269f39eb9bdaa4570e5a344f09c32eec5ad121142ebb3713b</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bs301afkas67jc0_s360_14itl_2_.xml</location>
+    <category>Motherboard Devices core chipset onboard video PCIe switches</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">3f6c040ff1e922792fc7ad33142ae90c48ed22814677a419a3f0048c0242799d</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bs301afejzaajc0_v14_itl_82ka_2_.xml</location>
+    <category>Storage</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">4f0e296f9f15d4c9c81c12351d9cad7a40a0d92729a0a2406e11197a1e2eb71c</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bs3020fu0e0hjc0_14itl_8852_2_.xml</location>
+    <category>Networking Wireless LAN</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">13a71ed5c480467a10632b2138eb30b7022d1548733678245ebb655b2f237365</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bs3020fu0e0hjc0_i_s360_14itl_2_.xml</location>
+    <category>Networking Wireless LAN</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">d0ebbe025043bf50f6895125b3a169f4cb9245480a2904aa296928a81af17568</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/3bs3020fu0e0hjc0_r_s360_14itl_2_.xml</location>
+    <category>Networking Wireless LAN</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">0ed9eb05ddc5492922dd462d4b83f9ec72a352fcdf792d36671d8e6ad18e3e7f</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/5zlc020f1evv38c0_82h7_8852_2_.xml</location>
+    <category>Bluetooth and Modem</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">d77489d1d7330473de5492d81747f2f93f8acde64099592fa8ed3027ab975240</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/ggcn26ww_2_.xml</location>
+    <category>BIOS UEFI</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">e3ed512535364c6418cf4375d0ad4dba3a3b72bcdb9f9fc8e75a9580d347943e</checksum>
+  </package>
+  <package>
+    <location>https://download.lenovo.com/consumer/mobiles/lenovo_supportlink_tvsu0707_2_.xml</location>
+    <category>Software and Utilities</category>
+    <oslangs></oslangs>
+    <checksum type="sha256">8219a2829a1a1ec4619ef43bf480bb5d53cc095a4dd3314193c0df2c0ca816b4</checksum>
+  </package>
+</packages>

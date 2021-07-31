@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<SmartSettingUser xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="1.0.15.0108">
+  <SmartSettingStatus>true</SmartSettingStatus>
+  <DefaultScene Name="Default" NotShowIntroduction="false">
+    <FeatureStatus Name="Audio" Switch="Close" Value="Music" />
+    <FeatureStatus Name="AutoFullScreen" Switch="Close" Value="" />
+    <FeatureStatus Name="TouchScreen" Switch="Close" Value="" />
+  </DefaultScene>
+  <PreScene Name="Default" NotShowIntroduction="false">
+    <FeatureStatus Name="Audio" Switch="Close" Value="Music" />
+    <FeatureStatus Name="AutoFullScreen" Switch="Close" Value="" />
+    <FeatureStatus Name="TouchScreen" Switch="Close" Value="" />
+  </PreScene>
+  <SceneCategoryList>
+    <SceneCategory Name="Photo" NotShowIntroduction="false">
+      <FeatureStatus Name="AutoFullScreen" Switch="Close" Value="" />
+    </SceneCategory>
+    <SceneCategory Name="Music" NotShowIntroduction="false">
+      <FeatureStatus Name="Audio" Switch="Close" Value="Music" />
+    </SceneCategory>
+    <SceneCategory Name="Video" NotShowIntroduction="false">
+      <FeatureStatus Name="Audio" Switch="Close" Value="Cinema" />
+      <FeatureStatus Name="AutoFullScreen" Switch="Close" Value="" />
+    </SceneCategory>
+    <SceneCategory Name="PPT" NotShowIntroduction="false">
+      <FeatureStatus Name="AutoFullScreen" Switch="Close" Value="" />
+      <FeatureStatus Name="TouchScreen" Switch="Open" Value="" />
+    </SceneCategory>
+    <SceneCategory Name="Productivity" NotShowIntroduction="false">
+    </SceneCategory>
+    <SceneCategory Name="Browser" NotShowIntroduction="false">
+    </SceneCategory>
+    <SceneCategory Name="E-Book" NotShowIntroduction="false">
+      <FeatureStatus Name="AutoFullScreen" Switch="Close" Value="" />
+    </SceneCategory>
+    <SceneCategory Name="Game" NotShowIntroduction="false">
+      <FeatureStatus Name="Audio" Switch="Close" Value="Game" />
+    </SceneCategory>
+    <SceneCategory Name="VideoCall" NotShowIntroduction="false">
+      <FeatureStatus Name="SmartMute" Switch="Close" Value="" />
+    </SceneCategory>
+  </SceneCategoryList>
+</SmartSettingUser>

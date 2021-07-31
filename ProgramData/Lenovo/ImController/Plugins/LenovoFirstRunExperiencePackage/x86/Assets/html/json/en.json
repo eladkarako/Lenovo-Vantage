@@ -1,0 +1,152 @@
+{
+  "apps": {
+    "banner-title": "Apps for you",
+    "banner-description": "Your Computer. Your Way",
+    "con-p1": "Lenovo PCs ship with less pre-installed software so your new device isn't cluttered with apps you don't need. Instead, we’ve picked a few frequently downloaded apps we can install for you to help get your device set up faster.",
+    "amazon-tooltip": "Shop smarter online",
+    "deezer-tooltip": "Discover the music you love with Deezer",
+    "winzip-tooltip": "WinZip, the world’s #1 compression software",
+    "cyberlink-photo-director-tooltip": "Complete photo adjustment & design",
+    "cyberlink-tooltip": "Media Player Plus by CyberLink",
+    "kingsoft-tooltip": "WPS Office by Kingsoft",
+    "nitro-pdf-tooltip": "Do more with PDFs",
+    "facebook-tooltip": "Connect with friends, family and other people you know",
+    "confirm-and-download": "Confirm and download",
+    "apps-note": "Note: After clicking Confirm and Download, you may get a prompt from Windows to allow us to install the software on your device. Once finished installing your apps will show up automatically on your desktop or start menu."
+  },
+  "close": {
+    "banner-title": "Need to go?",
+    "banner-description": "Don't worry. You can find all of these features and more inside Lenovo Vantage which is already on your device.",
+    "got-it": "Got it",
+    "cancel": "Cancel",
+    "remove-this": "No thanks, remove this from my device"
+  },
+  "dropbox": {
+    "banner-title": "Exclusive Dropbox Offer",
+    "banner-description": "Get 30 GB of space free for 1 year",
+    "sign-in-p1": "Dropbox brings all your files together, in one central place. They're easy to find and safely synced across all your devices—so you can access them anytime, anywhere.",
+    "sign-in-p2": "<a data-metrics-name=\"Features.Dropbox.SwitchToSignUpButton\" data-metrics-type=\"ItemClick\" data-metrics-parent=\"Features.Dropbox.SignInPage\" tabindex=\"2\" class=\"btn-sign-up a-link\">Sign up</a> or sign in and get 30 GB of space free for 1 year.",
+    "forgot-pw": "Forgot your password?",
+    "sign-in-agree": "I agree to the <a data-metrics-name=\"Features.Dropbox.LenovoTermButton\" data-metrics-type=\"ItemClick\" data-metrics-parent=\"Features.Dropbox.SignInPage\" tabindex=\"6\" class=\"lenovo-offers-terms a-link\">Lenovo offers terms</a>",
+    "sign-up-p1": "Dropbox brings all your files together, in one central place. They're easy to find and safely synced across all your devices—so you can access them anytime, anywhere.",
+    "sign-up-p2": "<a data-metrics-name=\"Features.Dropbox.SwitchToSignInButton\" data-metrics-type=\"ItemClick\" data-metrics-parent=\"Features.Dropbox.SignUpPage\" tabindex=\"2\" class=\"btn-sign-in a-link\">Sign in</a> or sign up and get 30 GB of space free for 1 year. ",
+    "sign-up-your-email": "Your email:",
+    "sign-up-agree": "I agree to <a data-metrics-name=\"Features.Dropbox.DropboxTermButton\" data-metrics-type=\"ItemClick\" data-metrics-parent=\"Features.Dropbox.SignUpPage\" tabindex=\"9\" class=\"dropbox-terms a-link\">Dropbox terms</a> and <a data-metrics-name=\"Features.Dropbox.LenovoTermButton\" data-metrics-type=\"ItemClick\" data-metrics-parent=\"Features.Dropbox.SignUpPage\" tabindex=\"10\" class=\"lenovo-offers-terms a-link\">Lenovo offers terms</a>",
+    "btn-sign-in": "Sign in and download",
+    "btn-sign-up": "Sign up and download",
+    "sign-in-skip": "Skip",
+    "sign-up-skip": "No thanks.",
+    "submit-description": "Submitting this form will allow Dropbox to download in the background and open it when it is ready.",
+    "view-offer-details": "View offer details.",
+    "error-sign-in-email": "Invalid email address",
+    "error-password-required": "Please enter your password",
+    "error-password-minlength": "Passwords must contain at least 6 characters",
+    "error-confirm-password-required": "Please enter your password",
+    "error-confirm-password-equalTo": "Passwords do not match",
+    "error-sign-up-email": "Please enter your email address",
+    "error-email-domain": "The domain portion of the email address is invalid.",
+    "error-sign-up-fname": "Please enter your first name",
+    "error-sign-up-lname": "Please enter your last name",
+    "error-agree": "Please agree to the Terms"
+  },
+  "lenovoid": {
+    "lenovo-id": "Lenovo ID",
+    "connects": "Connects you to everything Lenovo.",
+    "connects-details": "One last step. Click 'Next' below to link this device to your Lenovo account through Lenovo ID. Sign up for a new ID or sign in with your current ID to get faster device support and unlock access to Lenovo exclusive content customized just for you.",
+    "img-details1": "Manage your Lenovo account",
+    "img-details2": "Get faster support",
+    "img-details3": "Access Lenovo apps",
+    "img-details4": "Unlock exclusive features",
+    "img-details5": "Interact with other Lenovo users"
+
+  },
+  "migration": {
+    "need-help": "Need help migrating files from your old computer to your new computer? Download the Lenovo Migration Assistant to make setting up your new device quick and easy.",
+    "add-shortcut": "Add a shortcut to my desktop during the installation.",
+    "migrate-files": "Yes, help me migrate my files",
+    "download-line": "This app will be downloaded and open automatically when it's ready to be used."
+
+  },
+  "vantage": {
+    "contain-p1": "Lenovo Vantage will be your go-to application for getting the most out of your device.",
+    "list-p1": "Stay up to date with the latest drivers and apps.",
+    "list-p2": "Control hardware settings exclusive for your device.",
+    "list-p3": "Stay secure on-line with Lenovo Wifi Security.",
+    "list-p4": "Customize your experience to get content and exclusive offers just for you.",
+    "add-toolbar": "Add the Vantage toolbar to obtain \"at a glance\" battery status and access to other key device settings.",
+    "add-warranty": "Add shortcut to my desktop to quickly access warranty status.",
+    "warranty-shortcut-text": "My Warranty",
+    "support-shortcut-text": "Get Support"
+  },
+  "welcome": {
+    "welcome-hello": "Welcome to your new device",
+    "go-set-up": "Let's get you set up in {0} easy steps",
+    "check-details": "Help improve the experience of this app by allowing collection of anonymous usage statistics.",
+    "dropbox-offer": "Exclusive Dropbox offer",
+    "get-free": "Get your free 30GB of Dropbox storage",
+    "privacy-policy": "Lenovo Software Privacy Statement"
+  },
+  "premiumcare": {
+    "banner-title": "Review your warranty & service plan",
+    "con-p1": "Lenovo Services Warranty and Upgrades protect you from any hardware failure. With Lenovo Premium Care and Legion Ultimate Support for gaming we have your back covered for software, settings and how-to solutions. Accidental Damage Protection protects you from drops, spills, screen cracks and other damages caused by accident.",
+    "icon-text1": "Depot <br/>Service",
+    "icon-text2": "On-site Support",
+    "icon-text3": "Lenovo <br/>Premium <br/>Care",
+    "icon-text4": "Legion Ultimate Support",
+    "icon-text5": "Accidental Damage Protection",
+    "check-and-explore": "Check your warranty and explore your options"
+  },
+  "alldone": {
+    "all-done": "All done! Check out Vantage",
+    "all-done-entitled": "Download your software now",
+    "next-step": "Next step: Continue getting your system set up with Lenovo Vantage. We recommend you run our System Update tool to ensure your device has the latest drivers and software.",
+    "next-step-entitled": "Next Step: Looks like you purchased software with your device that you need to download. Click on the button below to launch Lenovo Vantage to get started. If you don’t want to do this now, you can download your software at any time by selecting My Software from the Lenovo Vantage menu.",
+    "launch": "Launch",
+    "security-advisor": "Security Advisor",
+    "hardware-settings": "Hardware Settings",
+    "discover-more": "Discover More",
+    "keep-secure1": "Keep your device secure with Lenovo Security Advisor",
+    "keep-secure2": "Configure your device's hardware settings",
+    "keep-secure3": "Explore exclusive offers for Lenovo devices"
+  },
+  "msg": {
+    "whoops": "Whoops",
+    "not-found": "No internet found. Please check your connection and try again",
+    "got-it": "Got it",
+    "try-again": "Try again",
+    "download-failed": "Download failed. Please try again.",
+    "install-failed": "Installation failed. Please try again.",
+    "dropbox-unreachable": "Failed to connect to Dropbox, network is unreachable.",
+    "dropbox-signin-unknow-error": "An unknown error occurred when signing in to your Dropbox account.",
+    "dropbox-signup-unknow-error": "An unknown error occurred when signing up for a Dropbox account.",
+    "battery-guage-not-installed": "Error enabling the Battery Gauge. Check the Hardware Settings section within Lenovo Vantage to retry enabling it.",
+    "resume-fre-hint": "Need to go? We'll save this to your start menu for you to finish at any time.",
+    "only-run-lenovo-device": "This application can only run on Lenovo devices.",
+    "sso-timestamp-incorrect": "Oops, looks like your PC time is incorrect. Please correct the time on your PC and try again.",
+    "sso-common-info": "Oops, We've encountered an error. Please try again.",
+    "download-apps-info": "Your apps will download in the background and will show up on your desktop when ready to use.",
+    "apps-note": "Note: Depending on the apps you chose, you may need to accept a download confirmation with Windows once the installation starts"
+  },
+  "title": {
+
+  },
+  "placeholder": {
+    "dropbox-sign-in-email": "Email",
+    "dropbox-sign-in-password": "Password",
+    "dropbox-sign-up-email": "Email address",
+    "dropbox-sign-up-password": "Enter password",
+    "dropbox-sign-up-fname": "First name",
+    "dropbox-sign-up-lname": "Last name",
+    "dropbox-sign-up-confirm-pwd": "Confirm password"
+  },
+  "common": {
+    "next": "Next",
+    "skip": "Skip",
+    "ok": "OK",
+    "cancel": "Cancel",
+    "lenovo-migration": "Lenovo Migration Assistant",
+    "fast-easy-secure": "Make migrating fast, easy, and secure.",
+    "lenovo-vantage": "Lenovo Vantage",
+    "got-easier": "Your PC just got easier."
+  }
+}

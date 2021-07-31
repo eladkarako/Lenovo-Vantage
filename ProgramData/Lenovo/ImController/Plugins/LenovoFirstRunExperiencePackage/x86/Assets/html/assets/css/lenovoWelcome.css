@@ -1,0 +1,731 @@
+.mask, .page-migrate .migration-mask, .page-dropbox .dropbox-mask {
+		display: none;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+}
+
+.top-view {
+		background-size: 100% 100%;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		max-width: 800px;
+		height: 250px;
+		padding-top: 25px;
+}
+
+.page-welcome .top-view {
+    height: 300px;
+}
+
+.page-welcome .bottom-view-left {
+    flex: 30%;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    max-width: 400px;
+    height: 300px;
+}
+
+.page-welcome .bottom-view-center {
+    flex: 30%;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    max-width: 400px;
+    height: 300px;
+}
+
+.page-welcome .bottom-view-right {
+    flex: 30%;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    max-width: 400px;
+    height: 300px;
+}
+
+.page-welcome .wel-btn {
+		margin-bottom: 2.75rem;
+		margin-left: -1px;
+}
+
+.page-welcome .p-checkbox:nth-last-of-type(1) {
+    display: none;
+}
+
+.page-premium-care .top-view {
+	padding-top: 20px;
+}
+
+.page-premium-care .icon {
+    background-size: 100% 100%;
+    display: block;
+    margin: auto;
+    height: 49px;
+    width: 49px;
+}
+
+.page-premium-care .icon.depot-service-icon {
+    background-image: url('../img/consumer/depot-service.svg');
+}
+
+.page-premium-care .icon.onsite-support-icon {
+    background-image: url('../img/consumer/onsite-support.svg');
+}
+
+.page-premium-care .icon.lenovo-premium-care-icon {
+    background-image: url('../img/consumer/lenovo-premium-care.svg');
+}
+
+.page-premium-care .icon.legion-ultimate-support-icon {
+    background-image: url('../img/consumer/legion-ultimate-support.svg');
+}
+
+.page-premium-care .icon.accidental-damage-protection-icon {
+    background-image: url('../img/consumer/accidental-damage-protection.svg');
+}
+
+.page-premium-care li.borderless {
+    border: 0 none;
+}
+
+.page-premium-care .flex-services {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    /* Make the content align at baseline */
+    align-self: baseline;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-premium-care .flex-services div {
+    text-align: center;
+    flex: 1 1;
+}
+
+.page-premium-care .wel-btn.vantage-btn-long {
+    width: 364px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.page-premium-care .wel-btn.vantage-btn-long:hover {
+    background-position: 0 -80px;
+}
+
+.page-premium-care .wel-btn.vantage-btn-long:active {
+    background-position: 0 -160px;
+}
+
+.page-premium-care .wel-btn.vantage-btn-long .ellipsis-btn {
+    padding-left: 20px;
+    width: 340px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+tr th {
+    /*background-color: #717372;*/
+    color: #ffffff;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+tr, th {
+    text-align: center;
+}
+
+.page-premium-care .td-title {
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.page-premium-care td {
+    line-height: 17px;
+    height: 25px;
+    background-color: #ffffff;
+    color: #717372;
+}
+
+.page-premium-care td.lpc-blue {
+    color: #3e8ddd;
+}
+
+.page-vantage .top-view {
+		padding-top: 20px;
+}
+
+.page-vantage .vs-most-list {
+		margin-bottom: 25px;
+}
+
+.page-vantage .vs-most-list p {
+		width: 92%;
+		line-height: 22px;
+		background-position: 0 0;
+		background-size: 22px 22px;
+		padding-left: 36px;
+		background-repeat: no-repeat;
+}
+
+.page-vantage .p-checkbox {
+		margin: 20px 0;
+}
+
+.page-vantage .p-checkbox span:nth-child(2) {
+		width: 94%;
+}
+
+.page-vantage .add-toolbar {
+		font-size: 14px;
+}
+
+.page-vantage .add-warranty {
+        font-size: 14px;
+}
+
+.page-vantage .p-checkbox:nth-last-of-type(1) {
+        display: none;
+        margin-bottom: 30px;
+}
+
+.page-lenovoid .top-view {
+		padding-top: 20px;
+}
+
+.page-lenovoid .lenovo-bott-icon {
+		width: 25px;
+		height: 25px;
+		margin-right: 1rem;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+}
+
+.page-close-app {
+		z-index: 3;
+}
+
+.page-migrate .top-view {
+		padding-top: 20px;
+}
+
+.page-migrate .wel-btn {
+		margin-left: -2px;
+}
+
+.page-migrate .wel-btn .migrate-btn-img {
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		height: 20px;
+		min-width: 20px;
+		margin-right: 10px;
+}
+
+.page-migrate .wel-btn.wel-btn-long {
+		padding-left: 15px;
+}
+
+.page-migrate .p-checkbox {
+		display: none;
+}
+
+.page-migrate .p-checkbox .input_check:checked + label:after {
+		bottom: 8px;
+}
+
+.page-migrate .download-line-box {
+		margin-bottom: 2.5rem;
+}
+
+.page-apps-for-you .top-view {
+		padding-top: 20px;
+}
+
+.page-apps-for-you .lenovo-pcs {
+		line-height: 2.5rem;
+		margin-bottom: 1.5rem;
+}
+
+.page-apps-for-you .apps-container {
+		position: relative;
+		width: 108%;
+}
+
+.page-apps-for-you .apps-container .p-checkbox {
+		height: 40px;
+		margin-bottom: 25px;
+		padding-left: 15px;
+		padding-right: 0;
+}
+
+.page-apps-for-you .apps-container .p-checkbox .check-span {
+		padding-right: 6px;
+		position: relative;
+}
+
+.page-apps-for-you .apps-container .p-checkbox .input_check + label {
+		margin-right: 6px;
+}
+
+.page-apps-for-you .apps-container .apps-tip {
+		height: 40px;
+		display: flex;
+		align-items: center;
+}
+
+.page-apps-for-you .apps-container .apps-img-text {
+		cursor: default;
+		min-width: 40px;
+		height: 40px;
+		border-radius: 5px;
+		margin-right: 8px;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+}
+
+.page-apps-for-you .apps-container .apps-img-text:hover {
+		opacity: .8;
+}
+
+.page-apps-for-you .apps-container .apps-text {
+		height: auto;
+		width: auto;
+		margin-right: 0;
+		font-size: 13px;
+		text-decoration: underline;
+}
+
+.page-apps-for-you .apps-container .tooltips {
+		z-index: 9;
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 180px;
+		overflow: hidden;
+		border: 1px solid;
+		font-size: 12px;
+}
+
+.page-apps-for-you .apps-container .tooltips .app-name {
+		font-weight: bold;
+}
+
+.page-apps-for-you .apps-note {
+		line-height: 2rem;
+}
+
+.tooltip-inner {
+		z-index: 9 !important;
+		position: absolute;
+		width: 160px !important;
+		overflow: hidden !important;
+		font-size: 12px !important;
+		border-radius: 0 !important;
+		text-align: left !important;
+}
+
+.tooltip-inner .app-name {
+		font-weight: bold;
+}
+
+.tooltip.left {
+		left: 88px !important;
+		top: 40px !important;
+}
+
+.tooltip-arrow {
+		display: none !important;
+}
+
+.page-dropbox .top-view-title {
+		padding-top: 53px;
+		height: 148px;
+}
+
+.page-dropbox .wel-contain {
+		width: 100%;
+		padding-left: 70px;
+		padding-top: 20px;
+		padding-right: 70px;
+}
+
+.page-dropbox .row input,
+.page-dropbox .form-top input,
+.page-dropbox .form-down input {
+		margin-bottom: 25px;
+		font-size: 15px;
+		position: relative;
+		padding: 0 4px;
+		height: 32px;
+		line-height: 30px;
+		width: 100%;
+}
+
+.page-dropbox .sign-view {
+		display: none;
+}
+
+.page-dropbox .sign-up-view {
+		display: block;
+}
+
+.page-dropbox .sign-top {
+		margin-bottom: 25px;
+		line-height: 23px;
+}
+
+.page-dropbox .sign-in-top {
+		margin-bottom: 35px;
+}
+
+.page-dropbox .sign-top p {
+		margin-bottom: 0;
+}
+
+.page-dropbox .sign-form input.error + p {
+		display: block;
+}
+
+.page-dropbox .input-col-2,
+.page-dropbox .input-col-3,
+.page-dropbox .your-email-box,
+.page-dropbox .form-right {
+		position: relative;
+}
+
+.page-dropbox .sign-form .error-1,
+.page-dropbox .sign-form .error-2 {
+		position: absolute;
+		left: 0;
+		top: -25px;
+		height: 12px;
+		line-height: 12px;
+		font-family: 'Segoe UI Semibold';
+		margin-bottom: 0;
+}
+
+.page-dropbox .tips-d a {
+		display: block;
+}
+
+.page-dropbox .sign-in-form .row {
+		width: 94.3%;
+		margin: 0;
+}
+
+.page-dropbox .sign-in-form .col-sm-5 {
+		padding: 0;
+		width: calc(50% - 15px);
+}
+
+.page-dropbox .sign-in-form .col-sm-5:first-child {
+		margin-right: 30px;
+}
+
+.page-dropbox .form-top,
+.page-dropbox .form-down {
+		width: 100%;
+		/* overflow: hidden; */
+		display: flex;
+}
+
+.page-dropbox .form-down input {
+		margin-bottom: 20px;
+}
+
+.page-dropbox .form-left {
+		float: left;
+		width: 611px;
+		margin-right: 30px;
+		display: flex;
+}
+
+.page-dropbox .form-left.sign-up-top-left {
+		margin-left: 0;
+		align-items: center;
+}
+
+.page-dropbox .form-left .text-your-email {
+		padding-right: 7px;
+		margin-bottom: 28px;
+		font-size: 15px;
+		line-height: 15px;
+}
+
+.page-dropbox .form-left .your-email-box {
+		flex-grow: 1;
+		min-width: 49%;
+}
+
+.page-dropbox .form-left .input-col-2 {
+		width: calc(50% - 3px);
+}
+
+.page-dropbox .form-left .input-col-2:first-child {
+		margin-right: 6px;
+}
+
+.page-dropbox .form-right {
+		width: 100%;
+}
+
+.page-dropbox .p-checkbox {
+		margin-bottom: 20px;
+		margin-top: 0px;
+		position: relative;
+}
+
+.page-dropbox .p-checkbox .error-1,
+.page-dropbox .p-checkbox .error-2 {
+		width: 400px;
+		top: -18px;
+}
+
+.page-dropbox .p-checkbox .input_check.error {
+		opacity: 0;
+}
+
+.page-dropbox .p-checkbox .forgot-pw {
+		position: absolute;
+		left: 326px;
+		top: 0;
+		height: 20px;
+		line-height: 20px;
+		text-align: right;
+		display: block;
+}
+
+.page-dropbox .sign-buttons {
+		margin-bottom: 15px;
+		overflow: hidden;
+}
+
+.page-dropbox .sign-buttons .btn-sign-in-down,
+.page-dropbox .sign-buttons .btn-sign-up-down {
+		margin-right: 73px;
+		margin-left: -2px;
+}
+
+.page-dropbox .sign-buttons .btn-sign-skip {
+		margin-right: 20px;
+		display: block;
+}
+
+.page-dropbox .sign-buttons .dropbox-loading {
+		display: none;
+		float: left;
+		width: 40px;
+		height: 40px;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+}
+
+.page-all-done .all-done-desc {
+		width: 100%;
+		padding-right: 8%;
+		max-height: 100px;
+		overflow-y: auto;
+}
+
+.page-all-done .bottom-view-left {
+		flex: 30%;
+		background-size: 100% 100%;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		max-width: 400px;
+		height: 350px;
+		overflow: hidden;
+}
+
+.page-all-done .bottom-view-center {
+		flex: 30%;
+		background-size: 100% 100%;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		max-width: 400px;
+		height: 350px;
+}
+
+.page-all-done .bottom-view-right {
+		flex: 30%;
+		background-size: 100% 100%;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		max-width: 400px;
+		height: 350px;
+}
+
+.lenovo-logo {
+		width: 34px;
+		height: 100px;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+}
+
+.welcome-title {
+		margin-bottom: 1.25rem;
+}
+
+.welcome-desc {
+		margin-bottom: 2.75rem;
+}
+
+.bottom-view-text {
+		position: absolute;
+		padding-left: 15px;
+		width: 32%;
+}
+
+.bottom-view-text.absolute-top2 {
+		top: 227px;
+		padding-right: 2px;
+		width: 32%;
+		height: 72px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+}
+
+.bottom-view-text.absolute-top {
+		top: 12px;
+}
+
+.bottom-view-text h6 {
+		font-size: 14px;
+		padding-bottom: 6px;
+}
+
+.bottom-view-text a {
+		text-decoration: underline;
+}
+
+.bottom-view-text p:nth-child(1) {
+		padding-bottom: 8px;
+}
+
+.download-line {
+		height: 5px;
+		max-width: 250px;
+		width: 0;
+		position: absolute;
+		display: none;
+}
+
+.download-line-box {
+		width: 250px;
+		position: relative;
+}
+
+.download-line-bg {
+		width: 250px;
+		height: 5px;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		display: none;
+}
+
+.top-view-title {
+		padding-left: 70px;
+		padding-top: 58px;
+		padding-right: 2px;
+		width: 430px;
+		height: 153px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+}
+
+.bottom-view {
+		/* padding-left: 70px; */
+		position: relative;
+		margin: 0;
+		overflow: hidden;
+}
+
+.next-btn {
+		width: 150px;
+		height: 30px;
+		padding: 0;
+}
+
+.go-next a,
+.vs-btn-next {
+		text-decoration: underline;
+		font-size: 12px;
+}
+
+.clearfr {
+		clear: both;
+}
+
+.close-buttons {
+		margin-top: 10px;
+		display: inline-block;
+}
+
+.close-buttons .wel-btn {
+		float: left;
+}
+
+.btn-gotit {
+		margin-right: 20px;
+}
+
+.wel-contain .text-large {
+		font-size: 18px;
+}
+
+.wel-contain .text-small {
+		font-size: 15px;
+}
+
+.top-view-detail {
+		padding-left: 60px;
+}
+
+.opening-animation {
+		z-index: 10;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		display: none;
+}
+
+.opening-animation img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 620px;
+		height: 300px;
+		margin-left: -310px;
+		margin-top: -150px;
+}
+
+.uac-link {
+		line-height: 25px;
+		margin-left: 30px;
+		color: #007EE5;
+		text-decoration: underline;
+}
+
+.uac-link::before {
+		content: url("../img/uac.png");
+		position: absolute;
+		margin-left: -60px;
+}
+
+.sign-in-agree-class {
+		width: calc(50% - 34px);
+		display: block;
+}

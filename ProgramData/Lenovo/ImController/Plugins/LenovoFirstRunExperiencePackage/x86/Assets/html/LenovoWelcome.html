@@ -1,0 +1,563 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en">
+
+<head>
+  <title>LenovoWelcome</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="cache-control" content="no-cache">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/lenovoWelcome.css">
+  <link rel="stylesheet" href="assets/theme/consumer.css">
+
+</head>
+
+<body oncontextmenu='return false;'>
+    <!-- dialog start -->
+    <div id="common-dialog" class="common-dialog">
+        <div class="common-dialog-back"></div>
+        <div id="dialog-panel-internet" class="dialog-panel">
+            <div class="dialog-top">
+                <div class="dialog-title"></div>
+                <a role="button" id="dialog-close-internet" tabindex="2" aria-label="Close" class="dialog-close"></a>
+            </div>
+            <div class="dialog-content dialog-content-internet">
+                <div class="dialog-left"></div>
+                <h6 class="dialog-right m-0">
+                    <p data-i18n-msg="whoops">Whoops</p>
+                    <p data-i18n-msg="not-found">No internet found. Please check your connection and try again</p>
+                    <p>
+                        <button id="internet-tryagain-btn" data-i18n-msg="try-again" tabindex="1" class="wel-btn text-center got-it">Try again</button>
+                    </p>
+                </h6>
+            </div>
+        </div>
+        <div id="dialog-panel-apps" class="dialog-panel">
+            <div class="dialog-top">
+                <div class="dialog-title"></div>
+        	    <a role="button" id="dialog-close-apps" data-metrics-name="Features.AppsForYou.ConfirmDialog.CloseButton" data-metrics-type="ItemClick" data-metrics-parent="Features.AppsForYou" tabindex="3" aria-label="Close" class="dialog-close"></a>
+            </div>
+            <div class="dialog-content dialog-content-apps">
+                <div class="dialog-left"></div>
+                <h6 class="dialog-right m-0"></h6>
+                <p data-i18n-msg="download-apps-info" class="line-height-2b mb-4 hyphens download-apps-info">Your apps will download in the background and will show up on your desktop when ready to use.</p>
+                <p>
+                    <button id="dialog-apps-ok" data-i18n-common="ok" tabindex="1" class="wel-btn text-center dialog-apps-ok">OK</button>
+                    <a role="button" id="dialog-apps-cancel" tabindex="2" class="a-link fz-12 dialog-apps-cancel" data-i18n-common="cancel" href="#">Cancel</a>
+                </p>
+                <div data-i18n-msg="apps-note" class="dialog-bottom hyphens">
+                    Note: Depending on the apps you chose, you may need to accept a download confirmation with Windows once the installation starts
+                </div>
+            </div>
+        </div>
+        <div id="dialog-panel-error" class="dialog-panel">
+            <div class="dialog-top">
+                <div class="dialog-title"></div>
+                <a role="button" id="dialog-close-general" tabindex="2" aria-label="Close" class="dialog-close"></a>
+            </div>
+            <div class="dialog-content dialog-content-error">
+                <div class="dialog-left"></div>
+                <h6 class="dialog-right m-0">
+                    <p class="failed-text"></p>
+                    <p>
+                        <button id="general-gotit-btn" data-i18n-msg="got-it" tabindex="1" class="wel-btn text-center got-it">Got it</button>
+                    </p>
+                </h6>
+            </div>
+        </div>
+    </div>
+    <!-- dialog end -->
+    <div id="WelcomePage" class="page page-welcome">
+        <div class="top-view d-flex d-media">
+            <div class="top-view-logo lenovo-logo" id="lenovo-logo"></div>
+            <div class="pl-5 pt-6">
+                <h2 class="welcome-title font-semilight mt-0">
+                    <span data-i18n-welcome="welcome-hello">Welcome to your new device</span>
+                    <span id="model-name"></span>
+                </h2>
+                <h3 id='welcome-go-set-up' data-i18n-welcome="go-set-up" class="welcome-desc mt-0">Let's get you set up</h3>
+                <p class="mb-5">
+                    <a role="button" tabindex="1" id="welcome-next-btn" data-metrics-name="Features.WelcomePage.NextButton" data-metrics-type="ItemClick" data-metrics-parent="Features.WelcomePage" class="wel-btn text-center" data-i18n-common="next" href="javascript:void(0)">Next</a>
+                </p>
+                <p class="p-checkbox">
+                    <span>
+                        <input tabindex="2" type="checkbox" class="input_check" name="" id="metric" aria-labelledby="metric-checkbox-description">
+                        <label id="metric-checkbox-description" class="mb-0" for="input_check">
+                            <span data-i18n-welcome="check-details">Help improve the experience of this app by allowing collection of anonymous usage statistics.</span>
+                            <a data-i18n-welcome="privacy-policy">Lenovo Software Privacy Statement</a>
+                        </label>
+                    </span>
+                    <span data-i18n-welcome="check-details">Help improve the experience of this app by allowing collection of anonymous usage statistics.</span>
+                    <br>
+                    <a tabindex="3" id="privacy-policy-btn" href="javascript:void(0)" class="a-link" data-i18n-welcome="privacy-policy" data-metrics-name="Features.WelcomePage.LenovoPrivacyPolicyButton" data-metrics-type="ItemClick" data-metrics-parent="Features.WelcomePage">Lenovo Software Privacy Statement</a>
+                </p>
+                <p class="p-checkbox pt-3">
+                    <span>
+                        <input tabindex="2" data-metrics-name="Features.WelcomePage.AddToolbarToggleButton" data-metrics-type="ItemClick" data-metrics-parent="Features.WelcomePage" data-metrics-value type="checkbox" class="input_check" name="" id="welcome-toolbar-option" aria-labelledby="toolbar-checkbox-description">
+                        <label id="welcome-toolbar-checkbox-description" class="mb-0" for="input_check">
+                            <span data-i18n-vantage="add-toolbar">Add the Vantage toolbar to obtain “at a glance” battery status and access to other key device settings.</span>
+                        </label>
+                    </span>
+                    <span data-i18n-vantage="add-toolbar" class="add-toolbar">Add the Vantage toolbar to obtain “at a glance” battery status and access to other key device settings.</span>
+                </p>
+                <p class="p-checkbox pt-5">
+                    <span>
+                        <input tabindex="3" data-metrics-name="Features.WelcomePage.AddWarrantyToggleButton" data-metrics-type="ItemClick" data-metrics-parent="Features.WelcomePage" data-metrics-value type="checkbox" class="input_check" name="" id="welcome-warranty-option" aria-labelledby="warranty-checkbox-description">
+                       <label id="welcome-warranty-checkbox-description" class="mb-0" for="input_check">
+                            <span data-i18n-vantage="add-warranty">Add shortcuts to my desktop to quickly access support and warranty status.</span>
+                        </label>
+                    </span>
+                    <span data-i18n-vantage="add-warranty" class="add-warranty">Add shortcuts to my desktop to quickly access support and warranty status.</span>
+                </p>
+            </div>
+        </div>
+        <div class="bottom-view d-flex position-relative">
+            <div class="bottom-view-left">
+                <div class="bottom-view-text absolute-top2">
+                    <h6 class="m-0" data-i18n-common="lenovo-vantage">Lenovo Vantage</h6>
+                    <p class="m-0" data-i18n-common="got-easier">Your PC just got easier.</p>
+                </div>
+            </div>
+            <div class="bottom-view-center">
+                <div class="bottom-view-text absolute-top2">
+                    <h6 class="m-0" data-i18n-welcome="dropbox-offer">Exclusive Dropbox offer</h6>
+                    <p class="m-0" data-i18n-welcome="get-free">Get your free 30GB of Dropbox storage</p>
+                </div>
+            </div>
+            <div class="bottom-view-right">
+                <div class="bottom-view-text absolute-top2">
+                    <h6 class="m-0" data-i18n-common="lenovo-migration">Lenovo Migration assitant</h6>
+                    <p class="m-0" data-i18n-common="fast-easy-secure">Make migrating fast, easy, and secure.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="PremiumCarePage" class="page page-premium-care">
+        <div class="wel-back">
+            <a aria-label="back" role="button" id="premium-care-back-btn" data-metrics-name="Features.PremiumCare.BackButton" data-metrics-type="ItemClick" data-metrics-parent="Features.PremiumCare" class="wel-btn-back" href="javascript:void(0)" tabindex="1"></a>
+        </div>
+        <div class="top-view">
+            <div class="top-view-title font-white">
+                <h2 class="mt-2 mb-3 font-semilight">
+                    <span data-i18n-premiumcare="banner-title">Review your warranty & service plan</span>
+                </h2>
+            </div>
+        </div>
+        <div class="wel-contain pl-normal">
+            <p data-i18n-premiumcare="con-p1" class="lenovo-pcs h6 line-height-2b mt-0">Lenovo Services Warranty and Upgrades protect you from any hardware failure. With Lenovo Premium Care and Legion Ultimate Support for gaming we have your back covered for software, settings and how-to solutions. Accidental Damage Protection protects you from drops, spills, screen cracks and other damages caused by accident.</p>
+            <div class="d-flex">
+                <div class="col-xs-3 flex-services">
+                    <div>
+                        <img class="icon depot-service-icon" />
+                        <p data-i18n-premiumcare="icon-text1" class="h6 line-height-2 mt-2">Depot <br/>Service</p>
+                    </div>
+                </div>
+
+                <div class="col-xs-3 flex-services">
+                    <div>
+                        <img class="icon onsite-support-icon" />
+                        <p data-i18n-premiumcare="icon-text2" class="h6 line-height-2 mt-2">On-site Support</p>
+                    </div>
+                </div>
+
+                <div class="col-xs-3 flex-services">
+                    <div class="service">
+                        <img class="icon lenovo-premium-care-icon" />
+                        <p data-i18n-premiumcare="icon-text3" class="h6 line-height-2 mt-2">Lenovo <br/>Premium <br/>Care</p>
+                    </div>
+                </div>
+
+                <div class="col-xs-3 flex-services">
+                    <div>
+                        <img class="icon legion-ultimate-support-icon" />
+                        <p data-i18n-premiumcare="icon-text4" class="h6 line-height-2 mt-2">Legion Ultimate Support</p>
+                    </div>
+                </div>
+
+                <div class="col-xs-3 flex-services">
+                    <div>
+                        <img class="icon accidental-damage-protection-icon" />
+                        <p data-i18n-premiumcare="icon-text5" class="h6 line-height-2 mt-2">Accident Damage Protection</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex h6 mt-5">
+                <a role="button" tabIndex="2" href="javascript:void(0)" id="premium-care-explore-options" data-metrics-name="Features.PremiumCare.CheckAndExploreButton" data-metrics-type="ItemClick" data-metrics-parent="Features.PremiumCare" class="wel-btn vantage-btn-long text-center mr-6 mt-0">
+                    <div data-i18n-premiumcare="check-and-explore" class="ellipsis-btn">
+                        Check your warranty and explore your options
+                    </div>
+                </a>
+                <div class="go-next">
+                    <a role="button" id="premium-care-next-btn" href="javascript:void(0)" tabIndex="3" data-metrics-name="Features.PremiumCare.SkipButton" data-metrics-type="ItemClick" data-metrics-parent="Features.PremiumCare" data-i18n-common="skip">Skip</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="VantagePage" class="page page-vantage">
+        <div class="wel-back">
+            <a aria-label="back" role="button" tabindex="1" id="vantage-back-btn" data-metrics-name="Features.Tangram.BackButton" data-metrics-type="ItemClick" data-metrics-parent="Features.Tangram" href="javascript:void(0)" class="wel-btn-back"></a>
+        </div>
+        <div class="top-view">
+            <div class="top-view-title font-white">
+                <h2 class="mt-2 mb-3 font-semilight">
+                    <span data-i18n-common="lenovo-vantage">Lenovo Vantage</span>
+                </h2>
+                <h4 class="mt-0 mb-2" data-i18n-common="got-easier">Your PC just got easier</h4>
+            </div>
+        </div>
+        <div class="pl-normal h6 mb-4">
+            <p data-i18n-vantage="contain-p1" class="mb-4">Lenovo Vantage will be your go-to application for getting the most out of your device.</p>
+            <div class="vs-most-list">
+                <p data-i18n-vantage="list-p1" class="icon-stay-up-to-date">Stay up to date with the latest drivers and apps.</p>
+                <p data-i18n-vantage="list-p2" class="icon-hardware-settings">Control hardware settings exclusive for your device.</p>
+                <p data-i18n-vantage="list-p3" class="icon-wifi-security">Stay secure on-line with Lenovo Wifi security.</p>
+                <p data-i18n-vantage="list-p4" class="icon-exculsive-offer">Customize your experience to get content and exclusive offers just for you.</p>
+            </div>
+            <p class="p-checkbox">
+                <span>
+                    <input tabindex="2" data-metrics-name="Features.Tangram.AddToolbarToggleButton" data-metrics-type="ItemClick" data-metrics-parent="Features.Tangram" data-metrics-value type="checkbox" class="input_check" name="" id="toolbar-option" aria-labelledby="toolbar-checkbox-description">
+                    <label id="toolbar-checkbox-description" class="mb-0" for="input_check">
+                        <span data-i18n-vantage="add-toolbar">Add the Vantage toolbar to obtain “at a glance” battery status and access to other key device settings.</span>
+                    </label>
+                </span>
+                <span data-i18n-vantage="add-toolbar" class="add-toolbar">Add the Vantage toolbar to obtain “at a glance” battery status and access to other key device settings.</span>
+            </p>
+            <p class="p-checkbox">
+                <span>
+                    <input tabindex="3" data-metrics-name="Features.Tangram.AddWarrantyToggleButton" data-metrics-type="ItemClick" data-metrics-parent="Features.Tangram" data-metrics-value type="checkbox" class="input_check" name="" id="warranty-option" aria-labelledby="warranty-checkbox-description">
+                    <label id="warranty-checkbox-description" class="mb-0" for="input_check">
+                        <span data-i18n-vantage="add-warranty">Add shortcuts to my desktop to quickly access support and warranty status.</span>
+                    </label>
+                </span>
+                <span data-i18n-vantage="add-warranty" class="add-warranty">Add shortcuts to my desktop to quickly access support and warranty status.</span>
+            </p>
+            <a role="button" tabindex="4" id="vantage-next-btn" data-metrics-name="Features.Tangram.NextButton" data-metrics-type="ItemClick" data-metrics-parent="Features.Tangram" data-i18n-common="next" href="javascript:void(0)" class="wel-btn vs-btn-next text-center">Next</a>
+        </div>
+    </div>
+    <div id="DropBoxPage" class="page page-dropbox">
+        <div class="wel-back">
+            <a aria-label="back" role="button" id="dropbox-back-btn" data-metrics-name="Features.Dropbox.BackButton" data-metrics-type="ItemClick" data-metrics-parent="Features.Dropbox" class="wel-btn-back" href="javascript:void(0)" tabindex="1"></a>
+        </div>
+        <div class="top-view">
+            <div class="top-view-title font-white">
+                <h2 class="mt-2 mb-3 font-semilight">
+                    <span data-i18n-dropbox="banner-title">Exclusive Dropbox Offer</span>
+                </h2>
+                <h4 class="mt-0 mb-2" data-i18n-dropbox="banner-description">Get 30 GB of space free for 1 year</h4>
+            </div>
+        </div>
+        <div class="wel-contain pl-normal">
+            <div class="sign-view sign-in-view">
+                <div class="sign-top sign-in-top h6 mt-0">
+                    <p data-i18n-dropbox="sign-in-p1"> Dropbox is the one place for all your stuff. Take your docs anywhere, send photo and videos quickly and never lose a file again. </p>
+                    <p data-i18n-dropbox="sign-in-p2">
+                        <a data-metrics-name="Features.Dropbox.SwitchToSignUpButton" data-metrics-type="ItemClick" data-metrics-parent="Features.Dropbox.SignInPage" tabindex="2" href="javascript:void(0)" class="btn-sign-up a-link">Sign up</a> or sign in and get 30 GB of space free for 1 year.
+                    </p>
+                </div>
+                <form class="sign-form sign-in-form" method="post" id="sign-in-form" action="">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <input data-i18n-placeholder="dropbox-sign-in-email" tabindex="3" id="si-email" name="si_email" type="email" placeholder="Email">
+                            <!-- <p class="error-2 email-error">The domain portion of the email address is invalid. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p> -->
+                        </div>
+                        <div class="col-sm-5">
+                            <input class="d-none" type="password">
+                            <input data-i18n-placeholder="dropbox-sign-in-password" tabindex="4" id="si-password" name="si_password" type="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <p class="p-checkbox clearfr">
+                        <span>
+                            <input id="sign-in-checkbox" aria-labelledby="sign-in-checkbox-description" data-metrics-name="Features.Dropbox.AgreeTermToggleButton" data-metrics-type="ItemClick" data-metrics-parent="Features.Dropbox.SignInPage" data-metrics-value tabindex="5" type="checkbox" class="input_check sign-in-agree" name="agree"
+                                   required>
+                            <label id="sign-in-checkbox-description" class="mb-0" for="input_check">
+                                <span data-i18n-dropbox="sign-in-agree"></span>
+                            </label>
+                        </span>
+                        <span data-i18n-dropbox="sign-in-agree" class="sign-in-agree-class">
+                            I agree
+                            <a data-metrics-name="Features.Dropbox.LenovoTermButton" data-metrics-type="ItemClick" data-metrics-parent="Features.Dropbox.SignInPage" tabindex="6" href="javascript:void(0)" class="lenovo-offers-terms a-link">Lenovo offers terms</a>
+                        </span>
+                        <a id="forgot-pwd-link" data-metrics-name="Features.Dropbox.ForgotPasswordButton" data-metrics-type="ItemClick" data-metrics-parent="Features.Dropbox.SignInPage" data-i18n-dropbox="forgot-pw" tabindex="7" href="javascript:void(0)" class="forgot-pw fz-12 a-link">Forgot your password?</a>
+                    </p>
+                    <div class="sign-buttons sign_in_buttons d-flex">
+                        <button data-metrics-name="Features.Dropbox.SignInButton" data-metrics-type="ItemClick" data-metrics-parent="Features.Dropbox.SignInPage" data-i18n-dropbox="btn-sign-in" tabindex="8" class="wel-btn-blue btn-sign-in-down" type="submit">Sign in and download</button>
+		        <a role="button" id="dropbox-signin-next-btn" data-metrics-name="Features.Dropbox.SkipButton" data-metrics-type="ItemClick" data-metrics-parent="Features.Dropbox" data-i18n-dropbox="sign-in-skip" tabindex="9" href="javascript:void(0)" class="a-link fz-12 btn-sign-skip">Skip</a>
+                        <div class="dropbox-loading"></div>
+                    </div>
+                </form>
+                <p class="fz-12 clearfr">
+                    <span data-i18n-dropbox="submit-description">Submitting this form will allow Dropbox to download in the background and open it when it is ready.</span>
+                    <a data-metrics-name="Features.Dropbox.ViewTermDetailButton" data-metrics-type="ItemClick" data-metrics-parent="Features.Dropbox.SignInPage	" data-i18n-dropbox="view-offer-details" tabindex="10" href="javascript:void(0)" class="view-offer-details a-link">View offer details.</a>
+                </p>
+            </div>
+            <div class="sign-view sign-up-view">
+                <div class="sign-top h6 mt-0">
+                    <p data-i18n-dropbox="sign-up-p1">Dropbox brings your files together, in one central place. They’re easy to find and safely synced across all your devices—so you can access them anytime, anywhere.</p>
+                    <p data-i18n-dropbox="sign-up-p2">
+                        <a data-metrics-name="Features.Dropbox.SwitchToSignInButton" data-metrics-type="ItemClick" data-metrics-parent="Features.Dropbox.SignUpPage" tabindex="2" href="javascript:void(0)" class="btn-sign-in a-link">Sign in</a> or sign up and get 30 GB of space free for 1 year.
+                    </p>
+                </div>
+                <form class="sign-form sign-up-form" method="post" id="sign-up-form" action="">
+                    <div class="form-top">
+                        <div class="row form-left sign-up-top-left">
+                            <div data-i18n-dropbox="sign-up-your-email" class="col-5 text-your-email">Your email:</div>
+                            <div class="cor-7 your-email-box">
+                                <input data-i18n-placeholder="dropbox-sign-up-email" tabindex="3" id="su-email" placeholder="Email address" type="email" name="email">
+                            </div>
+                        </div>
+                        <div class="form-right">
+                            <input class="d-none" type="password">
+                            <input data-i18n-placeholder="dropbox-sign-up-password" tabindex="6" id="su-password" type="password" placeholder="Enter password" name="password">
+                        </div>
+                    </div>
+                    <div class="form-down">
+                        <div class="form-left">
+                            <div class="input-col-2">
+                                <input data-i18n-placeholder="dropbox-sign-up-fname" tabindex="4" id="first-name" name="first_name" type="text" placeholder="First name">
+                            </div>
+                            <div class="input-col-2">
+                                <input tabindex="5" data-i18n-placeholder="dropbox-sign-up-lname" id="last-name" name="last_name" type="text" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="form-right">
+                            <input data-i18n-placeholder="dropbox-sign-up-confirm-pwd" tabindex="7" id="confirm-pwd" type="password" name="confirm_pwd" placeholder="Confirm password">
+                        </div>
+                    </div>
+                    <p class="p-checkbox clearfr">
+                        <span>
+                            <input id="sign-up-checkbox" aria-labelledby="sign-up-checkbox-description" data-metrics-name="Features.Dropbox.AgreeTermToggleButton" data-metrics-type="ItemClick" data-metrics-parent="Features.Dropbox.SignUpPage" data-metrics-value tabindex="8" type="checkbox" class="input_check sign-up-agree" name="agree"
+                                   required>
+                            <label id="sign-up-checkbox-description" class="mb-0" for="input_check">
+                                <span data-i18n-dropbox="sign-up-agree"></span>
+                            </label>
+                        </span>
+                        <span data-i18n-dropbox="sign-up-agree">
+                            I agree to
+                            <a data-metrics-name="Features.Dropbox.DropboxTermButton" href="javascript:void(0)" data-metrics-type="ItemClick" data-metrics-parent="Features.Dropbox.SignUpPage" tabindex="9" class="dropbox-terms a-link">Dropbox terms</a> and
+                            <a data-metrics-name="Features.Dropbox.LenovoTermButton" href="javascript:void(0)" data-metrics-type="ItemClick" data-metrics-parent="Features.Dropbox.SignUpPage" tabindex="10" class="lenovo-offers-terms a-link">Lenovo offers terms</a>
+                        </span>
+                    </p>
+                    <div class="sign-buttons sign_up_buttons d-flex">
+                        <button data-metrics-name="Features.Dropbox.SignUpButton" data-metrics-type="ItemClick" data-metrics-parent="Features.Dropbox.SignUpPage" data-i18n-dropbox="btn-sign-up" tabindex="11" class="wel-btn-blue btn-sign-up-down" type="submit">Sign up and download</button>
+	            	<a role="button" id="dropbox-signup-next-btn" href="javascript:void(0)" data-metrics-name="Features.Dropbox.NoThanksButton" data-metrics-type="ItemClick" data-metrics-parent="Features.Dropbox" data-i18n-dropbox="sign-up-skip" tabindex="12" class="a-link fz-12 btn-sign-skip">No thanks.</a>
+                        <div class="dropbox-loading"></div>
+                    </div>
+                </form>
+                <p class="fz-12 clearfr">
+                    <span data-i18n-dropbox="submit-description">Submitting this form will allow Dropbox to download in the background and open it when it is ready.</span>
+                    <a data-metrics-name="Features.Dropbox.ViewTermDetailButton" data-metrics-type="ItemClick" data-metrics-parent="Features.Dropbox.SignUpPage" data-i18n-dropbox="view-offer-details" tabindex="13" href="javascript:void(0)" class="view-offer-details a-link">View offer details.</a>
+                </p>
+            </div>
+        </div>
+        <div class="dropbox-mask"></div>
+    </div>
+    <div id="AppsForYouPage" class="page page-apps-for-you">
+        <div class="wel-back">
+            <a aria-label="back" role="button" id="apps-for-you-back-btn" data-metrics-name="Features.AppsForYou.BackButton" data-metrics-type="ItemClick" data-metrics-parent="Features.AppsForYou" href="javascript:void(0)" class="wel-btn-back" tabIndex="1"></a>
+        </div>
+        <div class="top-view">
+            <div class="top-view-title font-white">
+                <h2 class="mt-2 mb-3 font-semilight">
+                    <span data-i18n-apps="banner-title">Apps for you</span>
+                </h2>
+                <h4 class="mt-0 mb-2" data-i18n-apps="banner-description">Your Computer. Your Way</h4>
+            </div>
+        </div>
+        <div class="wel-contain pl-normal">
+            <p data-i18n-apps="con-p1" class="lenovo-pcs h6 line-height-2b mt-0">Lenovo PCs ship with less pre-installed software so your new computer isn't cluttered with apps you don't need. With Apps for you you choose only the apps you want — there are no ads, bundles, pop-ups, or unwagnted extras.</p>
+            <div class="row apps-container h6 my-0">
+            </div>
+            <div class="d-flex h6 mt-0">
+                <a role="button" tabIndex="8" href="javascript:void(0)" data-metrics-name="Features.AppsForYou.ConfirmAndDownloadButton" data-metrics-type="ItemClick" data-metrics-parent="Features.AppsForYou" data-i18n-apps="confirm-and-download" id="confirm-and-download" class="confirm-download wel-btn wel-btn-long text-center mr-6 mt-0"
+                   onclick="showDownloadApps();return false;">Confirm and download</a>
+                <div class="go-next">
+                    <a role="button" id="apps-for-you-skip-btn" href="javascript:void(0)" tabIndex="9" data-metrics-name="Features.AppsForYou.SkipButton" data-metrics-type="ItemClick" data-metrics-parent="Features.AppsForYou" data-i18n-common="skip">Skip</a>
+                </div>
+            </div>
+            <p class="apps-note clearfr" data-i18n-apps="apps-note">Note: After clicking Confirm and Download, you may get a prompt from Windows to allow us to install the software on your device. Once finished installing your apps will show up automatically on your desktop or start menu.</p>
+        </div>
+    </div>
+    <div id="MigratePage" class="page page-migrate">
+        <div class="wel-back">
+            <a aria-label="back" role="button" id="migrate-back-btn" href="javascript:void(0)" data-metrics-name="Features.DataMigration.BackButton" data-metrics-type="ItemClick" data-metrics-parent="Features.DataMigration" class="wel-btn-back" tabIndex="1"></a>
+        </div>
+        <div class="top-view">
+            <div class="top-view-title font-white">
+                <h2 class="mt-2 mb-3 font-semilight">
+                    <span data-i18n-common="lenovo-migration">Lenovo Migration Assitant</span>
+                </h2>
+                <h4 class="mt-0 mb-2" data-i18n-common="fast-easy-secure">Make migrating fast, easy, and secure.</h4>
+            </div>
+        </div>
+        <div class="bottom-view pl-normal">
+            <div class="pb-3 line-height-2b h6 mt-0">
+                <p data-i18n-migration="need-help" class="mb-0"> Need help migrating files from your old computer to your new computer? Download the Lenovo Migration Assistant to make setting up your new device quick and easy. </p>
+            </div>
+            <div class="pb-3 h6">
+                <p class="p-checkbox mb-1" id="shortcut-checkbox">
+                    <span>
+                        <input aria-labelledby="shortcut-checkbox-description" data-metrics-name="Features.DataMigration.AddShortcutToggleButton" data-metrics-type="ItemClick" data-metrics-parent="Features.DataMigration" data-metrics-value type="checkbox" class="input_check" name="" id="shortcut-option" tabIndex="2">
+                        <label id="shortcut-checkbox-description" class="mb-0" for="input_check">
+                            <span data-i18n-migration="add-shortcut">Add the shortcut to my desktop during the installation.</span>
+                        </label>
+                    </span>
+                    <span data-i18n-migration="add-shortcut">Add the shortcut to my desktop during the installation.</span>
+                </p>
+            </div>
+            <div class="d-flex h6">
+                <a role="button" data-metrics-name="Features.DataMigration.LaunchButton" data-metrics-type="ItemClick" data-metrics-parent="Features.DataMigration" class="d-flex wel-btn wel-btn-long text-center mr-6 mt-0" id="migrate-download" href="javascript:void(0)" tabIndex="3">
+                    <span class="migrate-btn-img"></span>
+                    <span class="pr-2 ellipsis" id="migrate-btn-text" data-i18n-migration="migrate-files">Yes, help me migrate my files</span>
+                </a>
+                <div class="go-next">
+	          <a role="button" id="migrate-next-btn" href="javascript:void(0)" data-metrics-name="Features.DataMigration.SkipButton" data-metrics-type="ItemClick" data-metrics-parent="Features.DataMigration" data-i18n-common="skip" tabIndex="4">Skip</a>
+                </div>
+            </div>
+            <div class="pt-4">
+                <div class="download-line-box">
+                    <div class="download-line-bg"></div>
+                    <div class="download-line"></div>
+                </div>
+                <p data-i18n-migration="download-line">This app will be downloaded and open automatically when it's ready to be used.</p>
+            </div>
+        </div>
+        <div class="migration-mask"></div>
+    </div>
+    <div id="LenovoIDPage" class="page page-lenovoid">
+        <div class="wel-back">
+            <a aria-label="back" role="button" tabindex="1" id="lid-back-btn" data-metrics-name="Features.LenovoID.BackButton" data-metrics-type="ItemClick" href="javascript:void(0)" data-metrics-parent="Features.LenovoID.SignInPage" class="wel-btn-back"></a>
+        </div>
+        <div class="top-view">
+            <div class="top-view-title font-white">
+                <h2 class="mt-2 mb-3 font-semilight">
+                    <span data-i18n-lenovoid="lenovo-id">Lenovo ID</span>
+                </h2>
+                <h4 class="mt-0 mb-2" data-i18n-lenovoid="connects">Connects you to everything Lenovo.</h4>
+            </div>
+        </div>
+        <div class="bottom-view h6 pl-normal">
+            <div class="pb-0">
+	       <p class="line-height-2b" data-i18n-lenovoid="connects-details"> One last step. Click 'Next' below to link this device to your Lenovo account through Lenovo ID. Sign up for a new ID or sign in with your current ID to get faster device support and unlock access to Lenovo exclusive content customized just for
+	          you. </p>
+            </div>
+            <div>
+                <div class="d-flex pb-3">
+                    <span class="lenovo-bott-icon lenovo-bott-icon1"></span>
+                    <span class="lenovo-bott-text" data-i18n-lenovoid="img-details1">Manage your Lenovo account</span>
+                </div>
+                <div class="d-flex pb-3">
+                    <span class="lenovo-bott-icon lenovo-bott-icon2"></span>
+                    <span class="lenovo-bott-text" data-i18n-lenovoid="img-details2">Get faster support</span>
+                </div>
+                <div class="d-flex pb-3">
+                    <span class="lenovo-bott-icon lenovo-bott-icon3"></span>
+                    <span class="lenovo-bott-text" data-i18n-lenovoid="img-details3">Access Lenovo apps</span>
+                </div>
+                <div class="d-flex pb-3">
+                    <span class="lenovo-bott-icon lenovo-bott-icon4"></span>
+                    <span class="lenovo-bott-text" data-i18n-lenovoid="img-details4">Unlock exclusive features</span>
+                </div>
+                <div class="d-flex pb-3">
+                    <span class="lenovo-bott-icon lenovo-bott-icon5"></span>
+                    <span class="lenovo-bott-text" data-i18n-lenovoid="img-details5">Interact with other Lenovo users</span>
+                </div>
+            </div>
+            <div class="d-flex mb-4 pt-3">
+                <a role="button" tabindex="2" id="lid-next-btn" data-metrics-name="Features.LenovoID.NextButton" data-metrics-type="ItemClick" data-metrics-parent="Features.LenovoID.SignInPage" class="wel-btn text-center mt-0 mr-6" href="javascript:void(0)" data-i18n-common="next">Next</a>
+                <div class="go-next">
+                    <a role="button" tabindex="3" id="lid-skip-btn" data-metrics-name="Features.LenovoID.SkipButton" data-metrics-type="ItemClick" data-metrics-parent="Features.LenovoID.SignInPage" href="javascript:void(0)" data-i18n-common="skip">Skip</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="closeApp" class="page page-close-app">
+        <div class="top-view close-app-banner">
+            <div class="lenovo-logo"></div>
+        </div>
+        <div class="wel-contain pl-normal">
+            <p data-i18n-close="banner-title" class="h4 mb-6">Need to go?</p>
+            <p data-i18n-close="banner-description" class="h6 line-height-2 mb-6">Don't worry. You can find all of these features and more inside Lenovo Vantage which is already on your device.</p>
+            <div class="close-buttons mb-6">
+                <a role="button" data-metrics-name="Features.ClosePage.GotItButton" data-metrics-type="ItemClick" data-metrics-parent="Features.ClosePage" data-i18n-close="got-it" id="close-got-it" class="wel-btn btn-gotit text-center" href="javascript:void(0);">Got it</a>
+                <a role="button" data-metrics-name="Features.ClosePage.CancelButton" data-metrics-type="ItemClick" data-metrics-parent="Features.ClosePage" data-i18n-close="cancel" id="close-cancel" class="wel-btn btn-cancel text-center" href="javascript:void(0);">Cancel</a>
+            </div>
+            <div>
+            	<a data-metrics-name="Features.ClosePage.UninstallButton" data-metrics-type="ItemClick" data-metrics-parent="Features.ClosePage" data-i18n-close="remove-this" id="close-remove-this" class="uac-link h6" href="javascript:void(0);">No thanks, remove this from my device</a>
+            </div>
+        </div>
+    </div>
+    <div id="AllDonePage" class="page page-all-done">
+        <div class="wel-back">
+            <a aria-label="back" role="button" id="alldone-back-btn" tabindex="1" data-metrics-name="Features.AllDonePage.BackButton" data-metrics-type="ItemClick" data-metrics-parent="Features.AllDonePage" href="javascript:void(0)" class="wel-btn-back"></a>
+        </div>
+        <div class="top-view d-flex d-media">
+            <div class="top-view-detail pt-6">
+                <h1 class="welcome-title mt-1">
+                    <span data-allDone-tangram="on" data-i18n-alldone="all-done" class="d-none">All done! Check out Vantage</span>
+                    <span data-allDone-tangram="off" data-i18n-alldone="all-done-entitled" class="d-none">Download your software now</span>
+                </h1>
+                <h6 data-allDone-tangram="on" class="line-height-2b mb-3 all-done-desc d-none" data-i18n-alldone="next-step">Next step: Continue getting your system set up with Lenovo Vantage. We recommend you run our System Update tool to ensure your device has the latest drivers and software. You can also choose these aplication below to continue to set up your devices</h6>
+                <h6 data-allDone-tangram="off" class="line-height-2b mb-3 all-done-desc d-none" data-i18n-alldone="next-step-entitled">Next Step: Looks like you purchased software with your device that you need to download. Click on the button below to launch Lenovo Vantage to get started. If you don’t want to do this now, you can download your software at any time by selecting My Software from the Lenovo Vantage menu.</h6>
+                <p class="mt-0 mb-5">
+                    <a data-allDone-tangram="on" role="button" tabindex="2" href="javascript:void(0)" data-metrics-name="Features.AllDonePage.LaunchTangram" data-metrics-type="ItemClick" data-metrics-parent="Features.AllDonePage" class="wel-btn text-center d-none" id="launch-vantage" data-i18n-alldone="launch">Launch</a>
+                    <a data-allDone-tangram="off" role="button" tabindex="2" href="javascript:void(0)" data-metrics-name="Features.AllDonePage.LaunchVantageMySoftware" data-metrics-type="ItemClick" data-metrics-parent="Features.AllDonePage" class="wel-btn text-center d-none" id="launch-software" data-i18n-alldone="launch">Launch</a>
+                </p>
+            </div>
+        </div>
+        <div class="bottom-view d-flex position-relative">
+            <div class="bottom-view-left">
+                <div class="bottom-view-text absolute-top">
+                    <h6 class="m-0" data-i18n-alldone="security-advisor">Security Advisor</h6>
+                    <p class="m-0 line-height-2">
+                        <a class="a-bg-blue" href="javascript:void(0)" tabindex="3" data-metrics-name="Features.AllDonePage.SecurityAdvisor" data-metrics-type="ItemClick" data-metrics-parent="Features.AllDonePage" id="launch-security-advisor" data-i18n-alldone="keep-secure1">Keep your device secure with Lenovo Security Advisor</a>
+                    </p>
+                </div>
+            </div>
+            <div class="bottom-view-center">
+                <div class="bottom-view-text absolute-top">
+                    <h6 class="m-0" data-i18n-alldone="hardware-settings">Hardware Settings</h6>
+                    <p class="m-0 line-height-2">
+                        <a class="a-bg-blue" href="javascript:void(0)" tabindex="4" data-metrics-name="Features.AllDonePage.HardwareSettings" data-metrics-type="ItemClick" data-metrics-parent="Features.AllDonePage" id="launch-hardware-settings" data-i18n-alldone="keep-secure2">Unlock the full potential of your device with hardware settings for you PC</a>
+                    </p>
+                </div>
+            </div>
+            <div class="bottom-view-right">
+                <div class="bottom-view-text absolute-top">
+                    <h6 class="m-0" data-i18n-alldone="discover-more">Discover More</h6>
+                    <p class="m-0 line-height-2">
+                        <a class="a-bg-blue" href="javascript:void(0)" tabindex="5" data-metrics-name="Features.AllDonePage.DiscoverMore" data-metrics-type="ItemClick" data-metrics-parent="Features.AllDonePage" id="launch-discover-more" data-i18n-alldone="keep-secure3">We've got Lenovo exclusive content to help you get the most out of your decive</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="opening-animation">
+        <img src="assets/img/OpeningAnimation.gif" />
+    </div>
+    <script id="app-item-template" type="text/x-jquery-tmpl">
+        <div class="col-sm-4 d-flex p-checkbox" id="app-${id}">
+            <span class="check-span">
+                <input aria-labelledby="${tag}-checkbox-description" tabIndex="${tabIndex}" data-metrics-name="${metrics}" data-metrics-type="ItemClick" data-metrics-parent="Features.AppsForYou" data-metrics-value type="checkbox" class="input_check" name="" id="${id}">
+                <label id="${tag}-checkbox-description" class="mb-0" for="input_check"><span>${name}</span></label>
+            </span>
+            <div class="apps-tip" data-toggle="tooltip" data-placement="bottom" title=" ">
+                <span class="apps-img-text apps-${tag}"></span>
+                <span class="apps-img-text apps-text">${name}</span>
+                <span class="tooltips-text d-none" data-i18n-apps="${tag}-tooltip">${tip}</span>
+            </div>
+        </div>
+    </script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/fre.js"></script>
+    <script src="js/interface.js"></script>
+    <script src="js/lenovoWelcome.js"></script>
+</body>
+
+</html>

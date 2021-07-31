@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginManifest>
+    <PackageInformation name="LenovoDeviceMetricsPlugin" version="1.0.10.0" location="LenovoDeviceMetricsPlugin.cab" lastModified="2016-09-01T21:30:12" customEventMonitor="">
+    </PackageInformation>
+    <ApplicabilityFilter>
+      <!--Enable for any of the dogfooding systems -->
+      <Filter tag="DeviceMetricsPlugin.Enablement">true</Filter>
+
+      <!--Hide for systems that specifically have their family set to “Thinkpad Edge” -->
+      <Filter family="thinkpad edge*">false</Filter>
+     
+      <!--Enable for any of the E-series laptops, E465 for example -->
+      <Filter family="thinkpad e*">true</Filter>
+      
+      <!-- Enable for all Lenovo / Idea -->
+      <Filter brand="idea">true</Filter>
+      <Filter brand="lenovo">true</Filter>
+      
+      <!--Hide for all other systems -->
+      <Filter>false</Filter>
+    </ApplicabilityFilter>
+    <ContractMappingList>
+  </ContractMappingList>
+    <EventSubscriptionList>
+        <!-- for active directory & machine information & app tag -->
+      <EventSubscription monitor="TimeBasedMonitor" trigger="TimeBaseChange" runas="User">
+        <Parameter> <![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<TimeBasedEventSubscription>
+<FriendlyName>RunDailyEvent</FriendlyName>
+<OOBEProximity>false</OOBEProximity>
+<RepeatIntervalUnit>Daily</RepeatIntervalUnit>
+<RepeatInterval>1</RepeatInterval>
+</TimeBasedEventSubscription>]]> </Parameter>
+      </EventSubscription>
+      <EventSubscription monitor="UsageMonitor" trigger="App">
+        <Parameter>
+          <![CDATA[ ]]>
+        </Parameter>
+      </EventSubscription>
+      <EventSubscription monitor="SystemEventMonitor" trigger="User-Login" runas="User">
+        <Parameter><![CDATA[ ]]></Parameter>
+      </EventSubscription>
+      <EventSubscription monitor="WindowMessageMonitor" trigger="PowerChange">
+       <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<PowerBroadcastEventSubscription>
+<PbtValueList>
+<PbtValue>18</PbtValue>
+</PbtValueList>
+<PowerSettingGuidList />
+</PowerBroadcastEventSubscription>]]> </Parameter>
+       </EventSubscription>
+    </EventSubscriptionList>
+  <SettingList>
+    <Setting key="ImController.Privilege.CustomKeepAlive">1</Setting>
+    <Setting key="ImController.Privilege.SkipSuspendTermination">1</Setting>
+  </SettingList>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>GkjYJuIEZlGOKhI6yJT3geg+wIo=</DigestValue></Reference></SignedInfo><SignatureValue>PaK1oWUDZlJShI9z/JVD3NyURYNIqcGSQNo9sBHkBOEjeAmaomkiiqz/DR9fr93tDNAOdcLDRq3+boUoxnxUWJTFxC/S9Pjyf8J691BQM80OSEZt8IsFJhGEa7ncf9tzFiGrUSj7JqvJJPpJ6wl85/4RFbgmbTVp8/Sl1q+jVLMJqkOxwKkQDyJt9HoOaeJsuv220fLFajg5x8AqrIP8mvaIm2okHnybE84BFwdG220iNGVbGxzzj+C6glwwKoeayGIb7PlcCyuIP1aKnZ/K6MUwWUT64dW6F0DXLaOJ17+vxT4q/FpieB0eNMW0x1osy83EBfMOXsVmoIw7BiVu3g==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIEuzCCA6OgAwIBAgIQR3ZVyInxomlCtfZfiBnjdzANBgkqhkiG9w0BAQsFADCBhDELMAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVjIENvcnBvcmF0aW9uMR8wHQYDVQQLExZTeW1hbnRlYyBUcnVzdCBOZXR3b3JrMTUwMwYDVQQDEyxTeW1hbnRlYyBDbGFzcyAzIFNIQTI1NiBDb2RlIFNpZ25pbmcgQ0EgLSBHMjAeFw0xOTA5MjcwMDAwMDBaFw0yMDExMjcyMzU5NTlaMGwxCzAJBgNVBAYTAlVTMRcwFQYDVQQIDA5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEBwwLTW9ycmlzdmlsbGUxDzANBgNVBAoMBkxlbm92bzEMMAoGA1UECwwDRzA4MQ8wDQYDVQQDDAZMZW5vdm8wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDHUhZm3P6QS2ul7w882Oh61NzqAmBNamYKRzm1wqwUhtWBEKmVCPQJIIwdSeiTofMzZbLo6Z7p8/JK8RIoOkvaOv1EKu4Ul6FueBPS4g3m8whaWFXBhg83U6NGGvqnB9U+50d9KxMnSPovSEwPs2dRuhKiG8DigGVuPUtNNmazl8QaUWpyojyHEETRfZwt53Pgu2jMCfIQsM+Y880zoEB+aW8+sJYHZgBlIUwokp6fWM9YOQoIQPQTo77uI3+RJrOan41uk/DjYkn5n7UKyQE8P+0Nlmx2T6UdJ/xAk0r036WNarYvWnQGnA5x/jQBtG/PrSafuRyEWMfC/kZGpWl5AgMBAAGjggE+MIIBOjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzBhBgNVHSAEWjBYMFYGBmeBDAEEATBMMCMGCCsGAQUFBwIBFhdodHRwczovL2Quc3ltY2IuY29tL2NwczAlBggrBgEFBQcCAjAZDBdodHRwczovL2Quc3ltY2IuY29tL3JwYTAfBgNVHSMEGDAWgBTUwAYiSes5S92T4lyhuEd2CXIDWDArBgNVHR8EJDAiMCCgHqAchhpodHRwOi8vcmIuc3ltY2IuY29tL3JiLmNybDBXBggrBgEFBQcBAQRLMEkwHwYIKwYBBQUHMAGGE2h0dHA6Ly9yYi5zeW1jZC5jb20wJgYIKwYBBQUHMAKGGmh0dHA6Ly9yYi5zeW1jYi5jb20vcmIuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQBK3zlAI2olZ3eHWmUWRRzjD/6J7Kp0ViFf5K+2qYfxK7b7XjotgLL/HS5rvadCKKwEFsSuzKdvSxI5/VXmChL1ggQKExGeSn3sDRDBivrkAhHQblZ8mYw9MI1Jqr5e+fnU40slyd2RGRObSVdPj7u0N8Ee7x3ujoJGpy+QSCd/pSrqeusoca95sH29YNv9yirsaZHZu7hMbnkU7RXwiyVALy6eHl/NvSa6s6PMq901fT2dJvR7Z3HHfgJe7+x6YvM1iklt8WPzdBfd9GT0iyee+wRbja6u6UT0uovWQBTmaN/nRPw15Dx5hcUueYNMnWNFa3WFKuPPZFElWvmykV/x</X509Certificate></X509Data></KeyInfo></Signature></PluginManifest>

@@ -1,0 +1,334 @@
+[Lenovo System Update build: 2021-03-31 2.0.0.1]	28/07/2021 00:54:59
+
+Info	2021-07-28 , 12:54:59.164
+	at Tvsu.Engine.UpateTaskListDataBase.get_Instance()
+	Message: InitUpdateTaskListDataBase from file: C:\ProgramData\Lenovo\ImController\SystemPluginData\LenovoSystemUpdatePlugin\session\UpdateTaskList.xml
+
+Info	2021-07-28 , 12:54:59.665
+	at Tvsu.Environment.EnvironmentManager..ctor()
+	Message: Starting Environment Manager...
+
+Info	2021-07-28 , 12:54:59.713
+	at Tvsu.Egather.EgatherManager.GetEgatherParser(String type)
+	Message: Running egather complete.....
+
+Info	2021-07-28 , 12:55:03.630
+	at Tvsu.Gur.GUR2.EvaluateDetectInstall()
+	Message: Evaluating rule
+
+Info	2021-07-28 , 12:55:03.678
+	at Tvsu.Gur.LevelVersionParser.parseVersion(String pattern, String val)
+	Message: Pattern Received: '1.0.2.0^', Value Received: '1.0.2.0'
+
+Info	2021-07-28 , 12:55:03.678
+	at Tvsu.Gur.LevelVersionParser.parseVersion(String pattern, String val)
+	Message: Pattern: '1.0.2.0^', Value: '1.0.2.0' Compare Result: True
+
+Info	2021-07-28 , 12:55:03.678
+	at Tvsu.Gur.EgatherDetectionMethods.EvalDriverVersionByHardwareIDByVersion(String[] hardwareId, String pattern, String date, Boolean& isInboxDriver)
+	Message: HardwareId Value to Evaluate: System.String[], Validation xmlversion: 1.0.2.0^, getVersion: 1.0.2.0, Validation xmldate: 2020-05-19, getdate: 20200519, Result: True
+
+Info	2021-07-28 , 12:55:03.678
+	at Tvsu.Gur.RuleEvaluator.EvaluateDetectionMethod(IRule rule, Boolean isForSeverityOverride, Boolean& isInboxDriver)
+	Message: Detection method evaluated: _Driver Result-> True
+
+Info	2021-07-28 , 12:55:03.678
+	at Tvsu.Gur.GUR2.EvaluateDetectInstall()
+	Message: Rule result: True
+
+Info	2021-07-28 , 12:55:03.678
+	at Tvsu.Engine.UpateTaskListDataBase.get_Instance()
+	Message: start to CheckAndNotify! CheckNotifyFlag is true
+
+Info	2021-07-28 , 12:55:03.782
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder.UpdateADPolicySettings()
+	Message: ScheduleFile is exist , ScheduleTask is exist ,Use ScheduleTask  create ScheduleFile
+
+Info	2021-07-28 , 12:55:03.783
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder.UpdateADPolicySettings()
+	Message: ScheduleFile is exist , ScheduleTask is exist ,Use ScheduleTask  create ScheduleFile
+
+Info	2021-07-28 , 12:55:03.783
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder.UpdateADPolicySettings()
+	Message: ScheduleFile is exist , ScheduleTask is exist ,Use ScheduleTask  create ScheduleFile
+
+Info	2021-07-28 , 12:55:03.784
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder.UpdateADPolicySettings()
+	Message: ScheduleFile is exist , ScheduleTask is exist ,Use ScheduleTask  create ScheduleFile
+
+Info	2021-07-28 , 12:55:03.784
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder.UpdateADPolicySettings()
+	Message: ScheduleFile is exist , ScheduleTask is exist ,Use ScheduleTask  create ScheduleFile
+
+Info	2021-07-28 , 12:55:03.784
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder.UpdateADPolicySettings()
+	Message: ScheduleFile is exist , ScheduleTask is exist ,Use ScheduleTask  create ScheduleFile
+
+Info	2021-07-28 , 12:55:03.788
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Task ScheduleInfo info: DayOfWeekSch Thursday, DayOfMonthSch , UTCTimeToCheck 18:45:51, SchedulerAbility OFF
+
+Info	2021-07-28 , 12:55:03.788
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Task ScheduleInfo info: DayOfWeekSch Thursday, DayOfMonthSch , UTCTimeToCheck 18:45:51, SchedulerAbility OFF
+
+Info	2021-07-28 , 12:55:03.788
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder.UpdateADPolicySettings()
+	Message: ScheduleFile is exist , ScheduleTask is exist ,Use ScheduleTask  create ScheduleFile
+
+Info	2021-07-28 , 12:55:03.790
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Task ScheduleInfo info: DayOfWeekSch Thursday, DayOfMonthSch , UTCTimeToCheck 18:45:51, SchedulerAbility OFF
+
+Info	2021-07-28 , 12:55:03.790
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Task ScheduleInfo info: DayOfWeekSch Thursday, DayOfMonthSch , UTCTimeToCheck 18:45:51, SchedulerAbility OFF
+
+Info	2021-07-28 , 12:55:03.790
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Task ScheduleInfo info: DayOfWeekSch Thursday, DayOfMonthSch , UTCTimeToCheck 18:45:51, SchedulerAbility OFF
+
+Info	2021-07-28 , 12:55:03.790
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Task ScheduleInfo info: DayOfWeekSch Thursday, DayOfMonthSch , UTCTimeToCheck 18:45:51, SchedulerAbility OFF
+
+Info	2021-07-28 , 12:55:03.790
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Task ScheduleInfo info: DayOfWeekSch Thursday, DayOfMonthSch , UTCTimeToCheck 18:45:51, SchedulerAbility OFF
+
+Info	2021-07-28 , 12:55:03.803
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Settings in UpdateSchedule.xml is same with task, not need to update
+
+Info	2021-07-28 , 12:55:03.803
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Settings in UpdateSchedule.xml is same with task, not need to update
+
+Info	2021-07-28 , 12:55:03.803
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Settings in UpdateSchedule.xml is same with task, not need to update
+
+Info	2021-07-28 , 12:55:03.803
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Settings in UpdateSchedule.xml is same with task, not need to update
+
+Info	2021-07-28 , 12:55:03.803
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Settings in UpdateSchedule.xml is same with task, not need to update
+
+Info	2021-07-28 , 12:55:03.803
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Settings in UpdateSchedule.xml is same with task, not need to update
+
+Info	2021-07-28 , 12:55:03.803
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Settings in UpdateSchedule.xml is same with task, not need to update
+
+Info	2021-07-28 , 12:55:03.806
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: Request ScheduleInfo info: Frequency , PackageType , DayOfWeek , DayOfMonth , UTCTimeToCheck , SchedulerAbility , RecommendedAutoUpdates , Notify 
+
+Info	2021-07-28 , 12:55:03.806
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: UpdateSchedule.xml ScheduleInfo info: Frequency Weekly, PackageType Critical, DayOfWeek Thursday, DayOfMonth , UTCTimeToCheck 18:45:51, SchedulerAbility OFF, RecommendedAutoUpdatesOFF, Notify DownloadAndInstallIfNoReboot
+
+Info	2021-07-28 , 12:55:03.806
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: Combine ScheduleInfo info: Frequency Weekly, PackageType Critical, DayOfWeek Thursday, DayOfMonth , UTCTimeToCheck 18:45:51, SchedulerAbility OFF, RecommendedAutoUpdates OFF, Notify DownloadAndInstallIfNoReboot
+
+Info	2021-07-28 , 12:55:03.806
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: Request ScheduleInfo info: Frequency , PackageType , DayOfWeek , DayOfMonth , UTCTimeToCheck , SchedulerAbility , RecommendedAutoUpdates , Notify 
+
+Info	2021-07-28 , 12:55:03.806
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: Request ScheduleInfo info: Frequency , PackageType , DayOfWeek , DayOfMonth , UTCTimeToCheck , SchedulerAbility , RecommendedAutoUpdates , Notify 
+
+Info	2021-07-28 , 12:55:03.806
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: UpdateSchedule.xml ScheduleInfo info: Frequency Weekly, PackageType Critical, DayOfWeek Thursday, DayOfMonth , UTCTimeToCheck 18:45:51, SchedulerAbility OFF, RecommendedAutoUpdatesOFF, Notify DownloadAndInstallIfNoReboot
+
+Info	2021-07-28 , 12:55:03.806
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: Combine ScheduleInfo info: Frequency Weekly, PackageType Critical, DayOfWeek Thursday, DayOfMonth , UTCTimeToCheck 18:45:51, SchedulerAbility OFF, RecommendedAutoUpdates OFF, Notify DownloadAndInstallIfNoReboot
+
+Info	2021-07-28 , 12:55:03.806
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: UpdateSchedule.xml ScheduleInfo info: Frequency Weekly, PackageType Critical, DayOfWeek Thursday, DayOfMonth , UTCTimeToCheck 18:45:51, SchedulerAbility OFF, RecommendedAutoUpdatesOFF, Notify DownloadAndInstallIfNoReboot
+
+Info	2021-07-28 , 12:55:03.806
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: Combine ScheduleInfo info: Frequency Weekly, PackageType Critical, DayOfWeek Thursday, DayOfMonth , UTCTimeToCheck 18:45:51, SchedulerAbility OFF, RecommendedAutoUpdates OFF, Notify DownloadAndInstallIfNoReboot
+
+Info	2021-07-28 , 12:55:03.806
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: Request ScheduleInfo info: Frequency , PackageType , DayOfWeek , DayOfMonth , UTCTimeToCheck , SchedulerAbility , RecommendedAutoUpdates , Notify 
+
+Info	2021-07-28 , 12:55:03.806
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: UpdateSchedule.xml ScheduleInfo info: Frequency Weekly, PackageType Critical, DayOfWeek Thursday, DayOfMonth , UTCTimeToCheck 18:45:51, SchedulerAbility OFF, RecommendedAutoUpdatesOFF, Notify DownloadAndInstallIfNoReboot
+
+Info	2021-07-28 , 12:55:03.806
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: Combine ScheduleInfo info: Frequency Weekly, PackageType Critical, DayOfWeek Thursday, DayOfMonth , UTCTimeToCheck 18:45:51, SchedulerAbility OFF, RecommendedAutoUpdates OFF, Notify DownloadAndInstallIfNoReboot
+
+Info	2021-07-28 , 12:55:03.806
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: Request ScheduleInfo info: Frequency , PackageType , DayOfWeek , DayOfMonth , UTCTimeToCheck , SchedulerAbility , RecommendedAutoUpdates , Notify 
+
+Info	2021-07-28 , 12:55:03.806
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: Request ScheduleInfo info: Frequency , PackageType , DayOfWeek , DayOfMonth , UTCTimeToCheck , SchedulerAbility , RecommendedAutoUpdates , Notify 
+
+Info	2021-07-28 , 12:55:03.806
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: UpdateSchedule.xml ScheduleInfo info: Frequency Weekly, PackageType Critical, DayOfWeek Thursday, DayOfMonth , UTCTimeToCheck 18:45:51, SchedulerAbility OFF, RecommendedAutoUpdatesOFF, Notify DownloadAndInstallIfNoReboot
+
+Info	2021-07-28 , 12:55:03.806
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: Combine ScheduleInfo info: Frequency Weekly, PackageType Critical, DayOfWeek Thursday, DayOfMonth , UTCTimeToCheck 18:45:51, SchedulerAbility OFF, RecommendedAutoUpdates OFF, Notify DownloadAndInstallIfNoReboot
+
+Info	2021-07-28 , 12:55:03.806
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: UpdateSchedule.xml ScheduleInfo info: Frequency Weekly, PackageType Critical, DayOfWeek Thursday, DayOfMonth , UTCTimeToCheck 18:45:51, SchedulerAbility OFF, RecommendedAutoUpdatesOFF, Notify DownloadAndInstallIfNoReboot
+
+Info	2021-07-28 , 12:55:03.806
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: Combine ScheduleInfo info: Frequency Weekly, PackageType Critical, DayOfWeek Thursday, DayOfMonth , UTCTimeToCheck 18:45:51, SchedulerAbility OFF, RecommendedAutoUpdates OFF, Notify DownloadAndInstallIfNoReboot
+
+Info	2021-07-28 , 12:55:03.806
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: Request ScheduleInfo info: Frequency , PackageType , DayOfWeek , DayOfMonth , UTCTimeToCheck , SchedulerAbility , RecommendedAutoUpdates , Notify 
+
+Info	2021-07-28 , 12:55:03.812
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: UpdateSchedule.xml ScheduleInfo info: Frequency Weekly, PackageType Critical, DayOfWeek Thursday, DayOfMonth , UTCTimeToCheck 18:45:51, SchedulerAbility OFF, RecommendedAutoUpdatesOFF, Notify DownloadAndInstallIfNoReboot
+
+Info	2021-07-28 , 12:55:03.812
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: Combine ScheduleInfo info: Frequency Weekly, PackageType Critical, DayOfWeek Thursday, DayOfMonth , UTCTimeToCheck 18:45:51, SchedulerAbility OFF, RecommendedAutoUpdates OFF, Notify DownloadAndInstallIfNoReboot
+
+Info	2021-07-28 , 12:55:03.960
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.SystemUpdate_GetUpdateSchedule()
+	Message: ScheduleFile is exist , ScheduleTask is exist ,Use ScheduleTask  create ScheduleFile
+
+Info	2021-07-28 , 12:55:03.961
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Task ScheduleInfo info: DayOfWeekSch Thursday, DayOfMonthSch , UTCTimeToCheck 18:45:51, SchedulerAbility OFF
+
+Info	2021-07-28 , 12:55:03.962
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Settings in UpdateSchedule.xml is same with task, not need to update
+
+Info	2021-07-28 , 12:55:03.963
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder.Get_MostRecentUpdateInfo()
+	Message: Get MostRecentUpdateInfo list...
+
+Info	2021-07-28 , 12:55:03.964
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.GetMostRecentUpdateInfo()
+	Message: get checkUpdateFile from file: checkUpdateFile.ser
+
+Severe	2021-07-28 , 12:55:03.964
+	at Tvsu.Sdk.SuSdk.get_Instance()
+	Message: Application runs with the framework: 4.0.30319.42000
+
+Info	2021-07-28 , 12:55:03.967
+	at Tvsu.Engine.DataBase.get_Instance()
+	Message: Initializing the DataBase from file: updates.ser
+
+Severe	2021-07-28 , 12:55:03.980
+	at Tvsu.Engine.DataBase.LoadSerializedDataBase(FileStream file)
+	Message: Loading the Update: C:\ProgramData\Lenovo\ImController\SystemPluginData\LenovoSystemUpdatePlugin\session\Repository\01lf02afar2w6jb0_s360_14itl\01lf02afar2w6jb0_s360_14itl_2_.xml
+
+Info	2021-07-28 , 12:55:04.068
+	at Tvsu.Engine.DataBase.InitializeDataBase()
+	Message: start check database!
+
+Info	2021-07-28 , 12:55:04.074
+	at Tvsu.Nls.NlsResources..ctor()
+	Message: Starting the instance of NLS@Runtime
+
+Info	2021-07-28 , 12:55:04.146
+	at Tvsu.Nls.NlsResources.loadResources()
+	Message: resources folder is:C:\ProgramData\Lenovo\iMController\Plugins\LenovoSystemUpdatePlugin\x64\\resources\translated\EN\strings\TranslatedResources.rpo
+
+Info	2021-07-28 , 12:55:04.150
+	at Tvsu.Nls.NlsResources.get_Instance()
+	Message: 
+The active language is: EN
+The default language is: EN
+The OS language is: EN
+The language loaded type is: OS
+
+Info	2021-07-28 , 12:55:04.150
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.GetMostRecentUpdateInfo()
+	Message: Starting the Application
+
+Info	2021-07-28 , 12:55:05.606
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder.UpdateADPolicySettings()
+	Message: ScheduleFile is exist , ScheduleTask is exist ,Use ScheduleTask  create ScheduleFile
+
+Info	2021-07-28 , 12:55:05.606
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder.UpdateADPolicySettings()
+	Message: ScheduleFile is exist , ScheduleTask is exist ,Use ScheduleTask  create ScheduleFile
+
+Info	2021-07-28 , 12:55:05.609
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Task ScheduleInfo info: DayOfWeekSch Thursday, DayOfMonthSch , UTCTimeToCheck 18:45:51, SchedulerAbility OFF
+
+Info	2021-07-28 , 12:55:05.609
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Task ScheduleInfo info: DayOfWeekSch Thursday, DayOfMonthSch , UTCTimeToCheck 18:45:51, SchedulerAbility OFF
+
+Info	2021-07-28 , 12:55:05.609
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Settings in UpdateSchedule.xml is same with task, not need to update
+
+Info	2021-07-28 , 12:55:05.609
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Settings in UpdateSchedule.xml is same with task, not need to update
+
+Info	2021-07-28 , 12:55:05.609
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: Request ScheduleInfo info: Frequency , PackageType , DayOfWeek , DayOfMonth , UTCTimeToCheck , SchedulerAbility , RecommendedAutoUpdates , Notify 
+
+Info	2021-07-28 , 12:55:05.609
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: Request ScheduleInfo info: Frequency , PackageType , DayOfWeek , DayOfMonth , UTCTimeToCheck , SchedulerAbility , RecommendedAutoUpdates , Notify 
+
+Info	2021-07-28 , 12:55:05.609
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: UpdateSchedule.xml ScheduleInfo info: Frequency Weekly, PackageType Critical, DayOfWeek Thursday, DayOfMonth , UTCTimeToCheck 18:45:51, SchedulerAbility OFF, RecommendedAutoUpdatesOFF, Notify DownloadAndInstallIfNoReboot
+
+Info	2021-07-28 , 12:55:05.609
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: UpdateSchedule.xml ScheduleInfo info: Frequency Weekly, PackageType Critical, DayOfWeek Thursday, DayOfMonth , UTCTimeToCheck 18:45:51, SchedulerAbility OFF, RecommendedAutoUpdatesOFF, Notify DownloadAndInstallIfNoReboot
+
+Info	2021-07-28 , 12:55:05.609
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: Combine ScheduleInfo info: Frequency Weekly, PackageType Critical, DayOfWeek Thursday, DayOfMonth , UTCTimeToCheck 18:45:51, SchedulerAbility OFF, RecommendedAutoUpdates OFF, Notify DownloadAndInstallIfNoReboot
+
+Info	2021-07-28 , 12:55:05.609
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: Combine ScheduleInfo info: Frequency Weekly, PackageType Critical, DayOfWeek Thursday, DayOfMonth , UTCTimeToCheck 18:45:51, SchedulerAbility OFF, RecommendedAutoUpdates OFF, Notify DownloadAndInstallIfNoReboot
+
+Info	2021-07-28 , 12:55:05.668
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder.Get_MostRecentUpdateInfo()
+	Message: Get MostRecentUpdateInfo list...
+
+Info	2021-07-28 , 12:55:05.668
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.GetMostRecentUpdateInfo()
+	Message: get checkUpdateFile from file: checkUpdateFile.ser
+
+Info	2021-07-28 , 12:55:05.668
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.SystemUpdate_GetUpdateSchedule()
+	Message: ScheduleFile is exist , ScheduleTask is exist ,Use ScheduleTask  create ScheduleFile
+
+Info	2021-07-28 , 12:55:05.668
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Task ScheduleInfo info: DayOfWeekSch Thursday, DayOfMonthSch , UTCTimeToCheck 18:45:51, SchedulerAbility OFF
+
+Info	2021-07-28 , 12:55:05.668
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Settings in UpdateSchedule.xml is same with task, not need to update
+

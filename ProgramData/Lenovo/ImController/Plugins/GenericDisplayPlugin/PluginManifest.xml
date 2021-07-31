@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginManifest>
+    <PackageInformation name="GenericDisplayPlugin" version="1.0.0.0" location="GenericDisplayPlugin.cab" lastModified="2016-12-19T14:49:13" customEventMonitor="">
+    </PackageInformation>
+    <ApplicabilityFilter>
+        <Filter>true</Filter>
+    </ApplicabilityFilter>
+    <ContractMappingList>
+        <ContractMapping name="SystemManagement.Display" version="1.0.0.0" runas="user" plugin="GenericDisplayPlugin" />
+    </ContractMappingList>
+    <EventSubscriptionList>
+        <!--<EventSubscription monitor="WindowMessageMonitor" trigger="SessionChange">
+            <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+                        	<SessionChangeEventSubscription>
+                                	<WtsSessionValueList>
+                       <WtsSessionValue>1</WtsSessionValue>
+                                              	<WtsSessionValue>5</WtsSessionValue>
+                 	<WtsSessionValue>7</WtsSessionValue>
+                                              	<WtsSessionValue>8</WtsSessionValue>
+                                  	</WtsSessionValueList>
+                          	</SessionChangeEventSubscription>]]></Parameter>
+        </EventSubscription>
+        <EventSubscription monitor="WindowMessageMonitor" trigger="PowerChange">
+            <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+			<PowerBroadcastEventSubscription>
+				<PbtValueList>
+					<PbtValue>18</PbtValue>
+				</PbtValueList>
+				<PowerSettingGuidList />
+			</PowerBroadcastEventSubscription>]]></Parameter>
+        </EventSubscription>-->
+        <EventSubscription monitor="WindowMessageMonitor" trigger="DeviceChange">
+            <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+
+			<DeviceChangeEventSubscription>
+				<DevInterfaceClassGuidList>
+
+					<DevInterfaceClassGuid>E6F07B5F-EE97-4a90-B076-33F57BF4EAA7</DevInterfaceClassGuid>
+
+				</DevInterfaceClassGuidList>
+
+			</DeviceChangeEventSubscription>]]></Parameter>
+        </EventSubscription>
+    </EventSubscriptionList>
+    <SettingList>
+        <Setting key="ImController.Privilege.ReceiveEvents">0</Setting>
+	<Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+	<Setting key="ImController.Association.Uap">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+    </SettingList>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>V7xJjDpwgqOTVWHxgBP5/aSYS5A=</DigestValue></Reference></SignedInfo><SignatureValue>0J+MTLJkNKFZeGJ80bO0ZVsZj0X6hBndA8O+biRRQxb3wy8FvCHXPSobguSiFITpieUkCCBUJGrHQ8DTWUvf154jorDYVFp6wt0boBrSLcBOWoBbvZgFfvrw46InJwd/mb67Vz8ZQ8vjYow/g3LoMs1r1ShsJvgkGuXRpk4K42aLXjwW7gFDohwdVBcy0CmMbGv4N3QCmgQTsp2T88twnJ39J2PRMZptUCVXztDPzKGCqkVJ0RBWXGvqc0XAhv3FjSystX/cM5Shj3oQ82OMOhIHDo7u1oRR2GP1PzxyqavpCx2womG7SFReVKUSee+r7Dvo1vJ0vgx5FfABcg00DA==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIEuzCCA6OgAwIBAgIQZljFv4bpkST5l0iwp6AVTDANBgkqhkiG9w0BAQsFADCBhDELMAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVjIENvcnBvcmF0aW9uMR8wHQYDVQQLExZTeW1hbnRlYyBUcnVzdCBOZXR3b3JrMTUwMwYDVQQDEyxTeW1hbnRlYyBDbGFzcyAzIFNIQTI1NiBDb2RlIFNpZ25pbmcgQ0EgLSBHMjAeFw0xODA5MDEwMDAwMDBaFw0xOTExMjMyMzU5NTlaMGwxCzAJBgNVBAYTAlVTMRcwFQYDVQQIDA5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEBwwLTW9ycmlzdmlsbGUxDzANBgNVBAoMBkxlbm92bzEMMAoGA1UECwwDRzA4MQ8wDQYDVQQDDAZMZW5vdm8wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDd1VYURgwD26YpMWCBYdCxyf64dSoSOIIKVGCiobnYqjzZpPlctsdnfciR2QDjWGgVNum/phno6Xzk548PyK2KvNih/U+Jb14cBHVPtH5nWVVylCxkFcgR3u9HcJTg1+7rjC7Sq09SSbn/KtR1zDt7j43j/Kulpof8I+ST+IG5Bm6j7UIK0lGaNfECYjlOyk4FcIEu0whTjeDNzOAGvShFkEWCibrtyKdva7WdaXuIKM1nLstliRWQb7FcEUV4QKg7OSLdxy04J5v3ouZf8ZmB4N5XzdLpDSXedAFxmBhFkHpdjYbNNEVJXcvIZotRq6+vIDLnIBIIYDHAjDY03dNJAgMBAAGjggE+MIIBOjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzBhBgNVHSAEWjBYMFYGBmeBDAEEATBMMCMGCCsGAQUFBwIBFhdodHRwczovL2Quc3ltY2IuY29tL2NwczAlBggrBgEFBQcCAjAZDBdodHRwczovL2Quc3ltY2IuY29tL3JwYTAfBgNVHSMEGDAWgBTUwAYiSes5S92T4lyhuEd2CXIDWDArBgNVHR8EJDAiMCCgHqAchhpodHRwOi8vcmIuc3ltY2IuY29tL3JiLmNybDBXBggrBgEFBQcBAQRLMEkwHwYIKwYBBQUHMAGGE2h0dHA6Ly9yYi5zeW1jZC5jb20wJgYIKwYBBQUHMAKGGmh0dHA6Ly9yYi5zeW1jYi5jb20vcmIuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCW8pDmbakEUon7g4G4yuQtBQTYl1/h5M34wycGFLwx1vvjQ2Nn2OYwAyPS7OsgZzH8FKhBncFLrfiSIQj5T9Jr6Dq5LB8TEzMMsKV8s+a9C34uxLDWw237klNZAEoEHP6rFedGSXoLY+JP2MGNCI7FPXzEEPuST+Cv9qzU9McWhoYVo+yK9irWSoN4XH92exrbhK50iEc1GrrQGU66P+BdZm5J1yJV9wphouyNs6Qze5dfNS5Cd6B8HsGJ6NFehMWNEJ+ht7spmRUkRBkjC/9wZjbS1XnKhty+hv7NB6rUvIqhD5EmJL4yPmurZc82QJkX5dIKXRolyebMtbNMdkph</X509Certificate></X509Data></KeyInfo></Signature></PluginManifest>

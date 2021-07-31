@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppInformation>
+  <AppID>65d2d719-464b-4fb6-a766-82640e3948db</AppID>
+  <Name>Dashlane</Name>
+  <Location Urltype="Fixed">
+  https://ws1.dashlane.com/5/binaries/query?platform=website&amp;target=launcher_win&amp;format=redirect 
+  </Location>
+  <InstallerName>DashlaneInst.exe</InstallerName>
+  <LaunchPath>%APPDATA%\Dashlane\Dashlane.exe</LaunchPath>
+  <Install>
+    <CmdParameter Context="User"> /partnername bd_partnerships_lenovo_2019</CmdParameter>
+    <Result>
+	  <ReturnCode Value="0" Type="Success">Setup was successfully run to completion or the /HELP or /? command line parameter was used.</ReturnCode>
+	  <!-- In order to compatible with old SUPlugin, add this strange return code when dashlane installed successfully -->
+      <ReturnCode Value="1223" Type="Success">Setup was successfully run to completion or the /HELP or /? command line parameter was used.</ReturnCode>
+    </Result>
+  </Install>
+  <DetectInstall>
+	<Or>
+		<!-- In order to compatible with old SUPlugin -->
+		<FileExists FileName="%APPDATA%\Dashlane\Dashlane.exe" />
+		<RegistryExists Key="HKEY_CURRENT_USER\Software\Dashlane\InstallInformation" ValueName="Version" />
+	</Or>
+  </DetectInstall>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>+2qPI1udbOvrOSb/6LKeKiKj58s=</DigestValue></Reference></SignedInfo><SignatureValue>HHoNlVrPijJzXiyhxALWmkgvnAXGwbQCeGwv3AyVbOoAKh6Me/99AcFzvq0tf5QlM9M8Rfc+oRrtyCbZCcvfLqb3+7VmBQ10iyf3iSAxylV/9zBSqa7RhfzR44N0mbKGk3KjYmC5S7VehlK7zuEsUUveZpvAz459j13lXVRayNqRz6Jr2chtxTTfosgZmcdrKzc8vb3Cpc1MiUg1IrRi5zcasWSnkQgOWnq3cFUz7VLNRu81nAvA6O9/iNuR97yZRmvhLrxHxvpswNpEgEI8Ni2wJJTYA90ESUrwARlekgvpF9vZH9wuOcPojMnkQXA5sp1u2ZB7nbp7o0mwyrAVIw==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIEuzCCA6OgAwIBAgIQZljFv4bpkST5l0iwp6AVTDANBgkqhkiG9w0BAQsFADCBhDELMAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVjIENvcnBvcmF0aW9uMR8wHQYDVQQLExZTeW1hbnRlYyBUcnVzdCBOZXR3b3JrMTUwMwYDVQQDEyxTeW1hbnRlYyBDbGFzcyAzIFNIQTI1NiBDb2RlIFNpZ25pbmcgQ0EgLSBHMjAeFw0xODA5MDEwMDAwMDBaFw0xOTExMjMyMzU5NTlaMGwxCzAJBgNVBAYTAlVTMRcwFQYDVQQIDA5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEBwwLTW9ycmlzdmlsbGUxDzANBgNVBAoMBkxlbm92bzEMMAoGA1UECwwDRzA4MQ8wDQYDVQQDDAZMZW5vdm8wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDd1VYURgwD26YpMWCBYdCxyf64dSoSOIIKVGCiobnYqjzZpPlctsdnfciR2QDjWGgVNum/phno6Xzk548PyK2KvNih/U+Jb14cBHVPtH5nWVVylCxkFcgR3u9HcJTg1+7rjC7Sq09SSbn/KtR1zDt7j43j/Kulpof8I+ST+IG5Bm6j7UIK0lGaNfECYjlOyk4FcIEu0whTjeDNzOAGvShFkEWCibrtyKdva7WdaXuIKM1nLstliRWQb7FcEUV4QKg7OSLdxy04J5v3ouZf8ZmB4N5XzdLpDSXedAFxmBhFkHpdjYbNNEVJXcvIZotRq6+vIDLnIBIIYDHAjDY03dNJAgMBAAGjggE+MIIBOjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzBhBgNVHSAEWjBYMFYGBmeBDAEEATBMMCMGCCsGAQUFBwIBFhdodHRwczovL2Quc3ltY2IuY29tL2NwczAlBggrBgEFBQcCAjAZDBdodHRwczovL2Quc3ltY2IuY29tL3JwYTAfBgNVHSMEGDAWgBTUwAYiSes5S92T4lyhuEd2CXIDWDArBgNVHR8EJDAiMCCgHqAchhpodHRwOi8vcmIuc3ltY2IuY29tL3JiLmNybDBXBggrBgEFBQcBAQRLMEkwHwYIKwYBBQUHMAGGE2h0dHA6Ly9yYi5zeW1jZC5jb20wJgYIKwYBBQUHMAKGGmh0dHA6Ly9yYi5zeW1jYi5jb20vcmIuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCW8pDmbakEUon7g4G4yuQtBQTYl1/h5M34wycGFLwx1vvjQ2Nn2OYwAyPS7OsgZzH8FKhBncFLrfiSIQj5T9Jr6Dq5LB8TEzMMsKV8s+a9C34uxLDWw237klNZAEoEHP6rFedGSXoLY+JP2MGNCI7FPXzEEPuST+Cv9qzU9McWhoYVo+yK9irWSoN4XH92exrbhK50iEc1GrrQGU66P+BdZm5J1yJV9wphouyNs6Qze5dfNS5Cd6B8HsGJ6NFehMWNEJ+ht7spmRUkRBkjC/9wZjbS1XnKhty+hv7NB6rUvIqhD5EmJL4yPmurZc82QJkX5dIKXRolyebMtbNMdkph</X509Certificate></X509Data></KeyInfo></Signature></AppInformation>

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ToastArgumentsModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SettingsList>
+    <Setting Key="IsScheduledAllowed">True</Setting>
+    <Setting Key="IsCallback">False</Setting>
+    <Setting Key="FriendlyName">promote_night_mode</Setting>
+    <Setting Key="PageName">Display</Setting>
+    <Setting Key="Duration">short</Setting>
+    <Setting Key="Expire">7</Setting>
+  </SettingsList>
+  <ResourceList>
+    <ResourceStringModel>
+      <ActivationArea>title</ActivationArea>
+      <ResourceStringList>
+        <ResourceString Key="en">Lenovo Settings</ResourceString>
+        <ResourceString Key="ar">Lenovo Settings</ResourceString>
+        <ResourceString Key="pt-br">Lenovo Settings</ResourceString>
+        <ResourceString Key="hr">Lenovo Settings</ResourceString>
+        <ResourceString Key="cs">Lenovo Settings</ResourceString>
+        <ResourceString Key="da">Lenovo Settings</ResourceString>
+        <ResourceString Key="fi">Lenovo Settings</ResourceString>
+        <ResourceString Key="fr">Lenovo Settings</ResourceString>
+        <ResourceString Key="el">Lenovo Settings</ResourceString>
+        <ResourceString Key="de">Lenovo Settings</ResourceString>
+        <ResourceString Key="he">Lenovo Settings</ResourceString>
+        <ResourceString Key="hu">Lenovo Settings</ResourceString>
+        <ResourceString Key="it">Lenovo Settings</ResourceString>
+        <ResourceString Key="ja">Lenovo Settings</ResourceString>
+        <ResourceString Key="ko">Lenovo Settings</ResourceString>
+        <ResourceString Key="nl">Lenovo Settings</ResourceString>
+        <ResourceString Key="nb">Lenovo Settings</ResourceString>
+        <ResourceString Key="pl">Lenovo Settings</ResourceString>
+        <ResourceString Key="pt">Lenovo Settings</ResourceString>
+        <ResourceString Key="ro">Lenovo Settings</ResourceString>
+        <ResourceString Key="ru">Lenovo Settings</ResourceString>
+        <ResourceString Key="sr">Lenovo Settings</ResourceString>
+        <ResourceString Key="sk">Lenovo Settings</ResourceString>
+        <ResourceString Key="sl">Lenovo Settings</ResourceString>
+        <ResourceString Key="es">Lenovo Settings</ResourceString>
+        <ResourceString Key="sv">Lenovo Settings</ResourceString>
+        <ResourceString Key="tr">Lenovo Settings</ResourceString>
+        <ResourceString Key="uk">Lenovo Settings</ResourceString>
+        <ResourceString Key="zh-cn">联想设置中心</ResourceString>
+        <ResourceString Key="zh-sg">Lenovo Settings</ResourceString>
+        <ResourceString Key="zh-hk">Lenovo Settings</ResourceString>
+        <ResourceString Key="zh-tw">Lenovo Settings</ResourceString>
+        <ResourceString Key="zh-mo">Lenovo Settings</ResourceString>
+      </ResourceStringList>
+    </ResourceStringModel>
+    <ResourceStringModel>
+      <ActivationArea>text</ActivationArea>
+      <ResourceStringList>
+        <ResourceString Key="en">Use Night Mode to automatically adjust your display’s blue-light level at night for eye strain</ResourceString>
+        <ResourceString Key="ar">استخدم الوضع الليلي لضبط مستوى الضوء الأزرق في جهاز العرض بشكل تلقائي خلال الليل لحماية العينين من الإجهاد</ResourceString>
+        <ResourceString Key="pt-br">Use o modo noturno para ajustar automaticamente o nível de luz azul do monitor à noite para tensão ocular</ResourceString>
+        <ResourceString Key="hr">Pomoću noćnog načina rada automatski prilagodite razinu plavog svjetla zaslona noću radi izbjegavanja naprezanja očiju</ResourceString>
+        <ResourceString Key="cs">Noční režim automaticky upravuje úroveň modré barevné složky obrazu v nočních podmínkách a snižuje únavu očí</ResourceString>
+        <ResourceString Key="da">Brug Nattilstand til automatisk at justere din skærms niveau af blåt lys om natten for at mindske belastningen af øjnene</ResourceString>
+        <ResourceString Key="fi">Vähennä silmien rasitusta käyttämällä yötilaa, joka säätää automaattisesti näytön sinisen valon tasoa yöllä</ResourceString>
+        <ResourceString Key="fr">Utilisez le mode Nuit pour régler automatiquement le niveau de la lumière bleue de votre écran en soirée afin d'éviter toute fatigue oculaire</ResourceString>
+        <ResourceString Key="el">Χρησιμοποιήστε τη νυχτερινή λειτουργία για να ρυθμίσετε αυτόματα το επίπεδο μπλε φωτός της οθόνης σας τη νύχτα για λόγους προστασίας από κόπωση των ματιών</ResourceString>
+        <ResourceString Key="de">Zur Schonung Ihrer Augen passt der Nachtmodus die Blauintensität der Anzeige bei Nacht automatisch an</ResourceString>
+        <ResourceString Key="he">השתמשו במצב לילה כדי להתאים באופן אוטומטי את רמת האור הכחול של התצוגה בלילה לאימוץ העיניים</ResourceString>
+        <ResourceString Key="hu">Az Éjszakai móddal automatikusan módosíthatja a képernyő által éjszaka kibocsátott kék színű fény mennyiségét, és ezzel kímélheti a szemét</ResourceString>
+        <ResourceString Key="it">Utilizza la Modalità notturna per regolare automaticamente il livello di luce blu dello schermo di notte e non affaticare la vista</ResourceString>
+        <ResourceString Key="ja">ナイト・モードを使用して、夜間のディスプレイのブルーライト・レベルを自動的に調整し眼精疲労を防ぎます</ResourceString>
+        <ResourceString Key="ko">야간 모드를 사용하여 눈의 피로감을 줄이기 위해 야간에 디스플레이의 블루라이트 레벨을 자동으로 조정합니다</ResourceString>
+        <ResourceString Key="nl">Gebruik de nachtmodus om het niveau van blauw licht van het beeldscherm 's nachts aan te passen om uw ogen minder te belasten</ResourceString>
+        <ResourceString Key="nb">Bruk Nattmodus til automatisk å justere skjermens nivå av blått lys om kvelden og natten for å unngå overanstrengelse av øynene</ResourceString>
+        <ResourceString Key="pl">Używaj trybu nocnego, aby automatycznie dostosowywać poziom emisji niebieskiego światła przez ekran w celu zmniejszenia zmęczenia oczu</ResourceString>
+        <ResourceString Key="pt">Utilize o Modo Noturno para ajustar automaticamente o nível de luz azul do ecrã à noite para redução do cansaço dos olhos</ResourceString>
+        <ResourceString Key="ro">Utilizaţi Modul Noapte, pentru a ajusta automat nivelul luminii albastre a ecranului în timpul nopţii, pentru a proteja ochii</ResourceString>
+        <ResourceString Key="ru">Используйте ночной режим для автоматической регулировки уровня синего света экрана ночью при перенапряжении глаз</ResourceString>
+        <ResourceString Key="sr">Koristite noćni režim da biste automatski prilagodili nivo plave boje na ekranu noću radi manjeg naprezanja očiju</ResourceString>
+        <ResourceString Key="sk">Použite nočný režim na automatickú úpravu úrovne modrej farby obrazovky v noci na zníženie únavy očí</ResourceString>
+        <ResourceString Key="sl">Nočni način uporabite za samodejno prilagajanje ravni modre barve ponoči za manjšo utrujenost oči</ResourceString>
+        <ResourceString Key="es">Utilice el modo Noche para ajustar automáticamente el nivel de luz azul en la pantalla y evitar el cansancio en la vista durante la noche</ResourceString>
+        <ResourceString Key="sv">Använd Nattläge för att automatiskt justera bildskärmens nivå av blått ljus på natten och minska belastningen på ögonen</ResourceString>
+        <ResourceString Key="tr">Göz yorgunluğunu azaltmak amacıyla geceleri ekranınızın mavi ışık düzeyinin otomatik ayarlanması için Gece Kipini kullanın</ResourceString>
+        <ResourceString Key="uk">Використовуйте нічний режим, у якому автоматично регулюється рівень синього світла екрана в нічний час, запобігаючи втомі очей</ResourceString>
+        <ResourceString Key="zh-cn">使用夜间模式在夜间自动调节显示屏的蓝光等级以减轻视疲劳</ResourceString>
+        <ResourceString Key="zh-sg">使用夜间模式在夜间自动调节显示屏的蓝光等级以减轻视疲劳</ResourceString>
+        <ResourceString Key="zh-hk">使用夜間模式自動調整顯示器在夜間的藍光亮度，以減輕眼睛疲勞</ResourceString>
+        <ResourceString Key="zh-tw">使用夜間模式自動調整顯示器在夜間的藍光亮度，以減輕眼睛疲勞</ResourceString>
+        <ResourceString Key="zh-mo">使用夜間模式自動調整顯示器在夜間的藍光亮度，以減輕眼睛疲勞</ResourceString>
+      </ResourceStringList>
+    </ResourceStringModel>
+    <ResourceStringModel>
+      <ActivationArea>button1</ActivationArea>
+      <ResourceStringList>
+        <ResourceString Key="en">Enable</ResourceString>
+        <ResourceString Key="ar">تمكين</ResourceString>
+        <ResourceString Key="pt-br">Ativar</ResourceString>
+        <ResourceString Key="hr">Omogući</ResourceString>
+        <ResourceString Key="cs">Povolit</ResourceString>
+        <ResourceString Key="da">Aktivér</ResourceString>
+        <ResourceString Key="fi">Ota käyttöön</ResourceString>
+        <ResourceString Key="fr">Activer</ResourceString>
+        <ResourceString Key="el">Ενεργοποίηση</ResourceString>
+        <ResourceString Key="de">Aktivieren</ResourceString>
+        <ResourceString Key="he">הפעלת</ResourceString>
+        <ResourceString Key="hu">Engedélyezés</ResourceString>
+        <ResourceString Key="it">Abilita</ResourceString>
+        <ResourceString Key="ja">有効にする</ResourceString>
+        <ResourceString Key="ko">사용</ResourceString>
+        <ResourceString Key="nl">Inschakelen</ResourceString>
+        <ResourceString Key="nb">Aktiver</ResourceString>
+        <ResourceString Key="pl">Włącz</ResourceString>
+        <ResourceString Key="pt">Ativar</ResourceString>
+        <ResourceString Key="ro">Activare</ResourceString>
+        <ResourceString Key="ru">Включить</ResourceString>
+        <ResourceString Key="sr">Omogući</ResourceString>
+        <ResourceString Key="sk">Zapnúť</ResourceString>
+        <ResourceString Key="sl">Omogoči</ResourceString>
+        <ResourceString Key="es">Habilitar</ResourceString>
+        <ResourceString Key="sv">Aktivera</ResourceString>
+        <ResourceString Key="tr">Seçeneğini etkinleştir</ResourceString>
+        <ResourceString Key="uk">Увімкнути</ResourceString>
+        <ResourceString Key="zh-cn">启用</ResourceString>
+        <ResourceString Key="zh-sg">启用</ResourceString>
+        <ResourceString Key="zh-hk">啟用</ResourceString>
+        <ResourceString Key="zh-tw">啟用</ResourceString>
+        <ResourceString Key="zh-mo">啟用</ResourceString>
+      </ResourceStringList>
+    </ResourceStringModel>
+  </ResourceList>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>SmWX2SXpyoUSSxaRh+kH5ylBCS0=</DigestValue></Reference></SignedInfo><SignatureValue>YVTJ//qYpLdaWKE1DRRIj4rv1GekFzQu/HpQ0oKFIKquDuycXNPVORV7rxPEY2NWrlmMTv5uhoFDw1EFTd1opD5lBLYyA7hFdlWrM+tV/YvqdRo5ArSuv9+AffZxQ4AaW7QcIsFdcsbjtnYrM+pckhOo5dSo0zDv1KnLvjgKtDbUbI0UWl19oASiI3U9+wIYokJADNwiU+cnXtTHu4mNSDdPQFNltNOEnBgOafyjB3FeyfdXDYA43cRhp+fBxk4ygcKSB3rr+JI+7GmashE+YnOX4SD2GqFrVT7jH5eHz3vjMn+quHFEnPPuPXzK9Y6E/NaKHMUuvR8YpplBkPX+Dw==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIE5jCCA86gAwIBAgIQRjqDp6eX8wmErBqoLyATjDANBgkqhkiG9w0BAQsFADCBhDELMAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVjIENvcnBvcmF0aW9uMR8wHQYDVQQLExZTeW1hbnRlYyBUcnVzdCBOZXR3b3JrMTUwMwYDVQQDEyxTeW1hbnRlYyBDbGFzcyAzIFNIQTI1NiBDb2RlIFNpZ25pbmcgQ0EgLSBHMjAeFw0xNzAyMDgwMDAwMDBaFw0xODAyMDkyMzU5NTlaMGwxCzAJBgNVBAYTAlVTMRcwFQYDVQQIDA5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEBwwLTW9ycmlzdmlsbGUxDzANBgNVBAoMBkxlbm92bzEMMAoGA1UECwwDRzA4MQ8wDQYDVQQDDAZMZW5vdm8wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCxRt8ld9FNmjglJwTclvTCqXikAjgMxm11Occ+Z3p7LzQPciUeFmkFBycy79BTaaN9WECRb+aDoJy53mBgDmfJ/t1NQnai0VxVS7TwVEYa2A6/VD9dWwmMkca8ZdfZDKtyG2vKBCKajYH8xEzzrchkCujTn197l4F9OhyEP2027xJ4UYc1j7ZeLPIhZV24q5EdBkqjfDqqYveGL+0OffHKDfEP7dDBjXDYi/bCTAcvzct56Qc4Pji5s7Zyljp1PcgWBZGaFwNnbyNlVCSenWzA506mMeSeZNiaWK2V2b2ayJGqEhgRjR2lKhAczjEhDsflV2N2xSmClXo1rfdm70d7AgMBAAGjggFpMIIBZTAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzBhBgNVHSAEWjBYMFYGBmeBDAEEATBMMCMGCCsGAQUFBwIBFhdodHRwczovL2Quc3ltY2IuY29tL2NwczAlBggrBgEFBQcCAjAZDBdodHRwczovL2Quc3ltY2IuY29tL3JwYTAfBgNVHSMEGDAWgBTUwAYiSes5S92T4lyhuEd2CXIDWDArBgNVHR8EJDAiMCCgHqAchhpodHRwOi8vcmIuc3ltY2IuY29tL3JiLmNybDBXBggrBgEFBQcBAQRLMEkwHwYIKwYBBQUHMAGGE2h0dHA6Ly9yYi5zeW1jZC5jb20wJgYIKwYBBQUHMAKGGmh0dHA6Ly9yYi5zeW1jYi5jb20vcmIuY3J0MBEGCWCGSAGG+EIBAQQEAwIEEDAWBgorBgEEAYI3AgEbBAgwBgEBAAEB/zANBgkqhkiG9w0BAQsFAAOCAQEAgVJHiDMb7A/I2OgwDsdPmTMTnvw6ffdTvXH6kS2142gBfCYZ2YBfIM5Yme4G9nAjZkOG6mjLk9QVdblNbLsy3AH52XMVDrcxvfSrezCHzCuZkBOb9rJX7tFUvEGOfjsPmoIxT0Hw3h/4Mq6PQDkRH6y+W5OdwF79eq3P2iWnfAuq0w7D4JpzyZuFnhGLn5YA2WP/myVMWJ1MHwCkoYpSx8wwSmOk+1pLmcGNNLL/CH+3GASKKpLLh/8h82X7oyer3dpoKoMjh0zj6AN1dx/lji62q4AH1fih9U1+udoXFUUR4V3R85iXxKXLxeTaaEu9SHDIVcOYPvJbuCp5hZj8/w==</X509Certificate></X509Data></KeyInfo></Signature></ToastArgumentsModel>

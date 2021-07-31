@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LenovoWelcomeSubscription>
+	<AppSettingList>
+
+		<!-- Settings -->
+		<!-- Package should not run if the current version is less than -->
+		<AppSetting key="WelcomeApp.MinimumVersionRequired">2.2.1.6</AppSetting>
+
+		<!--Configure whether LenovoWelcome should be launched-->
+		<AppSetting key="WelcomeApp.RunAfterOOBE">true</AppSetting>
+
+    <!--Configure whether Software Entitlement Tile on All Done page should be shown-->
+		<AppSetting key="WelcomeApp.ShowSoftwareEntitled">true</AppSetting>
+
+		<!--Configure which version of LenovoWelcome should skip auto-update -->
+		<AppSetting key="WelcomeApp.SkipAutoUpdate">2.2.1.6</AppSetting>
+
+		<!--  After this number of days, do not show  -->
+		<AppSetting key="WelcomeApp.Timing.MaximumDaysAfterOobe">7</AppSetting>
+
+		<!-- Create scheduled task to run this many minutes after oobe -->
+		<AppSetting key="WelcomeApp.Timing.MinimumMinutesAfterOobe">0</AppSetting>
+
+		<!-- Whether or not dropbox is the chosen storage provider -->
+		<AppSetting key="WelcomeApp.Features.Storage.DropBox" country="cn">false</AppSetting>
+		<AppSetting key="WelcomeApp.Features.Storage.DropBox">true</AppSetting>
+
+		<!-- Whether or not enable Welcome and companion page -->
+		<AppSetting key="WelcomeApp.Features.AnimationPage.Enable">true</AppSetting>
+		<AppSetting key="WelcomeApp.Features.WelcomePage.Enable">true</AppSetting>
+    <AppSetting key="WelcomeApp.Features.PremiumCarePage.Enable">true</AppSetting>
+		<AppSetting key="WelcomeApp.Features.LenovoIDPage.Enable">false</AppSetting>
+		<AppSetting key="WelcomeApp.Features.AppsForYouPage.Enable">true</AppSetting>		
+		<AppSetting key="WelcomeApp.Features.CompanionPage.Enable">true</AppSetting>
+		<AppSetting key="WelcomeApp.Features.VantagePage.Enable">false</AppSetting>
+		<AppSetting key="WelcomeApp.Features.DropBoxPage.Enable">true</AppSetting>
+		<AppSetting key="WelcomeApp.Features.MigratePage.Enable">true</AppSetting>
+    <!-- Add checkbox for "Add a shortcut to my desktop during installation" for LMA	 -->
+    <AppSetting key="WelcomeApp.Features.MigratePage.MigrateCheckbox.Enable">true</AppSetting>
+		<AppSetting key="WelcomeApp.Features.AllDonePage.Enable">true</AppSetting>
+
+	  <AppSetting key="WelcomeApp.Features.AppsForYouPage.amazonAssistant.Enable">true</AppSetting>
+	  <AppSetting key="WelcomeApp.Features.AppsForYouPage.winzip.Enable">true</AppSetting>
+    <AppSetting key="WelcomeApp.Features.AppsForYouPage.kingsoftWPSOffice.Enable">false</AppSetting>
+    <AppSetting key="WelcomeApp.Features.AppsForYouPage.facebook.Enable">true</AppSetting>
+    <AppSetting key="WelcomeApp.Features.AppsForYouPage.deezer.Enable">true</AppSetting>
+    <AppSetting key="WelcomeApp.Features.AppsForYouPage.cyberlinkMediaPlayer.Enable">false</AppSetting>
+    <AppSetting key="WelcomeApp.Features.AppsForYouPage.youTube.Enable">true</AppSetting>
+    <AppSetting key="WelcomeApp.Features.AppsForYouPage.alexaForPC.Enable">true</AppSetting>
+     
+    <!--New AppSettings for LenovoFirstRunExperience-->
+		<AppSetting key="LenovoFirstRunExperience.Timing.TimeFrame1.Percentage">0.2</AppSetting>
+		<AppSetting key="LenovoFirstRunExperience.Timing.TimeFrame1.MinutesAfterOOBE">0</AppSetting>
+
+		<AppSetting key="LenovoFirstRunExperience.Timing.TimeFrame2.Percentage">0.3</AppSetting>
+		<AppSetting key="LenovoFirstRunExperience.Timing.TimeFrame2.MinutesAfterOOBE">2</AppSetting>
+
+		<AppSetting key="LenovoFirstRunExperience.Timing.TimeFrame3.Percentage">0.5</AppSetting>
+		<AppSetting key="LenovoFirstRunExperience.Timing.TimeFrame3.MinutesAfterOOBE">5</AppSetting>
+
+	</AppSettingList>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>G7IUrKGsmqri4uy2kLe0+3Bkbac=</DigestValue></Reference></SignedInfo><SignatureValue>OUEHI5P+9NQEpFoMPZCL2IcW2OyK+XjSoyv/u1Pnzov7LqtFKCOfDBDp/eMFpK5rvavGOS8q1ivXHfTVEJCJme3e/cF4hlFjZr6Dxbrt8UrcHVPsxTNMuw9PuWVN+BVbKe1erFzBCZrMsrbPclnJL6BvCWszNF+jFDckA7tvPPQtJHPiBrSZl+YKX6zCiEKxzxCwKPYjR7Sbvh408QmXROixNXajA0MWnV7UnCDh63qGCzUjtna7Ta1YIWbTTrf/9SSZJ6qEu1nvSLnRiLy7h/H7/pa3SfwOrVzClRF4xt+EoC4PxQVMn2+8DGVNS8oTeSUJPCbQkAfmIBE6nXHI+Q==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIEuzCCA6OgAwIBAgIQR3ZVyInxomlCtfZfiBnjdzANBgkqhkiG9w0BAQsFADCBhDELMAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVjIENvcnBvcmF0aW9uMR8wHQYDVQQLExZTeW1hbnRlYyBUcnVzdCBOZXR3b3JrMTUwMwYDVQQDEyxTeW1hbnRlYyBDbGFzcyAzIFNIQTI1NiBDb2RlIFNpZ25pbmcgQ0EgLSBHMjAeFw0xOTA5MjcwMDAwMDBaFw0yMDExMjcyMzU5NTlaMGwxCzAJBgNVBAYTAlVTMRcwFQYDVQQIDA5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEBwwLTW9ycmlzdmlsbGUxDzANBgNVBAoMBkxlbm92bzEMMAoGA1UECwwDRzA4MQ8wDQYDVQQDDAZMZW5vdm8wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDHUhZm3P6QS2ul7w882Oh61NzqAmBNamYKRzm1wqwUhtWBEKmVCPQJIIwdSeiTofMzZbLo6Z7p8/JK8RIoOkvaOv1EKu4Ul6FueBPS4g3m8whaWFXBhg83U6NGGvqnB9U+50d9KxMnSPovSEwPs2dRuhKiG8DigGVuPUtNNmazl8QaUWpyojyHEETRfZwt53Pgu2jMCfIQsM+Y880zoEB+aW8+sJYHZgBlIUwokp6fWM9YOQoIQPQTo77uI3+RJrOan41uk/DjYkn5n7UKyQE8P+0Nlmx2T6UdJ/xAk0r036WNarYvWnQGnA5x/jQBtG/PrSafuRyEWMfC/kZGpWl5AgMBAAGjggE+MIIBOjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzBhBgNVHSAEWjBYMFYGBmeBDAEEATBMMCMGCCsGAQUFBwIBFhdodHRwczovL2Quc3ltY2IuY29tL2NwczAlBggrBgEFBQcCAjAZDBdodHRwczovL2Quc3ltY2IuY29tL3JwYTAfBgNVHSMEGDAWgBTUwAYiSes5S92T4lyhuEd2CXIDWDArBgNVHR8EJDAiMCCgHqAchhpodHRwOi8vcmIuc3ltY2IuY29tL3JiLmNybDBXBggrBgEFBQcBAQRLMEkwHwYIKwYBBQUHMAGGE2h0dHA6Ly9yYi5zeW1jZC5jb20wJgYIKwYBBQUHMAKGGmh0dHA6Ly9yYi5zeW1jYi5jb20vcmIuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQBK3zlAI2olZ3eHWmUWRRzjD/6J7Kp0ViFf5K+2qYfxK7b7XjotgLL/HS5rvadCKKwEFsSuzKdvSxI5/VXmChL1ggQKExGeSn3sDRDBivrkAhHQblZ8mYw9MI1Jqr5e+fnU40slyd2RGRObSVdPj7u0N8Ee7x3ujoJGpy+QSCd/pSrqeusoca95sH29YNv9yirsaZHZu7hMbnkU7RXwiyVALy6eHl/NvSa6s6PMq901fT2dJvR7Z3HHfgJe7+x6YvM1iklt8WPzdBfd9GT0iyee+wRbja6u6UT0uovWQBTmaN/nRPw15Dx5hcUueYNMnWNFa3WFKuPPZFElWvmykV/x</X509Certificate></X509Data></KeyInfo></Signature></LenovoWelcomeSubscription>

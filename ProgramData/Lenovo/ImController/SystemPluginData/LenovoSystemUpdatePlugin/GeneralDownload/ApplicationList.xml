@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationList>
+   
+  <Application>
+    <ID>D6580FA3-7655-45DD-BF50-8A691B89D836</ID>
+    <DescriptionFileLocation>https://filedownload.lenovo.com/enm/lsu/apps/D6580FA3-7655-45DD-BF50-8A691B89D836.xml</DescriptionFileLocation>
+  </Application>
+  
+  <Application>
+    <ID>FCF9F618-10F4-4230-99DD-F9B1CCB316AF</ID>
+    <DescriptionFileLocation>https://filedownload.lenovo.com/enm/lsu/apps/FCF9F618-10F4-4230-99DD-F9B1CCB316AF.xml</DescriptionFileLocation>
+  </Application>
+  
+  <Application>
+    <ID>2209E670-FE05-4588-82E0-2BB3A4674EEF</ID>
+    <DescriptionFileLocation>https://filedownload.lenovo.com/enm/lsu/apps/2209E670-FE05-4588-82E0-2BB3A4674EEF.xml</DescriptionFileLocation>
+  </Application>
+  
+  <Application>
+    <ID>B36D220D-D41F-48F5-B542-12BD0EED3738</ID>
+    <DescriptionFileLocation>https://filedownload.lenovo.com/enm/lsu/apps/B36D220D-D41F-48F5-B542-12BD0EED3738.xml</DescriptionFileLocation>
+  </Application>
+  
+  <Application>
+    <ID>54A6EC9C-B4A1-4053-82BC-F195FC0DC8EA</ID>
+    <DescriptionFileLocation>https://filedownload.lenovo.com/enm/lsu/apps/54A6EC9C-B4A1-4053-82BC-F195FC0DC8EA.xml</DescriptionFileLocation>
+  </Application>
+  
+  <Application>
+    <ID>373D5B2D-715B-40A2-8F20-057891D8B975</ID>
+    <DescriptionFileLocation>https://filedownload.lenovo.com/enm/lsu/apps/373D5B2D-715B-40A2-8F20-057891D8B975.xml</DescriptionFileLocation>
+  </Application>
+  
+  <Application>
+    <ID>93D45830-BC34-4D8B-AF88-3736456D5CB9</ID>
+    <DescriptionFileLocation>https://filedownload.lenovo.com/enm/lsu/apps/93D45830-BC34-4D8B-AF88-3736456D5CB9.xml</DescriptionFileLocation>
+  </Application>
+
+  <Application>
+    <ID>98DC09E7-4778-4319-B979-E080C2791D3F</ID>
+    <DescriptionFileLocation>https://filedownload.lenovo.com/enm/lsu/apps/98DC09E7-4778-4319-B979-E080C2791D3F.xml</DescriptionFileLocation>
+  </Application>
+  
+  <Application>
+    <ID>65d2d719-464b-4fb6-a766-82640e3948db</ID>
+    <DescriptionFileLocation>https://filedownload.lenovo.com/enm/lsu/apps/65d2d719-464b-4fb6-a766-82640e3948db.xml</DescriptionFileLocation>
+  </Application>
+
+  <Application>
+    <ID>C1A14FFF-3E7E-4613-941B-0DA8C00C5EEF</ID>
+    <DescriptionFileLocation>https://filedownload.lenovo.com/enm/lsu/apps/C1A14FFF-3E7E-4613-941B-0DA8C00C5EEF.xml</DescriptionFileLocation>
+  </Application>
+  
+  <Application>
+    <ID>40D4BC31-114E-379C-6EDB-18C3901B9BE6</ID>
+    <DescriptionFileLocation>https://filedownload.lenovo.com/enm/lsu/apps/40D4BC31-114E-379C-6EDB-18C3901B9BE6.xml</DescriptionFileLocation>
+  </Application>
+  
+  <Application>
+    <ID>9420CBCD-9907-4B97-B2C7-65F688C060B3</ID>
+    <DescriptionFileLocation>https://filedownload.lenovo.com/enm/lsu/apps/9420CBCD-9907-4B97-B2C7-65F688C060B3.xml</DescriptionFileLocation>
+  </Application><Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+	<SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+		<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+		<Reference URI="">
+			<Transforms>
+				<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+			</Transforms>
+			<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+			<DigestValue>tBQB0JnC0ByVtmdo4teeqZKCC0BfAg+S1zPqWiy51O0=</DigestValue>
+		</Reference>
+	</SignedInfo>
+	<SignatureValue>
+gTcPIUMo9mUeGJjyfj1KWczAmyh36j9z0EgZI2dDpvXUwmDFSynpt0sG+uc6FNCs
+H5PCPy3PZWnztcB+kBkBKdy1UgVxxkeykyeygb3h3S5qvHTxShnRjE9cFicMGlbK
+DbNwV+v0WJPKNAIJT+TdbLkGtEAsBomQ2Ik8Bpe7AD5u/m1JiDlRS1Xh7w7Xu2rF
+kyAVSPYzeogPEp5WM3DI86nGv/cUJi8l4bIQa3gejBfCaNxKZTSnB+K4ywaXKJ0m
+QyzvYBy6lENsQ5Yp407EnJYydHHNKovzSpCPKOzuXH5IJ3qe9+LsrPulzbPGBr9e
+BQSyWDbvvTgCm1oRUEBd6g==
+	</SignatureValue>
+	<KeyInfo>
+		<KeyValue>
+			<RSAKeyValue>
+				<Modulus>
+pg5Tz+CUZn3D7j1dmzRL0RjAGKdnx2fdZMF3i4yXBBgWa3sHCCp+W+Ftdc7UoShr
+1plk/5uAGdFFOCc4rQ/t98f56HzyxKkEbEuuSFcAH3nd928uV+dq3p3jbng3sLJJ
+E2sxTgIVf6eiF3YrTGBOwaZLQp3XyKnPPBNztqyKiBsTgz0gLm2eWEtee2di7NJE
+Fn4h+rl4+kfvz+c09xIBGx/TjPrv7IqrADdDE2paVO6B8xfl2bNXCZFjtZ4XDlHx
+psSGUu33PZAPQATVzavmk18+YBAJCGXgKpo6BegYfMMVRn+hKwlTa0qBp3j7TXHQ
+cYf7vWq2KIcpu7dgWZC2HQ==
+				</Modulus>
+				<Exponent>AQAB</Exponent>
+			</RSAKeyValue>
+		</KeyValue>
+		<X509Data>
+			<X509IssuerSerial>
+				<X509IssuerName>CN=Symantec Class 3 SHA256 Code Signing CA - G2, OU=Symantec Trust Network, O=Symantec Corporation, C=US</X509IssuerName>
+				<X509SerialNumber>102466512833882564165074911779155394872</X509SerialNumber>
+			</X509IssuerSerial>
+			<X509SubjectName>CN=Lenovo, OU=G08, O=Lenovo, L=Morrisville, ST=North Carolina, C=US</X509SubjectName>
+			<X509Certificate>
+MIIEmTCCA4GgAwIBAgIQTRZVIRqHpq7xFvuOuADBODANBgkqhkiG9w0BAQsFADCB
+hDELMAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVjIENvcnBvcmF0aW9uMR8w
+HQYDVQQLExZTeW1hbnRlYyBUcnVzdCBOZXR3b3JrMTUwMwYDVQQDEyxTeW1hbnRl
+YyBDbGFzcyAzIFNIQTI1NiBDb2RlIFNpZ25pbmcgQ0EgLSBHMjAeFw0yMDExMDYw
+MDAwMDBaFw0yMTExMDcyMzU5NTlaMGwxCzAJBgNVBAYTAlVTMRcwFQYDVQQIDA5O
+b3J0aCBDYXJvbGluYTEUMBIGA1UEBwwLTW9ycmlzdmlsbGUxDzANBgNVBAoMBkxl
+bm92bzEMMAoGA1UECwwDRzA4MQ8wDQYDVQQDDAZMZW5vdm8wggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQCmDlPP4JRmfcPuPV2bNEvRGMAYp2fHZ91kwXeL
+jJcEGBZrewcIKn5b4W11ztShKGvWmWT/m4AZ0UU4JzitD+33x/nofPLEqQRsS65I
+VwAfed33by5X52reneNueDewskkTazFOAhV/p6IXditMYE7BpktCndfIqc88E3O2
+rIqIGxODPSAubZ5YS157Z2Ls0kQWfiH6uXj6R+/P5zT3EgEbH9OM+u/siqsAN0MT
+alpU7oHzF+XZs1cJkWO1nhcOUfGmxIZS7fc9kA9ABNXNq+aTXz5gEAkIZeAqmjoF
+6Bh8wxVGf6ErCVNrSoGnePtNcdBxh/u9arYohym7t2BZkLYdAgMBAAGjggEcMIIB
+GDAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcD
+AzA/BgNVHSAEODA2MDQGBmeBDAEEATAqMCgGCCsGAQUFBwIBFhxodHRwczovL3d3
+dy5kaWdpY2VydC5jb20vQ1BTMB8GA1UdIwQYMBaAFNTABiJJ6zlL3ZPiXKG4R3YJ
+cgNYMCsGA1UdHwQkMCIwIKAeoByGGmh0dHA6Ly9yYi5zeW1jYi5jb20vcmIuY3Js
+MFcGCCsGAQUFBwEBBEswSTAfBggrBgEFBQcwAYYTaHR0cDovL3JiLnN5bWNkLmNv
+bTAmBggrBgEFBQcwAoYaaHR0cDovL3JiLnN5bWNiLmNvbS9yYi5jcnQwDQYJKoZI
+hvcNAQELBQADggEBAEeBH3C6r7hpIYHQFzhBJ8seuzo3Pft9P6qu/MffnAOnsxQA
+t241FXSp7kfKv/BSvvLFUQxoAh+O5OmdulYv7L1k75OhfrWT4c323C01gsAWgIFL
+PQ4W7K81QqgqycuwgstdVr+xSqfD2nImp5NSODAQ+/3FoUpXhRxP/tHLU7fS1Ju3
+4sTSgeInQYE0sVJhu2iUs9MOwioOuqco+x+3KITRLjAh1FbQWVBGCCpnKlAvCXR0
+vuEbS1oKUf/fWpOKstuzJgow7gKXHiUpyr3TsT9X7yBCiFtdFqBltAkkfVxLXGkU
+Z9ABeAhy2IJH6GY3zWGpoMry5CKFWvZ2QV7CIdg=
+			</X509Certificate>
+		</X509Data>
+	</KeyInfo>
+	<Object>
+		<SignatureProperties>
+			<SignatureProperty Target="#"><issuerCertificate xmlns="namespaceURI">MIIFRzCCBC+gAwIBAgIQfBs1NUrn23TnQV8RacprqDANBgkqhkiG9w0BAQsFADCBvTELMAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMR8wHQYDVQQLExZWZXJpU2lnbiBUcnVzdCBOZXR3b3JrMTowOAYDVQQLEzEoYykgMjAwOCBWZXJpU2lnbiwgSW5jLiAtIEZvciBhdXRob3JpemVkIHVzZSBvbmx5MTgwNgYDVQQDEy9WZXJpU2lnbiBVbml2ZXJzYWwgUm9vdCBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eTAeFw0xNDA3MjIwMDAwMDBaFw0yNDA3MjEyMzU5NTlaMIGEMQswCQYDVQQGEwJVUzEdMBsGA1UEChMUU3ltYW50ZWMgQ29ycG9yYXRpb24xHzAdBgNVBAsTFlN5bWFudGVjIFRydXN0IE5ldHdvcmsxNTAzBgNVBAMTLFN5bWFudGVjIENsYXNzIDMgU0hBMjU2IENvZGUgU2lnbmluZyBDQSAtIEcyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA15VD1NzfZ645+1KktiYxBHDpt45bKro3aTWVj7vAMOeG2HO73+vRdj+KVo7rLUvwVxhOsY2lM9MLdSPVankn3aPT9w6HZbXerRzx9TW0IlGvIqHBXUuQf8BZTqudeakC1x5JsTtNh/7CeKu/71KunK8I2TnlmlE+aV8wEE5xY2xY4fAgMxsPdL5byxLh24zEgJRyu/ZFmp7BJQv7oxye2KYJcHHswEdMj33D3hnOPu4Eco4X0//wsgUyGUzTsByf/qV4IEJwQbAmjG8AyDoAEUF6QbCnipEEoJl49He082Aq5mxQBLcUYP8NUfSoi4T+IdpcXn31KXlPsER0b21y/wIDAQABo4IBeDCCAXQwLgYIKwYBBQUHAQEEIjAgMB4GCCsGAQUFBzABhhJodHRwOi8vcy5zeW1jZC5jb20wEgYDVR0TAQH/BAgwBgEB/wIBADBmBgNVHSAEXzBdMFsGC2CGSAGG+EUBBxcDMEwwIwYIKwYBBQUHAgEWF2h0dHBzOi8vZC5zeW1jYi5jb20vY3BzMCUGCCsGAQUFBwICMBkaF2h0dHBzOi8vZC5zeW1jYi5jb20vcnBhMDYGA1UdHwQvMC0wK6ApoCeGJWh0dHA6Ly9zLnN5bWNiLmNvbS91bml2ZXJzYWwtcm9vdC5jcmwwEwYDVR0lBAwwCgYIKwYBBQUHAwMwDgYDVR0PAQH/BAQDAgEGMCkGA1UdEQQiMCCkHjAcMRowGAYDVQQDExFTeW1hbnRlY1BLSS0xLTcyNDAdBgNVHQ4EFgQU1MAGIknrOUvdk+JcobhHdglyA1gwHwYDVR0jBBgwFoAUtnf6aUhHn1MS1cLqBzJ2B9GXBxkwDQYJKoZIhvcNAQELBQADggEBAH/ryqfqi3ZC6z6OIFQw47e53PpIPhbHD0WVEM0nhqNm8wLtcfiqwlWXkXCD+VJ+Umk8yfHglEaAGLuh1KRWpvMdAJHVhvNIh+DLxDRoIF60y/kF7ZyvcFMnueg+flGgaXGL3FHtgDolMp9Er25DKNMhdbuX2IuLjP6pBEYEhfcVnEsRjcQsF/7Vbn+a4laS8ZazrS359N/aiZnOsjhEwPdHe8olufoqaDObUHLeqJ/UzSwLNL2LMHhA4I2OJxuQbxq+CBWBXesv4lHnUR7JeCnnHmW/OO8BSgEJJA4WxBR5wUE3NNA9kVKUneFo7wjw4mmcZ26QCxqTcdQmAsPAWiM=</issuerCertificate>
+			</SignatureProperty>
+		</SignatureProperties>
+	</Object>
+</Signature>
+
+</ApplicationList>

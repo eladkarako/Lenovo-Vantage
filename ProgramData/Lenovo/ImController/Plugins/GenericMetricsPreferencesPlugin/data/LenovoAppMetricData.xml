@@ -1,0 +1,837 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LenovoAppMetrics>
+  <!--<App type="legacy" ID="com.lenovo.deviceimprovement">
+    <FriendlyName>Lenovo Device Improvement</FriendlyName>
+    <InstallationCheck type="folder" bitness="32" root="ProgramFiles">Lenovo\DeviceImprovement</InstallationCheck>
+    <MetricSetting type="registry" bitness="32">
+	 <Location root="HKEY_LOCAL_MACHINE">Software\Lenovo\LenovoDeviceImprovement\DataCollectionCustomer</Location>
+	 <OnValue type="string">1</OnValue>
+	 <OffValue type="string">0</OffValue>
+    </MetricSetting>
+    <Descriptions>
+	 <Description lang="en">Shares statistical data with Lenovo to help improve the reliability, design, and optimization of features on your computer.</Description>
+	 <Description lang="ar">لمشاركة البيانات الإحصائية مع Lenovo بهدف المساعدة على تحسين موثوقية الميزات على الكمبيوتر وتصميمها وتحقيق أمثليتها.</Description>
+	 <Description lang="pt-br">Compartilha dados estatísticos com a Lenovo para melhorar a confiabilidade, o design e a otimização de recursos em seu computador.</Description>
+	 <Description lang="hr">Šalje statističke podatke tvrtki Lenovo radi poboljšanja pouzdanosti, dizajna i optimizacije značajki na računalu.</Description>
+	 <Description lang="cs">Sdílí se společností Lenovo statistické údaje, na jejichž základě je možno zlepšovat spolehlivost, design a optimalizační funkce vašeho počítače.</Description>
+	 <Description lang="da">Deler statistiske data med Lenovo for at forbedre pålideligheden, designet og optimeringen af funktioner på computeren.</Description>
+	 <Description lang="fi">Ohjelma jakaa tilastotietoja Lenovolle, jotta se voi parantaa tietokoneen luotettavuutta, ominaisuuksia ja ominaisuuksien optimointia.</Description>
+	 <Description lang="fr">Partage des données statistiques avec Lenovo afin d'améliorer la fiabilité, le concept et l'optimisation des fonctionnalités de votre ordinateur.</Description>
+	 <Description lang="el">Κάνει κοινή χρήση στατιστικών δεδομένων με τη Lenovo προκειμένου να βελτιωθεί η αξιοπιστία και ο σχεδιασμός και να βελτιστοποιηθούν οι δυνατότητες του υπολογιστή σας.</Description>
+	 <Description lang="de">Sendet statistische Daten an Lenovo, um die Zuverlässigkeit und das Design Ihres Computers zu verbessern und seine Funktionalität zu optimieren.</Description>
+	 <Description lang="he">שתפו נתונים סטטיסטיים עם Lenovo כדי לסייע בשיפור האמינות, העיצוב והמיטוב של תכונות המחשב שלכם.</Description>
+	 <Description lang="hu">Statisztikai adatokat oszt meg a Lenovóval, így segíti a számítógép-funkciók tervezését, optimalizálását és megbízhatóbbá tételét.</Description>
+	 <Description lang="it">Consente di condividere i dati statistici con Lenovo per migliorare l'affidabilità, la progettazione e l'ottimizzazione delle funzioni del computer.</Description>
+	 <Description lang="ja">統計データを Lenovo と共有し、ご使用のコンピューターの機能の信頼性、設計、最適化の改善に役立てます。</Description>
+	 <Description lang="ko">컴퓨터의 신뢰성과 디자인을 더욱 향상하고 기능을 한층 최적화할 수 있도록 Lenovo와 통계 데이터를 공유합니다.</Description>
+	 <Description lang="nl">Deelt statistische gegevens met Lenovo om de betrouwbaarheid, het ontwerp en de optimalisatie van functies op uw computer te verbeteren.</Description>
+	 <Description lang="nb">Del statistiske data med Lenovo for å hjelpe oss å forbedre datamaskinenes pålitelighet, design og funksjonalitet.</Description>
+	 <Description lang="pl">Udostępnia dane statystyczne firmie Lenovo w celu poprawy niezawodności i projektu, a także optymalizacji funkcji na komputerze użytkownika.</Description>
+	 <Description lang="pt">Partilha dados estatísticos com a Lenovo para ajudar a melhorar a fiabilidade, o design e a otimização das funções no seu computador.</Description>
+	 <Description lang="ro">Partajează cu Lenovo datele statistice pentru a ajuta la îmbunătăţirea fiabilităţii, designului şi optimizării funcţiilor de pe calculator.</Description>
+	 <Description lang="ru">Отправляет статистические данные в компанию Lenovo, чтобы помочь ей повысить надежность и улучшить реализацию функций компьютера, а также оптимизировать их.</Description>
+	 <Description lang="zh-hans">与 Lenovo 共享统计数据有助于改进计算机上各项功能的可靠性、设计及对其进行优化。</Description>
+	 <Description lang="sr">Deli statističke podatke sa kompanijom Lenovo radi poboljšanja pouzdanosti, dizajna i optimizacije funkcija na računaru.</Description>
+	 <Description lang="sk">Zdieľa štatistické údaje so spoločnosťou Lenovo na zlepšenie spoľahlivosti, koncepcie a na optimalizáciu funkcií počítača.</Description>
+	 <Description lang="sl">Pošilja statistične podatke podjetju Lenovo za pomoč pri izboljšanju zanesljivosti, oblikovanja in optimiziranja funkcij računalnika.</Description>
+	 <Description lang="es">Comparte datos estadísticos con Lenovo para ayudar a mejorar la confiabilidad, diseño y optimización de las características del sistema.</Description>
+	 <Description lang="sv">Delar statistiska data med Lenovo för att förbättra tillförlitlighet och design, och för att optimera funktioner på din dator.</Description>
+	 <Description lang="zh-hant">與 Lenovo 共用統計資料，協助我們提升您電腦功能的可靠性、設計和最佳化。</Description>
+	 <Description lang="tr">Bilgisayarınızdaki özelliklerin güvenilirliğinin, tasarımının ve iyileştirilmesinin gelişimine yardımcı olmak için Lenovo ile istatiksel veri paylaşır.</Description>
+	 <Description lang="uk">Передає статистичні дані до компанії Lenovo, щоб покращити надійність, дизайн і оптимізувати функції на вашому комп'ютері.</Description>
+    </Descriptions>
+    <Confirmations>
+	 <Confirmation lang="en">This information helps Lenovo tailor future offerings based on the most popular features.</Confirmation>
+	 <Confirmation lang="ar">من شأن هذه المعلومات أن تساعد Lenovo على تخصيص العروض المستقبلية بالاستناد إلى الميزات الأكثر رواجًا.</Confirmation>
+	 <Confirmation lang="pt-br">Essas informações ajudam a Lenovo a adaptar futuras ofertas com base nos recursos mais populares.</Confirmation>
+	 <Confirmation lang="hr">Ti podaci pomažu tvrtki Lenovo u prilagođavanju budućih ponuda usklađenih s najpopularnijim značajkama.</Confirmation>
+	 <Confirmation lang="cs">Tyto informace společnosti Lenovo pomáhají přizpůsobovat budoucí nabídku podle toho, jaké funkce jsou nejoblíbenější.</Confirmation>
+	 <Confirmation lang="da">Disse oplysninger hjælper Lenovo med at skræddersy fremtidige tilbud baseret på de mest populære funktioner.</Confirmation>
+	 <Confirmation lang="fi">Näiden tietojen avulla Lenovo räätälöi tulevaa valikoimaa suosituimpien ominaisuuksien mukaan.</Confirmation>
+	 <Confirmation lang="fr">Ces informations aident Lenovo à concevoir de nouvelles offres, sur la base des fonctionnalités les plus populaires.</Confirmation>
+	 <Confirmation lang="el">Αυτές οι πληροφορίες βοηθούν τη Lenovo να εξατομικεύσει τις μελλοντικές προσφορές σύμφωνα με τις πιο δημοφιλείς δυνατότητες.</Confirmation>
+	 <Confirmation lang="de">Diese Informationen helfen Lenovo, künftige Produkte noch besser auf die Wünsche der Kunden abzustimmen.</Confirmation>
+	 <Confirmation lang="he">מידע זה מסייע ל-Lenovo לתכנן מוצרים עתידיים על בסיס התכונות הפופולריות ביותר.</Confirmation>
+	 <Confirmation lang="hu">Ezek az adatok segítenek a Lenovónak a legnépszerűbb szolgáltatások alapján testre szabni a jövőbeli kínálatot.</Confirmation>
+	 <Confirmation lang="it">Queste informazioni permettono a Lenovo di personalizzare le offerte future in base alle funzioni più comuni.</Confirmation>
+	 <Confirmation lang="ja">この情報は、Lenovo が今後提供していく製品に、人気が高い機能を取り入れていく参考になります。</Confirmation>
+	 <Confirmation lang="ko">Lenovo는 사용자가 즐겨 쓰는 대개의 기능을 바탕으로 향후 제공할 항목을 다듬어 조정하는 데 이 정보를 유용하게 사용합니다.</Confirmation>
+	 <Confirmation lang="nl">Deze informatie helpt Lenovo toekomstige aanbiedingen af te stemmen op basis van de populairste functies.</Confirmation>
+	 <Confirmation lang="nb">Denne informasjonen hjelper Lenovo å skreddersy fremtidige produkter med de mest populære funksjonene.</Confirmation>
+	 <Confirmation lang="pl">Informacje pomagają firmie Lenovo dostosować ofertę funkcji na podstawie najpopularniejszych pozycji.</Confirmation>
+	 <Confirmation lang="pt">Estas informações ajudam a Lenovo a personalizar futuras ofertas com base nas funções mais populares.</Confirmation>
+	 <Confirmation lang="ro">Aceste informaţii ajută compania Lenovo să adapteze ofertele viitoare în funcţie de cele mai populare funcţii.</Confirmation>
+	 <Confirmation lang="ru">Эта информация помогает Lenovo подготовить будущие предложения на основе данных о самых популярных функциях.</Confirmation>
+	 <Confirmation lang="zh-hans">此信息可帮助 Lenovo 根据最受欢迎的功能调整未来的产品。</Confirmation>
+	 <Confirmation lang="sr">Ove informacije pomažu kompaniji Lenovo da prilagodi buduću ponudu na osnovu najpopularnijih funkcija.</Confirmation>
+	 <Confirmation lang="sk">Tieto informácie pomáhajú spoločnosti Lenovo prispôsobiť budúce ponuky na základe najpopulárnejších funkcií.</Confirmation>
+	 <Confirmation lang="sl">Ti podatki podjetju Lenovo pomagajo prilagoditi prihodnjo ponudbo na podlagi najbolj priljubljenih funkcij.</Confirmation>
+	 <Confirmation lang="es">Esta información ayuda a Lenovo a diseñar ofertas futuras sobre la base de las características más populares.</Confirmation>
+	 <Confirmation lang="sv">Det här hjälper Lenovo att skräddarsy framtida erbjudanden baserat på de mest populära funktionerna.</Confirmation>
+	 <Confirmation lang="zh-hant">這項資訊將協助 Lenovo 根據最受歡迎的功能量身打造未來的供應項目。</Confirmation>
+	 <Confirmation lang="tr">Bu bilgi, en popüler özelliklere dayanarak Lenovo'nun gelecekte olanak sunmasına yardımcı olur.</Confirmation>
+	 <Confirmation lang="uk">Ця інформація допомагає компанії Lenovo розробляти нові пропозиції на основі найпопулярніших функцій.</Confirmation>
+    </Confirmations>
+  </App>-->
+  <!--<App type="legacy" ID="com.lenovo.lenovoexperienceimprovement">
+    <FriendlyName>Lenovo Experience Improvement</FriendlyName>
+    <InstallationCheck type="registry" bitness="64_32" root="HKEY_LOCAL_MACHINE">SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\LenovoExperienceImprovement</InstallationCheck>
+    <RequireAdmin>true</RequireAdmin>
+    <MetricSetting type="schtask">
+	 <Location root="Lenovo\Experience Improvement"></Location>
+	 <OnValue type="string">1</OnValue>
+	 <OffValue type="string">0</OffValue>
+    </MetricSetting>
+    <Descriptions>
+	 <Description lang="en">Helps Lenovo understand if pre-installed applications are removed by our customers.</Description>
+	 <Description lang="ar">يساعد Lenovo على فهم ما إذا كانت التطبيقات المثبتة مسبقًا قد تمت إزالتها من قِبل العملاء.</Description>
+	 <Description lang="pt-br">Ajuda a Lenovo a compreender se os aplicativos pré-instalados são removidos pelos clientes.</Description>
+	 <Description lang="hr">Pomaže tvrtki Lenovo da otkrije jesu li naši klijenti uklonili unaprijed instalirane aplikacije.</Description>
+	 <Description lang="cs">Slouží společnosti Lenovo ke zjišťování, zda naši zákazníci odstraňují předinstalované aplikace.</Description>
+	 <Description lang="da">Hjælper Lenovo med at forstå, hvis forudinstallerede programmer fjernes af vores kunder.</Description>
+	 <Description lang="fi">Auttaa Lenovoa tunnistamaan, poistavatko käyttäjät esiasennettuja sovelluksia.</Description>
+	 <Description lang="fr">Permet à Lenovo de savoir si des applications préinstallées sont supprimées par nos clients.</Description>
+	 <Description lang="el">Βοηθά τη Lenovo να καταλάβει αν υπάρχουν προεγκατεστημένες εφαρμογές που έχουν απεγκαταστήσει οι πελάτες.</Description>
+	 <Description lang="de">Gibt Lenovo Aufschluss darüber, ob vorinstallierte Anwendungen von Kunden entfernt werden.</Description>
+	 <Description lang="he">מסייע ל-Lenovo להבין אם לקוחותינו הסירו יישומים שהותקנו מראש.</Description>
+	 <Description lang="hu">Segít a Lenovónak megállapítani, hogy az ügyfelek eltávolították-e az előtelepített alkalmazásokat.</Description>
+	 <Description lang="it">Consente a Lenovo di comprendere se le applicazioni preinstallate vengono rimosse dai nostri clienti.</Description>
+	 <Description lang="ja">Lenovo が、初期インストールされたアプリケーションがお客様によって削除されたかどうかを理解するために使用します。</Description>
+	 <Description lang="ko">고객이 이미 설치된 응용 프로그램을 삭제했는지 Lenovo가 파악할 수 있습니다.</Description>
+	 <Description lang="nl">Lenovo gebruikt deze functie om inzicht te krijgen in welke toepassingen die vooraf zijn geïnstalleerd, door onze klanten worden verwijderd.</Description>
+	 <Description lang="nb">Hjelper Lenovo å forstå om forhåndsinstallerte programmer fjernes av kundene.</Description>
+	 <Description lang="pl">Pomaga Lenovo określić, czy wstępnie zainstalowane aplikacje są usuwane przez klientów.</Description>
+	 <Description lang="pt">Ajuda a Lenovo a compreender se as aplicações pré-instaladas são removidas pelos nossos clientes.</Description>
+	 <Description lang="ro">Ajută Lenovo să afle dacă aplicaţiile preinstalate sunt eliminate de clienţii noştri.</Description>
+	 <Description lang="ru">Помогает Lenovo понять, удаляются ли предустановленные приложения пользователями.</Description>
+	 <Description lang="zh-hans">帮助 Lenovo 了解客户是否删除了预装的应用程序。</Description>
+	 <Description lang="sr">Pomozite kompaniji Lenovo da shvati da li su naši korisnici uklonili unapred instalirane aplikacije.</Description>
+	 <Description lang="sk">Pomáha spoločnosti Lenovo pochopiť, či naši zákazníci odstránili predinštalované aplikácie.</Description>
+	 <Description lang="sl">S tem pri družbi Lenovo ugotavljamo, ali naši uporabniki odstranijo prednameščene programe.</Description>
+	 <Description lang="es">Ayuda a Lenovo a entender si nuestros clientes eliminan las aplicaciones preinstaladas.</Description>
+	 <Description lang="sv">Optimerar programvaran beroende på vilket läge du använder (laptop-, stöd-, surfplatte- eller tältläge) och tipsar dig om andra populära appar för de olika lägena.</Description>
+	 <Description lang="zh-hant">協助 Lenovo 瞭解客戶是否移除了預先安裝的應用程式。</Description>
+	 <Description lang="tr">Lenovo'nun, önceden yüklenen uygulamaların müşterilerimiz tarafından kaldırılıp kaldırılmadığını anlamasına yardımcı olur.</Description>
+	 <Description lang="uk">Повідомляє компанії Lenovo, якщо клієнти видаляють попередньо встановлені програми.</Description>
+    </Descriptions>
+    <Confirmations>
+	 <Confirmation lang="en">Lenovo uses this information to make sure we provide applications that customers value.</Confirmation>
+	 <Confirmation lang="ar">تستخدمتستخدم Lenovo هذه المعلومات للتأكد من أننا توفر التطبيقات التي يقدّرها العملاء.</Confirmation>
+	 <Confirmation lang="pt-br">A Lenovo usa essas informações para garantir que sejam fornecidos aplicativos que os clientes apreciam.</Confirmation>
+	 <Confirmation lang="hr">Lenovo prikuplja podatke da bi bio siguran da nudimo aplikacije koje korisnici najviše cijene.</Confirmation>
+	 <Confirmation lang="cs">Pomocí těchto informací se společnost Lenovo snaží poskytovat aplikace, které mají pro zákazníky skutečnou hodnotu.</Confirmation>
+	 <Confirmation lang="da">Lenovo bruger disse oplysninger til at sikre, at vi leverer programmer, som kunderne sætter pris på.</Confirmation>
+	 <Confirmation lang="fi">Näiden tietojen avulla Lenovo voi toimittaa käyttäjien arvostamia sovelluksia.</Confirmation>
+	 <Confirmation lang="fr">Lenovo utilise ces informations pour s'assurer de fournir des applications particulièrement appréciées des clients.</Confirmation>
+	 <Confirmation lang="el">Η Lenovo χρησιμοποιεί αυτές τις πληροφορίες, ώστε να μπορεί να παρέχει στους πελάτες εφαρμογές που εκτιμούν.</Confirmation>
+	 <Confirmation lang="de">Lenovo nutzt diese Informationen, um zu gewährleisten, dass für Kunden relevante Anwendungen bereitgestellt werden.</Confirmation>
+	 <Confirmation lang="he">מידע זה מאפשר ל-Lenovo להבטיח שאנו מספקים יישומים החשובים ללקוחות.</Confirmation>
+	 <Confirmation lang="hu">A Lenovo ezeknek az adatoknak a használatával győződik meg róla, hogy csakugyan értékes alkalmazásokat biztosít az ügyfeleknek.</Confirmation>
+	 <Confirmation lang="it">Lenovo utilizza queste informazioni per accertarsi di fornire applicazioni apprezzate dai clienti.</Confirmation>
+	 <Confirmation lang="ja">Lenovo はこの情報を、お客様が価値を置くアプリケーションを提供していることを確認するために使用します。</Confirmation>
+	 <Confirmation lang="ko">Lenovo는 이 정보를 바탕으로 고객을 소중히 여기는 응용 프로그램을 제공하도록 합니다.</Confirmation>
+	 <Confirmation lang="nl">Lenovo gebruikt deze informatie om ervoor te zorgen dat wij toepassingen leveren die onze klanten waarderen.</Confirmation>
+	 <Confirmation lang="nb">Lenovo bruker denne informasjonen til å sørge for at vi leverer programmer som kundene setter pris på.</Confirmation>
+	 <Confirmation lang="pl">Na podstawie tych informacji Lenovo stara się dostarczać aplikacje cenione przez klientów.</Confirmation>
+	 <Confirmation lang="pt">A Lenovo utiliza estas informações para garantir que fornecemos aplicações que os clientes apreciam.</Confirmation>
+	 <Confirmation lang="ro">Lenovo utilizează aceste informaţii pentru a se asigura că furnizăm aplicaţii pe care clienţii le apreciază.</Confirmation>
+	 <Confirmation lang="ru">Компания Lenovo использует эту информацию, чтобы убедиться в ценности для пользователей предоставляемых ею приложений.</Confirmation>
+	 <Confirmation lang="zh-hans">Lenovo 使用这些信息确保所提供的应用程序对客户有用。</Confirmation>
+	 <Confirmation lang="sr">Kompanija Lenovo koristi ove informacije kako bi obezbedila aplikacije koje cene naši korisnici.</Confirmation>
+	 <Confirmation lang="sk">Spoločnosť Lenovo používa tieto informácie, aby sa presvedčila, či poskytujeme aplikácie, ktoré sú pre zákazníkov významné.</Confirmation>
+	 <Confirmation lang="sl">Lenovo te podatke uporabi za zagotavljanje programov, ki jih uporabniki cenijo.</Confirmation>
+	 <Confirmation lang="es">Lenovo utiliza esta información para asegurarnos de que proporcionamos aplicaciones valoradas por los clientes.</Confirmation>
+	 <Confirmation lang="sv">Ger Lenovo information, om kunderna tar bort förinstallerade program.</Confirmation>
+	 <Confirmation lang="zh-hant">Lenovo 會使用此資訊來確保所提供的應用程式對客戶有實用價值。</Confirmation>
+	 <Confirmation lang="tr">Lenovo bu bilgiyi müşterilerin değer verdiği uygulamalar sunduğundan emin olmak için kullanır.</Confirmation>
+	 <Confirmation lang="uk">Компанія Lenovo використовує цю інформацію, щоб дізнатися, чи подобаються клієнтам програми, що постачаються.</Confirmation>
+    </Confirmations>
+  </App>-->
+  <App type="legacy" ID="com.lenovo.ccsdk">
+    <FriendlyName>Lenovo Customer Engagement</FriendlyName>
+    <InstallationCheck type="registry" bitness="64_32" root="HKEY_LOCAL_MACHINE">SYSTEM\CurrentControlSet\services\CCSDK</InstallationCheck>
+    <RequireAdmin>true</RequireAdmin>
+    <MetricSetting type="registry">
+	 <Location root="HKEY_LOCAL_MACHINE">SYSTEM\CurrentControlSet\services\CCSDK\Start</Location>
+	 <OnValue type="dword">2</OnValue>
+	 <OffValue type="dword">4</OffValue>
+    </MetricSetting>
+    <Descriptions>
+	 <Description lang="en">Shares statistical data anonymously with Lenovo about how you use your device and the pre-installed applications. Lenovo uses this data to help improve the products and services we offer.</Description>
+	 <Description lang="ar">تشارك هذه الخدمة البيانات الإحصائية مع Lenovo، بطريقة مجهولة الهوية، حول الطريقة التي تستخدم بها جهازك والتطبيقات المثبتة مسبقًا. وتستخدم Lenovo هذه البيانات للمساعدة على تحسين المنتجات والخدمات التي نقدمها.</Description>
+	 <Description lang="pt-br">Compartilha dados estatísticos de maneira anônima com a Lenovo sobre como você usa o dispositivo e os aplicativos pré-instalados. A Lenovo usa esses dados para melhorar os produtos e serviços que oferecemos.</Description>
+	 <Description lang="hr">Anonimno šalje tvrtki Lenovo podatke o tome kako koristite uređaj i unaprijed instalirane aplikacije. Lenovo uz pomoć tih podataka poboljšava proizvode i usluge koje nudi.</Description>
+	 <Description lang="cs">Odesílá společnosti Lenovo anonymní statistické údaje o tom, jak využíváte své zařízení a předinstalované aplikace. Společnost Lenovo tyto údaje využívá ke zlepšování nabízených produktů a služeb.</Description>
+	 <Description lang="da">Deler statistiske data anonymt med Lenovo om, hvordan du bruger enheden og de forudinstallerede programmer. Lenovo bruger disse data til at hjælpe med at forbedre de produkter og tjenester, vi tilbyder.</Description>
+	 <Description lang="fi">Jakaa Lenovon kanssa anonyymeja tilastotietoja siitä, miten käytät laitetta ja mitä esiasennettuja sovelluksia siinä on. Lenovo käyttää näitä tietoja tarjoamisensa tuotteiden ja palvelujen parantamiseen.</Description>
+	 <Description lang="fr">Partage avec Lenovo des données statistiques anonymes sur la manière d'utiliser votre appareil et les applications préinstallées. Lenovo utilise ces données pour améliorer ses produits et ses services.</Description>
+	 <Description lang="el">Κοινοποιεί στατιστικά δεδομένα στη Lenovo ανώνυμα σχετικά με τον τρόπο χρήσης της συσκευής σας και των προεγκατεστημένων εφαρμογών. Η Lenovo χρησιμοποιεί αυτά τα δεδομένα, για να βελτιώσει τα προϊόντα και τις υπηρεσίες που προσφέρει.</Description>
+	 <Description lang="de">Sendet anonyme statistische Daten über die Nutzung der Einheit und der vorinstallierten Anwendungen an Lenovo. Lenovo nutzt diese Daten zur Verbesserung der angebotenen Produkte und Services.</Description>
+	 <Description lang="he">משתף נתונים סטטיסטיים עם Lenovo באופן אנונימי, בנוגע לאופן השימוש במכשיר וביישומים שהותקנו בו מראש. נתונים אלה מסייעים ל-Lenovo לשפר את המוצרים והשירותים שאנו מציעים.</Description>
+	 <Description lang="hu">Névtelen statisztikai adatokat oszt meg a Lenovóval az eszköz és az előtelepített alkalmazások használatáról. A Lenovo a kínált termékek és szolgáltatások javítására használja az adatokat.</Description>
+	 <Description lang="it">Condivide i dati statistici in modo anonimo con Lenovo su come l'utente utilizza il dispositivo e le applicazioni preinstallate. Lenovo usa tali dati per migliorare i prodotti e servizi offerti.</Description>
+	 <Description lang="ja">お客様がデバイスおよび初期インストール済みアプリケーションをどのように使用しているかについての統計データを、匿名で Lenovo と共有します。Lenovo はこのデータを、お客様に提供する製品およびサービスの向上に役立てます。</Description>
+	 <Description lang="ko">Lenovo는 장치의 사용 방법 및 이미 설치된 응용 프로그램에 대한 통계 데이터를 익명으로 공유합니다. Lenovo는 이 데이터를 제품 및 서비스 향상을 위해 사용하고 있습니다.</Description>
+	 <Description lang="nl">Deze functie deelt anoniem statistische gegevens met Lenovo over hoe u uw apparaat en de vooraf geïnstalleerde toepassingen gebruikt. Lenovo gebruikt deze gegevens om de aangeboden producten en diensten te verbeteren.</Description>
+	 <Description lang="nb">Deler statistiske data om hvordan du bruker enheten og de forhåndsinstallerte programmene, anonymt med Lenovo. Lenovo bruker disse dataene til å forbedre produktene og tjenestene våre.</Description>
+	 <Description lang="pl">Anonimowo przekazuje firmie Lenovo dane statystyczne na temat sposobu korzystania z urządzenia i wstępnie zainstalowanych aplikacji. Lenovo używa tych danych do doskonalenia dostarczanych produktów i usług.</Description>
+	 <Description lang="pt">Partilha, de forma anónima, dados estatísticos com a Lenovo relativos à forma como o dispositivo e as aplicações pré-instaladas são utilizados. A Lenovo utiliza estes dados para melhorar os produtos e serviços que oferecemos.</Description>
+	 <Description lang="ro">Partajează anonim date statistice cu Lenovo despre modul în care utilizaţi dispozitivul şi aplicaţiile preinstalate. Lenovo utilizează aceste date pentru a contribui la îmbunătăţirea produselor şi serviciilor pe care le oferim.</Description>
+	 <Description lang="ru">Анонимно отправляет в компанию Lenovo статистические данные об использовании вами своего устройства и предустановленных приложений. Компания Lenovo использует эти данные для улучшения предлагаемых ею продуктов и услуг.</Description>
+	 <Description lang="zh-hans">匿名地与 Lenovo 共享有关如何使用设备和预装应用程序的统计数据。Lenovo 使用这些数据帮助改进所提供的产品和服务。</Description>
+	 <Description lang="sr">Anonimno deli statističke podatke sa kompanijom Lenovo o tome kako koristite svoj uređaj i unapred instalirane aplikacije. Lenovo koristi ove informacije za poboljšanje proizvoda i usluga koje ima u ponudi.</Description>
+	 <Description lang="sk">Anonymne zdieľa so spoločnosťou Lenovo štatistické údaje o spôsobe používania zariadenia a predinštalovaných aplikáciách. Spoločnosť Lenovo tieto údaje využíva na zlepšovanie ponúkaných produktov a služieb.</Description>
+	 <Description lang="sl">Anonimno daja v skupno rabo z družbo Lenovo statistične podatke o tem, kako uporabljate svojo napravo in prednameščene programe. Pridobljeni podatki pomagajo pri izboljšanju izdelkov in storitev, ki jih ponujamo.</Description>
+	 <Description lang="es">Comparte datos estadísticos de forma anónima con Lenovo sobre el uso que hace de su dispositivo y las aplicaciones preinstaladas. Lenovo utiliza estos datos para mejorar los productos y servicios que ofrecemos.</Description>
+	 <Description lang="sv">Lenovo använder informationen för att se till att vi erbjuder de program som kunderna helst vill ha.</Description>
+	 <Description lang="zh-hant">將您對裝置和預先安裝之應用程式的使用情況統計資料，以匿名方式與 Lenovo 共用。Lenovo 會使用此資料來協助改善其提供的產品和服務。</Description>
+	 <Description lang="tr">Aygıtınızı ve önceden yüklenen uygulamaları nasıl kullandığınız konusunda anonim olarak Lenovo ile istatistiksel verileri paylaşır. Lenovo bu verileri sunduğumuz ürünleri ve hizmetleri iyileştirmeye yardımcı olmak için kullanır.</Description>
+	 <Description lang="uk">Анонімно передає в компанію Lenovo статистичні дані про особливості використання вами пристрою та попередньо встановлених програм. Компанія Lenovo використовує ці дані з метою покращити свої продукти й послуги.</Description>
+    </Descriptions>
+    <Confirmations>
+	 <Confirmation lang="en">This information helps Lenovo tailor future offerings based on which features are the most popular and most-often used.</Confirmation>
+	 <Confirmation lang="ar">من شأن هذه المعلومات أن تساعد Lenovo على تخصيص العروض المستقبلية بالاستناد إلى الميزات الأكثر رواجًا والأكثر استخدامًا.</Confirmation>
+	 <Confirmation lang="pt-br">Essas informações ajudam a Lenovo a adaptar futuras ofertas com base em quais recursos são mais populares e mais usados.</Confirmation>
+	 <Confirmation lang="hr">Ti podaci pomažu tvrtki Lenovo u prilagođavanju budućih ponuda usklađenih s najpopularnijim i najčešće korištenim značajkama.</Confirmation>
+	 <Confirmation lang="cs">Tyto informace společnosti Lenovo pomáhají přizpůsobovat budoucí nabídku podle toho, jaké funkce jsou nejoblíbenější a nejčastěji používané.</Confirmation>
+	 <Confirmation lang="da">Disse oplysninger hjælper Lenovo med at skræddersy fremtidige tilbud baseret på, hvilke funktioner der er mest populære og oftest bruges.</Confirmation>
+	 <Confirmation lang="fi">Näiden tietojen avulla Lenovo räätälöi tulevaa valikoimaa suosituimpien ja useimmin käytettyjen ominaisuuksien mukaan.</Confirmation>
+	 <Confirmation lang="fr">Ces informations aident Lenovo à concevoir de nouvelles offres, sur la base des fonctionnalités les plus populaires et les plus couramment utilisées.</Confirmation>
+	 <Confirmation lang="el">Αυτές οι πληροφορίες βοηθούν τη Lenovo να εξατομικεύσει τις μελλοντικές προσφορές με βάση τις δυνατότητες που είναι πιο δημοφιλείς και χρησιμοποιούνται συχνότερα.</Confirmation>
+	 <Confirmation lang="de">Diese Informationen helfen Lenovo, künftige Angebote noch besser auf die Wünsche der Kunden abzustimmen.</Confirmation>
+	 <Confirmation lang="he">מידע זה מסייע ל-Lenovo לתכנן מוצרים עתידיים על בסיס התכונות הפופולריות ביותר, שנמצאות בשימוש בתדירות הגבוהה ביותר.</Confirmation>
+	 <Confirmation lang="hu">Ezek az adatok segítenek a Lenovónak a legnépszerűbb és leggyakrabban használt szolgáltatások alapján testre szabni a jövőbeli kínálatot.</Confirmation>
+	 <Confirmation lang="it">Queste informazioni permettono a Lenovo di personalizzare le offerte future in base alle funzioni più comuni e più utilizzate.</Confirmation>
+	 <Confirmation lang="ja">この情報は、Lenovo が今後提供していく製品に、人気が高くよく使用される機能を取り入れていく参考になります。</Confirmation>
+	 <Confirmation lang="ko">Lenovo는 사용자가 즐겨 쓰고 자주 쓰는 기능을 바탕으로 향후 제공할 항목을 다듬어 조정하는데 이 정보를 유용하게 사용합니다.</Confirmation>
+	 <Confirmation lang="nl">Deze informatie helpt Lenovo toekomstige aanbiedingen af te stemmen op basis van de meest gebruikte en populairste functies.</Confirmation>
+	 <Confirmation lang="nb">Denne informasjonen hjelper Lenovo å skreddersy fremtidige produkter med de mest populære og brukte funksjonene.</Confirmation>
+	 <Confirmation lang="pl">Te informacje pomagają firmie Lenovo dostosowywać oferty na podstawie najpopularniejszych i najczęściej używanych funkcji.</Confirmation>
+	 <Confirmation lang="pt">Estas informações ajudam a Lenovo a personalizar futuras ofertas com base nas funções mais populares e mais utilizadas.</Confirmation>
+	 <Confirmation lang="ro">Aceste informaţii ajută compania Lenovo să adapteze ofertele viitoare în funcţie de cele mai populare şi mai des utilizate funcţii.</Confirmation>
+	 <Confirmation lang="ru">Эта информация помогает Lenovo подготовить будущие предложения на основе данных о том, какие функции наиболее популярны и используются чаще всего.</Confirmation>
+	 <Confirmation lang="zh-hans">此信息可帮助 Lenovo 根据哪些功能最受欢迎和最常使用，定制今后的产品。</Confirmation>
+	 <Confirmation lang="sr">Ove informacije pomažu kompaniji Lenovo da prilagodi buduću ponudu na osnovu najpopularnijih i najčešće korišćenih funkcija.</Confirmation>
+	 <Confirmation lang="sk">Tieto informácie pomáhajú spoločnosti Lenovo prispôsobiť budúce ponuky na základe najpopulárnejších a najpoužívanejších funkcií.</Confirmation>
+	 <Confirmation lang="sl">Ti podatki družbi Lenovo pomagajo prilagoditi prihodnjo ponudbo na podlagi najbolj priljubljenih in najpogosteje uporabljanih funkcij.</Confirmation>
+	 <Confirmation lang="es">Esta información ayuda a Lenovo a diseñar ofertas futuras sobre la base de las características más populares y utilizadas con mayor frecuencia.</Confirmation>
+	 <Confirmation lang="sv">Informationen hjälper Lenovo att skräddarsy framtida erbjudanden baserat på vilka funktioner som är populärast.</Confirmation>
+	 <Confirmation lang="zh-hant">這項資訊將協助 Lenovo 根據最受歡迎和最常使用的功能來量身打造未來的供應項目。</Confirmation>
+	 <Confirmation lang="tr">Bu bilgi, en popüler ve en çok kullanılan özelliklere dayanarak Lenovo'nun gelecekte sunacağı olanakları özelleştirmesine yardımcı olur.</Confirmation>
+	 <Confirmation lang="uk">Ці дані допомагають компанії Lenovo розробляти нові пропозиції на основі найпопулярніших функцій і функцій, що використовуються найчастіше.</Confirmation>
+    </Confirmations>
+  </App>
+  <App type="legacy" ID="com.lenovo.harmony">
+    <FriendlyName>Harmony</FriendlyName>
+    <InstallationCheck type="registry" bitness="32" root="HKEY_LOCAL_MACHINE">Software\Lenovo\Harmony</InstallationCheck>
+    <RequireAdmin>false</RequireAdmin>
+    <MetricSetting type="xml">
+	 <Location root="%ProgramData%">Lenovo\Harmony2\%USERNAME%\Resources\Config\HarmonyConfig.xml</Location>
+	 <XPath>HarmonyConfigInfo/IsMetricCollection</XPath>
+	 <OnValue type="string">true</OnValue>
+	 <OffValue type="string">false</OffValue>
+    </MetricSetting>
+    <LaunchPath type="registry" bitness="32" root="HKEY_LOCAL_MACHINE">
+	 <Location>Software\Lenovo\Harmony</Location>
+	 <Name>Launch</Name>
+    </LaunchPath>
+    <Descriptions>
+	 <Description lang="en">Optimizes software based on the modes you use (laptop, stand, tablet, or tent) and advises you of other highly rated or trending apps that are being used in each mode by other users.</Description>
+	 <Description lang="ar">لتحسين البرامج بالاستناد إلى الأوضاع التي تستخدمها (وضع الكمبيوتر المحمول أو الحامل أو الكمبيوتر اللوحي أو الخيمة) وتوفير النصائح لك بشأن التطبيقات الأخرى ذات التصنيفات العالية أو التطبيقات الرائجة التي يتم استخدامها في كل وضع من قِبل مستخدمين آخرين.</Description>
+	 <Description lang="pt-br">Otimiza software com base nos modos usados (laptop, base, tablet ou tenda) e orienta o usuário de outros aplicativos bem classificados ou de tendência que estão sendo usados em cada modo por outros usuários.</Description>
+	 <Description lang="hr">Optimizira softver u skladu s načinima rada koje koristite (prijenosno računalo, stalak, tablet ili šator) i preporučuje druge visokoocijenjene ili popularne aplikacije koje u tim načinima rada koriste drugi korisnici.</Description>
+	 <Description lang="cs">Optimalizuje software podle používaného režimu (notebook, stojan, tablet nebo stan) a doporučuje vám další oblíbené nebo moderní aplikace, které v jednotlivých režimech používají jiní uživatelé.</Description>
+	 <Description lang="da">Optimerer software baseret på de tilstande, du bruger (laptop, støtte, tablet eller telt) og giver dig besked om andre højt vurderede eller populære apps, der bruges i hver tilstand af andre brugere.</Description>
+	 <Description lang="fi">Ohjelma optimoi ohjelmiston käytettyjen tilojen mukaan (kannettava, taitos, taulu tai kolmio) sekä antaa tietoja muista arvostetuista tai suosituista sovelluksista, joita muut käyttäjät käyttävät kussakin tilassa.</Description>
+	 <Description lang="fr">Optimise le logiciel en fonction des modes que vous utilisez (ordinateur portable, sur support, tablette ou chevalet) et vous recommande d'autres applications populaires ou tendance utilisées dans chaque mode par d'autres utilisateurs.</Description>
+	 <Description lang="el">Βελτιστοποιεί το λογισμικό σύμφωνα με τις λειτουργίες που χρησιμοποιείτε (φορητός υπολογιστής, ανάκλιση, tablet ή σκηνή) και σας δίνει συμβουλές για άλλες εφαρμογές με υψηλή βαθμολογία ή δημοφιλία που χρησιμοποιούνται σε κάθε λειτουργία από άλλους χρήστες.</Description>
+	 <Description lang="de">Optimiert Software gemäß Ihrer bevorzugten Verwendungsweise (Laptop-, Stand-, Tablet- oder Zeltmodus) und stellt Ihnen weitere hoch bewertete oder beliebte Apps vor, die andere Benutzer im jeweiligen Modus häufig verwenden.</Description>
+	 <Description lang="he">מיטוב תוכנה על בסיס המצבים שמשמשים אתכם (מחשב נייד, מעמד, לוח או אוהל) והמלצות על יישומים פופולריים או בעלי דירוג גבוה שבהם משתמשים אחרים עושים שימוש בכל אחד מהמצבים.</Description>
+	 <Description lang="hu">A használt modellnek (laptop, álló helyzet, táblagép, sátor) megfelelően optimalizálja a szoftvereket, és olyan, magas színvonalú vagy népszerű alkalmazásokat javasol, amilyeneket más felhasználók használnak az egyes módokban.</Description>
+	 <Description lang="it">Consente di ottimizzare il software in base alle modalità utilizzate (laptop, supporto, tablet o tenda) e informa l'utente di altre app di tendenza o con una valutazione alta che vengono utilizzate in ciascuna modalità da altri utenti.</Description>
+	 <Description lang="ja">ご使用のモード (ラップトップ、スタンド、タブレット、テント) に合わせてソフトウェアを最適化し、各モードで他のユーザーから高評価のアプリや人気の高いアプリを提案します。</Description>
+	 <Description lang="ko">사용자에게 유용한 모드(노트북, 스탠드, 태블릿 또는 텐트)별로 소프트웨어를 최적화하고 다른 사용자들이 각 모드에서 사용하면서 높은 평점을 주거나 기대를 모으고 있는 다른 앱을 사용자에게 알려 줍니다.</Description>
+	 <Description lang="nl">Optimaliseert software op basis van de werkstand die u gebruikt (laptop-, stelling-, tablet- of tentwerkstand) en biedt u advies voor andere hooggewaardeerde en populaire apps die in elke werkstand door andere gebruikers worden gebruikt.</Description>
+	 <Description lang="nb">Optimaliserer programvare basert på hvilken modus du bruker (PC, nettbrett eller telt), og gir deg råd om andre høyt rangerte eller trendy apper som andre brukere bruker i hver modus.</Description>
+	 <Description lang="pl">Optymalizuje oprogramowanie na podstawie używanych trybów (laptopa, podstawki, tabletu lub namiotu) oraz informuje o wysoko ocenianych lub modnych aplikacjach używanych w każdym z trybów przez innych użytkowników.</Description>
+	 <Description lang="pt">Otimiza software com base nos modos utilizados (portátil, suporte, tablet ou tenda) e recomenda outras aplicações bem classificadas ou populares utilizadas em cada modo por outros utilizadores.</Description>
+	 <Description lang="ro">Optimizează software-ul pe baza modurilor pe care le utilizaţi (laptop, suport, tabletă sau cort) şi vă recomandă alte aplicaţii foarte bine cotate sau populare, care sunt folosite în fiecare mod de către alţi utilizatori.</Description>
+	 <Description lang="ru">Оптимизирует программное обеспечение на основе используемых вами режимов (ноутбук, консоль, планшетный ПК или тент) и информирует о других популярных приложениях, применяемых в каждом режиме другими пользователями.</Description>
+	 <Description lang="zh-hans">根据使用方式（笔记本电脑、直立、平板电脑或帐篷）优化软件，并向您介绍其他用户在每种方式下使用的其他评价较高或流行的应用。</Description>
+	 <Description lang="sr">Optimizuje softver na osnovu režima koji koristite (laptop, režim postolja, tablet ili šator) i obaveštava vas o drugim aplikacijama koje koriste drugi korisnici u svakom režimu, a koje su visoko kotirane ili su popularne.</Description>
+	 <Description lang="sk">Optimalizuje softvér na základe používaných režimov (prenosný počítač, stojan, tablet alebo stan) a poskytuje rady o iných aplikáciách s vysokým hodnotením alebo popularitou, ktoré v jednotlivých režimoch používajú iní používatelia.</Description>
+	 <Description lang="sl">Optimizira programsko opremo na podlagi načinov, ki jih uporabljate (način prenosnega računalnika, stojala, tabličnega računalnika ali šotora), ter vam svetuje druge dobro ocenjene ali priljubljene programe, ki jih v posameznih načinih uporabljajo drugi uporabniki.</Description>
+	 <Description lang="es">Optimiza el software en función de las modalidades que usted utiliza (portátil, pedestal, tableta o lienzo) y le sugiere aplicaciones altamente calificadas o aplicaciones populares usadas en cada modo por otros usuarios.</Description>
+	 <Description lang="sv">Optimerar programvaran beroende på vilket läge du använder (laptop-, stöd-, surfplatte- eller tältläge) och tipsar dig om andra populära appar för de olika lägena.</Description>
+	 <Description lang="zh-hant">根據您使用的模式（筆電、直立、平板或帳篷）將軟體最佳化，並為您建議其他使用者在每個模式下使用的高評價或熱門應用程式。</Description>
+	 <Description lang="tr">Kullandığınız kiplere göre (dizüstü, stand, tablet veya çadır/tent) yazılımı iyileştirir ve diğer kullanıcılar tarafından her kipte kullanılan yüksek oylu veya popüler uygulamalar hakkında size tavsiyede bulunur.</Description>
+	 <Description lang="uk">Оптимізує програмне забезпечення відповідно до режимів, що використовуються ("Ноутбук", "Стенд", "Планшет" або "Намет"), і надає рекомендації щодо інших популярних програм із хорошими відгуками, які запускаються в кожному режимі іншими користувачами.</Description>
+    </Descriptions>
+    <Confirmations>
+	 <Confirmation lang="en">Lenovo uses this information to provide the best feature experience and app recommendations for you and the user community.</Confirmation>
+	 <Confirmation lang="ar">تستخدم Lenovo هذه المعلومات لكي تقدم لك أفضل تجربة في استخدام الميزات إلى جانب نصائح تتعلق بالتطبيقات لك ولمجتمع المستخدمين.</Confirmation>
+	 <Confirmation lang="pt-br">A Lenovo usa essas informações para oferecer a melhor experiência de recursos e recomendações de aplicativos para você e a comunidade de usuários.</Confirmation>
+	 <Confirmation lang="hr">Lenovo na temelju tih podataka omogućuje najbolji doživljaj u radu sa značajkama te vama i ostalim korisnicima preporučuje aplikacije.</Confirmation>
+	 <Confirmation lang="cs">Tyto informace společnost Lenovo využívá k tomu, aby vám a uživatelské komunitě mohla přinášet ty nejlepší funkce a doporučovat ty nejvhodnější aplikace.</Confirmation>
+	 <Confirmation lang="da">Lenovo bruger disse oplysninger til at levere den bedste oplevelse og de bedste appanbefalinger til dig og brugergruppen.</Confirmation>
+	 <Confirmation lang="fi">Näiden tietojen avulla Lenovo parantaa ominaisuuksien käyttökokemusta sekä antaa sovellussuosituksia käyttäjille ja käyttäjäyhteisölle.</Confirmation>
+	 <Confirmation lang="fr">Lenovo utilise ces informations pour assurer une expérience optimale au niveau des fonctionnalités et émettre des recommandations d'applications, pour vous et pour la communauté des utilisateurs.</Confirmation>
+	 <Confirmation lang="el">Η Lenovo χρησιμοποιεί αυτές τις πληροφορίες, για να παράσχει την καλύτερη δυνατή εμπειρία δυνατοτήτων και να προτείνει εφαρμογές για εσάς και την κοινότητα των χρηστών.</Confirmation>
+	 <Confirmation lang="de">Lenovo nutzt diese Informationen, um für eine optimale Ergonomie der Funktion zu sorgen und App-Empfehlungen für Sie und die Benutzercommunity bereitzustellen.</Confirmation>
+	 <Confirmation lang="he">Lenovo משתמשת במידע זה כדי לספק חווית שימוש בתכונות הטובות ביותר והמלצות עבורכם ועבור קהילת המשתמשים.</Confirmation>
+	 <Confirmation lang="hu">A Lenovo a legjobb szolgáltatási környezet kialakításához és a felhasználók, illetve a felhasználói közönség számára adott alkalmazásjavaslatokhoz használja ezeket az adatokat.</Confirmation>
+	 <Confirmation lang="it">Lenovo utilizza queste informazioni per fornire le migliori funzioni e consigli sulle app per l'utente e la comunità degli utenti.</Confirmation>
+	 <Confirmation lang="ja">Lenovo はこの情報に基いて、機能を使いやすくしたりお客様やユーザー・コミュニティーにアプリをお勧めしたりします。</Confirmation>
+	 <Confirmation lang="ko">Lenovo는 이 정보를 바탕으로 사용자에게 그리고 사용자 커뮤니티에 최상의 기능 사용 환경을 제공하고 앱을 추천해 드립니다.</Confirmation>
+	 <Confirmation lang="nl">Lenovo gebruikt deze informatie om de beste functie-ervaring en aanbevelingen voor apps te bieden voor u en de gebruikerscommunity.</Confirmation>
+	 <Confirmation lang="nb">Lenovo bruker denne informasjonen til å levere den beste funksjonalitetsopplevelsen og de beste appanbefalingene til deg og andre brukere.</Confirmation>
+	 <Confirmation lang="pl">Lenovo używa tych informacji do zapewniania Tobie i społeczności użytkowników najlepszych funkcji i rekomendacji dotyczących programów.</Confirmation>
+	 <Confirmation lang="pt">A Lenovo utiliza estas informações para proporcionar a melhor experiência relacionada com as funções, bem como recomendações de aplicações, a si e à comunidade de utilizadores.</Confirmation>
+	 <Confirmation lang="ro">Lenovo utilizează aceste informaţii pentru a furniza cea mai bună experienţă legată de funcţii şi cele mai bune recomandări de aplicaţii pentru dumneavoastră şi pentru comunitatea de utilizatori.</Confirmation>
+	 <Confirmation lang="ru">Lenovo использует эту информацию для предоставления вам и сообществу пользователей рекомендаций по приложениям и оптимальному использованию функций.</Confirmation>
+	 <Confirmation lang="zh-hans">Lenovo 使用这些信息为您和用户社区提供最佳的功能体验和应用建议。</Confirmation>
+	 <Confirmation lang="sr">Kompanija Lenovo koristi ove informacije kako bi vama i zajednici korisnika obezbedila najbolji budući doživljaj i preporuke za aplikacije.</Confirmation>
+	 <Confirmation lang="sk">Spoločnosť Lenovo používa tieto informácie na poskytovanie najlepších funkcií a odporúčanie aplikácií vám a komunite používateľov.</Confirmation>
+	 <Confirmation lang="sl">Lenovo te podatke uporablja za zagotavljanje najboljše izkušnje s funkcijami in priporočanje programov za vas in za skupnost uporabnikov.</Confirmation>
+	 <Confirmation lang="es">Lenovo utiliza esta información para proporcionar la mejor experiencia de características y recomendaciones de aplicaciones para usted y la comunidad de usuarios.</Confirmation>
+	 <Confirmation lang="sv">Lenovo använder informationen för att ge dig den bästa upplevelsen och ge dig och andra användare förslag på appar.</Confirmation>
+	 <Confirmation lang="zh-hant">Lenovo 會使用此資訊來為您和使用者社群提供最佳功能體驗和應用程式推薦。</Confirmation>
+	 <Confirmation lang="tr">Lenovo bu bilgiyi size ve kullanıcı topluluğuna en iyi özellikte tecrübe ve uygulama önerileri sağlamak için kullanır.</Confirmation>
+	 <Confirmation lang="uk">Компанія Lenovo використовує цю інформацію, щоб забезпечити найвищу якість роботи з функціями та запропонувати програми для вас і спільноти користувачів.</Confirmation>
+    </Confirmations>
+  </App>
+  <App type="legacy" ID="com.lenovo.lsc">
+    <FriendlyName>Lenovo Solution Center</FriendlyName>
+    <InstallationCheck type="registry" bitness="32" root="HKEY_LOCAL_MACHINE">Software\Microsoft\Windows\CurrentVersion\App Paths\LSC.exe</InstallationCheck>
+    <RequireAdmin>false</RequireAdmin>
+    <MetricSetting type="ini">
+	 <Location root="%AppData%">Lenovo\LSC\profile.ini</Location>
+	 <XPath>profile\LenovoStatisticsCollection</XPath>
+	 <OnValue type="string">true</OnValue>
+	 <OffValue type="string">false</OffValue>
+    </MetricSetting>
+    <LaunchPath type="registry" bitness="32" root="HKEY_LOCAL_MACHINE">
+	 <Location>SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\LSC.exe</Location>
+	 <Name>Path</Name>
+    </LaunchPath>
+    <Descriptions>
+	 <Description lang="en">Provides hardware diagnostics to isolate problems and help improve your support experience.</Description>
+	 <Description lang="ar">لتوفير عمليات تشخيص للأجهزة لعزل المشاكل والمساعدة على تحسين تجربة الدعم.</Description>
+	 <Description lang="pt-br">Oferece diagnóstico de hardware para isolar problemas e ajudar a melhorar sua experiência com o suporte.</Description>
+	 <Description lang="hr">Omogućuje hardversku dijagnostiku radi otkrivanja problema i bolje korisničke podrške.</Description>
+	 <Description lang="cs">Nabízí funkce pro diagnostiku hardwaru, které umožňují odhalovat problémy a pomáhají vám při využívání technické podpory.</Description>
+	 <Description lang="da">Giver hardwarediagnostik for at isolere problemer og hjælpe med at forbedre supportoplevelsen.</Description>
+	 <Description lang="fi">Ohjelma suorittaa laitteiston vianmäärityksiä ongelmien määrittämiseksi ja tukikokemuksen parantamiseksi.</Description>
+	 <Description lang="fr">Fournit des diagnostics matériels pour isoler les problèmes et améliorer l'expérience d'assistance.</Description>
+	 <Description lang="el">Παρέχει διαγνωστικά υλικού για να απομονώσει προβλήματα και να συμβάλλει στη βελτίωση της εμπειρίας υποστήριξης.</Description>
+	 <Description lang="de">Führt Hardwarediagnosen durch, um Probleme zu erkennen und den Support zu verbessern.</Description>
+	 <Description lang="he">אבחוני חומרה המשמשים לבידוד בעיות ומסייעים בשיפור חווית התמיכה שלכם.</Description>
+	 <Description lang="hu">Hardverdiagnosztikai szolgáltatásokkal segít a hibák meghatározásában és a támogatás színvonalának javításában.</Description>
+	 <Description lang="it">Fornisce la diagnostica hardware per isolare eventuali problemi e migliorare il supporto.</Description>
+	 <Description lang="ja">ハードウェア診断で問題を切り分け、サポートの質の向上に役立てます。</Description>
+	 <Description lang="ko">하드웨어를 진단하여 오류를 격리하고 사용자 지원 환경을 개선합니다.</Description>
+	 <Description lang="nl">Biedt hardwarediagnoses om problemen te isoleren en uw ondersteuningservaring te verbeteren.</Description>
+	 <Description lang="nb">Leverer maskinvarediagnostikk for å isolere problemer og bidrar til å forbedre opplevelsen med brukerstøtte.</Description>
+	 <Description lang="pl">Umożliwia diagnozowanie sprzętu w celu wyizolowania problemów i pomaga podnosić jakość pomocy technicznej.</Description>
+	 <Description lang="pt">Fornece diagnósticos de hardware para isolar problemas e ajudar a melhorar a sua experiência de suporte.</Description>
+	 <Description lang="ro">Furnizează funcţii de diagnosticare a hardware-ului pentru a izola problemele şi pentru a contribui la îmbunătăţirea experienţei legate de asistenţă.</Description>
+	 <Description lang="ru">Обеспечивает диагностику оборудования для выявления проблем и повышения эффективности поддержки.</Description>
+	 <Description lang="zh-hans">提供硬件诊断以确定问题及帮助改进支持体验。</Description>
+	 <Description lang="sr">Obezbeđuje dijagnostiku za hardver kako bi se otkrio problem i poboljšao vaš doživljaj podrške.</Description>
+	 <Description lang="sk">Poskytuje diagnostiku hardvéru s cieľom izolovať problémy a zlepšiť technickú podporu.</Description>
+	 <Description lang="sl">Ponuja diagnostiko strojne opreme za iskanje težav in izboljšanje storitev podpore.</Description>
+	 <Description lang="es">Proporciona diagnósticos de hardware para aislar problemas y ayudar a mejorar su experiencia de soporte.</Description>
+	 <Description lang="sv">Ger felsökning av maskinvara för att isolera problem och förbättrar din supportupplevelse.</Description>
+	 <Description lang="zh-hant">提供硬體診斷以隔離問題並協助改善您的支援體驗。</Description>
+	 <Description lang="tr">Sorunları yalıtmak ve destek tecrübenizin gelişimine yardımcı olmak için donanım tanımlaması sağlar.</Description>
+	 <Description lang="uk">Виконує діагностику устаткування, щоб локалізувати проблеми та допомогти удосконалити процедуру підтримки користувачів.</Description>
+    </Descriptions>
+    <Confirmations>
+	 <Confirmation lang="en">Lenovo uses this information to help provide the best support experience.</Confirmation>
+	 <Confirmation lang="ar">تستخدم Lenovo هذه المعلومات للمساعدة على توفير أفضل تجربة دعم.</Confirmation>
+	 <Confirmation lang="pt-br">A Lenovo usa essas informações para ajudar a oferecer a melhor experiência de suporte.</Confirmation>
+	 <Confirmation lang="hr">Lenovo uz pomoć tih podataka poboljšava svoju korisničku podršku.</Confirmation>
+	 <Confirmation lang="cs">Tyto informace společnost Lenovo využívá k tomu, aby vám mohla nabídnout co nejlepší uživatelskou podporu.</Confirmation>
+	 <Confirmation lang="da">Lenovo bruger disse oplysninger til at hjælpe med at yde den bedste supportoplevelse.</Confirmation>
+	 <Confirmation lang="fi">Näiden tietojen avulla Lenovo toimittaa parhaan mahdollisen tuen käyttökokemuksen.</Confirmation>
+	 <Confirmation lang="fr">Lenovo utilise ces informations pour assurer une expérience d'assistance optimale.</Confirmation>
+	 <Confirmation lang="el">Η Lenovo χρησιμοποιεί αυτές τις πληροφορίες για να παράσχει την καλύτερη δυνατή εμπειρία υποστήριξης.</Confirmation>
+	 <Confirmation lang="de">Lenovo nutzt diese Informationen, um eine positive Benutzererfahrung mit dem Support zu gewährleisten.</Confirmation>
+	 <Confirmation lang="he">מידע זה מסייע ל-Lenovo לספק את חווית התמיכה הטובה ביותר.</Confirmation>
+	 <Confirmation lang="hu">A Lenovo a támogatás tökéletesítéséhez használja ezeket az adatokat.</Confirmation>
+	 <Confirmation lang="it">Lenovo utilizza queste informazioni per fornire il migliore supporto.</Confirmation>
+	 <Confirmation lang="ja">Lenovo はこの情報を、最高のサポートを提供するための参考に使用します。</Confirmation>
+	 <Confirmation lang="ko">Lenovo는 최상의 사용자 지원 환경을 구현할 때 이 정보를 유용하게 사용합니다.</Confirmation>
+	 <Confirmation lang="nl">Lenovo gebruikt deze informatie om u de beste ondersteuningservaring te bieden.</Confirmation>
+	 <Confirmation lang="nb">Lenovo bruker denne informasjonen til å gi deg en bedre brukerstøtteopplevelse.</Confirmation>
+	 <Confirmation lang="pl">Na podstawie tych informacji Lenovo podnosi jakość pomocy technicznej.</Confirmation>
+	 <Confirmation lang="pt">A Lenovo utiliza estas informações para ajudar a proporcionar a melhor experiência de suporte.</Confirmation>
+	 <Confirmation lang="ro">Lenovo utilizează aceste informaţii pentru a contribui la oferirea celei mai bune experienţe legate de asistenţă.</Confirmation>
+	 <Confirmation lang="ru">Lenovo использует эту информацию для обеспечения наиболее эффективной поддержки.</Confirmation>
+	 <Confirmation lang="zh-hans">Lenovo 使用这些信息帮助提供最佳的支持体验。</Confirmation>
+	 <Confirmation lang="sr">Kompanija Lenovo koristi ove informacije kako bi obezbedila najbolji doživljaj podrške.</Confirmation>
+	 <Confirmation lang="sk">Spoločnosť Lenovo používa tieto informácie na poskytovanie najlepšej technickej podpory.</Confirmation>
+	 <Confirmation lang="sl">V podjetju Lenovo te podatke uporabljamo za zagotavljanje najboljše podpore.</Confirmation>
+	 <Confirmation lang="es">Lenovo utiliza esta información para facilitar la entrega de la mejor experiencia de soporte.</Confirmation>
+	 <Confirmation lang="sv">Lenovo använder informationen för att kunna erbjuda den bästa supportupplevelsen.</Confirmation>
+	 <Confirmation lang="zh-hant">Lenovo 會使用此資訊來協助提供最佳的支援體驗。</Confirmation>
+	 <Confirmation lang="tr">Lenovo, en iyi destek tecrübesinin saplanmasına yardımcı olmak için bu bilgiyi kullanır.</Confirmation>
+	 <Confirmation lang="uk">Компанія Lenovo використовує цю інформацію, щоб забезпечити найвищий рівень підтримки користувачів.</Confirmation>
+    </Confirmations>
+  </App>
+  <App type="legacy" ID="com.lenovo.systemupdate">
+    <FriendlyName>Lenovo System Update</FriendlyName>
+    <InstallationCheck type="registry" bitness="32" root="HKEY_LOCAL_MACHINE">SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\tvsu.exe</InstallationCheck>
+    <RequireAdmin>true</RequireAdmin>
+    <MetricSetting type="registry" bitness="32">
+	 <Location root="HKEY_LOCAL_MACHINE">SOFTWARE\Lenovo\System Update\Preferences\UserSettings\General\MetricsEnabled</Location>
+	 <OnValue type="text">YES</OnValue>
+	 <OffValue type="text">NO</OffValue>
+    </MetricSetting>
+    <Descriptions>
+	 <Description lang="en">Installs the latest driver and app updates from Lenovo.</Description>
+	 <Description lang="ar">لتثبيت تحديثات برامج التشغيل والتطبيقات الأحدث من Lenovo.</Description>
+	 <Description lang="pt-br">Instala o driver e as atualizações de aplicativo mais recentes da Lenovo.</Description>
+	 <Description lang="hr">Instalira najnovije upravljačke programe i ažuriranja aplikacija tvrtke Lenovo.</Description>
+	 <Description lang="cs">Instaluje nejnovější aktualizace aplikací a ovladačů zařízení od společnosti Lenovo.</Description>
+	 <Description lang="da">Installerer de nyeste driver- og appopdateringer fra Lenovo.</Description>
+	 <Description lang="fi">Ohjelma asentaa uusimmat ajuri- ja sovelluspäivitykset Lenovolta.</Description>
+	 <Description lang="fr">Installe les dernières mises à jour des pilotes et des applications de Lenovo.</Description>
+	 <Description lang="el">Εγκαθιστά τις τελευταίες ενημερώσεις προγραμμάτων οδήγησης και εφαρμογών από τη Lenovo.</Description>
+	 <Description lang="de">Installiert die neuesten Treiber- und App-Updates von Lenovo.</Description>
+	 <Description lang="he">התקנת מנהלי התקנים ועדכוני היישומים החדשים ביותר מ-Lenovo.</Description>
+	 <Description lang="hu">Telepíti az eszközillesztők és az alkalmazások legújabb frissítéseit a Lenovótól.</Description>
+	 <Description lang="it">Consente di installare gli aggiornamenti di driver e app più recenti da Lenovo.</Description>
+	 <Description lang="ja">Lenovo が提供する最新のドライバーおよびアプリ更新をインストールします。</Description>
+	 <Description lang="ko">Lenovo에서 제공하는 최신 드라이버 및 앱 업데이트를 설치합니다.</Description>
+	 <Description lang="nl">Installeert de nieuwste driver- en app-updates van Lenovo.</Description>
+	 <Description lang="nb">Installerer den nyeste driveren og de nyeste appoppdateringene fra Lenovo.</Description>
+	 <Description lang="pl">Instaluje najnowsze aktualizacje sterownika i aplikacji firmy Lenovo.</Description>
+	 <Description lang="pt">Instala as atualizações de controladores e aplicações mais recentes da Lenovo.</Description>
+	 <Description lang="ro">Instalează cel mai recent driver şi cele mai recente actualizări de aplicaţii de la Lenovo.</Description>
+	 <Description lang="ru">Устанавливает последние обновления драйверов и приложений от Lenovo.</Description>
+	 <Description lang="zh-hans">安装 Lenovo 提供的最新驱动程序和应用更新。</Description>
+	 <Description lang="sr">Instalira najnoviji upravljački program i ažuriranja aplikacije kompanije Lenovo.</Description>
+	 <Description lang="sk">Inštaluje najnovšie aktualizácie ovládačov a aplikácií od spoločnosti Lenovo.</Description>
+	 <Description lang="sl">Namesti najnovejše posodobitve gonilnikov in programov podjetja Lenovo.</Description>
+	 <Description lang="es">Instala los controladores y actualizaciones de aplicaciones más recientes de Lenovo.</Description>
+	 <Description lang="sv">Installerar de senaste uppdateringarna för drivrutiner och appar från Lenovo.</Description>
+	 <Description lang="zh-hant">從 Lenovo 安裝最新的驅動程式和應用程式更新。</Description>
+	 <Description lang="tr">Lenovo'dan en son sürücüyü ve uygulama güncellemelerini yükler.</Description>
+	 <Description lang="uk">Установлює всі останні версії драйверів і програм Lenovo.</Description>
+    </Descriptions>
+    <Confirmations>
+	 <Confirmation lang="en">Lenovo uses this information to get the latest updates available specifically for your computer.</Confirmation>
+	 <Confirmation lang="ar">تستخدم Lenovo هذه المعلومات للحصول على التحديثات الأخيرة المتوفرة خصيصًا للكمبيوتر الذي تستخدمه.</Confirmation>
+	 <Confirmation lang="pt-br">A Lenovo usa essas informações para obter as atualizações mais recentes disponíveis especificamente para seu computador.</Confirmation>
+	 <Confirmation lang="hr">Lenovo na temelju tih podataka dohvaća najnovija ažuriranja dostupna za vaše računalo.</Confirmation>
+	 <Confirmation lang="cs">Tyto informace společnost Lenovo používá k tomu, aby vám mohla nabídnout nejnovější aktualizace určené právě pro váš počítač.</Confirmation>
+	 <Confirmation lang="da">Lenovo bruger disse oplysninger til at få de nyeste opdateringer specifikt til din computer.</Confirmation>
+	 <Confirmation lang="fi">Näiden tietojen avulla Lenovo tuo käyttäjien saataville uusimmat tietokonepäivitykset.</Confirmation>
+	 <Confirmation lang="fr">Lenovo utilise ces informations pour obtenir les mises à jour disponibles les plus récentes concernant votre ordinateur.</Confirmation>
+	 <Confirmation lang="el">Η Lenovo χρησιμοποιεί αυτές τις πληροφορίες, για να λάβει τις τελευταίες ενημερώσεις που είναι διαθέσιμες ειδικά για τον υπολογιστή σας.</Confirmation>
+	 <Confirmation lang="de">Lenovo nutzt diese Informationen zum Abrufen der neuesten Updates, die speziell für Ihren Computer verfügbar sind.</Confirmation>
+	 <Confirmation lang="he">Lenovo משתמשת במידע זה כדי להפוך את העדכונים החדשים ביותר לזמינים באופן ספציפי עבור המחשב שלכם.</Confirmation>
+	 <Confirmation lang="hu">A Lenovo a kifejezetten a számítógéphez elérhető legújabb frissítések biztosításához használja ezeket az adatokat.</Confirmation>
+	 <Confirmation lang="it">Lenovo utilizza queste informazioni per ottenere gli aggiornamenti più recenti disponibili specificamente per il computer in uso.</Confirmation>
+	 <Confirmation lang="ja">Lenovo はこの情報を、ご使用のコンピューターで使用可能な最新の更新を入手するために使用します。</Confirmation>
+	 <Confirmation lang="ko">Lenovo는 사용자의 컴퓨터에서 주로 사용할 수 있는 최신 업데이트를 선별할 때 이 정보를 유용하게 사용합니다.</Confirmation>
+	 <Confirmation lang="nl">Lenovo gebruikt deze informatie om de meest recente updates te verkrijgen die specifiek voor uw computer bedoeld zijn.</Confirmation>
+	 <Confirmation lang="nb">Lenovo bruker denne informasjon til å gjøre de nyeste oppdateringene tilgjengelige for akkurat din datamaskin.</Confirmation>
+	 <Confirmation lang="pl">Na podstawie tych informacji Lenovo dostarcza najnowsze aktualizacje przeznaczone specjalnie dla danego komputera.</Confirmation>
+	 <Confirmation lang="pt">A Lenovo utiliza estas informações para obter as atualizações mais recentes disponíveis especificamente para o seu computador.</Confirmation>
+	 <Confirmation lang="ro">Lenovo utilizează aceste informaţii pentru a obţine cele mai recente actualizări disponibile în special pentru calculatorul dumneavoastră.</Confirmation>
+	 <Confirmation lang="ru">Lenovo использует эту информацию для получения последних обновлений, доступных для вашего компьютера.</Confirmation>
+	 <Confirmation lang="zh-hans">Lenovo 使用这些信息获取适用于您的计算机的最新可用更新。</Confirmation>
+	 <Confirmation lang="sr">Kompanija Lenovo koristi ove informacije kako bi obezbedila najnovija ažuriranja dostupna posebno za vaš računar.</Confirmation>
+	 <Confirmation lang="sk">Spoločnosť Lenovo používa tieto informácie na získanie najnovších aktualizácií, ktoré sú dostupné práve pre váš počítač.</Confirmation>
+	 <Confirmation lang="sl">Lenovo te podatke uporablja za prenos najnovejših posodobitev, ki so na voljo posebej za vaš računalnik.</Confirmation>
+	 <Confirmation lang="es">Lenovo usa esta información para obtener las actualizaciones más recientes orientadas específicamente para su sistema.</Confirmation>
+	 <Confirmation lang="sv">Lenovo använder information för att hämta de senaste uppdateringarna som är tillgängliga för just din dator.</Confirmation>
+	 <Confirmation lang="zh-hant">Lenovo 會使用此資訊來取得您電腦專屬的最新可用更新。</Confirmation>
+	 <Confirmation lang="tr">Lenovo bu bilgiyi, bilgisayarınız için mevcut olan en son güncellemeleri sağlamak için kullanır.</Confirmation>
+	 <Confirmation lang="uk">Компанія Lenovo використовує цю інформацію, щоб отримати останні оновлення, доступні саме для вашого комп'ютера.</Confirmation>
+    </Confirmations>
+    <LaunchPath type="registry" bitness="64_32" root="HKEY_LOCAL_MACHINE">
+	 <Location>SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\tvsu.exe</Location>
+	 <Name>Path</Name>
+    </LaunchPath>
+  </App>
+  <App type="legacy" ID="com.lenovo.writeit">
+    <FriendlyName>WRITEit</FriendlyName>
+    <InstallationCheck type="file" bitness="64_32" root="ProgramFiles">Lenovo\WriteIt\WRITEIt.exe</InstallationCheck>
+    <RequireAdmin>false</RequireAdmin>
+    <MetricSetting type="xml">
+	 <Location root="%AppData%">Lenovo\WRITEit\Settings\WRITEit_%USERNAME%_User_Settings.xml</Location>
+	 <XPath>Settings/Metrics/IsMetricsEnabled</XPath>
+	 <OnValue type="string">True</OnValue>
+	 <OffValue type="string">False</OffValue>
+    </MetricSetting>
+    <LaunchPath type="file" bitness="64_32" root="ProgramFiles">
+	 <Location>"Lenovo\WRITEIT"</Location>
+	 <Name>writeit.exe</Name>
+    </LaunchPath>
+    <Descriptions>
+	 <Description lang="en">Enables you to write directly into text boxes using a digital pen and Lenovo's unique handwriting-recognition technology.</Description>
+	 <Description lang="ar">لتمكينك من الكتابة في مربعات النص بشكل مباشر باستخدام قلم رقمي وتقنية Lenovo الفريدة للتعرف على الكتابة اليدوية.</Description>
+	 <Description lang="pt-br">Permite escrever diretamente em caixas de texto usando uma caneta digital e a tecnologia de reconhecimento de escrita exclusiva da Lenovo.</Description>
+	 <Description lang="hr">Omogućuje pisanje izravno u tekstne okvire pomoću digitalne olovke i jedinstvene tehnologije prepoznavanja rukopisa koju je razvila tvrtka Lenovo.</Description>
+	 <Description lang="cs">Slouží k přímému psaní do textových polí pomocí digitálního pera a jedinečné technologie rozpoznávání ručně psaného písma od společnosti Lenovo.</Description>
+	 <Description lang="da">Giver dig mulighed for at skrive direkte i tekstfelter ved hjælp af en digital pen og Lenovos unikke teknologi til håndskriftgenkendelse.</Description>
+	 <Description lang="fi">Ohjelma mahdollistaa kirjoittamisen suoraan tekstiruutuihin digitaalisella kynällä ja Lenovon yksilöllisen käsinkirjoituksen tunnistustekniikan avulla.</Description>
+	 <Description lang="fr">Permet d'écrire directement dans les champs de texte en utilisant un stylet numérique et la technologie de reconnaissance de l'écriture unique de Lenovo.</Description>
+	 <Description lang="el">Σας επιτρέπει να γράφετε απευθείας σε πλαίσια κειμένου χρησιμοποιώντας ψηφιακή γραφίδα και τη μοναδική τεχνολογία αναγνώρισης γραφής της Lenovo.</Description>
+	 <Description lang="de">Ermöglicht das direkte Eingeben von Text in Textfelder mit einem digitalen Stift und der einzigartigen Handschrifterkennungstechnologie von Lenovo.</Description>
+	 <Description lang="he">מאפשרת לכם לכתוב ישירות בתיבות טקסט באמצעות עט דיגיטלי וטכנולוגיית זיהוי כתב היד הייחודית של Lenovo.</Description>
+	 <Description lang="hu">Egy digitális tollal és a Lenovo egyedi kézírás-felismerő technológiájával közvetlenül a szövegmezőkbe írhat.</Description>
+	 <Description lang="it">Consente di scrivere direttamente nelle caselle di testo utilizzando una penna digitale e l'esclusiva tecnologia di riconoscimento della scrittura a mano di Lenovo.</Description>
+	 <Description lang="ja">デジタル・ペンおよび Lenovo 独自の手書き認識技術を使用して、テキスト・ボックスに直接書き込むことができます。</Description>
+	 <Description lang="ko">디지털 펜 및 Lenovo의 독보적인 필기 인식 기술을 사용하여 텍스트 상자에 직접 글씨를 쓸 수 있습니다.</Description>
+	 <Description lang="nl">Hiermee kunt u direct in tekstvakken schrijven met behulp van een digitale pen en de unieke technologie van Lenovo voor handschriftherkenning.</Description>
+	 <Description lang="nb">Gjør at du kan skrive direkte inn i tekstbokser med en digital penn og Lenovos unike håndskriftsteknologi.</Description>
+	 <Description lang="pl">Umożliwia pisanie bezpośrednio w polach tekstowych przy użyciu pióra cyfrowego oraz unikatowej technologii rozpoznawania pisma odręcznego firmy Lenovo.</Description>
+	 <Description lang="pt">Permite-lhe escrever diretamente em caixas de texto com uma caneta digital, utilizando a tecnologia de reconhecimento de escrita manual exclusiva da Lenovo.</Description>
+	 <Description lang="ro">Vă permite să scrieţi direct în casetele text cu ajutorul creionului digital şi al tehnologiei unice de recunoaştere a scrisului de mână oferite de Lenovo.</Description>
+	 <Description lang="ru">Позволяет вводить текст непосредственно в текстовые поля с помощью цифрового пера и уникальной технологии распознавания рукописного текста, разработанной компанией Lenovo.</Description>
+	 <Description lang="zh-hans">使您可使用数字手写笔和 Lenovo 独有的手写识别技术，直接在文本框中书写内容。</Description>
+	 <Description lang="sr">Omogućava vam da pišete direktno u okvire za tekst koristeći digitalnu olovku i jedinstvenu tehnologiju za prepoznavanje rukopisa koju je razvila kompanija Lenovo.</Description>
+	 <Description lang="sk">Umožňuje priame písanie do textových polí pomocou digitálneho pera a jedinečnej technológie spoločnosti Lenovo na rozpoznávanie rukopisu.</Description>
+	 <Description lang="sl">Omogoča pisanje neposredno v besedilna polja z uporabo digitalnega peresa in edinstvene tehnologije podjetja Lenovo za prepoznavanje rokopisa.</Description>
+	 <Description lang="es">Le permite escribir directamente sobre cuadros de texto mediante un lápiz digital y la tecnología única de Lenovo de reconocimiento de manuscrita.</Description>
+	 <Description lang="sv">Gör att du kan skriva direkt i textrutor med hjälp av en digital penna och Lenovos unika teknik som känner igen handskrift.</Description>
+	 <Description lang="zh-hant">可讓您使用數位筆和 Lenovo 的獨家手寫辨識技術，直接將內容寫入文字框中。</Description>
+	 <Description lang="tr">Dijital bir kalem yardımıyla direkt olarak metin kutularına yazı yazma özelliğini ve Lenovo'nun eşsiz el yazısı tanıma teknolojisini etkinleştirir.</Description>
+	 <Description lang="uk">Дає змогу записувати дані в текстові поля за допомогою цифрового пера й унікальної технології розпізнавання рукописного вводу Lenovo.</Description>
+    </Descriptions>
+    <Confirmations>
+	 <Confirmation lang="en">Lenovo uses this information to target future improvements based on how WRITEit is used.</Confirmation>
+	 <Confirmation lang="ar">تستخدم Lenovo هذه المعلومات لاستهداف التحسينات المستقبلية بالاستناد إلى الطريقة التي يتم استخدام WRITEit من خلالها.</Confirmation>
+	 <Confirmation lang="pt-br">A Lenovo usa essas informações para direcionar aprimoramentos futuros com base no modo em que o WRITEit é usado.</Confirmation>
+	 <Confirmation lang="hr">Lenovo na temelju tih podataka i načina korištenja aplikacije WRITEit planira buduća poboljšanja.</Confirmation>
+	 <Confirmation lang="cs">Tyto informace společnost Lenovo využívá k tomu, aby mohla dále vylepšovat program WRITEit podle toho, jak ho lidé používají.</Confirmation>
+	 <Confirmation lang="da">Lenovo bruger disse oplysninger til at målrette fremtidige forbedringer baseret på, hvordan WRITEit bruges.</Confirmation>
+	 <Confirmation lang="fi">Näiden tietojen avulla Lenovo kohdistaa tulevia parannuksia WRITEitin käytön mukaan.</Confirmation>
+	 <Confirmation lang="fr">Lenovo utilise ces informations pour cibler des améliorations futures, sur la base de l'usage qui est fait de WRITEit.</Confirmation>
+	 <Confirmation lang="el">Η Lenovo χρησιμοποιεί αυτές τις πληροφορίες, για να προβεί σε μελλοντικές βελτιώσεις με βάση τον τρόπο με τον οποίο χρησιμοποιείται το WRITEit.</Confirmation>
+	 <Confirmation lang="de">Lenovo nutzt diese Informationen, um künftige Verbesserungen auf die Verwendungsweise von WRITEit abzustimmen.</Confirmation>
+	 <Confirmation lang="he">מידע זה מסייע ל-Lenovo למקד שיפורים עתידיים בהתאם לאופן השימוש ב-WRITEit.</Confirmation>
+	 <Confirmation lang="hu">A Lenovo ezekkel az adatokkal a WRITEit használatához igazítva igyekszik alakítani a jövőbeli fejlesztéseket.</Confirmation>
+	 <Confirmation lang="it">Lenovo utilizza queste informazioni per individuare eventuali miglioramenti futuri in base alla modalità di utilizzo di WRITEit.</Confirmation>
+	 <Confirmation lang="ja">Lenovo はこの情報を、WRITEit の使用状況に基いて、今後の改良点を定めるために使用します。</Confirmation>
+	 <Confirmation lang="ko">Lenovo는 WRITEit 사용 행태를 바탕으로 향후 개선점을 공략할 때 이 정보를 유용하게 사용합니다.</Confirmation>
+	 <Confirmation lang="nl">Lenovo gebruikt deze informatie om verbeteringen in de toekomst beter af te stemmen op hoe WRITEit wordt gebruikt.</Confirmation>
+	 <Confirmation lang="nb">Lenovo bruker denne informasjonen til å målrette fremtidige forbedringer basert på hvordan WRITEit brukes.</Confirmation>
+	 <Confirmation lang="pl">Na podstawie tych informacji i sposobie używania programu WRITEit Lenovo określa, jakie udoskonalenia należy wprowadzić.</Confirmation>
+	 <Confirmation lang="pt">A Lenovo utiliza estas informações como objetivo para futuros melhoramentos baseados no modo como o WRITEit é utilizado.</Confirmation>
+	 <Confirmation lang="ro">Lenovo utilizează aceste informaţii pentru a se orienta către viitoare îmbunătăţiri în funcţie de modul în care este utilizat WRITEit.</Confirmation>
+	 <Confirmation lang="ru">Lenovo использует эту информацию для планирования улучшений в будущем на основе сведений о применении WRITEit.</Confirmation>
+	 <Confirmation lang="zh-hans">Lenovo 使用这些信息根据 WRITEit 的使用方式确定未来的改进方向。</Confirmation>
+	 <Confirmation lang="sr">Kompanija Lenovo koristi ove informacije kako bi izabrala buduća poboljšanja na osnovu upotrebe programa WRITEit.</Confirmation>
+	 <Confirmation lang="sk">Spoločnosť Lenovo používa tieto informácie na zacielenie budúcich zlepšení na základe spôsobu používania aplikácie WRITEit.</Confirmation>
+	 <Confirmation lang="sl">Lenovo te podatke uporablja pri razvoju prihodnjih izboljšav na podlagi tega, kako se uporablja WRITEit.</Confirmation>
+	 <Confirmation lang="es">Lenovo usa esta información para preparar mejoras futuras en torno al modo en el que se usa WRITEit.</Confirmation>
+	 <Confirmation lang="sv">Lenovo använder informationen för att hitta framtida förbättringar baserat på hur WRITEit används.</Confirmation>
+	 <Confirmation lang="zh-hant">Lenovo 會使用此資訊並根據 WRITEit 的使用情形來決定未來的改善目標。</Confirmation>
+	 <Confirmation lang="tr">Lenovo bu bilgiyi WRITEit'in nasıl kullanacağı ile ilgili gelecekteki gelişmeleri saptamak için kullanır.</Confirmation>
+	 <Confirmation lang="uk">Компанія Lenovo використовує цю інформацію, щоб розробляти покращені версії програм і драйверів на основі способу використання WRITEit.</Confirmation>
+    </Confirmations>
+  </App>
+  <App type="Universal" ID="com.lenovo.settings">
+    <FriendlyName>Lenovo Settings</FriendlyName>
+    <PackageName>LenovoCorporation.LenovoSettings_4642shxvsv8s2</PackageName>
+    <RequireAdmin>false</RequireAdmin>
+    <MetricSetting type="registry">
+	 <Location root="HKEY_CURRENT_USER">Software\Lenovo\Metrics\com.lenovo.settings</Location>
+	 <OnValue type="string">1</OnValue>
+	 <OffValue type="string">0</OffValue>
+    </MetricSetting>
+    <Descriptions>
+	 <Description lang="en">Provides settings for Lenovo-unique features such as Location Awareness, TrackPoint, Touchpad, Mobile hotspots, and other features on your Lenovo computer.</Description>
+	 <Description lang="ar">لتوفير الإعدادات الخاصة بالميزات الفريدة من Lenovo كمعرفة الموقع وTrackPoint ولوحة اللمس ونقاط الاتصال المتنقلة‬‏‫‬ والميزات الأخرى على كمبيوتر Lenovo.</Description>
+	 <Description lang="pt-br">Fornece configurações para recursos exclusivos da Lenovo, como Conhecimento de Local, TrackPoint, Touchpad, Hotspots móveis e outros recursos em seu computador Lenovo.</Description>
+	 <Description lang="hr">Sadrži postavke za jedinstvene značajke tvrtke Lenovo, kao što su prepoznavanje mjesta, TrackPoint, dodirna pločica, mobilne pristupne točke i druge značajke na vašem računalu tvrtke Lenovo.</Description>
+	 <Description lang="cs">Umožňuje nastavování jedinečných funkcí od společnosti Lenovo, například sledování umístění, TrackPoint, dotyková ploška, mobilní hotspoty a dalších funkcí vašeho počítače Lenovo.</Description>
+	 <Description lang="da">Giver indstillinger til Lenovo-unikke funktioner såsom Placeringskendskab, TrackPoint, Navigationsplade, Mobile hotspots og andre funktioner på Lenovo-computeren.</Description>
+	 <Description lang="fi">Ohjelma sisältää Lenovon yksilöllisten ominaisuuksien (esimerkiksi sijaintitiedot, TrackPoint, kosketuslevy ja mobiilitukiasemat) ja muiden Lenovo-tietokoneen ominaisuuksien asetuksia.</Description>
+	 <Description lang="fr">Fournit les paramètres des fonctionnalités uniques de Lenovo comme Connaissance des emplacements, TrackPoint, le pavé tactile, les points d'accès sans fil mobiles et d'autres fonctionnalités sur votre ordinateur Lenovo.</Description>
+	 <Description lang="el">Παρέχει ρυθμίσεις για μοναδικές δυνατότητες της Lenovo, όπως είναι ο Εντοπισμός τοποθεσίας, το TrackPoint, η Επιφάνεια αφής, τα Κινητά hotspot και άλλες δυνατότητες του υπολογιστή Lenovo.</Description>
+	 <Description lang="de">Einstellungen für Lenovo-spezifische Leistungsmerkmale wie Standorterkennung, TrackPoint, Touchpad, mobiler Hotspot und andere Funktionen auf Ihrem Lenovo Computer.</Description>
+	 <Description lang="he">מספקת הגדרות לתכונות ייחודיות של Lenovo כגון "מודעות למיקום", TrackPoint, משטח המגע, נקודות חמות ניידות ותכונות אחרות הפועלות במחשב Lenovo שלכם.</Description>
+	 <Description lang="hu">A Lenovo egyedi funkcióihoz – például a Helyfigyeléshez, a TrackPointhoz, az érintőfelülethez, a mobile hozzáférési pontokhoz – biztosít beállításokat a Lenovo-számítógépen.</Description>
+	 <Description lang="it">Fornisce impostazioni per funzioni esclusive di Lenovo, come Rilevamento posizione, TrackPoint, Touchpad, hotspot mobili e altre funzioni del computer Lenovo.</Description>
+	 <Description lang="ja">Lenovo コンピューターに搭載されている Location Awareness、TrackPoint、Touchpad、モバイル・ホットスポットなど、Lenovo 独自の機能の設定を提供します。</Description>
+	 <Description lang="ko">Lenovo 컴퓨터에서 Location Awareness, TrackPoint, 터치 패드, 모바일 핫스팟과 같은 Lenovo 특유의 기능을 설정합니다.</Description>
+	 <Description lang="nl">Biedt instellingen voor Lenovo-specifieke functies, zoals Locatiegevoeligheid, TrackPoint, Touchpad, Mobiele Hotspots en andere functies op uw Lenovo-computer.</Description>
+	 <Description lang="nb">Inneholder innstillinger for Lenovos unike funksjoner, for eksempel Plasseringsbevissthet, TrackPoint, pekeplate, mobile trådløssoner og andre funksjoner på Lenovo-maskinen.</Description>
+	 <Description lang="pl">Zapewnia ustawienia unikatowych funkcji i urządzeń w komputerze Lenovo, takich jak Rozpoznawanie lokalizacji, TrackPoint, touchpad, mobilne punkty dostępowe itd.</Description>
+	 <Description lang="pt">Disponibiliza definições para as funções exclusivas da Lenovo, como a Deteção da Localização, TrackPoint, Touchpad, Hotspots móveis, entre outras funções disponíveis no seu computador Lenovo.</Description>
+	 <Description lang="ro">Oferă setări pentru funcţiile unice de la Lenovo, cum ar fi Identificare locaţie, TrackPoint, Touchpad, Hotspoturi mobile şi alte funcţii pe calculatorul Lenovo.</Description>
+	 <Description lang="ru">Предоставляет параметры для уникальных функций Lenovo, таких как определение информации о местоположении, TrackPoint, сенсорная панель, мобильные хот-споты, а также других функций, доступных на компьютере Lenovo.</Description>
+	 <Description lang="zh-hans">提供 Lenovo 计算机上的 Lenovo 独有功能（如位置感知、TrackPoint、触摸板、移动热点）和其他功能的设置。</Description>
+	 <Description lang="sr">Obezbeđuje postavke za jedinstvene funkcije na vašem računaru koje je razvila kompanija Lenovo, kao što su Svesnost lokacije, TrackPoint, Dodirna tabla, Mobilne pristupne tačke i druge.</Description>
+	 <Description lang="sk">Poskytuje nastavenia pre jedinečné funkcie od spoločnosti Lenovo, ako sú informácie o polohe, TrackPoint, dotykový panel, mobilné prístupové body a ďalšie funkcie počítača Lenovo.</Description>
+	 <Description lang="sl">Ponuja nastavitve za funkcije, ki jih imajo samo računalniki Lenovo, kot so Lokacijske nastavitve, sledilna ploščica, mobilne dostopne točke in druge.</Description>
+	 <Description lang="es">Proporciona configuraciones para características únicas de Lenovo, como reconocimiento de ubicación, TrackPoint, área táctil, punto de acceso móvil y otras características del sistema Lenovo.</Description>
+	 <Description lang="sv">Ger inställningar för funktioner som är unika för Lenovo, som platsmedvetenhet, TrackPoint, styrplatta, mobila surfzoner och andra funktioner på din Lenovo-dator.</Description>
+	 <Description lang="zh-hant">提供 Lenovo 獨家功能（例如位置偵測、TrackPoint、觸控板、行動熱點）和您 Lenovo 電腦上其他功能的設定。</Description>
+	 <Description lang="tr">Location Awareness (Konum Farkındalığı), TrackPoint, Touchpad, Mobile hotspots (Mobil Erişim Noktaları) ve Lenovo bilgisayarlarındaki diğer özellikler gibi eşsiz Lenovo özellikleri için olan ayarları sağlar.</Description>
+	 <Description lang="uk">Забезпечує настройки для унікальних функцій Lenovo, як-от "Визначення розташування", TrackPoint, "Сенсорна панель", "Мобільні точки доступу" тощо, на вашому комп'ютері Lenovo.</Description>
+    </Descriptions>
+    <Confirmations>
+	 <Confirmation lang="en">Lenovo uses this information to optimize the Settings application's design based on the most-used settings.</Confirmation>
+	 <Confirmation lang="ar">تستخدم Lenovo هذه المعلومات لتحسين تصميم تطبيق الإعدادات بالاستناد إلى الإعدادات الأكثر استخدامًا.</Confirmation>
+	 <Confirmation lang="pt-br">A Lenovo usa essas informações para otimizar o design do aplicativo de Configurações com base nas configurações mais usadas.</Confirmation>
+	 <Confirmation lang="hr">Lenovo na temelju tih podataka i najčešće korištenih postavki optimizira dizajn aplikacije Settings.</Confirmation>
+	 <Confirmation lang="cs">Společnost Lenovo tyto informace využívá k optimalizaci designu aplikace Settings podle toho, jaká nastavení lidé používají nejčastěji.</Confirmation>
+	 <Confirmation lang="da">Lenovo bruger disse oplysninger til at optimere designet for programmet Settings baseret på de mest anvendte indstillinger.</Confirmation>
+	 <Confirmation lang="fi">Näiden tietojen avulla Lenovo optimoi Settings-ohjelman ominaisuuksia useimmiten käytettyjen asetusten mukaan.</Confirmation>
+	 <Confirmation lang="fr">Lenovo utilise ces informations pour optimiser le modèle de l'application Paramètres, sur la base des paramètre les plus utilisés.</Confirmation>
+	 <Confirmation lang="el">Η Lenovo χρησιμοποιεί αυτές τις πληροφορίες, για να βελτιστοποιήσει τη σχεδίαση της εφαρμογής Settings σύμφωνα με τις ρυθμίσεις που χρησιμοποιούνται περισσότερο.</Confirmation>
+	 <Confirmation lang="de">Lenovo nutzt diese Informationen, um das Design der Anwendung "Einstellungen" gemäß den meistgenutzten Einstellungen zu optimieren.</Confirmation>
+	 <Confirmation lang="he">Lenovo משתמשת במידע זה למיטוב העיצוב של יישום ההגדרות, על בסיס ההגדרות שנמצאות בשימוש הרב ביותר.</Confirmation>
+	 <Confirmation lang="hu">A Lenovo a leggyakoribb beállítások alapján az alkalmazás kialakítását optimalizálja ezekkel az adatokkal.</Confirmation>
+	 <Confirmation lang="it">Lenovo utilizza queste informazioni per ottimizzare la progettazione dell'applicazione Settings in base alle impostazioni più utilizzate.</Confirmation>
+	 <Confirmation lang="ja">Lenovo はこの情報を、最も使用されている設定に基いて設定アプリケーションの設計を最適化するために使用します。</Confirmation>
+	 <Confirmation lang="ko">Lenovo는 주로 사용되는 설정에 따라 설정 응용 프로그램의 디자인을 최적화할 때 이 정보를 유용하게 사용합니다.</Confirmation>
+	 <Confirmation lang="nl">Lenovo gebruikt deze informatie om het ontwerp van de toepassing Instellingen te optimaliseren op basis van de meest gebruikte instellingen.</Confirmation>
+	 <Confirmation lang="nb">Lenovo bruker denne informasjonen til å optimalisere utformingen av Innstillinger-programmet ut fra hvilke innstillinger som brukes mest.</Confirmation>
+	 <Confirmation lang="pl">Na podstawie tych informacji i najczęściej używanych ustawień Lenovo optymalizuje projekt aplikacji Settings.</Confirmation>
+	 <Confirmation lang="pt">A Lenovo utiliza estas informações para otimizar o design da aplicação Definições com base nas definições mais utilizadas.</Confirmation>
+	 <Confirmation lang="ro">Lenovo utilizează aceste informaţii pentru a optimiza designul aplicaţiei Settings în funcţie de setările cele mai utilizate.</Confirmation>
+	 <Confirmation lang="ru">Lenovo использует эту информацию для оптимизации приложения Settings на основе данных о наиболее часто используемых параметрах.</Confirmation>
+	 <Confirmation lang="zh-hans">Lenovo 使用这些信息根据最常用的设置优化 Settings 应用程序的设计。</Confirmation>
+	 <Confirmation lang="sr">Kompanija Lenovo koristi ove informacije kako bi optimizovala dizajn aplikacije za postavke na osnovu najčešće korišćenih postavki.</Confirmation>
+	 <Confirmation lang="sk">Spoločnosť Lenovo používa tieto informácie na optimalizáciu koncepcie aplikácie Nastavenie na základe najpoužívanejších nastavení.</Confirmation>
+	 <Confirmation lang="sl">Lenovo te podatke uporablja za optimiziranje oblikovanja programa za nastavitve na podlagi najpogosteje uporabljenih nastavitev.</Confirmation>
+	 <Confirmation lang="es">Lenovo usa esta información para optimizar el diseño de la aplicación sobre la base de los valores más usados.</Confirmation>
+	 <Confirmation lang="sv">Lenovo använder informationen för att optimera designen på applikationen Inställningar, baserat på de mest använda inställningarna.</Confirmation>
+	 <Confirmation lang="zh-hant">Lenovo 會使用此資訊並根據最常用的設定來最佳化 Settings 應用程式的設計。</Confirmation>
+	 <Confirmation lang="tr">Lenovo bu bilgiyi, en çok kullanılan ayarlara dayanarak Settings (Ayarlar) uygulamasını iyileştirmek için kullanır.</Confirmation>
+	 <Confirmation lang="uk">Компанія Lenovo використовує цю інформацію, щоб оптимізувати дизайн програми Lenovo Settings відповідно до найбільш використовуваних параметрів.</Confirmation>
+    </Confirmations>
+  </App>
+  <App type="Universal" ID="com.lenovo.companion">
+    <FriendlyName>Lenovo Companion</FriendlyName>
+    <PackageName>E046963F.LenovoCompanion_k1h2ywk1493x8</PackageName>
+    <RequireAdmin>false</RequireAdmin>
+    <MetricSetting type="registry">
+	 <Location root="HKEY_CURRENT_USER">Software\Lenovo\Metrics\com.lenovo.companion</Location>
+	 <OnValue type="string">1</OnValue>
+	 <OffValue type="string">0</OffValue>
+    </MetricSetting>
+    <Descriptions>
+	 <Description lang="en">Provides access to driver and app updates, system support, warranty information, user guides, and the Lenovo support knowledge base. Companion also provides "how to" information and articles to help you get the most out of your Lenovo computer.</Description>
+	 <Description lang="ar">لتوفير الوصول إلى تحديثات التطبيقات وبرامج التشغيل ودعم النظام ومعلومات الضمان وأدلة المستخدمين وقاعدة معارف دعم Lenovo. يوفر Companion أيضًا معلومات ومقالات "إرشادية" لمساعدتك على تحقيق أقصى قدر من الاستفادة من كمبيوتر Lenovo.‬</Description>
+	 <Description lang="pt-br">Fornece configurações para recursos exclusivos da Lenovo, como Conhecimento de Local, TrackPoint, Touchpad, Hotspots móveis e outros recursos em seu computador Lenovo.</Description>
+	 <Description lang="hr">Omogućuje pristup ažuriranjima upravljačkih programa i aplikacija, podršci sustava, informacijama o jamstvu, korisničkim vodičima i bazi znanja za podršku tvrtke Lenovo. Companion sadrži i upute i članke o tome kako najbolje iskoristiti prednosti računala tvrtke Lenovo.</Description>
+	 <Description lang="cs">Poskytuje přístup k aktualizacím aplikací a ovladačů zařízení, k podpoře systému, informacím o záruce, uživatelským příručkám a k informační bázi podpory Lenovo. Aplikace Companion kromě toho obsahuje návody a články, které vám pomohou využít počítač Lenovo na maximum.</Description>
+	 <Description lang="da">Giver adgang til driver- og appopdateringer, systemsupport, garantioplysninger, brugervejledninger og Lenovo-supports videnbase. Companion giver også "sådan gør du"-oplysninger og artikler, så du kan få mest muligt ud af Lenovo-computeren.</Description>
+	 <Description lang="fi">Ohjelma toimittaa käyttäjien saataville ajuri- ja sovelluspäivityksiä, järjestelmän tukitoimintoja, takuutietoja, käyttöoppaita ja Lenovo-tuen tietämyskannan. Companion sisältää myös ohjeita ja artikkeleita, joiden avulla käyttäjät saavat parhaan hyödyn Lenovo-tietokoneestaan.</Description>
+	 <Description lang="fr">Fournit l'accès aux mises à jour des pilotes et des applications, l'assistance système, les informations relatives à la garantie, les guides d'utilisation et la base de connaissances Lenovo Support. Companion fournit également des articles et des informations pratiques pour vous aider à tirer le meilleur parti de votre ordinateur Lenovo.</Description>
+	 <Description lang="el">Παρέχει πρόσβαση σε ενημερώσεις προγραμμάτων οδήγησης και εφαρμογών, υποστήριξη συστήματος, πληροφορίες εγγύησης, οδηγούς χρήσης και στη γνωσιακή βάση υποστήριξης της Lenovo. Επίσης, το Companion παρέχει πληροφορίες και άρθρα "διαδικασιών" που θα σας βοηθήσουν να αξιοποιήσετε στο μέγιστο δυνατό τον υπολογιστή Lenovo.</Description>
+	 <Description lang="de">Zugriff auf Treiber- und App-Updates, Systemsupport, Informationen zur Garantie, Benutzerhandbücher sowie die Lenovo Support-Wissensdatenbank. Außerdem bietet Companion Anleitungen und Tipps zur optimalen Nutzung Ihres Lenovo Computers.</Description>
+	 <Description lang="he">מספק גישה לעדכוני יישומים ומנהלי התקנים, תמיכה במערכת, מידע בנושא אחריות, מדריכים למשתמש ומאגר הידע לתמיכה של Lenovo. Lenovo Companion גם מספק הנחיות ומאמרים כדי לסייע לכם להפיק את המרב ממחשב Lenovo שלכם.</Description>
+	 <Description lang="hu">Hozzáférést biztosít az illesztőprogram- és alkalmazásfrissítésekhez, a rendszertámogatáshoz, a jótállási adatokhoz, a felhasználói kézikönyvekhez és a Lenovo támogatási tudásbázisához. A Companion útmutatókkal és súgócikkekkel is segít, hogy a legtöbbet hozza ki a Lenovo-számítógépből.</Description>
+	 <Description lang="it">Fornisce l'accesso ad aggiornamenti di driver e app, supporto del sistema, informazioni sulla garanzia, guide per l'utente e Knowledge Base di supporto Lenovo. Companion fornisce anche informazioni sulle procedure e articoli per sfruttare al massimo il proprio computer Lenovo.</Description>
+	 <Description lang="ja">ドライバーおよびアプリの更新、システム・サポート、保証情報、ユーザー・ガイド、および Lenovo サポート・ナレッジ・ベースへのアクセスを提供します。Companion にはまた、「ハウツー」情報や Lenovo コンピューターを最大限に活用するために役立つ記事も用意されています。</Description>
+	 <Description lang="ko">드라이버 및 앱 업데이트, 시스템 지원, 보증 정보, 사용 설명서 및 Lenovo Support 기술자료에 액세스할 수 있습니다. 또한, Companion은 사용자가 Lenovo 컴퓨터의 효용성을 극대화하려 할 때 유용한 "요령 안내" 정보 및 문서를 제공합니다.</Description>
+	 <Description lang="nl">Biedt toegang tot driver- en app-updates, systeemondersteuning, informatie over de garantie, gebruikershandleidingen en de knowledge base van Lenovo Support. Companion biedt ook instructies en artikelen waarmee u optimaal gebruik kunt maken van uw Lenovo-computer.</Description>
+	 <Description lang="nb">Gir tilgang til driver- og appoppdateringer, systemstøtte, garantiinformasjon, brukerveiledninger og Lenovos kunnskapsbase for brukerstøtte. Companion gir også praktiske instruksjoner og artikler som hjelper deg å få mest mulig ut av Lenovo-maskinen din.</Description>
+	 <Description lang="pl">Zapewnia dostęp do aktualizacji sterownika i aplikacji, pomocy technicznej do systemu, informacji dotyczących gwarancji, podręczników użytkownika oraz bazy wiedzy Lenovo Support. Companion zawiera również instrukcje i artykuły, które pomagają w wykorzystywaniu wszystkich możliwości komputera Lenovo.</Description>
+	 <Description lang="pt">Fornece acesso a atualizações de controladores e aplicações, suporte do sistema, informações sobre a garantia, manuais de utilizador e à base de dados de conhecimento de suporte da Lenovo. O Companion também disponibiliza informações de procedimentos e artigos para ajudar a tirar o máximo partido do seu computador Lenovo.</Description>
+	 <Description lang="ro">Oferă acces la driver şi la actualizările de aplicaţii, la asistenţa pentru sistem, la informaţiile legate de garanţie, la ghidurile utilizatorului şi la baza de cunoştinţe Lenovo Support. Companion furnizează, de asemenea, informaţii elementare şi articole pentru a vă ajuta să profitaţi la maximum de calculatorul Lenovo.</Description>
+	 <Description lang="ru">Обеспечивает доступ к обновлениям драйверов и приложений, средствам поддержки системы, информации о гарантии, руководствам пользователей и базе знаний по ресурсам поддержки Lenovo. Companion также предоставляет инструкции и доступ к статьям, помогающим добиться максимально эффективного использования компьютера Lenovo.</Description>
+	 <Description lang="zh-hans">用于访问驱动程序和应用更新、系统支持、保修信息、用户指南和 Lenovo 支持知识库。Companion 还提供“使用方式”信息和文章以帮助您充分利用您的 Lenovo 计算机。</Description>
+	 <Description lang="sr">Obezbeđuje pristup ažuriranjima za upravljačke programe i aplikacije, sistemskoj podršci, informacijama o garanciji, uputstvima za korisnike i bazi znanja za podršku kompanije Lenovo. Companion takođe obezbeđuje informacije i članke u stilu „kako da“ koje vam pomažu da svoj Lenovo računar iskoristite na najbolji način.</Description>
+	 <Description lang="sk">Poskytuje prístup k aktualizáciám ovládačov a aplikácií, technickej podpore systému, informáciám o záruke, používateľským príručkám a databáze vedomostí technickej podpory spoločnosti Lenovo. Program Companion tiež poskytuje informácie o postupoch a články, ktoré vám pomôžu vyťažiť z počítača Lenovo maximum.</Description>
+	 <Description lang="sl">Omogoča dostop do posodobitev gonilnikov in programov, sistemske podpore, informacij o garanciji, vodičev za uporabnike in zbirke znanja za podporo izdelkov Lenovo. Companion ponuja tudi navodila in članke, s katerimi boste lahko na najboljši način uporabili računalnik Lenovo.</Description>
+	 <Description lang="es">Proporciona acceso a actualizaciones de controladores y aplicaciones, soporte de sistema, información de garantía, guías de usuario y la base de conocimiento de Lenovo Support. Companion también proporciona información instructiva y artículos para sacar el máximo provecho de su sistema Lenovo.</Description>
+	 <Description lang="sv">Ger tillgång till uppdateringar för drivrutiner och appar, systemsupport, garantiinformation, användarhandböcker och kunskapsbasen Lenovo Support. Companion innehåller även instruktioner och artiklar som hjälper dig att få ut det mesta av din Lenovo-dator.</Description>
+	 <Description lang="zh-hant">可讓您存取驅動程式和應用程式更新、系統支援、保固資訊、使用手冊和 Lenovo 支援知識庫。Companion 也會提供「操作方法」資訊和文章，協助您充分運用您的 Lenovo 電腦。</Description>
+	 <Description lang="tr">Sürücü ve uygulama güncellemelerine, sistem desteğine, garanti bilgisine, kullanma kılavuzlarına ve Lenovo destek bilgi bankasına erişimi sağlar. Companion ayrıca kullanım bilgisini ve Lenovo bilgisayarınızı anlamanıza yardımcı olacak makaleleri de sağlar.</Description>
+	 <Description lang="uk">Забезпечує доступ до оновлених версій драйверів і програм, служби підтримки системи, гарантійної інформації, посібників користувача, а також до бази знань служби підтримки Lenovo. У Companion також можна знайти інструкції та статті, які допоможуть максимально використовувати можливості комп'ютера Lenovo.</Description>
+    </Descriptions>
+    <Confirmations>
+	 <Confirmation lang="en">Lenovo uses this information to optimize Companion's design based on which support tools and information are most often used.</Confirmation>
+	 <Confirmation lang="ar">تستخدم Lenovo هذه المعلومات لتحسين تصميم Companion بالاستناد إلى أدوات الدعم والمعلومات الأكثر استخدامًا في أغلب الأحيان.</Confirmation>
+	 <Confirmation lang="pt-br">A Lenovo usa essas informações para otimizar o design do aplicativo de Configurações com base nas configurações mais usadas.</Confirmation>
+	 <Confirmation lang="hr">Lenovo na temelju tih informacija te podataka o najčešće korištenih alatima podrške i informacijama optimizira dizajn aplikacije Companion.</Confirmation>
+	 <Confirmation lang="cs">Společnost Lenovo tyto informace využívá k optimalizaci designu aplikace Companion podle toho, jaké informace a nástroje podpory lidé používají nejčastěji.</Confirmation>
+	 <Confirmation lang="da">Lenovo bruger disse oplysninger til at optimere Companions design baseret på, hvilke supportværktøjer og -oplysninger der oftest bruges.</Confirmation>
+	 <Confirmation lang="fi">Näiden tietojen avulla Lenovo optimoi Companion-ohjelman ominaisuuksia useimmiten käytettyjen tukityökalujen ja -tietojen mukaan.</Confirmation>
+	 <Confirmation lang="fr">Lenovo utilise ces informations pour optimiser le concept de Companion, sur la base des informations et des outils d'assistance les plus fréquemment utilisés.</Confirmation>
+	 <Confirmation lang="el">Η Lenovo χρησιμοποιεί αυτές τις πληροφορίες, για να βελτιστοποιήσει τη σχεδίαση του Companion σύμφωνα με τα εργαλεία και τις πληροφορίες υποστήριξης που χρησιμοποιούνται συχνότερα.</Confirmation>
+	 <Confirmation lang="de">Lenovo nutzt diese Informationen, um das Design der Anwendung "Companion" hinsichtlich der meistgenutzten Supporttools und -informationen zu optimieren.</Confirmation>
+	 <Confirmation lang="he">Lenovo משתמשת במידע זה למיטוב העיצוב של Companion, על בסיס כלי התמיכה והמידע שנמצאים בשימוש הרב ביותר.</Confirmation>
+	 <Confirmation lang="hu">A Lenovo a leggyakrabban használt támogatási eszközök és információk alapján a Companion kialakítását optimalizálja ezekkel az adatokkal.</Confirmation>
+	 <Confirmation lang="it">Lenovo utilizza queste informazioni per ottimizzare la progettazione di Companion in base alle informazioni e agli strumenti di supporto utilizzati più spesso.</Confirmation>
+	 <Confirmation lang="ja">Lenovo はこの情報を、もっともよく使用されるサポート・ツールや情報に基いて、Companion の設計を最適化するために使用します。</Confirmation>
+	 <Confirmation lang="ko">Lenovo는 지원 도구 및 정보가 사용되는 빈도에 따라 Companion의 디자인을 최적화할 때 이 정보를 유용하게 사용합니다.</Confirmation>
+	 <Confirmation lang="nl">Lenovo gebruikt deze informatie om het ontwerp van Companion te optimaliseren op basis van welke hulpprogramma's voor ondersteuning en welke informatie het meest worden gebruikt.</Confirmation>
+	 <Confirmation lang="nb">Lenovo bruker denne informasjonen til å optimalisere Companions design ut fra hvilke brukerstøtteverktøy og hvilken informasjon som brukes mest.</Confirmation>
+	 <Confirmation lang="pl">Na podstawie tych informacji oraz danych dotyczących tego, które narzędzia pomocy technicznej artykuły są używane najczęściej, Lenovo optymalizuje projekt aplikacji Companion.</Confirmation>
+	 <Confirmation lang="pt">A Lenovo utiliza estas informações para otimizar o design do Companion com base nas informações e ferramentas de suporte mais utilizadas.</Confirmation>
+	 <Confirmation lang="ro">Lenovo utilizează aceste informaţii pentru a optimiza designul aplicaţiei Companion în funcţie de instrumentele şi informaţiile de asistenţă utilizate cel mai frecvent.</Confirmation>
+	 <Confirmation lang="ru">Lenovo использует эту информацию для оптимизации приложения Companion на основе данных о наиболее часто используемых средствах поддержки и сведениях о поддержке.</Confirmation>
+	 <Confirmation lang="zh-hans">Lenovo 使用这些信息根据最常使用哪些支持工具和信息来优化 Companion 的设计。</Confirmation>
+	 <Confirmation lang="sr">Kompanija Lenovo koristi ove informacije kako bi optimizovala dizajn aplikacije Companion na osnovu najčešće korišćenih alatki za podršku i informacija.</Confirmation>
+	 <Confirmation lang="sk">Spoločnosť Lenovo používa tieto informácie na optimalizáciu koncepcie programu Companion na základe najčastejšie používaných nástrojov a informácií technickej podpory.</Confirmation>
+	 <Confirmation lang="sl">Lenovo te podatke uporablja za optimiziranje oblikovanja programa Companion na podlagi orodij za podporo in informacij, ki se najpogosteje uporabljajo.</Confirmation>
+	 <Confirmation lang="es">Lenovo utiliza esta información para optimizar el diseño de Companion en función de las herramientas de soporte y la información que se usa más frecuentemente.</Confirmation>
+	 <Confirmation lang="sv">Lenovo använder informationen för att optimera Companions design, baserat på vilka supportverktyg och vilken information som oftast används.</Confirmation>
+	 <Confirmation lang="zh-hant">Lenovo 會使用此資訊並根據最常用的支援工具和資訊來最佳化 Companion 的設計。</Confirmation>
+	 <Confirmation lang="tr">Lenovo bu bilgiyi, hangi destek araçlarının ve bilginin en çok kullanıldığına dayanarak Companion'ın tasarımını iyileştirmek için kullanır.</Confirmation>
+	 <Confirmation lang="uk">Компанія Lenovo використовує цю інформацію для оптимізації дизайну Companion відповідно до найбільш використовуваних інструментів і даних для підтримки користувачів.</Confirmation>
+    </Confirmations>
+  </App>
+  <App type="Universal" ID="com.lenovo.lenovoID">
+    <FriendlyName>Lenovo ID</FriendlyName>
+    <PackageName>LenovoCorporation.LenovoID_4642shxvsv8s2</PackageName>
+    <RequireAdmin>false</RequireAdmin>
+    <MetricSetting type="xml">
+      <Location root="%LOCALAPPDATA%">Packages\LenovoCorporation.LenovoID_4642shxvsv8s2\LocalState\LenovoID_User_Settings.xml</Location>
+      <XPath>Settings/Metrics/IsMetricsEnabled</XPath>
+      <OnValue type="string">True</OnValue>
+      <OffValue type="string">False</OffValue>
+    </MetricSetting>
+    <Descriptions>
+      <Description lang="en">Enables you to manage your Lenovo ID profile and provides a single sign-on capability for select Lenovo ID supported apps and services.</Description>
+      <Description lang="ar">يتيح لك هذا التطبيق إدارة ملف تعريف Lenovo ID ويوفر إمكانية تسجيل الدخول الفردي إلى تطبيقات وخدمات محددة يدعمها Lenovo ID.</Description>
+      <Description lang="pt-br">Permite que você gerencie seu perfil do Lenovo ID e oferece o recurso de single sign-on para determinados aplicativos e serviços compatíveis com o Lenovo ID.</Description>
+      <Description lang="hr">Omogućuje upravljanje profilom za Lenovo ID te jedinstvenu prijavu u odabrane aplikacije i servise koji podržavaju Lenovo ID.</Description>
+      <Description lang="cs">Umožňuje spravovat váš profil Lenovo ID a pomocí jediného přihlášení používat některé aplikace a služby, které funkci Lenovo ID podporují.</Description>
+      <Description lang="da">Giver dig mulighed for at administrere din Lenovo ID-profil og giver en single sign-on-mulighed for udvalgte Lenovo ID-understøttede apps og tjenester.</Description>
+      <Description lang="fi">Lenovo ID -sovelluksen avulla voit hallita Lenovo ID -profiilia ja käyttää kertakirjautumisella valittuja sovelluksia ja palveluita, joita Lenovo ID tukee.</Description>
+      <Description lang="fr">Vous permet de gérer votre profil Lenovo ID et prévoit une connexion unique pour certaines applications et certains services pris en charge par Lenovo ID.</Description>
+      <Description lang="el">Σας επιτρέπει να διαχειρίζεστε το προφίλ Lenovo ID και παρέχει δυνατότητα καθολικής σύνδεσης σε επιλεγμένες εφαρμογές και υπηρεσίες που υποστηρίζουν το Lenovo ID.</Description>
+      <Description lang="de">Ermöglicht die Verwaltung Ihres Lenovo ID-Profils und bietet die Single Sign-on-Funktion für ausgewählte, von Lenovo ID unterstützte Apps und Dienste an.</Description>
+      <Description lang="he">מאפשר לכם לנהל את פרופיל ה-Lenovo ID שלכם ומספק אפשרות של כניסה בודדת לבחירת האפליקציות והשירותים הנתמכים על ידי Lenovo ID.</Description>
+      <Description lang="hu">Lehetővé teszi a Lenovo ID-profil kezelését és egyszeri bejelentkezési lehetőségeket nyújt néhány olyan alkalmazáshoz és szolgáltatáshoz, amelyek a Lenovo ID-t használják.</Description>
+      <Description lang="it">Consente di gestire il profilo Lenovo ID e fornisce una funzionalità SSO (Single Sign-On) per alcuni servizi e app supportati da Lenovo ID.</Description>
+      <Description lang="ja">Lenovo ID プロファイルを管理できるようになり、選択した Lenovo ID をサポートしているアプリやサービスでシングル・サインオン機能を使用できます。</Description>
+      <Description lang="ko">Lenovo ID 프로파일을 관리할 수 있으며 Lenovo ID가 지원되는 일부 앱과 서비스에서 SSO(Single Sign-On) 기능을 사용할 수 있습니다.</Description>
+      <Description lang="nl">Hiermee kunt u uw Lenovo ID-profiel beheren en kunt u de functie voor eenmalig aanmelden gebruiken bij bepaalde apps en services die Lenovo ID ondersteunen.</Description>
+      <Description lang="nb">Lar deg administrere Lenovo ID-profilen din og gir funksjonalitet for enkeltpålogging for utvalgte Lenovo ID-støttede apper og tjenester.</Description>
+      <Description lang="pl">Umożliwia zarządzanie profilem Lenovo ID i korzystanie z funkcji jednokrotnego logowania do wybranych aplikacji i usług obsługujących Lenovo ID.</Description>
+      <Description lang="pt">Permite a gestão do perfil do Lenovo ID e disponibiliza uma função de início de sessão único para uma seleção de aplicações e serviços suportados pelo Lenovo ID.</Description>
+      <Description lang="ro">Vă permite să gestionaţi profilul Lenovo ID şi să furnizaţi o funcţie de sign-on unic pentru anumite aplicaţii şi servicii acceptate de Lenovo ID.</Description>
+      <Description lang="ru">Позволяет управлять профилем Lenovo ID и обеспечивает возможность единого входа для некоторых поддерживаемых приложений и услуг Lenovo ID.</Description>
+      <Description lang="zh-hans">让您能够管理 Lenovo ID 概要文件，并为部分 Lenovo ID 支持的应用程序和服务提供单点登录功能。</Description>
+      <Description lang="sr">Omogućava da upravljate Lenovo ID profilom i obezbeđuje mogućnost potvrde identiteta za jedinstveno prijavljivanje za odabrane aplikacije i usluge koje podržavaju Lenovo ID.</Description>
+      <Description lang="sk">Umožňuje spravovať profil Lenovo ID a poskytuje prístup jedným prihlásením do vybraných aplikácií a služieb s podporou identifikátora Lenovo ID.</Description>
+      <Description lang="sl">Omogoča upravljanje profila za Lenovo ID ter ponuja možnost enotne prijave za programsko opremo in storitve, ki podpirajo Lenovo ID.</Description>
+      <Description lang="es">Le permite administrar su perfil de Lenovo ID y proporciona una capacidad de inicio de sesión única para las aplicaciones y servicios específicos admitidos por Lenovo ID.</Description>
+      <Description lang="sv">Gör det möjligt för dig att hantera din Lenovo ID-profil och ger enkel inloggning för utvalda appar och tjänster som har stöd för Lenovo ID.</Description>
+      <Description lang="zh-hant">可讓您管理您的 Lenovo ID 設定檔，並為 Lenovo ID 支援的特定應用程式和服務提供單一登入功能。</Description>
+      <Description lang="tr">Lenovo ID'nizi yönetmenize olanak tanır ve Lenovo ID'yi destekleyen belirli uygulama ve hizmetler için tekli oturum açma özelliği sunar.</Description>
+      <Description lang="uk">Дає змогу керувати профілем Lenovo ID й підтримує функцію єдиного входу для певних програм і служб, для яких використовується ідентифікатор Lenovo ID.</Description>
+    </Descriptions>
+    <Confirmations>
+      <Confirmation lang="en">Lenovo uses this information to optimize the Lenovo ID design and functionality based on how it is used.</Confirmation>
+      <Confirmation lang="ar">تستخدم Lenovo هذه المعلومات لتحسين تصميم Lenovo ID ووظائفه بالاستناد إلى الطريقة التي يتم بها استخدامه.</Confirmation>
+      <Confirmation lang="pt-br">A Lenovo usa essas informações para otimizar o design e a funcionalidade do Lenovo ID com base na forma como é utilizado.</Confirmation>
+      <Confirmation lang="hr">Lenovo na temelju tih podataka i načina korištenja optimizira dizajn i funkcije aplikacije Lenovo ID.</Confirmation>
+      <Confirmation lang="cs">Společnost Lenovo tyto informace využívá k optimalizaci designu a funkcí aplikace Lenovo ID podle toho, jak ji lidé používají.</Confirmation>
+      <Confirmation lang="da">Lenovo bruger disse oplysninger til at optimere designet og funktionaliteten for Lenovo ID baseret på, hvordan det bruges.</Confirmation>
+      <Confirmation lang="fi">Näiden tietojen avulla Lenovo optimoi Lenovo ID -sovelluksen ominaisuuksia käytön mukaan.</Confirmation>
+      <Confirmation lang="fr">Lenovo utilise ces informations pour optimiser le modèle et la fonction Lenovo ID, sur la base de son utilisation.</Confirmation>
+      <Confirmation lang="el">Η Lenovo χρησιμοποιεί αυτές τις πληροφορίες, για να βελτιστοποιήσει τη σχεδίαση και τη λειτουργικότητα του Lenovo ID με βάση τον τρόπο χρήσης του.</Confirmation>
+      <Confirmation lang="de">Lenovo nutzt diese Informationen, um Design und Funktionen von Lenovo ID gemäß der Verwendungsweise von Lenovo ID zu optimieren.</Confirmation>
+      <Confirmation lang="he">Lenovo משתמשת במידע זה למיטוב העיצוב והשימושיות של Lenovo ID על בסיס השימוש שנעשה בו.</Confirmation>
+      <Confirmation lang="hu">A Lenovo az adatok segítségével a használat alapján optimalizálja a Lenovo ID kialakítását és szolgáltatásait.</Confirmation>
+      <Confirmation lang="it">Lenovo utilizza queste informazioni per ottimizzare le funzionalità e la progettazione di Lenovo ID in base alla modalità di utilizzo.</Confirmation>
+      <Confirmation lang="ja">Lenovo はこの情報を、使用状況に基づいて Lenovo ID の設計と機能を最適化するために使用します。</Confirmation>
+      <Confirmation lang="ko">Lenovo는 이 정보를 사용하여 그 사용 방식에 따라 Lenovo ID 디자인 및 기능을 최적화합니다.</Confirmation>
+      <Confirmation lang="nl">Lenovo gebruikt deze informatie om het ontwerp en de functionaliteit van Lenovo ID te optimaliseren op basis van het gebruik van Lenovo ID.</Confirmation>
+      <Confirmation lang="nb">Lenovo bruker denne informasjonen til å optimalisere utformingen av og funksjonaliteten til Lenovo ID basert på hvordan den brukes.</Confirmation>
+      <Confirmation lang="pl">Na podstawie tych informacji i sposobu użytkowania Lenovo optymalizuje projekt aplikacji i funkcjonalność Lenovo ID.</Confirmation>
+      <Confirmation lang="pt">A Lenovo utiliza estas informações para otimizar o design e a funcionalidade do Lenovo ID com base na forma como é utilizado.</Confirmation>
+      <Confirmation lang="ro">Lenovo utilizează aceste informaţii pentru a optimiza designul şi funcţionalitatea Lenovo ID pe baza modului de utilizare.</Confirmation>
+      <Confirmation lang="ru">Lenovo использует эту информацию для оптимизации реализации и функциональности приложения Lenovo ID на основе данных о его применении.</Confirmation>
+      <Confirmation lang="zh-hans">Lenovo 根据其使用方式利用这些信息优化 Lenovo ID 设计和功能。</Confirmation>
+      <Confirmation lang="sr">Kompanija Lenovo koristi ove informacije kako bi optimizovala Lenovo ID dizajn i funkcionalnosti na osnovu načina upotrebe.</Confirmation>
+      <Confirmation lang="sk">Spoločnosť Lenovo používa tieto informácie na optimalizáciu koncepcie a funkčnosti identifikátora Lenovo ID na základe spôsobu používania.</Confirmation>
+      <Confirmation lang="sl">Lenovo te podatke uporablja za optimiziranje oblikovanja in funkcij Lenovo ID-ja na podlagi tega, kako se uporablja.</Confirmation>
+      <Confirmation lang="es">Lenovo usa esta información para optimizar el diseño y funcionalidad de Lenovo ID sobre la base del modo en el que se usa.</Confirmation>
+      <Confirmation lang="sv">Lenovo använder informationen för att optimera designen på Lenovo ID och funktionaliteten baserat på hur den används.</Confirmation>
+      <Confirmation lang="zh-hant">Lenovo 會使用此資訊並根據 Lenovo ID 的使用情形來最佳化其設計和功能。</Confirmation>
+      <Confirmation lang="tr">Lenovo bu bilgileri, kullanım biçimini temel alarak Lenovo ID tasarımını ve işlevlerini iyileştirmek için kullanır.</Confirmation>
+      <Confirmation lang="uk">Компанія Lenovo використовує цю інформацію, щоб оптимізувати дизайн і функціональність програми Lenovo ID відповідно до особливостей її використання.</Confirmation>
+    </Confirmations>
+  </App>
+  <App type="legacy" ID="com.lenovo.LDI">
+    <FriendlyName>Lenovo Device Improvement</FriendlyName>
+    <InstallationCheck type="folder" bitness="64_32" root="ProgramData">Lenovo\ImController\Plugins\LenovoDeviceMetricsPlugin</InstallationCheck>
+    <RequireAdmin>true</RequireAdmin>
+    <MetricSetting type="registry">
+      <Location root="HKEY_LOCAL_MACHINE">SOFTWARE\Lenovo\AnonymousMetrics\Enabled</Location>
+      <OnValue type="dword">1</OnValue>
+      <OffValue type="dword">0</OffValue>
+    </MetricSetting>
+    <Descriptions>
+      <Description lang="en">Shares statistical data with Lenovo to help improve the reliability, design, and optimization of features on your computer.</Description>
+      <Description lang="ar">لمشاركة البيانات الإحصائية مع Lenovo بهدف المساعدة على تحسين موثوقية الميزات على الكمبيوتر وتصميمها وتحقيق أمثليتها.</Description>
+      <Description lang="pt-br">Compartilha dados estatísticos com a Lenovo para melhorar a confiabilidade, o design e a otimização de recursos em seu computador.</Description>
+      <Description lang="hr">Šalje statističke podatke tvrtki Lenovo radi poboljšanja pouzdanosti, dizajna i optimizacije značajki na računalu.</Description>
+      <Description lang="cs">Sdílí se společností Lenovo statistické údaje, na jejichž základě je možno zlepšovat spolehlivost, design a optimalizační funkce vašeho počítače.</Description>
+      <Description lang="da">Deler statistiske data med Lenovo for at forbedre pålideligheden, designet og optimeringen af funktioner på computeren.</Description>
+      <Description lang="fi">Ohjelma jakaa tilastotietoja Lenovolle, jotta se voi parantaa tietokoneen luotettavuutta, ominaisuuksia ja ominaisuuksien optimointia.</Description>
+      <Description lang="fr">Partage des données statistiques avec Lenovo afin d'améliorer la fiabilité, le concept et l'optimisation des fonctionnalités de votre ordinateur.</Description>
+      <Description lang="el">Κάνει κοινή χρήση στατιστικών δεδομένων με τη Lenovo προκειμένου να βελτιωθεί η αξιοπιστία και ο σχεδιασμός και να βελτιστοποιηθούν οι δυνατότητες του υπολογιστή σας.</Description>
+      <Description lang="de">Sendet statistische Daten an Lenovo, um die Zuverlässigkeit und das Design Ihres Computers zu verbessern und seine Funktionalität zu optimieren.</Description>
+      <Description lang="he">שתפו נתונים סטטיסטיים עם Lenovo כדי לסייע בשיפור האמינות, העיצוב והמיטוב של תכונות המחשב שלכם.</Description>
+      <Description lang="hu">Statisztikai adatokat oszt meg a Lenovóval, így segíti a számítógép-funkciók tervezését, optimalizálását és megbízhatóbbá tételét.</Description>
+      <Description lang="it">Consente di condividere i dati statistici con Lenovo per migliorare l'affidabilità, la progettazione e l'ottimizzazione delle funzioni del computer.</Description>
+      <Description lang="ja">統計データを Lenovo と共有し、ご使用のコンピューターの機能の信頼性、設計、最適化の改善に役立てます。</Description>
+      <Description lang="ko">컴퓨터의 신뢰성과 디자인을 더욱 향상하고 기능을 한층 최적화할 수 있도록 Lenovo와 통계 데이터를 공유합니다.</Description>
+      <Description lang="nl">Deelt statistische gegevens met Lenovo om de betrouwbaarheid, het ontwerp en de optimalisatie van functies op uw computer te verbeteren.</Description>
+      <Description lang="nb">Del statistiske data med Lenovo for å hjelpe oss å forbedre datamaskinenes pålitelighet, design og funksjonalitet.</Description>
+      <Description lang="pl">Udostępnia dane statystyczne firmie Lenovo w celu poprawy niezawodności i projektu, a także optymalizacji funkcji na komputerze użytkownika.</Description>
+      <Description lang="pt">Partilha dados estatísticos com a Lenovo para ajudar a melhorar a fiabilidade, o design e a otimização das funções no seu computador.</Description>
+      <Description lang="ro">Partajează cu Lenovo datele statistice pentru a ajuta la îmbunătăţirea fiabilităţii, designului şi optimizării funcţiilor de pe computer.</Description>
+      <Description lang="ru">Отправляет статистические данные в компанию Lenovo, чтобы помочь ей повысить надежность и улучшить реализацию функций компьютера, а также оптимизировать их.</Description>
+      <Description lang="zh-hans">与 Lenovo 共享统计数据有助于改进计算机上各项功能的可靠性、设计及对其进行优化。</Description>
+      <Description lang="sr">Deli statističke podatke sa kompanijom Lenovo radi poboljšanja pouzdanosti, dizajna i optimizacije funkcija na računaru.</Description>
+      <Description lang="sk">Zdieľa štatistické údaje so spoločnosťou Lenovo na zlepšenie spoľahlivosti, koncepcie a na optimalizáciu funkcií počítača.</Description>
+      <Description lang="sl">Pošilja statistične podatke podjetju Lenovo za pomoč pri izboljšanju zanesljivosti, oblikovanja in optimiziranja funkcij računalnika.</Description>
+      <Description lang="es">Comparte datos estadísticos con Lenovo para ayudar a mejorar la confiabilidad, diseño y optimización de las características del sistema.</Description>
+      <Description lang="sv">Delar statistiska data med Lenovo för att förbättra tillförlitlighet och design, och för att optimera funktioner på din dator.</Description>
+      <Description lang="zh-hant">與 Lenovo 共用統計資料，協助我們提升您電腦功能的可靠性、設計和最佳化。</Description>
+      <Description lang="tr">Bilgisayarınızdaki özelliklerin güvenilirliğinin, tasarımının ve iyileştirilmesinin gelişimine yardımcı olmak için Lenovo ile istatiksel veri paylaşır.</Description>
+      <Description lang="uk">Передає статистичні дані до компанії Lenovo, щоб покращити надійність, дизайн і оптимізувати функції на вашому комп'ютері.</Description>
+    </Descriptions>
+    <Confirmations>
+      <Confirmation lang="en">Lenovo uses this information to optimize PC Device design based on how it is used.</Confirmation>
+      <Confirmation lang="ar">تستخدم Lenovo هذه المعلومات لتحسين تصميم جهاز الكمبيوتر الشخصي بالاستناد إلى كيفية استخدامه.</Confirmation>
+      <Confirmation lang="pt-br">A Lenovo usa estas informações para otimizar o design do dispositivo de PC com base no modo como ele é usado.</Confirmation>
+      <Confirmation lang="hr">Lenovo koristi te podatke za optimizaciju PC-ja/uređaja na temelju načina njegova korištenja.</Confirmation>
+      <Confirmation lang="cs">Tyto informace společnost Lenovo využívá k vylepšování svých počítačů podle toho, jak je lidé používají.</Confirmation>
+      <Confirmation lang="da">Lenovo bruger disse oplysninger til at optimere pc'en baseret på, hvordan den bruges.</Confirmation>
+      <Confirmation lang="fi">Näiden tietojen avulla Lenovo optimoi tietokonelaitteen rakenteen tietokoneen käytön mukaan.</Confirmation>
+      <Confirmation lang="fr">Lenovo utilise ces informations pour optimiser ses modèles de PC, sur la base de leur usage.</Confirmation>
+      <Confirmation lang="el">Η Lenovo χρησιμοποιεί αυτές τις πληροφορίες για λόγους βελτιστοποίησης του σχεδιασμού συσκευής PC βάσει του τρόπου χρήσης της.</Confirmation>
+      <Confirmation lang="de">Lenovo nutzt diese Informationen, um das Design des PCs entsprechend der Verwendungsweise zu optimieren.</Confirmation>
+      <Confirmation lang="he">מידע זה מסייע ל-Lenovo למטב את העיצוב של מחשבים אישיים בהתבסס על האופן שבו נעשה בהם שימוש.</Confirmation>
+      <Confirmation lang="hu">A Lenovo ezekkel az adatokkal a számítógép-használat alapján igyekszik optimalizálni a számítógépei kialakítását.</Confirmation>
+      <Confirmation lang="it">Lenovo utilizza queste informazioni per ottimizzare il design dei dispositivi per PC in base alle specifiche modalità di utilizzo.</Confirmation>
+      <Confirmation lang="ja">Lenovo はこの情報を、使用状況に基づいて PC デバイスの設計を最適化するために使用します。</Confirmation>
+      <Confirmation lang="ko">Lenovo는 사용 행태를 바탕으로 PC 장치 디자인을 최적화하기 위해 이 정보를 사용합니다.</Confirmation>
+      <Confirmation lang="nl">Lenovo gebruikt deze informatie om het ontwerp van pc's te optimaliseren en af te stemmen op hoe deze worden gebruikt.</Confirmation>
+      <Confirmation lang="nb">Del statistiske data med Lenovo for å hjelpe oss å forbedre datamaskinenes pålitelighet, design og funksjonalitet.</Confirmation>
+      <Confirmation lang="pl">Lenovo używa tych informacji do optymalizowania konstrukcji komputera podstawie sposobu użytkowania.</Confirmation>
+      <Confirmation lang="pt">A Lenovo utiliza estas informações para otimizar o design do PC de acordo com o modo como é utilizado.</Confirmation>
+      <Confirmation lang="ro">Lenovo utilizează aceste informaţii pentru a optimiza designul dispozitivelor PC în funcţie de modul în care este utilizat.</Confirmation>
+      <Confirmation lang="ru">Lenovo использует эту информацию для оптимизации работы ПК на основе сведений о его применении.</Confirmation>
+      <Confirmation lang="zh-hans">Lenovo 使用这些信息根据电脑设备的使用方式对其设计进行优化。</Confirmation>
+      <Confirmation lang="sr">Lenovo koristi ove informacije da bi optimizovao dizajn računara na osnovu načina njihovog korišćenja.</Confirmation>
+      <Confirmation lang="sk">Spoločnosť Lenovo využíva tieto informácie na optimalizáciu dizajnu počítačového zariadenia podľa spôsobu jeho používania.</Confirmation>
+      <Confirmation lang="sl">Lenovo te podatke uporablja za optimiziranje oblikovanja osebnih računalnikov glede na njihovo uporabo.</Confirmation>
+      <Confirmation lang="es">Lenovo utiliza esta información para optimizar el diseño del dispositivo de PC basándose en la forma en que se utiliza.</Confirmation>
+      <Confirmation lang="sv">Lenovo använder denna information för att optimera datorns kapacitet baserat på hur den används.</Confirmation>
+      <Confirmation lang="zh-hant">Lenovo 會使用此資訊並根據此使用情形來最佳化 PC 裝置設計。</Confirmation>
+      <Confirmation lang="tr">Lenovo bu bilgileri Bilgisayar Cihazının nasıl kullanıldığına bağlı olarak tasarımını iyileştirmek için kullanır.</Confirmation>
+      <Confirmation lang="uk">Компанія Lenovo використовує цю інформацію, щоб оптимізувати дизайн ПК відповідно до особливостей його використання.</Confirmation>
+    </Confirmations>
+  </App>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>5lOLrObRocYepkvqp4nnVXwQBK0=</DigestValue></Reference></SignedInfo><SignatureValue>lDrhKfgFmpM22LNTdsYSiZjHARZwL439Nt4sMEV9XlcQIEvSuzUUkafiLKFK3CH5HUtpLmbi4oOwxbk2SSJytfilabWifWJgNbXpIRz/TiUsU0HT2WF+HW2l2yYPkpLVJ3cryXduROZ035RDsRQbDxtjY9Fkia6ir38chUdRsbOqxW7WDkCRG1nG2yc3exz3QJWqqQPwAMnMyvBikxF8SYQ65tIsrOSHd1RRazbjeRqKsv4f7I/UOZ5O5nqbA1N26wCIClUYBMaYvziVxfCV0nHCm+UgYYLTj+aDl7XcrNrn1oJdflRrHS+lXcyDuTvtiTV8aVbpfBcO+sYmXBMaIg==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIE6zCCA9OgAwIBAgIQAXSjWjuVw+qF0e6z/5RcTjANBgkqhkiG9w0BAQsFADCBhDELMAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVjIENvcnBvcmF0aW9uMR8wHQYDVQQLExZTeW1hbnRlYyBUcnVzdCBOZXR3b3JrMTUwMwYDVQQDEyxTeW1hbnRlYyBDbGFzcyAzIFNIQTI1NiBDb2RlIFNpZ25pbmcgQ0EgLSBHMjAeFw0xNjAzMTYwMDAwMDBaFw0xNzAzMTcyMzU5NTlaMGwxCzAJBgNVBAYTAlVTMRcwFQYDVQQIDA5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEBwwLTW9ycmlzdmlsbGUxDzANBgNVBAoMBkxlbm92bzEMMAoGA1UECwwDRzA4MQ8wDQYDVQQDDAZMZW5vdm8wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLMGyuwjdITCKtXCwFWvdtPNkdiY9IXVDl7vgcXvkA/VVIl+uLhqMoTiNalEB/zcgyDIIkEhVVKAKmym9TlIbQZpkZodwA+faHfpHQ9dOr0ISUhfwlQoqmgzL2JjzOoXCwGdZoMVEL26AGT074KoaHIZ3EaF1tjI+7VIjlO+1IinVYdhvMyp5tyW16vCmWeemJ1dnWvn5RnroyVesEcRLQ8W/CqQHrCNF/aOh8VTyjDd96+ELE2HaE36xLgy427prCP+xBL0NxRMgu8zfIPdY6e471qmyxn81y6sfQtplIJo4r3bEvVr6LCpIZz29gz9zHKvOdysSq6f4DoDBCwrNxAgMBAAGjggFuMIIBajAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzBmBgNVHSAEXzBdMFsGC2CGSAGG+EUBBxcDMEwwIwYIKwYBBQUHAgEWF2h0dHBzOi8vZC5zeW1jYi5jb20vY3BzMCUGCCsGAQUFBwICMBkaF2h0dHBzOi8vZC5zeW1jYi5jb20vcnBhMB8GA1UdIwQYMBaAFNTABiJJ6zlL3ZPiXKG4R3YJcgNYMCsGA1UdHwQkMCIwIKAeoByGGmh0dHA6Ly9yYi5zeW1jYi5jb20vcmIuY3JsMFcGCCsGAQUFBwEBBEswSTAfBggrBgEFBQcwAYYTaHR0cDovL3JiLnN5bWNkLmNvbTAmBggrBgEFBQcwAoYaaHR0cDovL3JiLnN5bWNiLmNvbS9yYi5jcnQwEQYJYIZIAYb4QgEBBAQDAgQQMBYGCisGAQQBgjcCARsECDAGAQEAAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQAIfPuLpv+5h6IR71gQGprThHVNh69KzAqOt1clKpXlXXrrMcwylsmeNspbea3/AiaUMGwWVY+usK6jxlwvrVSOHh9P1QBazpcFBUsZft8nnng6iLjlQX+C8XpnalccUAh+q4x2sCohxdNygc+vkXwkmj6nupsE4Fc1jwO9BapUvCpCMs+q/s/FLfImmWHun9B/CVWvT0sUY9dHsD1O3H49AgUWgMR+pacbsXQdos4BuTn8/6snd3o1VbAx2XnoqlddUWnYJJ7ksynpanBgC+LkgCMSTa9W67GbAPEpUsiNsALLJlOTk75HtI5cmUIckNvocPZSiDsIwUr0xcD0B/JF</X509Certificate></X509Data></KeyInfo></Signature></LenovoAppMetrics>

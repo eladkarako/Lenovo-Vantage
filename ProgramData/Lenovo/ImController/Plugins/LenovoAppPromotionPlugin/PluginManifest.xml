@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginManifest>
+    <PackageInformation name="LenovoAppPromotionPlugin" version="1.2.100.0" location="LenovoAppPromotionPlugin.cab" lastModified="2017-04-12T02:11:05">
+    </PackageInformation>
+    <ApplicabilityFilter>
+        <Filter>true</Filter>
+    </ApplicabilityFilter>
+    <ContractMappingList>
+        <ContractMapping name="SystemManagement.LenovoAppPromotion" version="1.0.0.0" runas="user" plugin="LenovoAppPromotionPlugin" />
+    </ContractMappingList>
+    <EventSubscriptionList>
+        <EventSubscription monitor="SystemEventMonitor" trigger="User-Login">
+            <Parameter><![CDATA[  ]]></Parameter>
+        </EventSubscription>
+    </EventSubscriptionList>
+    <SettingList>
+        <!--<Setting key="ImController.Association.Device"> </Setting>-->
+        <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+    </SettingList>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>FzwvdYA0131fEHfs1qH5+9iYq50=</DigestValue></Reference></SignedInfo><SignatureValue>Bv97VErNeiRc1d3d9iGvvne7B7RGEnV81GPkCVaWMinewV5Vaf3+aB5rY1dQYMAPE5C0/CnJamFAnxUjm0zifpalIPwvS7Hd+Z0/in3pb3sNLGv1KP8O7lQr4HF7Ag4i4fNuuXlidNuMXi5pORMpht3I+LaUavr37yrojCWwmpBB6iMVA9sOVdim4JFf8gbblCt08OXjymif3HAol0OYzh+77GHDbzYEckeOTDhRUkiCSsgbBGPQ1JGk74PM3WBUbuQKuL/gkcwK+ryZMHJc2wbYQIWka586dUknaJFSc7hMukXLqg2/OlSY8jscUyI0zvAYpSMXqPqAaywolzg/Aw==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIE5jCCA86gAwIBAgIQRjqDp6eX8wmErBqoLyATjDANBgkqhkiG9w0BAQsFADCBhDELMAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVjIENvcnBvcmF0aW9uMR8wHQYDVQQLExZTeW1hbnRlYyBUcnVzdCBOZXR3b3JrMTUwMwYDVQQDEyxTeW1hbnRlYyBDbGFzcyAzIFNIQTI1NiBDb2RlIFNpZ25pbmcgQ0EgLSBHMjAeFw0xNzAyMDgwMDAwMDBaFw0xODAyMDkyMzU5NTlaMGwxCzAJBgNVBAYTAlVTMRcwFQYDVQQIDA5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEBwwLTW9ycmlzdmlsbGUxDzANBgNVBAoMBkxlbm92bzEMMAoGA1UECwwDRzA4MQ8wDQYDVQQDDAZMZW5vdm8wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCxRt8ld9FNmjglJwTclvTCqXikAjgMxm11Occ+Z3p7LzQPciUeFmkFBycy79BTaaN9WECRb+aDoJy53mBgDmfJ/t1NQnai0VxVS7TwVEYa2A6/VD9dWwmMkca8ZdfZDKtyG2vKBCKajYH8xEzzrchkCujTn197l4F9OhyEP2027xJ4UYc1j7ZeLPIhZV24q5EdBkqjfDqqYveGL+0OffHKDfEP7dDBjXDYi/bCTAcvzct56Qc4Pji5s7Zyljp1PcgWBZGaFwNnbyNlVCSenWzA506mMeSeZNiaWK2V2b2ayJGqEhgRjR2lKhAczjEhDsflV2N2xSmClXo1rfdm70d7AgMBAAGjggFpMIIBZTAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzBhBgNVHSAEWjBYMFYGBmeBDAEEATBMMCMGCCsGAQUFBwIBFhdodHRwczovL2Quc3ltY2IuY29tL2NwczAlBggrBgEFBQcCAjAZDBdodHRwczovL2Quc3ltY2IuY29tL3JwYTAfBgNVHSMEGDAWgBTUwAYiSes5S92T4lyhuEd2CXIDWDArBgNVHR8EJDAiMCCgHqAchhpodHRwOi8vcmIuc3ltY2IuY29tL3JiLmNybDBXBggrBgEFBQcBAQRLMEkwHwYIKwYBBQUHMAGGE2h0dHA6Ly9yYi5zeW1jZC5jb20wJgYIKwYBBQUHMAKGGmh0dHA6Ly9yYi5zeW1jYi5jb20vcmIuY3J0MBEGCWCGSAGG+EIBAQQEAwIEEDAWBgorBgEEAYI3AgEbBAgwBgEBAAEB/zANBgkqhkiG9w0BAQsFAAOCAQEAgVJHiDMb7A/I2OgwDsdPmTMTnvw6ffdTvXH6kS2142gBfCYZ2YBfIM5Yme4G9nAjZkOG6mjLk9QVdblNbLsy3AH52XMVDrcxvfSrezCHzCuZkBOb9rJX7tFUvEGOfjsPmoIxT0Hw3h/4Mq6PQDkRH6y+W5OdwF79eq3P2iWnfAuq0w7D4JpzyZuFnhGLn5YA2WP/myVMWJ1MHwCkoYpSx8wwSmOk+1pLmcGNNLL/CH+3GASKKpLLh/8h82X7oyer3dpoKoMjh0zj6AN1dx/lji62q4AH1fih9U1+udoXFUUR4V3R85iXxKXLxeTaaEu9SHDIVcOYPvJbuCp5hZj8/w==</X509Certificate></X509Data></KeyInfo></Signature></PluginManifest>

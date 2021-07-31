@@ -1,0 +1,52 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly SocksSSLConnector, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class SocksSSLConnector.socksDownloadingDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int64): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int64, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class SocksSSLConnector.SocksConnector: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String url : Public
+    System.String responseHeaders : Public
+    System.String ContentLength : Public
+    System.String IssuerInfo : Public
+    System.String SubjectInfo : Public
+  Methods:
+    SocksWebConnect(): PrivateScope, Public, HideBySig
+    SocksWebRequest(): PrivateScope, Public, HideBySig
+    SocksWebResponse(socksDownloadingDelegate): PrivateScope, Public, HideBySig
+    SocksWebResponse(): PrivateScope, Public, HideBySig
+    SocksWebResponseToStream(Stream): PrivateScope, Public, HideBySig
+    GetError(): PrivateScope, Public, HideBySig
+    GetErorCode(): PrivateScope, Public, HideBySig
+    Imprime(): PrivateScope, Public, HideBySig
+    CloseInternetHandles(): PrivateScope, Public, HideBySig
+    ResponseStatus(): PrivateScope, Public, HideBySig
+    AccestType(UInt32 IsLong): PrivateScope, Public, HideBySig
+    ProxyName(String): PrivateScope, Public, HideBySig
+    ProxyBypass(String): PrivateScope, Public, HideBySig
+    ServerName(String): PrivateScope, Public, HideBySig
+    ObjectName(String): PrivateScope, Public, HideBySig
+    AllowAutoRedirect(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Method(String): PrivateScope, Public, HideBySig
+    AddRange(UInt32 IsLong): PrivateScope, Public, HideBySig
+    BlockSize(Int32): PrivateScope, Public, HideBySig
+    AddRequestHeaders(String): PrivateScope, Public, HideBySig
+    Certificates(String[]): PrivateScope, Public, HideBySig
+    LocalPath(String): PrivateScope, Public, HideBySig
+    Cancel(): PrivateScope, Public, HideBySig
+    Request(String): PrivateScope, Public, HideBySig
+    Progress(): PrivateScope, Public, HideBySig

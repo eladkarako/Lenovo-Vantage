@@ -1,0 +1,2802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImControllerSubscription version="2.0" dateCreated="2021-07-20T02:47:56">
+    <Service id="7A343344-7E8B-4ACC-9062-941BDE75A1E9" version="1.1.17.2" msVersion="1.1.20.1" downloadLocation="https://filedownload.lenovo.com/enm/sift/core/System-Interface-Foundation-Update-64.exe" msDownloadLocation64="https://filedownload.lenovo.com/enm/sift/core/ms-LenovoSystemInterfaceFoundation-64.cab" downloadLocation32="https://filedownload.lenovo.com/enm/sift/core/Lenovo-System-Interface-Foundation-32.msi" downloadLocation64="https://filedownload.lenovo.com/enm/sift/core/Lenovo-System-Interface-Foundation-64.msi">
+        <SettingsList>
+            <Setting key="Imc.Telemetry.IsEnabled">true</Setting>
+            <Setting key="Imc.Telemetry.Event.IMC-Update-Action.IsEnabled" family="thinkpad x1 carbon*">true</Setting>
+            <Setting key="Imc.Telemetry.Event.IMC-Lifecycle-Action.IsEnabled">true</Setting>
+            <Setting key="Imc.Telemetry.Event.IMC-Plugin-Activity.IsEnabled" family="thinkpad x1 carbon*">true</Setting>
+            <Setting key="Imc.Telemetry.Event.IMC-Update-Action.IsEnabled">false</Setting>
+            <Setting key="Imc.Telemetry.Event.IMC-Plugin-Activity.IsEnabled">false</Setting>
+            <Setting key="Imc.Events.UsageMonitor.IsEnabled">true</Setting>
+            <Setting key="Imc.Events.UsageMonitor.App.FlushIntervalMinutes">720</Setting>
+            <Setting key="Imc.Events.UsageMonitor.App.FlushCapacity">500</Setting>
+        </SettingsList>
+    </Service>
+    <PackageList>
+        <Package>
+            <PackageInformation name="WavesAudioPlugin" version="1.0.34.0" location="WavesAudioPlugin.cab" lastModified="2017-06-13T02:44:03" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.Audio.MaxxAudio">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.AudioProfile" version="1.0.0.0" runas="User" plugin="WavesAudioPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Package.Replacement.Name">DolbyAudioPlugin</Setting>
+                <Setting key="ImController.Package.Replacement.MinimumVersion">1.2.184.0</Setting>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="UDCForModernPreloadPackage" packageType="App" version="0.1.0.20" location="UDCForModernPreloadPackage.cab" lastModified="2019-07-15T05:33:54">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter mtm="81Q9*">true</Filter>
+                <Filter mtm="81TC*">true</Filter>
+                <Filter mtm="81TD*">true</Filter>
+                <Filter mtm="81TE*">true</Filter>
+                <Filter mtm="81RT*">true</Filter>
+                <Filter mtm="81NW*">true</Filter>
+                <Filter mtm="81R1*">true</Filter>
+                <Filter mtm="81NY*">true</Filter>
+                <Filter mtm="20QT*">true</Filter>
+                <Filter mtm="20QU*">true</Filter>
+                <Filter mtm="20QV*">true</Filter>
+                <Filter mtm="20QW*">true</Filter>
+                <Filter mtm="20QN*">true</Filter>
+                <Filter mtm="20QQ*">true</Filter>
+                <Filter mtm="20QR*">true</Filter>
+                <Filter mtm="20QS*">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList/>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Privilege.CustomInstall">1</Setting>
+                <Setting key="ImController.Association.Device"/>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="ThinkTouchPadPlugin" version="2.0.0.10" location="ThinkTouchPadPlugin.cab" lastModified="2015-04-24T12:00:00" customEventMonitor="" msVersion="2.0.0.10" msLocation="ms-ThinkTouchPadPlugin.cab">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter brand="think">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.PointingDevice" version="1.0.0.0" runas="user" plugin="ThinkTouchPadPlugin"/>
+            </ContractMappingList>
+            <SettingList>
+                <Setting key="ImController.Privilege.ReceiveEvents">0</Setting>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+            </SettingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+				  <RegistryEventSubscription>
+					<RegistryHiveName>HKEY_CURRENT_USER</RegistryHiveName>
+					<KeyPath>Software\Synaptics</KeyPath>
+					<ValueName></ValueName>
+					<MonitorRegTree>true</MonitorRegTree>
+				  </RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+				  <RegistryEventSubscription>
+					<RegistryHiveName>HKEY_CURRENT_USER</RegistryHiveName>
+					<KeyPath>Control Panel\Mouse</KeyPath>
+					<ValueName></ValueName>
+					<MonitorRegTree>true</MonitorRegTree>
+				  </RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+				  <RegistryEventSubscription>
+					<RegistryHiveName>HKEY_CURRENT_USER</RegistryHiveName>
+					<KeyPath>SOFTWARE\Elantech\SmartPad</KeyPath>
+					<ValueName></ValueName>
+					<MonitorRegTree>true</MonitorRegTree>
+				  </RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+				  <RegistryEventSubscription>
+					<RegistryHiveName>HKEY_CURRENT_USER</RegistryHiveName>
+					<KeyPath>SOFTWARE\Elantech\PointStick</KeyPath>
+					<ValueName></ValueName>
+					<MonitorRegTree>true</MonitorRegTree>
+				  </RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+				  <RegistryEventSubscription>
+					<RegistryHiveName>HKEY_CURRENT_USER</RegistryHiveName>
+					<KeyPath>SOFTWARE\Alps\Apoint</KeyPath>
+					<ValueName></ValueName>
+					<MonitorRegTree>true</MonitorRegTree>
+				  </RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="WindowMessageMonitor" trigger="SessionChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+                        		<SessionChangeEventSubscription>
+                                		<WtsSessionValueList>
+                                        		<WtsSessionValue>7</WtsSessionValue>
+                                              		<WtsSessionValue>8</WtsSessionValue>
+                                  		</WtsSessionValueList>
+                          		</SessionChangeEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="SystemEventMonitor" trigger="User-Login">
+                    <Parameter><![CDATA[ ]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+        </Package>
+        <Package>
+            <PackageInformation name="ThinkSmartSensePlugin" version="2.0.0.131" location="ThinkSmartSensePlugin.cab" lastModified="2015-04-06T12:00:00" customEventMonitor="" msVersion="2.0.0.107" msLocation="ms-ThinkSmartSensePlugin.cab">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter brand="think" enclosureType="notebook">true</Filter>
+                <Filter brand="think" enclosureType="handheld">true</Filter>
+                <Filter brand="think" family="*thinkpad*">true</Filter>
+                <Filter brand="think" enclosureType="notebook">true</Filter>
+                <Filter brand="idea" enclosureType="notebook">true</Filter>
+                <Filter brand="idea" enclosureType="handheld">true</Filter>
+                <Filter brand="lenovo" enclosureType="notebook">true</Filter>
+                <Filter brand="lenovo" enclosureType="handheld">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.SmartSense" version="1.0.0.0" runas="user" plugin="ThinkSmartSensePlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="ThinkPowerPlugin" version="1.2.301.0" location="ThinkPowerPlugin.cab" lastModified="2018-05-29T03:07:08" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter brand="think" subbrand="thinkpad">true</Filter>
+                <Filter brand="think" family="*thinkpad*">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.Power" version="1.0.0.0" runas="user" plugin="ThinkPowerPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="ThinkPicoProjectorPlugin" version="1.2.199.0" location="ThinkPicoProjectorPlugin.cab" lastModified="2017-02-23T03:50:44" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter brand="think" family="ThinkPad X1 Tablet">true</Filter>
+                <Filter brand="think" family="ThinkPad X1 Tablet G2">true</Filter>
+                <Filter brand="think" family="ThinkPad X1 Tablet Gen 2">true</Filter>
+                <Filter brand="idea">false</Filter>
+                <Filter brand="lenovo">false</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="PicoProjectorPlugin.ProjectorSettings" version="1.0.0.0" runas="User" plugin="ThinkPicoProjectorPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="ThinkPicoPJInstallerPlugin" version="1.2.252.0" location="ThinkPicoPJInstallerPlugin.cab" lastModified="2018-07-23T02:36:31" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter brand="think" family="ThinkPad X1 Tablet">true</Filter>
+                <Filter brand="think" family="ThinkPad X1 Tablet G2">true</Filter>
+                <Filter brand="think" family="ThinkPad X1 Tablet Gen 2">true</Filter>
+                <Filter brand="idea">false</Filter>
+                <Filter brand="lenovo">false</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList/>
+            <SettingList>
+                <Setting key="ImController.Privilege.ReceiveEvents">1</Setting>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="WindowMessageMonitor" trigger="DeviceChange" runas="System">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+							<DeviceChangeEventSubscription>  
+								<DevInterfaceClassGuidList>
+									<DevInterfaceClassGuid>a5dcbf10-6530-11d2-901f-00c04fb951ed</DevInterfaceClassGuid>
+								</DevInterfaceClassGuidList> 
+						</DeviceChangeEventSubscription>]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+        </Package>
+        <Package>
+            <PackageInformation name="ThinkMultimodeDetectPlugin" version="1.2.230.0" location="ThinkMultimodeDetectPlugin.cab" lastModified="2017-08-01T04:43:59" customEventMonitor="" msVersion="1.2.230.0" msLocation="ms-ThinkMultimodeDetectPlugin.cab">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter brand="think" enclosureType="notebook">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="" version="1.0.0.0" runas="user" plugin="ThinkMultimodeDetectPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange" runas="user">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+       <RegistryEventSubscription>
+         <RegistryHiveName>HKEY_LOCAL_MACHINE</RegistryHiveName>
+         <KeyPath>SYSTEM\CurrentControlSet\Services\IBMPMSVC\Transform\CurrentStatus</KeyPath>
+         <ValueName>MM</ValueName>
+       </RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="ThinkModeSwitcherPackage" packageType="App" version="1.2.0.2" location="ThinkModeSwitcherPackage.cab" lastModified="2021-05-12T04:23:00">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter brand="think" family="thinkpad x1 fold gen 1">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList/>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Privilege.CustomInstall">1</Setting>
+                <Setting key="ImController.Association.Device"/>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="ThinkKeyboardPlugin" version="2.0.0.15" location="ThinkKeyboardPlugin.cab" lastModified="2015-04-06T12:00:00" customEventMonitor="" msVersion="1.2.137.0" msLocation="ms-ThinkKeyboardPlugin.cab">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter brand="think">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.Keyboard" version="1.0.0.0" runas="user" plugin="ThinkKeyboardPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="ThinkIntelligentSensingPackage" packageType="App" version="2.0.0.6" location="ThinkIntelligentSensingPackage.cab" lastModified="2016-05-17T11:38:58" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter brand="think" family="ThinkPad X1 Tablet">true</Filter>
+                <Filter brand="think" family="ThinkPad X1 Tablet Gen 2">true</Filter>
+                <Filter brand="think" family="ThinkPad X1 Tablet Gen 3">true</Filter>
+                <Filter brand="think" family="ThinkPad X1 Carbon 4th">true</Filter>
+                <Filter brand="think" family="ThinkPad X1 Yoga 1st">true</Filter>
+                <Filter brand="think" family="ThinkPad X1 Yoga 2nd">true</Filter>
+                <Filter brand="think" family="ThinkPad X1 Yoga 3rd">true</Filter>
+                <Filter brand="think" family="ThinkPad Yoga 260">true</Filter>
+                <Filter brand="think" family="ThinkPad Yoga 370">true</Filter>
+                <Filter brand="think" family="ThinkPad X380 Yoga">true</Filter>
+                <Filter brand="think" family="ThinkPad P40 Yoga">true</Filter>
+                <Filter brand="think" family="ThinkPad Yoga 460">true</Filter>
+                <Filter brand="think" family="ThinkPad S3">true</Filter>
+                <Filter brand="think" family="ThinkPad Yoga 14 ">true</Filter>
+                <Filter brand="think" family="ThinkPad S1(2ndGen)">true</Filter>
+                <Filter brand="think" family="ThinkPad S1(3rdGen)">true</Filter>
+                <Filter brand="think" family="ThinkPad S1(4thGen)">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList/>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Privilege.CustomInstall">1</Setting>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="ThinkHotkeyPackage" packageType="App" version="1.2.44.0" location="ThinkHotkeyPackage.cab" lastModified="2017-08-08T08:13:48" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter brand="think">true</Filter>
+                <Filter brand="idea">false</Filter>
+                <Filter brand="lenovo">false</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList/>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Package.DisableUpdate"/>
+                <Setting key="ImController.Privilege.CustomInstall">1</Setting>
+                <Setting key="ImController.Package.UpdateRequiresReboot"/>
+                <Setting key="ImController.Package.InstallRequiresReboot"/>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="ThinkDPMPlugin" version="1.2.181.8" location="ThinkDPMPlugin.cab" lastModified="2016-01-07T14:48:15">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter brand="think" subbrand="thinkcentre">true</Filter>
+                <Filter brand="lenovo" subbrand="thinkcentre">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.PowerProfile" version="1.0.0.0" runas="System" plugin="ThinkDPMPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="WindowMessageMonitor" trigger="SessionChange" runas="System">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+					<SessionChangeEventSubscription>
+							<WtsSessionValueList>
+									<WtsSessionValue>7</WtsSessionValue>
+									<WtsSessionValue>8</WtsSessionValue>
+							</WtsSessionValueList>
+					</SessionChangeEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange" runas="System">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+				<RegistryEventSubscription>
+				<RegistryHiveName>HKEY_LOCAL_MACHINE</RegistryHiveName>
+				<KeyPath>SOFTWARE\Lenovo\DPMPlugin\Scheduler</KeyPath>
+				<ValueName>ShutDown</ValueName> 
+				</RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange" runas="System">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+				<RegistryEventSubscription>
+				<RegistryHiveName>HKEY_LOCAL_MACHINE</RegistryHiveName>
+				<KeyPath>SOFTWARE\Lenovo\DPMPlugin\Scheduler</KeyPath>
+				<ValueName>SetMonitorBrightness</ValueName> 
+				</RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange" runas="System">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+				<RegistryEventSubscription>
+				<RegistryHiveName>HKEY_LOCAL_MACHINE</RegistryHiveName>
+				<KeyPath>SOFTWARE\Lenovo\DPMPlugin\Scheduler</KeyPath>
+				<ValueName>SwitchPowerPlan</ValueName> 
+				</RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange" runas="System">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+				<RegistryEventSubscription>
+				<RegistryHiveName>HKEY_LOCAL_MACHINE</RegistryHiveName>
+				<KeyPath>SOFTWARE\Lenovo\DPMPlugin\Scheduler</KeyPath>
+				<ValueName>IdleMonitor</ValueName> 
+				</RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="ThinkBatteryPlugin" version="1.2.300.0" location="ThinkBatteryPlugin.cab" lastModified="2018-05-09T05:18:38" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter brand="think" subbrand="thinkpad">true</Filter>
+                <Filter brand="think" family="*thinkpad*">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemInformation.Battery" version="1.0.0.0" runas="user" plugin="ThinkBatteryPlugin"/>
+                <ContractMapping name="SystemManagement.BatteryMgmt" version="1.0.0.0" runas="user" plugin="ThinkBatteryPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="ThinkAPSPlugin" version="2.0.0.39" location="ThinkAPSPlugin.cab" lastModified="2015-04-06T12:00:00" customEventMonitor="" msVersion="2.0.0.17" msLocation="ms-ThinkAPSPlugin.cab">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter brand="think" enclosureType="notebook">true</Filter>
+                <Filter brand="idea" enclosureType="notebook">true</Filter>
+                <Filter brand="lenovo" enclosureType="notebook">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.APS" version="1.0.0.0" runas="user" plugin="ThinkAPSPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="ThinkAPSPackage" packageType="App" version="2.0.0.11" location="ThinkAPSPackage.cab" lastModified="2016-05-17T11:38:58" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter brand="think" enclosureType="notebook">true</Filter>
+                <Filter brand="think" family="ThinkPad X1 Tablet">false</Filter>
+                <Filter brand="think" family="ThinkPad X1 Tablet G2">false</Filter>
+                <Filter brand="think" family="ThinkPad X1 Tablet Gen 2">false</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList/>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Privilege.CustomInstall">1</Setting>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="ThinkActivePenPlugin" version="1.2.291.0" location="ThinkActivePenPlugin.cab" lastModified="2018-04-05T08:40:38" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter brand="think">true</Filter>
+                <Filter brand="idea">true</Filter>
+                <Filter brand="lenovo">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="ActivePenPlugin.PenBatteryStatus" version="1.0.0.0" runas="user" plugin="ThinkActivePenPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoWiFiSecurityPlugin" version="2.1.0.81" location="LenovoWiFiSecurityPlugin.cab" lastModified="2019-04-03T15:35:26">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter manufacturer="lenovo">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.WiFiSecurity" version="1.0.0.0" runas="user" plugin="LenovoWiFiSecurityPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="SystemEventMonitor" trigger="User-Login">
+                    <Parameter><![CDATA[  ]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="WlanMonitor" trigger="msm-Connected">
+                    <Parameter><![CDATA[]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="WlanMonitor" trigger="msm-Disconnected">
+                    <Parameter><![CDATA[]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="WindowMessageMonitor" trigger="PowerChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+			  <PowerBroadcastEventSubscription>
+				<PbtValueList>
+					<PbtValue>18</PbtValue>
+				</PbtValueList>
+				<PowerSettingGuidList />
+			  </PowerBroadcastEventSubscription>]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoCompanionBeta_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoVisionProtectionPlugin" version="1.2.95.14" location="LenovoVisionProtectionPlugin.cab" lastModified="2017-03-02T14:25:02" customEventMonitor="" msVersion="1.2.90.21" msLocation="ms-LenovoVisionProtectionPlugin.cab">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter>true</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.VisionProtection" version="1.0.0.0" runas="user" plugin="LenovoVisionProtectionPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="SystemEventMonitor" trigger="User-Login">
+                    <Parameter><![CDATA[ ]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="WindowMessageMonitor" trigger="PowerChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+			<PowerBroadcastEventSubscription>
+				<PbtValueList>
+					<PbtValue>18</PbtValue>
+				</PbtValueList>
+				<PowerSettingGuidList />
+			</PowerBroadcastEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="AppMonitor" trigger="InstallUninstall">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>	
+			<AppMonitorSubscription>	
+				<AppEventList>
+					<AppEvent event="Uninstall" pfn="E046963F.LenovoCompanion_k1h2ywk1493x8" />
+					<AppEvent event="Uninstall" pfn="E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8" />
+					<AppEvent event="Uninstall" pfn="E046963F.LenovoCompanionBeta_k1h2ywk1493x8" />					
+				</AppEventList>
+			</AppMonitorSubscription>]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="ImController.Privilege.ReceiveEvents">0</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoCompanionBeta_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoUdcForImcPackage" packageType="App" version="1.330.8.0" location="LenovoUdcForImcPackage.cab" lastModified="2016-09-14T03:17:26" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter osBitness="32">false</Filter>
+                <Filter tag="System.IsEnterpriseDevice">false</Filter>
+                <Filter tag="!57540AMZNMobileLLC.AmazonAlexa_22t9g3sebte08">false</Filter>
+                <Filter tag="!UdcInstalled">false</Filter>
+                <Filter tag="UdcInstalled|false">false</Filter>
+                <Filter tag="UdcVersion|3.3.0.106">false</Filter>
+                <Filter tag="UdcVersion|3.2.0.33">true</Filter>
+                <Filter tag="UdcVersion|3.1.0.72">true</Filter>
+                <Filter tag="UdcVersion|2.11.0.115">true</Filter>
+                <Filter tag="UdcVersion|2.11.2.3">true</Filter>
+                <Filter tag="UdcVersion|2.10.0.66">true</Filter>
+                <Filter tag="UdcVersion|2.9.0.49">true</Filter>
+                <Filter tag="UdcVersion|2.8.0.63">true</Filter>
+                <Filter tag="UdcVersion|2.7.0.26">true</Filter>
+                <Filter tag="UdcVersion|2.6.0.49">true</Filter>
+                <Filter tag="UdcVersion|2.5.0.42">true</Filter>
+                <Filter tag="UdcVersion|2.4.0.37">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList/>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Privilege.CustomInstall">1</Setting>
+                <Setting key="ImController.Association.Device"/>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoSystemUpdatePlugin" version="2.0.0.171" location="LenovoSystemUpdatePlugin.cab" lastModified="2015-08-04T14:54:00" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter tag="System.Profile.MMD">false</Filter>
+                <Filter brand="think">true</Filter>
+                <Filter brand="idea">true</Filter>
+                <Filter brand="lenovo">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemOptimization.SystemUpdate" version="1.0.0.0" runas="system" plugin="LenovoSystemUpdatePlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange" runas="system">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+				<RegistryEventSubscription>
+				<RegistryHiveName>HKEY_LOCAL_MACHINE</RegistryHiveName>
+				<KeyPath>SOFTWARE\Lenovo\SystemUpdatePlugin\Scheduler</KeyPath>
+        <ValueName>start</ValueName> 
+			</RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange" runas="system">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+				<RegistryEventSubscription>
+				<RegistryHiveName>HKEY_LOCAL_MACHINE</RegistryHiveName>
+				<KeyPath>Software\Policies\Lenovo\E046963F.LenovoCompanion_k1h2ywk1493x8</KeyPath>
+        <ValueName>70E80D9F_37C7_4C93_8C68_3EB61E57D2EE</ValueName> 
+			</RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange" runas="system">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+				<RegistryEventSubscription>
+				<RegistryHiveName>HKEY_LOCAL_MACHINE</RegistryHiveName>
+				<KeyPath>Software\Policies\Lenovo\E046963F.LenovoCompanion_k1h2ywk1493x8</KeyPath>
+        <ValueName>F939BA69-B60B-4095-8E8D-7A7D916E0B63</ValueName> 
+			</RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange" runas="system">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+							<RegistryEventSubscription>
+							<RegistryHiveName>HKEY_LOCAL_MACHINE</RegistryHiveName>
+							<KeyPath>Software\Policies\Lenovo\Commercial Vantage</KeyPath>
+					<ValueName>AutoUpdateScheduleDayOfWeek</ValueName> 
+						</RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange" runas="system">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+							<RegistryEventSubscription>
+							<RegistryHiveName>HKEY_LOCAL_MACHINE</RegistryHiveName>
+							<KeyPath>Software\Policies\Lenovo\Commercial Vantage</KeyPath>
+					<ValueName>AutoUpdateScheduleTime</ValueName> 
+						</RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange" runas="system">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+							<RegistryEventSubscription>
+							<RegistryHiveName>HKEY_LOCAL_MACHINE</RegistryHiveName>
+							<KeyPath>Software\Policies\Lenovo\Commercial Vantage</KeyPath>
+					<ValueName>AutoUpdateEnabled</ValueName> 
+						</RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange" runas="system">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+							<RegistryEventSubscription>
+							<RegistryHiveName>HKEY_LOCAL_MACHINE</RegistryHiveName>
+							<KeyPath>Software\Policies\Lenovo\Commercial Vantage</KeyPath>
+					<ValueName>page.systemUpdate</ValueName> 
+						</RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange" runas="system">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+							<RegistryEventSubscription>
+							<RegistryHiveName>HKEY_LOCAL_MACHINE</RegistryHiveName>
+							<KeyPath>Software\Policies\Lenovo\Commercial Vantage</KeyPath>
+					<ValueName>RunOnce</ValueName> 
+						</RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="SystemEventMonitor" trigger="User-Login" runas="system">
+                    <Parameter><![CDATA[ ]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="ImController.Privilege.SkipSuspendTermination">1</Setting>
+                <Setting key="ImController.Association.Device"/>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoSpectrumPlugin" version="2.0.0.85" location="LenovoSpectrumPlugin.cab" lastModified="2017-08-20T14:26:38" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter brand="think" family="thinkpad x1 carbon 4th">true</Filter>
+                <Filter brand="think" family="thinkpad x1 yoga*">true</Filter>
+                <Filter brand="think" family="thinkpad x13 yoga">true</Filter>
+                <Filter brand="think" family="thinkpad x13 yoga gen1">true</Filter>
+                <Filter brand="think" family="thinkpad x13 yoga gen 1">true</Filter>
+                <Filter brand="think" family="thinkpad e560p">true</Filter>
+                <Filter brand="think" family="thinkpad s5">true</Filter>
+                <Filter brand="think" family="thinkpad s5 2nd gen">true</Filter>
+                <Filter brand="think" family="thinkpad x1 carbon 6th">true</Filter>
+                <Filter brand="think" family="thinkpad x1 extreme*">true</Filter>
+                <Filter brand="think" family="thinkPad p1 gen 2">true</Filter>
+                <Filter brand="think" family="thinkPad p1 gen2">true</Filter>
+                <Filter brand="think" family="thinkPad p1 gen3">true</Filter>
+                <Filter brand="think" family="thinkPad p1 gen 3">true</Filter>
+                <Filter brand="think" family="thinkPad p15 gen 1">true</Filter>
+                <Filter brand="think" family="thinkPad p15g gen 1">true</Filter>
+                <Filter brand="think" family="thinkpad t15g gen 1">true</Filter>
+                <Filter brand="think" family="thinkpad t15g gen1">true</Filter>
+                <Filter brand="think" family="thinkpad p15 gen 2">true</Filter>
+                <Filter brand="think" family="thinkpad p15 gen2">true</Filter>
+                <Filter brand="think" family="thinkpad p15 gen 2i">true</Filter>
+                <Filter brand="think" family="thinkpad p15 gen2i">true</Filter>
+                <Filter brand="think" family="thinkpad p15 gen 2a">true</Filter>
+                <Filter brand="think" family="thinkpad p15 gen2a">true</Filter>
+                <Filter brand="think" family="thinkpad t15g gen 2">true</Filter>
+                <Filter brand="think" family="thinkpad t15g gen2">true</Filter>
+                <Filter brand="think" family="thinkpad t15g gen 2i">true</Filter>
+                <Filter brand="think" family="thinkpad t15g gen2i">true</Filter>
+                <Filter brand="think" family="thinkPad t15g gen 2a">true</Filter>
+                <Filter brand="think" family="thinkpad t15g gen2a">true</Filter>
+                <Filter brand="think" family="thinkpad p53">true</Filter>
+                <Filter brand="think" family="thinkpad p73">true</Filter>
+                <Filter brand="think" family="thinkpad x1 fold">true</Filter>
+                <Filter brand="think" family="thinkpad x1 fold gen 1">true</Filter>
+                <Filter brand="think" family="thinkpad x1 fold gen1">true</Filter>
+                <Filter brand="idea" family="Yoga 14sACH 2021 O">true</Filter>
+                <Filter brand="idea" family="Yoga Slim 7 Pro 14ACH5 O">true</Filter>
+                <Filter brand="idea" family="Yoga Slim 7 Pro 14IHU5 O">true</Filter>
+                <Filter brand="idea" family="Yoga Slim 7 Pro 14IHU5 O U">true</Filter>
+                <Filter brand="idea" family="Yoga Slim 7 Pro 14IHU5 O D">true</Filter>
+                <Filter brand="idea" family="Yoga 14sIHU 2021 O">true</Filter>
+                <Filter brand="idea" family="ThinkBook 14p G2 ACH">true</Filter>
+                <Filter brand="idea" family="ThinkBook 14p G 2 ACH">true</Filter>
+                <Filter brand="idea" family="Yoga Slim 7 Pro 14ACH5 OD">true</Filter>
+                <Filter brand="idea" family="Yoga 14sACH 2021 OD">true</Filter>
+                <Filter brand="idea" family="Yoga Slim 7 Carbon 14ACN6">true</Filter>
+                <Filter brand="idea" family="IdeaPad Slim 7 Carbon 14ACN6">true</Filter>
+                <Filter brand="idea" family="Yoga Slim 7 Carbon 14ACN6 D">true</Filter>
+                <Filter brand="idea" family="Yoga Slim 7 Carbon 14ACN6 U">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.Spectrum" version="1.0.0.0" runas="user" plugin="LenovoSpectrumPlugin"/>
+            </ContractMappingList>
+            <SettingList>
+                <Setting key="ImController.Privilege.ReceiveEvents">0</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoCompanionBeta_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="SystemEventMonitor" trigger="User-Login">
+                    <Parameter><![CDATA[ ]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="WindowMessageMonitor" trigger="SessionChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+	        <SessionChangeEventSubscription>
+                   <WtsSessionValueList>
+                      <WtsSessionValue>1</WtsSessionValue>
+                   </WtsSessionValueList>
+                </SessionChangeEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="WindowMessageMonitor" trigger="PowerChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+			<PowerBroadcastEventSubscription>
+				<PbtValueList>
+					<PbtValue>18</PbtValue>
+				</PbtValueList>
+				<PowerSettingGuidList />
+			</PowerBroadcastEventSubscription>]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoSettingsAppPlugin" version="1.2.129.0" location="LenovoSettingsAppPlugin.cab" lastModified="2017-09-08T01:06:17">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter>true</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.LenovoSettingsApp" version="1.0.0.0" runas="user" plugin="LenovoSettingsAppPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoPaperDisplayPlugin" version="1.2.256.0" location="LenovoPaperDisplayPlugin.cab" lastModified="2018-01-15T05:51:12" customEventMonitor="" msVersion="1.2.256.0" msLocation="ms-LenovoPaperDisplayPlugin.cab">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter brand="idea">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.PaperDisplay" version="1.0.0.0" runas="user" plugin="LenovoPaperDisplayPlugin"/>
+            </ContractMappingList>
+            <SettingList>
+                <Setting key="ImController.Privilege.ReceiveEvents">1</Setting>
+                <Setting key="ImController.Privilege.SkipSuspendTermination">1</Setting>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="SystemEventMonitor" trigger="User-Login">
+                    <Parameter><![CDATA[ ]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoMobileHotspotPlugin" version="1.2.76.0" location="LenovoMobileHotspotPlugin.cab" lastModified="2016-08-17T23:51:21" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter>true</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.MobileHotspot" version="1.0.0.0" runas="system" plugin="LenovoMobileHotspotPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoKBDManagerPlugin" version="3.0.1.4" location="LenovoKBDManagerPlugin.cab" lastModified="2015-04-06T12:00:00" customEventMonitor="" msVersion="2.0.0.18" msLocation="ms-LenovoKBDManagerPlugin.cab">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter brand="think">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.KBDManager" version="1.0.0.0" runas="user" plugin="LenovoKBDManagerPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoHardwareScanPlugin" version="1.0.50.8" location="LenovoHardwareScanPlugin.cab" lastModified="2021-04-29T15:52:07" customEventMonitor="" msVersion="1.0.35.0" msLocation="ms-LenovoHardwareScanPlugin.cab">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter brand="think">true</Filter>
+                <Filter brand="idea">true</Filter>
+                <Filter brand="lenovo">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.HardwareScan.General" version="1.0.0.0" runas="system" plugin="LenovoHardwareScanPlugin"/>
+                <ContractMapping name="SystemManagement.HardwareScan.CPU" version="1.0.0.0" runas="system" plugin="LenovoHardwareScanPlugin"/>
+                <ContractMapping name="SystemManagement.HardwareScan.Memory" version="1.0.0.0" runas="system" plugin="LenovoHardwareScanPlugin"/>
+                <ContractMapping name="SystemManagement.HardwareScan.Motherboard" version="1.0.0.0" runas="system" plugin="LenovoHardwareScanPlugin"/>
+                <ContractMapping name="SystemManagement.HardwareScan.PCIExpress" version="1.0.0.0" runas="system" plugin="LenovoHardwareScanPlugin"/>
+                <ContractMapping name="SystemManagement.HardwareScan.Storage" version="1.0.0.0" runas="system" plugin="LenovoHardwareScanPlugin"/>
+                <ContractMapping name="SystemManagement.HardwareScan.Wireless" version="1.0.0.0" runas="system" plugin="LenovoHardwareScanPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Privilege.SkipSuspendTermination">1</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoGamingUserPlugin" version="3.7.0.38" location="LenovoGamingUserPlugin.cab" lastModified="2017-12-22T14:16:37" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter family="IdeaCentre GeekPro-14AMR">false</Filter>
+                <Filter family="IdeaCentre GeekPro-14IMB">false</Filter>
+                <Filter family="Legion REN7000P-26AMR">false</Filter>
+                <Filter family="ZHENGJIUZHE REN7000-28IMB">false</Filter>
+                <Filter family="ZHENGJIUZHE REN9000-34IMZ">false</Filter>
+                <Filter family="ZHENGJIUZHE REN9000K-34IMZ">false</Filter>
+                <Filter family="ZHENGJIUZHE REN7000K-28IMB">false</Filter>
+                <Filter family="Legion Y73015ICH">true</Filter>
+                <Filter family="Legion Y9000">true</Filter>
+                <Filter family="Legion Y73015ICHg">true</Filter>
+                <Filter family="Legion Y9000g">true</Filter>
+                <Filter family="Legion Y73017ICH">true</Filter>
+                <Filter family="Legion Y900017">true</Filter>
+                <Filter family="Legion Y73017ICHg">true</Filter>
+                <Filter family="Legion Y9000g17">true</Filter>
+                <Filter family="Legion Y53015ICH">true</Filter>
+                <Filter family="Rescuer Y7000">true</Filter>
+                <Filter family="Rescuer Y7000P">true</Filter>
+                <Filter family="Legion Y7000P">true</Filter>
+                <Filter family="Legion C53019ICB">true</Filter>
+                <Filter family="Legion T53028ICB">true</Filter>
+                <Filter family="Legion T53028APR">true</Filter>
+                <Filter family="Legion C73019ICO">true</Filter>
+                <Filter family="Legion T73028ICO">true</Filter>
+                <Filter family="Legion Y74015ICH">true</Filter>
+                <Filter family="Legion Y9000P 2019">true</Filter>
+                <Filter family="Legion Y74015ICHg">true</Filter>
+                <Filter family="Legion Y74017ICH">true</Filter>
+                <Filter family="Legion Y74017ICHg">true</Filter>
+                <Filter family="Legion Y9000K 2019">true</Filter>
+                <Filter family="Legion Y53015ICH1060">true</Filter>
+                <Filter family="Legion Y70001060">true</Filter>
+                <Filter family="Legion Y7000P1060">true</Filter>
+                <Filter family="Legion Y54015ICH">true</Filter>
+                <Filter family="Legion Y54015IRH">true</Filter>
+                <Filter family="Legion Y7000 2019">true</Filter>
+                <Filter family="Legion Y7000P 2019">true</Filter>
+                <Filter family="Legion Y545">true</Filter>
+                <Filter family="Legion Y54017IRH">true</Filter>
+                <Filter family="Legion Y54015IRHPG0">true</Filter>
+                <Filter family="Legion Y7000 2019 PG0">true</Filter>
+                <Filter family="Legion Y7000P 2019 PG0">true</Filter>
+                <Filter family="Legion Y545 PG0">true</Filter>
+                <Filter family="Legion Y54017IRHPG0">true</Filter>
+                <Filter family="Legion Y7000 2019 1050">true</Filter>
+                <Filter family="Legion Y74015IRH">true</Filter>
+                <Filter family="Legion Y74015IRHg">true</Filter>
+                <Filter family="Legion Y74017IRH">true</Filter>
+                <Filter family="Legion Y74017IRHg">true</Filter>
+                <Filter family="Legion Y9000K 2019 SE">true</Filter>
+                <Filter family="Legion Y730-15ICH">true</Filter>
+                <Filter family="Legion Y730-15ICHg">true</Filter>
+                <Filter family="Legion Y730-17ICH">true</Filter>
+                <Filter family="Legion Y9000-17">true</Filter>
+                <Filter family="Legion Y730-17ICHg">true</Filter>
+                <Filter family="Legion Y9000g-17">true</Filter>
+                <Filter family="Legion Y530-15ICH">true</Filter>
+                <Filter family="Legion C530-19ICB">true</Filter>
+                <Filter family="Legion T530-28ICB">true</Filter>
+                <Filter family="Legion T530-28APR">true</Filter>
+                <Filter family="Legion C730-19ICO">true</Filter>
+                <Filter family="Legion T730-28ICO">true</Filter>
+                <Filter family="Legion Y740-15ICH">true</Filter>
+                <Filter family="Legion Y740-15ICHg">true</Filter>
+                <Filter family="Legion Y740-17ICH">true</Filter>
+                <Filter family="Legion Y740-17ICHg">true</Filter>
+                <Filter family="Legion Y530-15ICH-1060">true</Filter>
+                <Filter family="Legion Y7000-1060">true</Filter>
+                <Filter family="Legion Y7000P-1060">true</Filter>
+                <Filter family="Legion Y540-15ICH">true</Filter>
+                <Filter family="Legion Y540-15IRH">true</Filter>
+                <Filter family="Legion Y540-17IRH">true</Filter>
+                <Filter family="Legion Y540-15IRH-PG0">true</Filter>
+                <Filter family="Legion Y540-17IRH-PG0">true</Filter>
+                <Filter family="Legion Y740-15IRH">true</Filter>
+                <Filter family="Legion Y740-15IRHg">true</Filter>
+                <Filter family="Legion Y740-17IRH">true</Filter>
+                <Filter family="Legion Y740-17IRHg">true</Filter>
+                <Filter family="Legion Y9000X 2019">true</Filter>
+                <Filter family="Legion Y740S-15IRH">true</Filter>
+                <Filter family="Legion Y9000X 2020">true</Filter>
+                <Filter family="IdeaPad Gaming 3 15IMH05">true</Filter>
+                <Filter family="IdeaPad Creator 5 15IMH05">true</Filter>
+                <Filter family="Legion T5-28IMB05">true</Filter>
+                <Filter family="Legion Y740S-15IMH">true</Filter>
+                <Filter family="Legion Y9000X2020R">true</Filter>
+                <Filter family="Legion Y9000P2020H">true</Filter>
+                <Filter family="Legion Y9000P 2020">true</Filter>
+                <Filter family="Legion 7 15IMH05">true</Filter>
+                <Filter family="Legion 7 15IMHg05">true</Filter>
+                <Filter family="Legion 5 15IMH05H">true</Filter>
+                <Filter family="Legion Y7000 2020H">true</Filter>
+                <Filter family="Legion 5 15IMH05">true</Filter>
+                <Filter family="Legion Y7000 2020">true</Filter>
+                <Filter family="Legion 5P 15IMH05H">true</Filter>
+                <Filter family="Legion Y7000P2020H">true</Filter>
+                <Filter family="Legion 5P 15IMH05">true</Filter>
+                <Filter family="Legion Y7000P 2020">true</Filter>
+                <Filter family="Legion 5 17IMH05H">true</Filter>
+                <Filter family="Legion 5 17IMH05">true</Filter>
+                <Filter family="Legion 5 15ARH05">true</Filter>
+                <Filter family="Legion R7000 2020">true</Filter>
+                <Filter family="IdeaCentre G5 14IMB05">true</Filter>
+                <Filter family="Legion T5-28ICB05">true</Filter>
+                <Filter family="Legion Y9000K2020H">true</Filter>
+                <Filter family="Legion Y9000K 2020">true</Filter>
+                <Filter family="Legion Y7000P2020">true</Filter>
+                <Filter family="Legion 5 15ARH05H">true</Filter>
+                <Filter family="IdeaCentre G5 14AMR05">true</Filter>
+                <Filter family="Legion R5 28IMB05">true</Filter>
+                <Filter family="Legion T5 28IMB05">true</Filter>
+                <Filter family="Legion T5 28ICB05">true</Filter>
+                <Filter family="Legion T7 34IMZ05">true</Filter>
+                <Filter family="Legion S7 15IMH05">true</Filter>
+                <Filter family="Legion Y9000X 2021">true</Filter>
+                <Filter family="Legion5 17ARH05H">true</Filter>
+                <Filter family="Legion5 17ARH05">true</Filter>
+                <Filter family="Legion5P 15ARH05H">true</Filter>
+                <Filter family="R7000P2020H">true</Filter>
+                <Filter family="Legion5P 15ARH05">true</Filter>
+                <Filter family="R7000P2020">true</Filter>
+                <Filter family="Legion 5P 15ARH05H">true</Filter>
+                <Filter family="Legion R7000P2020H">true</Filter>
+                <Filter family="Legion 5 17ARH05H">true</Filter>
+                <Filter family="Legion T7 34IMZ5">true</Filter>
+                <Filter family="IdeaPad Gaming 3 15ARH05">true</Filter>
+                <Filter family="Legion S7 15IMH5">true</Filter>
+                <Filter family="Legion S7 15ARH5">true</Filter>
+                <Filter family="Legion R9000X 2021">true</Filter>
+                <Filter family="Legion T5 26AMR5">true</Filter>
+                <Filter family="IdeaCentre Gaming5 14IOB6">true</Filter>
+                <Filter family="IC Creator 5 14IOB6">true</Filter>
+                <Filter family="IdeaCentre Gaming5 14ACN6">true</Filter>
+                <Filter family="IdeaCentre Gaming5 17IAB7">true</Filter>
+                <Filter family="Legion T5 26IOB6">true</Filter>
+                <Filter family="Legion R9000K 2021">true</Filter>
+                <Filter family="Legion 7 16ITHg6">true</Filter>
+                <Filter family="Legion Y9000K2021H">true</Filter>
+                <Filter family="Legion S7 15ACH6">true</Filter>
+                <Filter family="Legion R9000X2021R">true</Filter>
+                <Filter family="Legion 5 15ACH6H">true</Filter>
+                <Filter family="Legion R7000 2021H">true</Filter>
+                <Filter family="Legion R7000P2021H">true</Filter>
+                <Filter family="Legion 5 15ACH6">true</Filter>
+                <Filter family="Legion R7000 2021">true</Filter>
+                <Filter family="Legion R7000P2021">true</Filter>
+                <Filter family="Legion 5 17ACH6H">true</Filter>
+                <Filter family="Legion 5 17ACH6">true</Filter>
+                <Filter family="Legion R9000P2021H">true</Filter>
+                <Filter family="Legion 5P16ACH6H">true</Filter>
+                <Filter family="Legion 5P16ACH6">true</Filter>
+                <Filter family="Legion R9000P2021">true</Filter>
+                <Filter family="Legion 5 15ITH6H">true</Filter>
+                <Filter family="Legion Y7000 2021H">true</Filter>
+                <Filter family="Legion Y7000P2021H">true</Filter>
+                <Filter family="Legion 5 15ITH6">true</Filter>
+                <Filter family="Legion Y7000 2021">true</Filter>
+                <Filter family="Legion Y7000P2021">true</Filter>
+                <Filter family="Legion 5 17ITH6H">true</Filter>
+                <Filter family="Legion 5 17ITH6">true</Filter>
+                <Filter family="Legion 5P16ITH6H">true</Filter>
+                <Filter family="Legion Y9000P2021H">true</Filter>
+                <Filter family="Legion 5P16ITH6">true</Filter>
+                <Filter family="Legion Y9000P2021">true</Filter>
+                <Filter family="IdeaPad Gaming 3 15IHU6">true</Filter>
+                <Filter family="IdeaPad Gaming3 15IHU6D">true</Filter>
+                <Filter family="IdeaPad Gaming3 15ACH6D">true</Filter>
+                <Filter family="IdeaPad Gaming 3 15ACH6">true</Filter>
+                <Filter family="Legion 7 16ACHg6">true</Filter>
+                <Filter family="Legion R9000K2021H">true</Filter>
+                <Filter family="Legion R70002021H">true</Filter>
+                <Filter family="Legion R70002021">true</Filter>
+                <Filter family="Legion 5 Pro 16ACH6H">true</Filter>
+                <Filter family="Legion 5 Pro 16ACH6">true</Filter>
+                <Filter family="Legion Y70002021H">true</Filter>
+                <Filter family="Legion Y70002021">true</Filter>
+                <Filter family="Legion 5 Pro 16ITH6H">true</Filter>
+                <Filter family="Legion 5 Pro 16ITH6">true</Filter>
+                <Filter family="Legion 5 15ACH6A">true</Filter>
+                <Filter family="Legion R70002021A">true</Filter>
+                <Filter family="Legion R7000P2021A">true</Filter>
+                <Filter family="Legion 5 15IMH6">true</Filter>
+                <Filter family="Legion Y70002020R">true</Filter>
+                <Filter family="Legion T7 34IAZ7">true</Filter>
+                <Filter tag="System.Profile.Gaming">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="Gaming.GameUserCommon" version="1.0.0.0" runas="user" plugin="LenovoGamingUserPlugin"/>
+                <ContractMapping name="Gaming.Hardwareinfo" version="1.0.0.0" runas="user" plugin="LenovoGamingUserPlugin"/>
+                <ContractMapping name="Gaming.GameRecorder" version="1.0.0.0" runas="user" plugin="LenovoGamingUserPlugin"/>
+                <ContractMapping name="Gaming.MagicYKey" version="1.0.0.0" runas="user" plugin="LenovoGamingUserPlugin"/>
+                <ContractMapping name="Gaming.Optimization" version="1.0.0.0" runas="user" plugin="LenovoGamingUserPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="ImController.Association.Device"/>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoGamingSystemPlugin" version="3.7.0.38" location="LenovoGamingSystemPlugin.cab" lastModified="2017-12-22T14:15:27" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter family="IdeaCentre GeekPro-14AMR">false</Filter>
+                <Filter family="IdeaCentre GeekPro-14IMB">false</Filter>
+                <Filter family="Legion REN7000P-26AMR">false</Filter>
+                <Filter family="ZHENGJIUZHE REN7000-28IMB">false</Filter>
+                <Filter family="ZHENGJIUZHE REN9000-34IMZ">false</Filter>
+                <Filter family="ZHENGJIUZHE REN9000K-34IMZ">false</Filter>
+                <Filter family="ZHENGJIUZHE REN7000K-28IMB">false</Filter>
+                <Filter family="Legion Y73015ICH">true</Filter>
+                <Filter family="Legion Y9000">true</Filter>
+                <Filter family="Legion Y73015ICHg">true</Filter>
+                <Filter family="Legion Y9000g">true</Filter>
+                <Filter family="Legion Y73017ICH">true</Filter>
+                <Filter family="Legion Y900017">true</Filter>
+                <Filter family="Legion Y73017ICHg">true</Filter>
+                <Filter family="Legion Y9000g17">true</Filter>
+                <Filter family="Legion Y53015ICH">true</Filter>
+                <Filter family="Rescuer Y7000">true</Filter>
+                <Filter family="Rescuer Y7000P">true</Filter>
+                <Filter family="Legion Y7000P">true</Filter>
+                <Filter family="Legion C53019ICB">true</Filter>
+                <Filter family="Legion T53028ICB">true</Filter>
+                <Filter family="Legion T53028APR">true</Filter>
+                <Filter family="Legion C73019ICO">true</Filter>
+                <Filter family="Legion T73028ICO">true</Filter>
+                <Filter family="Legion Y74015ICH">true</Filter>
+                <Filter family="Legion Y9000P 2019">true</Filter>
+                <Filter family="Legion Y74015ICHg">true</Filter>
+                <Filter family="Legion Y74017ICH">true</Filter>
+                <Filter family="Legion Y74017ICHg">true</Filter>
+                <Filter family="Legion Y9000K 2019">true</Filter>
+                <Filter family="Legion Y53015ICH1060">true</Filter>
+                <Filter family="Legion Y70001060">true</Filter>
+                <Filter family="Legion Y7000P1060">true</Filter>
+                <Filter family="Legion Y54015ICH">true</Filter>
+                <Filter family="Legion Y54015IRH">true</Filter>
+                <Filter family="Legion Y7000 2019">true</Filter>
+                <Filter family="Legion Y7000P 2019">true</Filter>
+                <Filter family="Legion Y545">true</Filter>
+                <Filter family="Legion Y54017IRH">true</Filter>
+                <Filter family="Legion Y54015IRHPG0">true</Filter>
+                <Filter family="Legion Y7000 2019 PG0">true</Filter>
+                <Filter family="Legion Y7000P 2019 PG0">true</Filter>
+                <Filter family="Legion Y545 PG0">true</Filter>
+                <Filter family="Legion Y54017IRHPG0">true</Filter>
+                <Filter family="Legion Y7000 2019 1050">true</Filter>
+                <Filter family="Legion Y74015IRH">true</Filter>
+                <Filter family="Legion Y74015IRHg">true</Filter>
+                <Filter family="Legion Y74017IRH">true</Filter>
+                <Filter family="Legion Y74017IRHg">true</Filter>
+                <Filter family="Legion Y9000K 2019 SE">true</Filter>
+                <Filter family="Legion Y730-15ICH">true</Filter>
+                <Filter family="Legion Y730-15ICHg">true</Filter>
+                <Filter family="Legion Y730-17ICH">true</Filter>
+                <Filter family="Legion Y9000-17">true</Filter>
+                <Filter family="Legion Y730-17ICHg">true</Filter>
+                <Filter family="Legion Y9000g-17">true</Filter>
+                <Filter family="Legion Y530-15ICH">true</Filter>
+                <Filter family="Legion C530-19ICB">true</Filter>
+                <Filter family="Legion T530-28ICB">true</Filter>
+                <Filter family="Legion T530-28APR">true</Filter>
+                <Filter family="Legion C730-19ICO">true</Filter>
+                <Filter family="Legion T730-28ICO">true</Filter>
+                <Filter family="Legion Y740-15ICH">true</Filter>
+                <Filter family="Legion Y740-15ICHg">true</Filter>
+                <Filter family="Legion Y740-17ICH">true</Filter>
+                <Filter family="Legion Y740-17ICHg">true</Filter>
+                <Filter family="Legion Y530-15ICH-1060">true</Filter>
+                <Filter family="Legion Y7000-1060">true</Filter>
+                <Filter family="Legion Y7000P-1060">true</Filter>
+                <Filter family="Legion Y540-15ICH">true</Filter>
+                <Filter family="Legion Y540-15IRH">true</Filter>
+                <Filter family="Legion Y540-17IRH">true</Filter>
+                <Filter family="Legion Y540-15IRH-PG0">true</Filter>
+                <Filter family="Legion Y540-17IRH-PG0">true</Filter>
+                <Filter family="Legion Y740-15IRH">true</Filter>
+                <Filter family="Legion Y740-15IRHg">true</Filter>
+                <Filter family="Legion Y740-17IRH">true</Filter>
+                <Filter family="Legion Y740-17IRHg">true</Filter>
+                <Filter family="Legion Y9000X 2019">true</Filter>
+                <Filter family="Legion Y740S-15IRH">true</Filter>
+                <Filter family="Legion Y9000X 2020">true</Filter>
+                <Filter family="IdeaPad Gaming 3 15IMH05">true</Filter>
+                <Filter family="IdeaPad Creator 5 15IMH05">true</Filter>
+                <Filter family="Legion T5-28IMB05">true</Filter>
+                <Filter family="Legion Y740S-15IMH">true</Filter>
+                <Filter family="Legion Y9000X2020R">true</Filter>
+                <Filter family="Legion Y9000P2020H">true</Filter>
+                <Filter family="Legion Y9000P 2020">true</Filter>
+                <Filter family="Legion 7 15IMH05">true</Filter>
+                <Filter family="Legion 7 15IMHg05">true</Filter>
+                <Filter family="Legion 5 15IMH05H">true</Filter>
+                <Filter family="Legion Y7000 2020H">true</Filter>
+                <Filter family="Legion 5 15IMH05">true</Filter>
+                <Filter family="Legion Y7000 2020">true</Filter>
+                <Filter family="Legion 5P 15IMH05H">true</Filter>
+                <Filter family="Legion Y7000P2020H">true</Filter>
+                <Filter family="Legion 5P 15IMH05">true</Filter>
+                <Filter family="Legion Y7000P 2020">true</Filter>
+                <Filter family="Legion 5 17IMH05H">true</Filter>
+                <Filter family="Legion 5 17IMH05">true</Filter>
+                <Filter family="Legion 5 15ARH05">true</Filter>
+                <Filter family="Legion R7000 2020">true</Filter>
+                <Filter family="IdeaCentre G5 14IMB05">true</Filter>
+                <Filter family="Legion T5-28ICB05">true</Filter>
+                <Filter family="Legion Y9000K2020H">true</Filter>
+                <Filter family="Legion Y9000K 2020">true</Filter>
+                <Filter family="Legion Y7000P2020">true</Filter>
+                <Filter family="Legion 5 15ARH05H">true</Filter>
+                <Filter family="IdeaCentre G5 14AMR05">true</Filter>
+                <Filter family="Legion R5 28IMB05">true</Filter>
+                <Filter family="Legion T5 28IMB05">true</Filter>
+                <Filter family="Legion T5 28ICB05">true</Filter>
+                <Filter family="Legion T7 34IMZ05">true</Filter>
+                <Filter family="Legion S7 15IMH05">true</Filter>
+                <Filter family="Legion Y9000X 2021">true</Filter>
+                <Filter family="Legion5 17ARH05H">true</Filter>
+                <Filter family="Legion5 17ARH05">true</Filter>
+                <Filter family="Legion5P 15ARH05H">true</Filter>
+                <Filter family="R7000P2020H">true</Filter>
+                <Filter family="Legion5P 15ARH05">true</Filter>
+                <Filter family="R7000P2020">true</Filter>
+                <Filter family="Legion 5P 15ARH05H">true</Filter>
+                <Filter family="Legion R7000P2020H">true</Filter>
+                <Filter family="Legion 5 17ARH05H">true</Filter>
+                <Filter family="Legion T7 34IMZ5">true</Filter>
+                <Filter family="IdeaPad Gaming 3 15ARH05">true</Filter>
+                <Filter family="Legion S7 15IMH5">true</Filter>
+                <Filter family="Legion S7 15ARH5">true</Filter>
+                <Filter family="Legion R9000X 2021">true</Filter>
+                <Filter family="Legion T5 26AMR5">true</Filter>
+                <Filter family="IdeaCentre Gaming5 14IOB6">true</Filter>
+                <Filter family="IC Creator 5 14IOB6">true</Filter>
+                <Filter family="IdeaCentre Gaming5 14ACN6">true</Filter>
+                <Filter family="IdeaCentre Gaming5 17IAB7">true</Filter>
+                <Filter family="Legion T5 26IOB6">true</Filter>
+                <Filter family="Legion R9000K 2021">true</Filter>
+                <Filter family="Legion 7 16ITHg6">true</Filter>
+                <Filter family="Legion Y9000K2021H">true</Filter>
+                <Filter family="Legion S7 15ACH6">true</Filter>
+                <Filter family="Legion R9000X2021R">true</Filter>
+                <Filter family="Legion 5 15ACH6H">true</Filter>
+                <Filter family="Legion R7000 2021H">true</Filter>
+                <Filter family="Legion R7000P2021H">true</Filter>
+                <Filter family="Legion 5 15ACH6">true</Filter>
+                <Filter family="Legion R7000 2021">true</Filter>
+                <Filter family="Legion R7000P2021">true</Filter>
+                <Filter family="Legion 5 17ACH6H">true</Filter>
+                <Filter family="Legion 5 17ACH6">true</Filter>
+                <Filter family="Legion R9000P2021H">true</Filter>
+                <Filter family="Legion 5P16ACH6H">true</Filter>
+                <Filter family="Legion 5P16ACH6">true</Filter>
+                <Filter family="Legion R9000P2021">true</Filter>
+                <Filter family="Legion 5 15ITH6H">true</Filter>
+                <Filter family="Legion Y7000 2021H">true</Filter>
+                <Filter family="Legion Y7000P2021H">true</Filter>
+                <Filter family="Legion 5 15ITH6">true</Filter>
+                <Filter family="Legion Y7000 2021">true</Filter>
+                <Filter family="Legion Y7000P2021">true</Filter>
+                <Filter family="Legion 5 17ITH6H">true</Filter>
+                <Filter family="Legion 5 17ITH6">true</Filter>
+                <Filter family="Legion 5P16ITH6H">true</Filter>
+                <Filter family="Legion Y9000P2021H">true</Filter>
+                <Filter family="Legion 5P16ITH6">true</Filter>
+                <Filter family="Legion Y9000P2021">true</Filter>
+                <Filter family="IdeaPad Gaming 3 15IHU6">true</Filter>
+                <Filter family="IdeaPad Gaming3 15IHU6D">true</Filter>
+                <Filter family="IdeaPad Gaming3 15ACH6D">true</Filter>
+                <Filter family="IdeaPad Gaming 3 15ACH6">true</Filter>
+                <Filter family="Legion 7 16ACHg6">true</Filter>
+                <Filter family="Legion R9000K2021H">true</Filter>
+                <Filter family="Legion R70002021H">true</Filter>
+                <Filter family="Legion R70002021">true</Filter>
+                <Filter family="Legion 5 Pro 16ACH6H">true</Filter>
+                <Filter family="Legion 5 Pro 16ACH6">true</Filter>
+                <Filter family="Legion Y70002021H">true</Filter>
+                <Filter family="Legion Y70002021">true</Filter>
+                <Filter family="Legion 5 Pro 16ITH6H">true</Filter>
+                <Filter family="Legion 5 Pro 16ITH6">true</Filter>
+                <Filter family="Legion 5 15ACH6A">true</Filter>
+                <Filter family="Legion R70002021A">true</Filter>
+                <Filter family="Legion R7000P2021A">true</Filter>
+                <Filter family="Legion 5 15IMH6">true</Filter>
+                <Filter family="Legion Y70002020R">true</Filter>
+                <Filter family="Legion T7 34IAZ7">true</Filter>
+                <Filter tag="System.Profile.Gaming">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="Gaming.GameSystemCommon" version="1.0.0.0" runas="system" plugin="LenovoGamingSystemPlugin"/>
+                <ContractMapping name="Gaming.FanCooling" version="1.0.0.0" runas="system" plugin="LenovoGamingSystemPlugin"/>
+                <ContractMapping name="Gaming.Locker" version="1.0.0.0" runas="system" plugin="LenovoGamingSystemPlugin"/>
+                <ContractMapping name="Gaming.OverClock" version="1.0.0.0" runas="system" plugin="LenovoGamingSystemPlugin"/>
+                <ContractMapping name="Gaming.LedSettings" version="1.0.0.0" runas="system" plugin="LenovoGamingSystemPlugin"/>
+                <ContractMapping name="Gaming.GSync" version="1.0.0.0" runas="system" plugin="LenovoGamingSystemPlugin"/>
+                <ContractMapping name="Gaming.OverDrive" version="1.0.0.0" runas="system" plugin="LenovoGamingSystemPlugin"/>
+                <ContractMapping name="Gaming.NetworkBoost" version="1.0.0.0" runas="system" plugin="LenovoGamingSystemPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="SystemEventMonitor" trigger="User-Login" runas="system">
+                    <Parameter><![CDATA[ ]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="ImController.Privilege.ReceiveEvents">1</Setting>
+                <Setting key="ImController.Privilege.SkipSuspendTermination">1</Setting>
+                <Setting key="ImController.Association.Device"/>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoFirstRunExperiencePackage" packageType="App" version="2.2.1.6" location="LenovoFirstRunExperiencePackage.cab" lastModified="2017-09-07T14:01:10" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter country="CN">false</Filter>
+                <Filter brand="think">false</Filter>
+                <Filter manufacturer="lenovo" tag="System.Os.DaysFromOobe|&gt;31">false</Filter>
+                <Filter manufacturer="lenovo">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList/>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Privilege.CustomInstall">1</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoDeviceMetricsPlugin" version="2.21.0.5" location="LenovoDeviceMetricsPlugin.cab" lastModified="2016-09-01T21:30:12" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter tag="DeviceMetricsPlugin.Enablement">true</Filter>
+                <Filter family="thinkpad edge*">false</Filter>
+                <Filter family="thinkpad e*">true</Filter>
+                <Filter brand="idea">true</Filter>
+                <Filter brand="lenovo">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+            </ContractMappingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="TimeBasedMonitor" trigger="TimeBaseChange" runas="User">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<TimeBasedEventSubscription>
+<FriendlyName>RunDailyEvent</FriendlyName>
+<OOBEProximity>false</OOBEProximity>
+<RepeatIntervalUnit>Daily</RepeatIntervalUnit>
+<RepeatInterval>1</RepeatInterval>
+</TimeBasedEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="UsageMonitor" trigger="App">
+                    <Parameter><![CDATA[ ]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="SystemEventMonitor" trigger="User-Login" runas="User">
+                    <Parameter><![CDATA[ ]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="WindowMessageMonitor" trigger="PowerChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<PowerBroadcastEventSubscription>
+<PbtValueList>
+<PbtValue>18</PbtValue>
+</PbtValueList>
+<PowerSettingGuidList />
+</PowerBroadcastEventSubscription>]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="ImController.Privilege.CustomKeepAlive">1</Setting>
+                <Setting key="ImController.Privilege.SkipSuspendTermination">1</Setting>
+                <Setting key="ImController.Association.Device"/>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoCompanionAppPlugin" version="2.1.0.223" location="LenovoCompanionAppPlugin.cab" lastModified="2018-09-03T15:51:23" customEventMonitor="" msVersion="2.1.0.189" msLocation="ms-LenovoCompanionAppPlugin.cab">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter manufacturer="lenovo">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemInformation.SupportDocuments" version="1.0.0.0" runas="user" plugin="LenovoCompanionAppPlugin"/>
+                <ContractMapping name="SystemInformation.SecurityCenter" version="1.0.0.0" runas="user" plugin="LenovoCompanionAppPlugin"/>
+            </ContractMappingList>
+            <SettingList>
+                <Setting key="ImController.Package.DisabledVersion">2.1.0.41</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoCompanionBeta_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+                <Setting key="LenovoCompanionAppPlugin.Notifications.TryHardwareScan.IsEnabled">true</Setting>
+                <Setting key="LenovoCompanionAppPlugin.Notifications.CheckWhatsNew.IsEnabled">true</Setting>
+                <Setting key="LenovoCompanionAppPlugin.Notifications.CheckForSystemUpdates.IsEnabled">true</Setting>
+                <Setting key="LenovoCompanionAppPlugin.Notifications.CheckArticles.IsEnabled">true</Setting>
+                <Setting key="LenovoCompanionAppPlugin.Notifications.DeviceRefresh.IsEnabled">true</Setting>
+                <Setting key="LenovoCompanionAppPlugin.Notifications.LenovoID.IsEnabled">true</Setting>
+                <Setting key="LenovoCompanionAppPlugin.Notifications.Sweepstakes.IsEnabled">true</Setting>
+                <Setting key="LenovoCompanionAppPlugin.Notifications.Warranty.Intervals">5,30,90</Setting>
+                <Setting key="LenovoCompanionAppPlugin.Notifications.AlexaMessageFrequency">2</Setting>
+                <Setting key="LenovoCompanionAppPlugin.Notifications.AlexaToastMessageGapInDays">7</Setting>
+                <Setting key="LenovoCompanionAppPlugin.Notifications.AlexaSupportedOSVersion">6.3.17133</Setting>
+                <Setting key="LenovoCompanionAppPlugin.AppEvents.InstallUninstall">ThinkPowerPlugin, LenovoAppScenarioPlugin, LenovoVisionProtectionPlugin, IdeaNotebookPlugin, LenovoGamingSystemPlugin, GenericDisplayPlugin, LenovoCameraPlugin, ThinkSmartSensePlugin, DolbyAudioPlugin</Setting>
+                <Setting key="LenovoCompanionAppPlugin.AutoLaunchVantage.IsEnabled">true</Setting>
+                <Setting key="LenovoCompanionAppPlugin.AutoLaunchVantage.ChancePercentage">20</Setting>
+                <Setting key="LenovoCompanionAppPlugin.AutoLaunchVantage.ExcludedLanguages">zh-hans</Setting>
+                <Setting key="LenovoCompanionAppPlugin.AutoLaunchVantage.ExcludedCountries">cn</Setting>
+                <Setting key="LenovoCompanionAppPlugin.AutoLaunchVantage.TargetedThemes">Consumer</Setting>
+                <Setting key="LenovoCompanionAppPlugin.AutoLaunchVantage.TimeToShow">5</Setting>
+                <Setting key="LenovoCompanionAppPlugin.AutoLaunchVantage.NewWindowsMinVersion">10.0.21000.0000</Setting>
+                <Setting key="LenovoCompanionAppPlugin.Notifications.AlexaTargetedSystems">
+      {"Systems":[
+      {
+      "FamilyName": "IdeaPad S74014IIL",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0285&amp;SUBSYS_17AA3813","version":"6.0.8726.1"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_34C8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_381017AA","version":"10.24.0.2709"}]},
+      "BiosNumber": "BYCN26WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "Yoga S74014IIL",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0285&amp;SUBSYS_17AA3813","version":"6.0.8726.1"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_34C8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_381017AA","version":"10.24.0.2709"}]},
+      "BiosNumber": "BYCN26WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ThinkPad L13",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA5078&amp;REV_1001","version":"9.0.266.0"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_02C8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_507817AA","version":"10.23.0.2672"}]},
+      "BiosNumber": "R15ET14W",
+      "supportLauguages":"en,de,ja",
+      "supportCountrys":"us,gb,de,jp"
+      },
+      {
+      "FamilyName": "ThinkPad L13 Yoga",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA0019&amp;REV_1001","version":"9.0.266.0"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_02C8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_507817AA","version":"10.23.0.2672"}]},
+      "BiosNumber": "R15ET14W",
+      "supportLauguages":"en,de,ja",
+      "supportCountrys":"us,gb,de,jp"
+      },
+      {
+      "FamilyName": "Lenovo ideapad 730S13IML",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0298&amp;SUBSYS_17AA381A","version":"6.0.8716.1"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_02C8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_380117AA","version":"10.23.0.2672"}]},
+      "BiosNumber": "BRCN15WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "Lenovo Yoga S73013IML",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0298&amp;SUBSYS_17AA381A","version":"6.0.8716.1"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_02C8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_380117AA","version":"10.23.0.2672"}]},
+      "BiosNumber": "BRCN15WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ThinkPad E15",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA507A","version":"9.0.276.0"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_02C8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_507917AA","version":"10.23.0.2764"}]},
+      "BiosNumber": "R16ET16W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "Yoga C94015IRH",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0298&amp;SUBSYS_17AA381B","version":"6.0.8734.1"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_A348&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_380217AA","version":"10.23.2725.2"}]},
+      "BiosNumber": "BSCN18WW",
+      "supportLauguages":"en,de,ja",
+      "supportCountrys":"us,gb,de,jp"
+      },
+      {
+      "FamilyName": "IdeaPad S54015IML",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0257&amp;SUBSYS_17AA3831","version":"6.0.8734.1"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_02C8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_381E17AA","version":"10.23.0.2672"}]},
+      "BiosNumber": "CNCN08WW",
+      "supportLauguages":"en,de,ja",
+      "supportCountrys":"us,gb,de,jp"
+      },
+      {
+      "FamilyName": "ThinkPad X390",
+      "Driver": {"drivers":[{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_02C8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_22AC17AA","version":"10.23.0.2427"},{"deviceName":"Audio Driver","hardwareId":"NTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0257&amp;SUBSYS_17AA22AC","version":"6.0.8734.1"}]},
+      "BiosNumber": "N2SET04W",
+      "supportLauguages":"en,de,ja",
+      "supportCountrys":"us,gb,de,jp"
+      },
+      {
+      "FamilyName": "Thinkpad X1 Carbon 7th",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0285&amp;SUBSYS_17AA2293","version":"6.0.8699.1"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_229217AA","version":"10.23.2618.03"}]},
+      "BiosNumber": "N2QET06W",
+      "supportLauguages":"en,de,ja",
+      "supportCountrys":"us,gb,de,jp"
+      },
+      {
+      "FamilyName": "Thinkpad P1 Gen2",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA229F, INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA229E,INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA22A0,INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA22A1","version":"9.0.266.0"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_A348&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_229F17AA,INTELAUDIO\\DSP_CTLR_DEV_A348&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_229E17AA,INTELAUDIO\\DSP_CTLR_DEV_A348&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_22A017AA,INTELAUDIO\\DSP_CTLR_DEV_A348&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_22A117AA","version":"10.23.0.2672"}]},
+      "BiosNumber": "N2OET16W",
+      "supportLauguages":"en,de,ja",
+      "supportCountrys":"us,gb,de,jp"
+      },
+      {
+      "FamilyName": "Thinkpad X1 Extreme 2nd",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA229F, INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA229E,INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA22A0,INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA22A1","version":"9.0.266.0"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_A348&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_229F17AA,INTELAUDIO\\DSP_CTLR_DEV_A348&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_229E17AA,INTELAUDIO\\DSP_CTLR_DEV_A348&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_22A017AA,INTELAUDIO\\DSP_CTLR_DEV_A348&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_22A117AA","version":"10.23.0.2672"}]},
+      "BiosNumber": "N2OET16W",
+      "supportLauguages":"en,de,ja",
+      "supportCountrys":"us,gb,de,jp"
+      },
+      {
+      "FamilyName": "ThinkPad T490",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"NTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0257&amp;SUBSYS_17AA22AA","version":"6.0.8757.1"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_02C8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_22AA17AA","version":"10.23.00.2764"}]},
+      "BiosNumber": "N2RET04W",
+      "supportLauguages":"en,de,ja",
+      "supportCountrys":"us,gb,de,jp"
+      },
+      {
+      "FamilyName": "Yoga C94015IRH",
+      "Driver": {"drivers":[{"deviceName":"Intel Audio Controller","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_A348&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_380217AA","version":"10.23.2725.2"},{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0298&amp;SUBSYS_17AA381B","version":"6.0.8734.1"}]},
+      "BiosNumber": "BSCN18WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ThinkPad E14",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA5079","version":"9.0.276.0"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_02C8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_507917AA","version":"10.23.0.2764"}]},
+      "BiosNumber": "R16ET16W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "IdeaPad FLEX14IWL",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA3810","version":"9.0.237.0"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_381417AA","version":"10.23.0.2353"}]},
+      "BiosNumber": "AHCN26WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "IdeaPad C34014IWL",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA3810","version":"9.0.237.0"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_381417AA","version":"10.23.0.2353"}]},
+      "BiosNumber": "AHCN26WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "IdeaPad S54015IML",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0257&amp;SUBSYS_17AA3831","version":"6.0.8734.1"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_02C8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_381E17AA","version":"10.23.0.2672"}]},
+      "BiosNumber": "CNCN08WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ThinkPad P73",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA229B","version":"9.0.256.0"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_A348&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_229B17AA","version":"10.23.0.2618"}]},
+      "BiosNumber": "N2NET11W",
+      "supportLauguages":"en,de,ja",
+      "supportCountrys":"us,gb,de,jp"
+      },
+      {
+      "FamilyName": "ThinkPad P53",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA2297","version":"9.0.254.0"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_A348&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_229717AA","version":"10.23.0.2490"}]},
+      "BiosNumber": "N2NET11W",
+      "supportLauguages":"en,de,ja",
+      "supportCountrys":"us,gb,de,jp"
+      },
+      {
+      "FamilyName": "ThinkPad E490s",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA5074&amp;REV_1001","version":"9.0.243.0"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_507217AA","version":"10.23.0.2353"}]},
+      "BiosNumber": "R0YET14W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "Thinkpad T490s",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0257&amp;SUBSYS_17AA2286","version":"6.0.1.8639"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_228617AA","version":"10.23.0.2427"}]},
+      "BiosNumber": "N2JET17W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "Thinkpad L390",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0257&amp;SUBSYS_17AA5077","version":"6.0.8716.1"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_507717AA","version":"10.23.0.2672"}]},
+      "BiosNumber": "R10ET25W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "Thinkpad L390 Yoga",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0257&amp;SUBSYS_17AA5077","version":"6.0.8716.1"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_507717AA","version":"10.23.0.2672"}]},
+      "BiosNumber": "R10ET25W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "Thinkpad X1 Carbon 7th",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0285&amp;SUBSYS_17AA2293","version":"6.0.8699.1"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_229217AA","version":"10.23.2618.03"}]},
+      "BiosNumber": "N2HET20W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },      {
+      "FamilyName": "Thinkpad X1 Yoga 4th",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":" INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0285&amp;SUBSYS_17AA2292","version":"6.0.8699.1"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_229217AA","version":"10.23.2618.03"}]},
+      "BiosNumber": "N2QET06W",
+      "supportLauguages":"en,de,ja",
+      "supportCountrys":"us,gb,de,jp"
+      },
+      {
+      "FamilyName": "Thinkpad X1 Yoga 4th",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0285&amp;SUBSYS_17AA2292","version":"6.0.8699.1"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_229217AA","version":"10.23.2618.03"}]},
+      "BiosNumber": "N2HET20W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "Thinkpad X1 Extreme",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0285&amp;SUBSYS_17AA2266,INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0285&amp;SUBSYS_17AA2267,INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0285&amp;SUBSYS_17AA2276","version":"6.0.1.8648"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_A348&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_226717AA","version":"10.23.0.2618"}]},
+      "BiosNumber": "N2EET36W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "Thinkpad P1",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0285&amp;SUBSYS_17AA2266,INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0285&amp;SUBSYS_17AA2267,INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0285&amp;SUBSYS_17AA2276","version":"6.0.1.8648"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_A348&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_226717AA","version":"10.23.0.2618"}]},
+      "BiosNumber": "N2EET36W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "Thinkpad X1 Extreme 2nd",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA229F","version":"9.0.259.0"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_A348&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_229F17AA","version":"10.23.0.2618"}]},
+      "BiosNumber": "N2OET16W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "Thinkpad P1 Gen2",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA229F","version":"9.0.259.0"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_A348&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_229F17AA","version":"10.23.0.2618"}]},
+      "BiosNumber": "N2OET16W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ThinkPad P43s",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0257&amp;SUBSYS_17AA22A2","version":"6.0.1.8673"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_227917AA","version":"10.23.0.2427"}]},
+      "BiosNumber": "N2IET64W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "Ideapad S54015IWL GTX",
+      "Driver": {"drivers":[{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_380C17AA","version":"10.23.0.2618"},{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0257&amp;SUBSYS_17AA382E","version":"6.0.1.8644"}]},
+      "BiosNumber": "BWCN10WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "Yoga S94014IWL",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0298&amp;SUBSYS_17AA3816","version":"6.0.1.8668"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_380F17AA","version":"10.23.0.1980"}]},
+      "BiosNumber": "AKCN06WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "IdeaPad S94014IWL",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0298&amp;SUBSYS_17AA3816","version":"6.0.1.8668"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_380F17AA","version":"10.23.0.1980"}]},
+      "BiosNumber": "AKCN06WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ThinkPad X390 Yoga",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0257&amp;SUBSYS_17AA2294","version":"6.0.1.8619"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_229417AA","version":"10.23.0.2427"}]},
+      "BiosNumber": "N2LET58W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ThinkPad T490",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0257&amp;SUBSYS_17AA2279","version":"6.0.1.8544"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_227917AA","version":"10.23.0.2077"}]},
+      "BiosNumber": "N2IET17W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ThinkPad L590",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0257&amp;SUBSYS_17AA5076","version":"6.0.1.8639"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_507517AA","version":"10.23.0.2427"}]},
+      "BiosNumber": "R0ZET20W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ThinkPad L490",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0257&amp;SUBSYS_17AA5075","version":"6.0.1.8639"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_507517AA","version":"10.23.0.2427"}]},
+      "BiosNumber": "R0ZET20W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "IdeaPad S54014IWL Touch",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA3811","version":"9.0.210.130"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_381417AA","version":"10.23.0.1878"}]},
+      "BiosNumber": "AHCN08WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "IdeaPad S54014IWL",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA3811","version":"9.0.210.130"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_381417AA","version":"10.23.0.1878"}]},
+      "BiosNumber": "AHCN08WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ThinkPad E490",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA5072&amp;REV_1001","version":"9.0.243.0"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_507217AA","version":"10.23.0.2353"}]},
+      "BiosNumber": "R0YET14W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ThinkPad E590",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_1F86&amp;SUBSYS_17AA5073&amp;REV_1001","version":"9.0.243.0"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_507217AA","version":"10.23.0.2353"}]},
+      "BiosNumber": "R0YET14W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ThinkPad P53s",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0257&amp;SUBSYS_17AA2281","version":"6.0.1.8544"},{"deviceName":"Intel SST Audio Controller","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_227917AA","version":"10.23.0.2077"}]},
+      "BiosNumber": "N2IET17W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "IdeaPad S54015IWL",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0257&amp;SUBSYS_17AA3812","version":"6.0.1.8606"},{"deviceName":"Intel SST Audio Controller","hardwareId":"PCI\\VEN_8086&amp;DEV_9DC8&amp;SUBSYS_380917AA&amp;REV_30","version":"10.23.0.2214"}]},
+      "BiosNumber": "APCN21WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ThinkPad T590",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0257&amp;SUBSYS_17AA2284","version":"6.0.1.8544"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_227917AA","version":"10.23.0.2077"}]},
+      "BiosNumber": "N2IET17W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ThinkCentre M920z",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0235&amp;SUBSYS_17AA3122","version":"6.0.1.8519"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_A348&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_312217AA","version":"10.23.0.1685"}]},
+      "BiosNumber": "M1MKT33A",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "Yoga A94027ICB",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0274&amp;SUBSYS_17AA36F9","version":"6.0.1.8612"},{"deviceName":"Intel SST Audio Driver","hardwareId":"PCI\\VEN_8086&amp;DEV_A348&amp;SUBSYS_36F917AA","version":"10.23.0.2353"}]},
+      "BiosNumber": "O43KT21A",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ideacentre AIO 52024IKU",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0274&amp;SUBSYS_17AA36DC","version":"6.0.1.8475"},{"deviceName":"Intel SST Audio Controller","hardwareId":"PCI\\VEN_8086&amp;DEV_9D71&amp;SUBSYS_36DC17AA,PCI\\VEN_8086&amp;DEV_9D70&amp;SUBSYS_36DC17AA","version":"9.21.0.3523"}]},
+      "BiosNumber": "O3DKT30A",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ideacentre AIO 52022ICB",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0274&amp;SUBSYS_17AA36F2","version":"6.0.1.8519"},{"deviceName":"Intel SST Audio Controller","hardwareId":"PCI\\VEN_8086&amp;DEV_A348&amp;SUBSYS_36F217AA","version":"10.23.0.1520"}]},
+      "BiosNumber": "O3XKT31A",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "V54024IWL AIO",
+      "Driver": {"drivers":[{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0235&amp;SUBSYS_17AA3145","version":"6.0.1.8581"},{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_314517AA","version":"10.23.0.2672"}]},
+      "BiosNumber": "M29KT17A",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ideacentre AIO 730S24IKB",
+      "Driver": {"drivers":[{"deviceName":"Intel SST Audio Controller","hardwareId":"PCI\\VEN_8086&amp;DEV_9D71&amp;SUBSYS_36F117AA","version":"9.21.0.3523"},{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0235&amp;SUBSYS_17AA36F1","version":"6.0.1.8558"}]},
+      "BiosNumber": "O3WKT14A",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ideacentre AIO 52024ICB",
+      "Driver": {"drivers":[{"deviceName":"Intel SST Audio Controller","hardwareId":"PCI\\VEN_8086&amp;DEV_A348&amp;SUBSYS_36F317AA","version":"10.23.0.1520"},{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0274&amp;SUBSYS_17AA36F3","version":"6.0.1.8519"}]},
+      "BiosNumber": "O3XKT31A",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ThinkPad X390",
+      "Driver": {"drivers":[{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_228617AA","version":"10.23.0.2077"},{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0257&amp;SUBSYS_17AA2288","version":"6.0.1.8544"}]},
+      "BiosNumber": "N2JET17W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "Yoga 73015IWL",
+      "Driver": {"drivers":[{"deviceName":"Intel SST Audio Controller","hardwareId":"PCI\\VEN_8086&amp;DEV_9DC8&amp;SUBSYS_381017AA","version":"10.23.0.1878"},{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0236&amp;SUBSYS_17AA391D","version":"6.0.1.8534"}]},
+      "BiosNumber": "9MCN19WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "Yoga 73013IWL",
+      "Driver": {"drivers":[{"deviceName":"Intel SST Audio Controller","hardwareId":"PCI\\VEN_8086&amp;DEV_9DC8&amp;SUBSYS_381D17AA","version":"10.23.0.1878"},{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0236&amp;SUBSYS_17AA391E","version":"6.0.1.8534"}]},
+      "BiosNumber": "9NCN15WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ThinkCentre M820z",
+      "Driver": {"drivers":[{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_A348&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_312317AA&amp;REV_0010","version":"10.23.0.1520"},{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0235&amp;SUBSYS_17AA3123&amp;REV_1000","version":"6.0.1.8485"}]},
+      "BiosNumber": "M1NKT36A",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "IdeaCentre A54024ICB",
+      "Driver": {"drivers":[{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_A348&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_370217AA","version":"10.23.0.2672"},{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0274&amp;SUBSYS_17AA3702","version":"6.0.8738.1"}]},
+      "BiosNumber": "O49KT30A",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "IdeaCentre A54027ICB",
+      "Driver": {"drivers":[{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_A348&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_370117AA","version":"10.23.0.2672"},{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_14F1&amp;DEV_20D0&amp;SUBSYS_17AA3701","version":"9.0.267.0"}]},
+      "BiosNumber": "O48KT24A",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "IdeaPad C34015IWL",
+      "Driver": {"drivers":[{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_381617AA","version":"10.23.0.2672"},{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0257&amp;SUBSYS_17AA3805","version":"6.0.1.8627"}]},
+      "BiosNumber": "ALCN27WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "IdeaPad FLEX15IWL",
+      "Driver": {"drivers":[{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9DC8&amp;VEN_8086&amp;DEV_0222&amp;SUBSYS_381617AA","version":"10.23.0.2672"},{"deviceName":"Audio Driver","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0257&amp;SUBSYS_17AA3805","version":"6.0.1.8627"}]},
+      "BiosNumber": "ALCN27WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ThinkPad X1 Carbon 6th",
+      "Driver": {"drivers":[{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0285&amp;*,INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0295&amp;*","version":"9.21.0.3523"},{"deviceName":"Realtek High Definition Audio","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9D71&amp;VEN_8086&amp;DEV_0222*","version":"6.0.1.8444"}]},
+      "BiosNumber": "N23ET48W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ThinkPad X1 Yoga 3rd",
+      "Driver": {"drivers":[{"deviceName":"Intel SST OED","hardwareId":" INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0285&amp;*,INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0295&amp;*","version":"9.21.0.3523"},{"deviceName":"Realtek High Definition Audio","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9D71&amp;VEN_8086&amp;DEV_0222*","version":"6.0.1.8422"}]},
+      "BiosNumber": "N25ET33W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ThinkPad X1 Tablet Gen 3",
+      "Driver": {"drivers":[{"deviceName":"Intel SST OED","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0285&amp;*,INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0295&amp;*","version":"9.21.0.3523"},{"deviceName":"Realtek High Definition Audio","hardwareId":"INTELAUDIO\\DSP_CTLR_DEV_9D71&amp;VEN_8086&amp;DEV_0222*","version":"6.0.1.8422"}]},
+      "BiosNumber": "N1ZET63W",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "YOGA C93013IKB",
+      "Driver": {"drivers":[{"deviceName":"Intel SST Audio Controller","hardwareId":"PCI\\VEN_8086&amp;DEV_9D71&amp;SUBSYS_383117AA","version":"9.21.0.3690"},{"deviceName":"Realtek High Definition Audio","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0298&amp;SUBSYS_17AA3812","version":"6.0.1.8504"}]},
+      "BiosNumber": "8GCN30WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "YOGA C93013IKB Glass",
+      "Driver": {"drivers":[{"deviceName":"Intel SST Audio Controller","hardwareId":"PCI\\VEN_8086&amp;DEV_9D71&amp;SUBSYS_383117AA","version":"9.21.0.3690"},{"deviceName":"Realtek High Definition Audio","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0298&amp;SUBSYS_17AA3812","version":"6.0.1.8504"}]},
+      "BiosNumber": "8GCN30WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ideapad 730S13IWL",
+      "Driver": {"drivers":[{"deviceName":"Intel SST Audio Controller","hardwareId":"PCI\\VEN_8086&amp;DEV_9DC8&amp;SUBSYS_380117AA","version":"10.23.0.1789"},{"deviceName":"Realtek High Definition Audio","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0298&amp;SUBSYS_17AA3814","version":"6.0.1.8536"}]},
+      "BiosNumber": "8HCN23WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "Yoga S73013IWL",
+      "Driver": {"drivers":[{"deviceName":"Intel SST Audio Controller","hardwareId":"PCI\\VEN_8086&amp;DEV_9DC8&amp;SUBSYS_380117AA","version":"10.23.0.2427"},{"deviceName":"Realtek High Definition Audio","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0298&amp;SUBSYS_17AA3814","version":"6.0.8694.1"}]},
+      "BiosNumber": "8HCN23WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "YOGA 73013IKB",
+      "Driver": {"drivers":[{"deviceName":"Intel SST Audio Controller","hardwareId":"PCI\\VEN_8086&amp;DEV_9D71&amp;SUBSYS_382817AA","version":"9.21.0.4104"},{"deviceName":"Realtek High Definition Audio","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0236&amp;SUBSYS_17AA38FE","version":"6.0.1.8492"}]},
+      "BiosNumber": "7LCN24WW",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      },
+      {
+      "FamilyName": "ideacentre AIO 52022IKU",
+      "Driver": {"drivers":[{"deviceName":"Intel SST Audio Controller","hardwareId":"PCI\\VEN_8086&amp;DEV_9D71&amp;SUBSYS_36DF17AA,PCI\\VEN_8086&amp;DEV_9D70&amp;SUBSYS_36DF17AA","version":"9.21.0.3523"},{"deviceName":"Realtek High Definition Audio","hardwareId":"INTELAUDIO\\FUNC_01&amp;VEN_10EC&amp;DEV_0274&amp;SUBSYS_17AA36DF","version":"6.0.1.8475"}]},
+      "BiosNumber": "O3DKT30A",
+      "supportLauguages":"en",
+      "supportCountrys":"us"
+      }
+      ]}
+    </Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+            </SettingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="TimeBasedMonitor" trigger="TimeBaseChange" runas="User">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<TimeBasedEventSubscription>
+  <FriendlyName>RunDailyEvent</FriendlyName>
+  <OOBEProximity>false</OOBEProximity>
+  <RandomDelay>PT10H</RandomDelay>
+  <RepeatIntervalUnit>Daily</RepeatIntervalUnit>
+  <RepeatInterval>1</RepeatInterval>
+  <StartDateTime>2016-01-31T08:00:10</StartDateTime>
+</TimeBasedEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="AppMonitor" trigger="InstallUninstall">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+			<AppMonitorSubscription>
+				<AppEventList>
+					<AppEvent event="Install" pfn="E046963F.LenovoCompanion_k1h2ywk1493x8" />
+					<AppEvent event="Uninstall" pfn="E046963F.LenovoCompanion_k1h2ywk1493x8" /> 
+					<AppEvent event="Install" pfn="E046963F.LenovoCompanionBeta_k1h2ywk1493x8" />
+					<AppEvent event="Uninstall" pfn="E046963F.LenovoCompanionBeta_k1h2ywk1493x8" /> 
+					<AppEvent event="Install" pfn="E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8" />
+					<AppEvent event="Uninstall" pfn="E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8" /> 
+				</AppEventList>
+			</AppMonitorSubscription>]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoCameraPlugin" version="1.2.239.5" location="LenovoCameraPlugin.cab" lastModified="2017-04-12T11:33:33" msVersion="1.2.237.1" msLocation="ms-LenovoCameraPlugin.cab">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter brand="think">true</Filter>
+                <Filter brand="idea">true</Filter>
+                <Filter brand="lenovo">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.Camera" version="1.0.0.0" runas="user" plugin="LenovoCameraPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="WindowMessageMonitor" trigger="SessionChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+
+	        <SessionChangeEventSubscription>
+
+                   <WtsSessionValueList>
+
+                      <WtsSessionValue>1</WtsSessionValue>
+
+                      <WtsSessionValue>5</WtsSessionValue>
+
+                   </WtsSessionValueList>
+
+                </SessionChangeEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="WindowMessageMonitor" trigger="PowerChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+			<PowerBroadcastEventSubscription>
+				<PbtValueList>
+					<PbtValue>18</PbtValue>
+				</PbtValueList>
+				<PowerSettingGuidList />
+			</PowerBroadcastEventSubscription>]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoBatteryGaugePackage" packageType="App" version="1.1.1.151" location="LenovoBatteryGaugePackage.cab" lastModified="2020-12-06T20:23:23">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter tag="E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8">false</Filter>
+                <Filter brand="think" subbrand="thinkpad">true</Filter>
+                <Filter brand="think" family="*thinkpad*">true</Filter>
+                <Filter brand="idea" subbrand="ideapad">true</Filter>
+                <Filter brand="lenovo" enclosureType="notebook">true</Filter>
+                <Filter brand="lenovo" enclosureType="notebook">true</Filter>
+                <Filter brand="idea" enclosureType="notebook">true</Filter>
+                <Filter brand="lenovo" enclosureType="notebook">true</Filter>
+                <Filter brand="idea" enclosureType="allinone">true</Filter>
+                <Filter brand="lenovo" enclosureType="allinone">true</Filter>
+                <Filter enclosureType="desktop">true</Filter>
+                <Filter enclosureType="tower">true</Filter>
+                <Filter enclosureType="workstation">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList/>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Privilege.CustomInstall">1</Setting>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoAuthenticationPlugin" version="1.3.0.13" location="LenovoAuthenticationPlugin.cab" lastModified="2015-04-20T12:00:00" customEventMonitor="" msVersion="1.3.0.9" msLocation="ms-LenovoAuthenticationPlugin.cab">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter brand="think">true</Filter>
+                <Filter brand="idea">true</Filter>
+                <Filter brand="lenovo">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="LenovoAuthenticationPlugin" version="1.0.0.0" runas="system" plugin="LenovoAuthenticationPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="SystemEventMonitor" trigger="User-Login" runas="system">
+                    <Parameter><![CDATA[  ]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="WindowMessageMonitor" trigger="PowerChange" runas="System">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+			  <PowerBroadcastEventSubscription>
+				<PbtValueList>
+          <PbtValue>18</PbtValue>
+				</PbtValueList>
+				<PowerSettingGuidList />
+			  </PowerBroadcastEventSubscription>]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="ImController.Association.Device"/>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoAudioPlugin" version="1.2.238.9" location="LenovoAudioPlugin.cab" lastModified="2017-04-12T11:34:00" msVersion="1.2.235.5" msLocation="ms-LenovoAudioPlugin.cab">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter brand="think">true</Filter>
+                <Filter brand="idea">true</Filter>
+                <Filter brand="lenovo">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.Audio" version="1.0.0.0" runas="user" plugin="LenovoAudioPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="ImController.Privilege.ReceiveEvents">0</Setting>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoAppScenarioPluginSystem" version="1.2.185.10" location="LenovoAppScenarioPluginSystem.cab" lastModified="2017-10-30T00:13:03" customEventMonitor="" msVersion="1.2.180.20" msLocation="ms-LenovoAppScenarioPluginSystem.cab">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter enclosureType="notebook">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.AppScenario.System" version="1.0.0.0" runas="System" plugin="LenovoAppScenarioPluginSystem"/>
+            </ContractMappingList>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoAppScenarioPlugin" version="1.2.189.5" location="LenovoAppScenarioPlugin.cab" lastModified="2016-12-23T17:54:47" customEventMonitor="" msVersion="1.2.184.23" msLocation="ms-LenovoAppScenarioPlugin.cab">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter enclosureType="notebook">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.AppScenario" version="1.0.0.0" runas="User" plugin="LenovoAppScenarioPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="WindowMessageMonitor" trigger="SessionChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+
+
+	        <SessionChangeEventSubscription>
+
+
+                   <WtsSessionValueList>
+
+
+                      <WtsSessionValue>1</WtsSessionValue>
+
+
+                      <WtsSessionValue>5</WtsSessionValue>
+
+
+                   </WtsSessionValueList>
+
+
+                </SessionChangeEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="SystemEventMonitor" trigger="User-Login">
+                    <Parameter><![CDATA[ ]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="WindowMessageMonitor" trigger="PowerChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+
+			<PowerBroadcastEventSubscription>
+
+				<PbtValueList>
+
+					<PbtValue>18</PbtValue>
+
+				</PbtValueList>
+
+				<PowerSettingGuidList />
+
+			</PowerBroadcastEventSubscription>]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="ImController.Privilege.ReceiveEvents">0</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoCompanionBeta_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Privilege.SkipSuspendTermination">1</Setting>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoAppPromotionPlugin" version="1.2.100.0" location="LenovoAppPromotionPlugin.cab" lastModified="2017-04-12T02:11:05">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter>true</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.LenovoAppPromotion" version="1.0.0.0" runas="user" plugin="LenovoAppPromotionPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="SystemEventMonitor" trigger="User-Login">
+                    <Parameter><![CDATA[  ]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="LenovoAccountPlugin" version="1.3.0.5" location="LenovoAccountPlugin.cab" lastModified="2017-05-26T12:00:00" customEventMonitor="" msVersion="1.2.41.0" msLocation="ms-LenovoAccountPlugin.cab">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter manufacturer="lenovo">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.LenovoAccount" version="1.0.0.0" runas="user" plugin="LenovoAccountPlugin"/>
+            </ContractMappingList>
+            <SettingList>
+                <Setting key="ImController.Association.Device"/>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="IdeaOSDPackage" packageType="App" version="1.2.15.0" location="IdeaOSDPackage.cab" lastModified="2017-09-29T04:07:36">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter brand="idea" subbrand="ideapad">true</Filter>
+                <Filter brand="lenovo" enclosureType="notebook">true</Filter>
+                <Filter brand="lenovo" enclosureType="notebook">true</Filter>
+                <Filter brand="idea" enclosureType="notebook">true</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList/>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Package.DisableUpdate"/>
+                <Setting key="ImController.Privilege.CustomInstall">1</Setting>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="IdeaNotebookPlugin" version="1.2.73.49" location="IdeaNotebookPlugin.cab" lastModified="2021-03-22T09:26:00" msVersion="1.2.67.15" msLocation="ms-IdeaNotebookPlugin.cab">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter brand="idea" subbrand="ideapad">true</Filter>
+                <Filter brand="lenovo" enclosureType="notebook">true</Filter>
+                <Filter brand="idea" enclosureType="notebook">true</Filter>
+                <Filter brand="lenovo" enclosureType="notebook">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.Keyboard" version="1.0.0.0" runas="user" plugin="IdeaNotebookPlugin"/>
+                <ContractMapping name="SystemManagement.PointingDevice" version="1.0.0.0" runas="user" plugin="IdeaNotebookPlugin"/>
+                <ContractMapping name="SystemInformation.Battery" version="1.0.0.0" runas="user" plugin="IdeaNotebookPlugin"/>
+                <ContractMapping name="SystemManagement.BatteryMgmt" version="1.0.0.0" runas="user" plugin="IdeaNotebookPlugin"/>
+                <ContractMapping name="SystemManagement.Power" version="1.0.0.0" runas="user" plugin="IdeaNotebookPlugin"/>
+                <ContractMapping name="SystemManagement.PowerProfile" version="1.0.0.0" runas="user" plugin="IdeaNotebookPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+        <RegistryEventSubscription>
+            <RegistryHiveName>HKEY_LOCAL_MACHINE</RegistryHiveName>
+            <KeyPath>SYSTEM\CurrentControlSet\Services\LITSSVC\LNBITS\IC\AUTODETECT</KeyPath>
+            <ValueName>CurrentState</ValueName>
+        </RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="ImController.Privilege.ReceiveEvents">1</Setting>
+                <Setting key="ImController.Privilege.SkipSuspendTermination">1</Setting>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="IdeaFanPlugin" version="1.0.34.0" location="IdeaFanPlugin.cab" lastModified="2015-09-16T10:52:17">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter brand="idea" subbrand="ideapad">true</Filter>
+                <Filter brand="lenovo" enclosureType="notebook">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.Fan" version="1.0.0.0" runas="user" plugin="IdeaFanPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="GenericCorePlugin" version="1.3.3.8" location="GenericCorePlugin.cab" lastModified="2015-11-19T14:32:12" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter>true</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemUtilities.ActiveDirectory" version="1.0.0.0" runas="user" plugin="GenericCorePlugin"/>
+                <ContractMapping name="SystemUtilities.AppLauncher" version="1.0.0.0" runas="user" plugin="GenericCorePlugin"/>
+                <ContractMapping name="SystemUtilities.FileSystem" version="1.0.0.0" runas="user" plugin="GenericCorePlugin"/>
+                <ContractMapping name="SystemInformation.Memory" version="1.0.0.0" runas="user" plugin="GenericCorePlugin"/>
+                <ContractMapping name="SystemUtilities.Registry" version="1.0.0.0" runas="user" plugin="GenericCorePlugin"/>
+                <ContractMapping name="SystemInformation.Storage" version="1.0.0.0" runas="user" plugin="GenericCorePlugin"/>
+                <ContractMapping name="SystemInformation.Machine" version="1.0.0.0" runas="user" plugin="GenericCorePlugin"/>
+                <ContractMapping name="SystemInformation.AppTag" version="1.0.0.0" runas="user" plugin="GenericCorePlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Association.Device"/>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="GenericTelemetryPlugin" version="2.1.0.20" location="GenericTelemetryPlugin.cab" lastModified="2019-02-28T16:00:00" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter manufacturer="lenovo">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+            </ContractMappingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="SystemEventMonitor" trigger="User-Login" runas="system">
+                    <Parameter><![CDATA[ ]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="WindowMessageMonitor" trigger="PowerChange" runas="system">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+			<PowerBroadcastEventSubscription>
+				<PbtValueList>
+					<PbtValue>18</PbtValue>
+				</PbtValueList>
+				<PowerSettingGuidList />
+			</PowerBroadcastEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="TimeBasedMonitor" trigger="TimeBaseChange" runas="system">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+			<TimeBasedEventSubscription>
+			<FriendlyName>RunDailyEvent</FriendlyName>
+			<OOBEProximity>false</OOBEProximity>
+			<RandomDelay>PT3H</RandomDelay>
+			<RequireNetworkConnection>true</RequireNetworkConnection>
+			<RepeatIntervalUnit>Daily</RepeatIntervalUnit>
+			<RepeatInterval>1</RepeatInterval>
+			<StartDateTime>2020-01-31T09:00:10</StartDateTime>
+			</TimeBasedEventSubscription>]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="Telemetry.Config.V1.BundleQuantity">20</Setting>
+                <Setting key="Telemetry.Config.V1.Channel.Core"><![CDATA[{"ProviderName":"Lenovo-Sif-Core","IsEnabled":true,"DataPolicies":[{"Classification":"Device","PolicyConditions":[{"container":"HKEY_LOCAL_MACHINE\\SOFTWARE\\Lenovo\\AnonymousMetrics","disabledValue":"0","enabledValue":"1","item":"Enabled","method":"RegistryValue","type":"SystemPolicy"},{"container":"HKEY_CURRENT_USER\\Software\\Lenovo\\Metrics","disabledValue":"0","enabledValue":"1","item":"com.lenovo.companion","method":"RegistryValue","type":"UserPreference"},{"container":"HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Lenovo\\ImController","disabledValue":"1","enabledValue":"0","item":"DisableSystemInterfaceUsageStats","method":"RegistryValue","type":"SystemPolicy"}]}],"LudpConfig":{"GeoMap":[{"geo":"*","uri":"https:\/\/chifsr.lenovomm.com\/PCJson"}],"isEnabled":true,"productMap":[{"appKey":"DR5Q2D85DB67","logName":"imc","ludpName":"imc"},{"appKey":"DR5Q2D85DB67","logName":"lsif","ludpName":"imc"}]}}]]></Setting>
+                <Setting key="Telemetry.Config.V1.Channel.Companion"><![CDATA[{"ProviderName":"Lenovo-Sif-Companion","IsEnabled":true,"DataPolicies":[{"Classification":"User","PolicyConditions":[{"container":"HKEY_CURRENT_USER\\Software\\Lenovo\\Metrics","disabledValue":"0","enabledValue":"1","item":"com.lenovo.companion","method":"RegistryValue","type":"UserPreference"},{"container":"HKEY_LOCAL_MACHINE\\Software\\Policies\\Lenovo\\E046963F.LenovoCompanion_k1h2ywk1493x8","disabledValue":"0","enabledValue":"1","item":"422FDE50-51D5-4A5B-9A44-7B19BCD03A29","method":"RegistryValue","type":"SystemPolicy"}]}],"LudpConfig":{"GeoMap":[{"geo":"*","uri":"https:\/\/chifsr.lenovomm.com\/PCJson"}],"isEnabled":true,"productMap":[{"appKey":"SW9XFRH45924","logName":"Companion","ludpName":"Companion"},{"appKey":"JCI32DET5030","logName":"LenovoCompanionAppPlugin","ludpName":"LenovoCompanionAppPlugin"},{"appKey":"JCI32DET5030","logName":"GenericMessagingPlugin","ludpName":"GenericMessagingPlugin"},{"appKey":"JCI32DET5030","logName":"GenericTelemetryPlugin","ludpName":"GenericTelemetryPlugin"},{"appKey":"JCI32DET5030","logName":"LenovoSystemUpdatePlugin","ludpName":"LenovoSystemUpdatePlugin"},{"appKey":"JCI32DET5030","logName":"ThinkMultimodeDetectPlugin","ludpName":"ThinkMultimodeDetectPlugin"},{"appKey":"JCI32DET5030","logName":"ThinkIntelligentSensingPackage","ludpName":"ThinkIntelligentSensingPackage"},{"appKey":"JCI32DET5030","logName":"GenericDisplayPlugin","ludpName":"GenericDisplayPlugin"},{"appKey":"JCI32DET5030","logName":"LenovoAudioPlugin","ludpName":"LenovoAudioPlugin"},{"appKey":"JCI32DET5030","logName":"LenovoAppScenarioPlugin","ludpName":"LenovoAppScenarioPlugin"},{"appKey":"JCI32DET5030","logName":"LenovoBatteryGaugePackage","ludpName":"LenovoBatteryGaugePackage"},{"appKey":"JCI32DET5030","logName":"LenovoWiFiSecurityPlugin","ludpName":"LenovoWiFiSecurityPlugin"},{"appKey":"JCI32DET5030","logName":"ThinkMultimodeDetectPlugin","ludpName":"ThinkMultimodeDetectPlugin"},{"appKey":"JCI32DET5030","logName":"ThinkIntelligentSensingPackage","ludpName":"ThinkIntelligentSensingPackage"},{"appKey":"JCI32DET5030","logName":"LenovoGamingSystemPlugin","ludpName":"LenovoGamingSystemPlugin"},{"appKey":"JCI32DET5030","logName":"LenovoGamingUserPlugin","ludpName":"LenovoGamingUserPlugin"},{"appKey":"JCI32DET5030","logName":"BetterTogetherPlugin","ludpName":"BetterTogetherPlugin"},{"appKey":"H0NKPE8K8789","logName":"Lenovo.Vantage.SmartPerformanceAddin","ludpName":"Lenovo.Vantage.SmartPerformanceAddin"}]}}]]></Setting>
+                <Setting key="ImController.Association.Device"/>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="GenericNetworkPlugin" version="1.0.34.0" location="GenericNetworkPlugin.cab" lastModified="2015-09-16T10:42:42" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter brand="think">true</Filter>
+                <Filter brand="idea">true</Filter>
+                <Filter brand="lenovo">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="GenericNetworkPlugin.RadioControl" version="1.0.0.0" runas="user" plugin="GenericNetworkPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="GenericMetricsPreferencesPlugin" version="1.2.44.0" location="GenericMetricsPreferencesPlugin.cab" lastModified="2016-11-16T02:53:13" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter>true</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="MetricPreferences" version="1.0.0.0" runas="user" plugin="GenericMetricsPreferencesPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Association.Device"/>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="GenericMessagingPlugin" version="3.2.0.27" location="GenericMessagingPlugin.cab" lastModified="2017-01-10T19:00:00" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter manufacturer="lenovo">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.Messaging" version="1.0.0.0" runas="user" plugin="GenericMessagingPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="TimeBasedMonitor" trigger="TimeBaseChange" runas="user">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+				<TimeBasedEventSubscription>
+					<FriendlyName>RunDailyEvent</FriendlyName>
+					<OOBEProximity>false</OOBEProximity>
+					<RandomDelay>PT10H</RandomDelay>
+					<RepeatIntervalUnit>Daily</RepeatIntervalUnit>
+					<RepeatInterval>1</RepeatInterval>
+					<StartDateTime>2016-01-31T08:00:15</StartDateTime>
+				</TimeBasedEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="SystemEventMonitor" trigger="User-Login">
+                    <Parameter><![CDATA[]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="WindowMessageMonitor" trigger="PowerChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+			<PowerBroadcastEventSubscription>
+				<PbtValueList>
+					<PbtValue>18</PbtValue>
+				</PbtValueList>
+				<PowerSettingGuidList />
+			</PowerBroadcastEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="WindowMessageMonitor" trigger="SessionChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+			<SessionChangeEventSubscription>
+				<WtsSessionValueList>
+					<WtsSessionValue>8</WtsSessionValue>
+				</WtsSessionValueList>
+			</SessionChangeEventSubscription>]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E15">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E470">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E570">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E14">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E580">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E590">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E480">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E490">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre E73">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E595">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E560">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E495">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E550">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E15 2nd Gen">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad S2">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E460">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E450">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E14 2nd Gen">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E540">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad S2 2nd Gen">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre Edge 72">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E585">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad S5">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E575">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E530">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E475">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E440">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E531">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Twist S230u">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad S5 2nd Gen">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E485">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre E73z">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre E93z">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E490s">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E430">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E431">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E520">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E530c">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E555">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad S440">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E420">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre Edge 71">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E330">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad S540">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E565">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad S1 2nd Gen">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre Edge 72z">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad S3">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E545">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre Edge72">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad S1 3rd Gen">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E450c">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre Edge 92z">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E465">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E130">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre Edge92">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre Edge 91z">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge 14">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre E93">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre E92z">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre Edge 62z">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre E75">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre E63z">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge 15">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad R480">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E430c">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E550c">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad R500">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre Edge71">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E535">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad E455">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad S430">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad R61">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre E95">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad S2 3rd Gen">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre Edge 91">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre Edge 71z">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge 13">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad R400">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad S531">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E320">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E420s">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre E74">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad S431">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad R490">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E525">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad S2 4th Gen">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E145">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge 11">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E220s">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E135">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre E75s">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad R61e">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E120">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre E74z">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E335">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre E95z">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E320">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E325">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre E73s">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E435">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E425">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E445">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad S1 4th Gen">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge E125">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre E96">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre Edge 92">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad Edge L330">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre E74s">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad R590">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre E76">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad R460">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre E79">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkPad S1">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre E76s">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" family="ThinkCentre E700">true</Setting>
+                <Setting key="GenericMessagingPlugin.Notifications.SLRecs" brand="think">false</Setting>
+                <Setting key="GenericMessagingPlugin.SLRecsUITemplate">79EA4C1E-FDE5-4318-AB47-25F85C600C89|bsvar1|1</Setting>
+                <Setting key="GenericMessagingPlugin.SLRecsUITemplate">6EF1E2EA-680E-4638-9E39-83A0C89D99B3|bsvar2|1</Setting>
+                <Setting key="ImController.Privilege.SkipSuspendTermination">1</Setting>
+                <Setting key="GenericMessagingPlugin.NewWindowsVersionFilter">10.0.21000.0000</Setting>
+                <Setting key="ImController.Association.Device"/>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="GenericLocationProfilePlugin" version="1.2.176.0" location="GenericLocationProfilePlugin.cab" lastModified="2017-01-12T23:01:00" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter>true</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.LocationProfile" version="1.0.0.0" runas="user" plugin="GenericLocationProfilePlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="GenericLocationDetectPlugin" version="1.2.182.0" location="GenericLocationDetectPlugin.cab" lastModified="2017-01-17T02:32:52" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter>true</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+            </ContractMappingList>
+            <SettingList>
+                <Setting key="ImController.Privilege.ReceiveEvents">0</Setting>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+            </SettingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="NetworkMonitor" trigger="NetworkStatusChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+			  <NetworkEventSubscription>
+			  <NetworkAddressChange>true</NetworkAddressChange>
+			  <InternetConnectivityChanged>true</InternetConnectivityChanged>
+			  </NetworkEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="WindowMessageMonitor" trigger="SessionChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+                        	<SessionChangeEventSubscription>
+                                	<WtsSessionValueList>
+                                        	<WtsSessionValue>1</WtsSessionValue>
+                                              	<WtsSessionValue>5</WtsSessionValue>
+                                  	</WtsSessionValueList>
+                          	</SessionChangeEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="ImControllerServiceEventMonitor" trigger="imc-startup">
+                    <Parameter><![CDATA[  ]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="WindowMessageMonitor" trigger="PowerChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+			  <PowerBroadcastEventSubscription>
+				<PbtValueList>
+					<PbtValue>18</PbtValue>
+				</PbtValueList>
+				<PowerSettingGuidList />
+			  </PowerBroadcastEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+			  <RegistryEventSubscription>
+				<RegistryHiveName>HKEY_CURRENT_USER</RegistryHiveName>
+				<KeyPath>Software\Microsoft\Windows NT\CurrentVersion\Windows</KeyPath>
+				<ValueName>Device</ValueName>
+			  </RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+			  <RegistryEventSubscription>
+				<RegistryHiveName>HKEY_CURRENT_USER</RegistryHiveName>
+				<KeyPath>SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\Main</KeyPath>
+				<ValueName>HomeButtonPage</ValueName>
+			  </RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="RegistryMonitor" trigger="RegistryChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+			  <RegistryEventSubscription>
+				<RegistryHiveName>HKEY_CURRENT_USER</RegistryHiveName>
+				<KeyPath>Software\Lenovo\ImController\PluginData\LenovoPaperDisplayPlugin</KeyPath>
+				<ValueName>UserSelectedMode</ValueName>
+			  </RegistryEventSubscription>]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+        </Package>
+        <Package>
+            <PackageInformation name="GenericDisplayPlugin" version="1.2.179.5" location="GenericDisplayPlugin.cab" lastModified="2016-12-19T14:49:13" customEventMonitor="" msVersion="1.2.179.5" msLocation="ms-GenericDisplayPlugin.cab">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter>true</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.Display" version="1.0.0.0" runas="user" plugin="GenericDisplayPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="WindowMessageMonitor" trigger="DeviceChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+
+			<DeviceChangeEventSubscription>
+				<DevInterfaceClassGuidList>
+
+					<DevInterfaceClassGuid>E6F07B5F-EE97-4a90-B076-33F57BF4EAA7</DevInterfaceClassGuid>
+
+				</DevInterfaceClassGuidList>
+
+			</DeviceChangeEventSubscription>]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="ImController.Privilege.ReceiveEvents">0</Setting>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="GenericActiveDirectoryPlugin" version="1.2.26.0" location="GenericActiveDirectoryPlugin.cab" lastModified="2016-07-14T17:22:59" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter>true</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemUtilities.ActiveDirectory" version="1.0.0.0" runas="user" plugin="GenericActiveDirectoryPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Association.Device"/>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="DolbyDAXPackage" packageType="App" version="1.2.103.0" location="DolbyDAXPackage.cab" lastModified="2017-10-24T04:16:26">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter brand="think">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList/>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Package.DisableUpdate"/>
+                <Setting key="ImController.Privilege.CustomInstall">1</Setting>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="DolbyDAX2Package" packageType="App" version="1.2.81.0" location="DolbyDAX2Package.cab" lastModified="2017-11-01T09:00:00">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter brand="think">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList/>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Package.DisableUpdate"/>
+                <Setting key="ImController.Package.Replacement.Name">DolbyDAXPackage</Setting>
+                <Setting key="ImController.Package.Replacement.MinimumVersion">1.2.90.0</Setting>
+                <Setting key="ImController.Privilege.CustomInstall">1</Setting>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="DolbyAudioPlugin" version="1.2.239.23" location="DolbyAudioPlugin.cab" lastModified="2018-01-15T05:44:22" msVersion="1.2.235.5" msLocation="ms-DolbyAudioPlugin.cab">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter>true</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList>
+                <ContractMapping name="SystemManagement.AudioProfile" version="1.0.0.0" runas="user" plugin="DolbyAudioPlugin"/>
+            </ContractMappingList>
+            <EventSubscriptionList>
+                <EventSubscription monitor="SystemEventMonitor" trigger="User-Login">
+                    <Parameter><![CDATA[ ]]></Parameter>
+                </EventSubscription>
+                <EventSubscription monitor="WindowMessageMonitor" trigger="PowerChange">
+                    <Parameter><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+
+			<PowerBroadcastEventSubscription>
+
+				<PbtValueList>
+
+					<PbtValue>18</PbtValue>
+
+				</PbtValueList>
+
+				<PowerSettingGuidList />
+
+			</PowerBroadcastEventSubscription>]]></Parameter>
+                </EventSubscription>
+            </EventSubscriptionList>
+            <SettingList>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap" appversion="4.0.0.0">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="ChromaTunePackage" packageType="App" version="2.0.0.13" location="ChromaTunePackage.cab" lastModified="2016-06-15T19:16:58" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter brand="think" family="thinkpad x1 carbon 4th">true</Filter>
+                <Filter brand="think" family="thinkpad x1 yoga*">true</Filter>
+                <Filter brand="think" family="thinkpad e560p">true</Filter>
+                <Filter brand="think" family="thinkpad s5">true</Filter>
+                <Filter brand="think" family="thinkpad s5 2nd gen">true</Filter>
+                <Filter brand="think" family="thinkpad x1 carbon 6th">true</Filter>
+                <Filter brand="think" family="thinkpad x1 extreme">true</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList/>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Privilege.CustomInstall">1</Setting>
+                <Setting key="ImController.Package.UpdateRequiresReboot"/>
+                <Setting key="ImController.Package.InstallRequiresReboot"/>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoCompanion_k1h2ywk1493x8</Setting>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+                <Setting key="ImController.Association.Uap">E046963F.LenovoSettingsforEnterprise_k1h2ywk1493x8</Setting>
+            </SettingList>
+        </Package>
+        <Package>
+            <PackageInformation name="ActivePenLowBatteryNotifierPackage" packageType="App" version="1.2.163.0" location="ActivePenLowBatteryNotifierPackage.cab" lastModified="2017-12-06T00:41:16" customEventMonitor="">
+            </PackageInformation>
+            <ApplicabilityFilter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter tag="System.IsMsCiRequired">false</Filter>
+                <Filter brand="think">false</Filter>
+                <Filter brand="idea">false</Filter>
+                <Filter brand="lenovo">false</Filter>
+                <Filter>false</Filter>
+            </ApplicabilityFilter>
+            <ContractMappingList/>
+            <EventSubscriptionList/>
+            <SettingList>
+                <Setting key="ImController.Privilege.CustomInstall">1</Setting>
+                <Setting key="ImController.Association.Uap">LenovoCorporation.LenovoSettings_4642shxvsv8s2</Setting>
+            </SettingList>
+        </Package>
+    </PackageList><Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+	<SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+		<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+		<Reference URI="">
+			<Transforms>
+				<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+			</Transforms>
+			<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+			<DigestValue>JRg6OXlH1z3op/t+SDrXz6kMkfilT3n4/e1OeubjB6w=</DigestValue>
+		</Reference>
+	</SignedInfo>
+	<SignatureValue>
+pa6Fe6IWlJfMXO0CuHVBFMRAXejLtQbSq2I2mbMnd1SHa7haZ0oALKgIMNuhbjPO
+LJctDXpZxXflBlwEMXrMwEqjnIKL3lky2rmfU3zGHQi1t6Et4O28sbHHWglsuI6E
+SmgCgQTHLG7qV8/If+oaO1zY0kHMpvv2YzbWCGxL228/x+Us3DebjeuxECiYl/3C
+pQj5r1dtPAxlyCwtR9SHZwmcpXsD74sKJtdbkWJkLArY6FuYd/MVQvEkAXzv3Nr8
+M7J7oMTq4XY+3CDXm59pUoKR+dKBxiskKxsjLe87O0QyWUc/1iUBhQ8QPjsR5IM0
+TDbcmPOlQ0zFBXyD6e97Dg==
+	</SignatureValue>
+	<KeyInfo>
+		<KeyValue>
+			<RSAKeyValue>
+				<Modulus>
+pg5Tz+CUZn3D7j1dmzRL0RjAGKdnx2fdZMF3i4yXBBgWa3sHCCp+W+Ftdc7UoShr
+1plk/5uAGdFFOCc4rQ/t98f56HzyxKkEbEuuSFcAH3nd928uV+dq3p3jbng3sLJJ
+E2sxTgIVf6eiF3YrTGBOwaZLQp3XyKnPPBNztqyKiBsTgz0gLm2eWEtee2di7NJE
+Fn4h+rl4+kfvz+c09xIBGx/TjPrv7IqrADdDE2paVO6B8xfl2bNXCZFjtZ4XDlHx
+psSGUu33PZAPQATVzavmk18+YBAJCGXgKpo6BegYfMMVRn+hKwlTa0qBp3j7TXHQ
+cYf7vWq2KIcpu7dgWZC2HQ==
+				</Modulus>
+				<Exponent>AQAB</Exponent>
+			</RSAKeyValue>
+		</KeyValue>
+		<X509Data>
+			<X509IssuerSerial>
+				<X509IssuerName>CN=Symantec Class 3 SHA256 Code Signing CA - G2, OU=Symantec Trust Network, O=Symantec Corporation, C=US</X509IssuerName>
+				<X509SerialNumber>102466512833882564165074911779155394872</X509SerialNumber>
+			</X509IssuerSerial>
+			<X509SubjectName>CN=Lenovo, OU=G08, O=Lenovo, L=Morrisville, ST=North Carolina, C=US</X509SubjectName>
+			<X509Certificate>
+MIIEmTCCA4GgAwIBAgIQTRZVIRqHpq7xFvuOuADBODANBgkqhkiG9w0BAQsFADCB
+hDELMAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVjIENvcnBvcmF0aW9uMR8w
+HQYDVQQLExZTeW1hbnRlYyBUcnVzdCBOZXR3b3JrMTUwMwYDVQQDEyxTeW1hbnRl
+YyBDbGFzcyAzIFNIQTI1NiBDb2RlIFNpZ25pbmcgQ0EgLSBHMjAeFw0yMDExMDYw
+MDAwMDBaFw0yMTExMDcyMzU5NTlaMGwxCzAJBgNVBAYTAlVTMRcwFQYDVQQIDA5O
+b3J0aCBDYXJvbGluYTEUMBIGA1UEBwwLTW9ycmlzdmlsbGUxDzANBgNVBAoMBkxl
+bm92bzEMMAoGA1UECwwDRzA4MQ8wDQYDVQQDDAZMZW5vdm8wggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQCmDlPP4JRmfcPuPV2bNEvRGMAYp2fHZ91kwXeL
+jJcEGBZrewcIKn5b4W11ztShKGvWmWT/m4AZ0UU4JzitD+33x/nofPLEqQRsS65I
+VwAfed33by5X52reneNueDewskkTazFOAhV/p6IXditMYE7BpktCndfIqc88E3O2
+rIqIGxODPSAubZ5YS157Z2Ls0kQWfiH6uXj6R+/P5zT3EgEbH9OM+u/siqsAN0MT
+alpU7oHzF+XZs1cJkWO1nhcOUfGmxIZS7fc9kA9ABNXNq+aTXz5gEAkIZeAqmjoF
+6Bh8wxVGf6ErCVNrSoGnePtNcdBxh/u9arYohym7t2BZkLYdAgMBAAGjggEcMIIB
+GDAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcD
+AzA/BgNVHSAEODA2MDQGBmeBDAEEATAqMCgGCCsGAQUFBwIBFhxodHRwczovL3d3
+dy5kaWdpY2VydC5jb20vQ1BTMB8GA1UdIwQYMBaAFNTABiJJ6zlL3ZPiXKG4R3YJ
+cgNYMCsGA1UdHwQkMCIwIKAeoByGGmh0dHA6Ly9yYi5zeW1jYi5jb20vcmIuY3Js
+MFcGCCsGAQUFBwEBBEswSTAfBggrBgEFBQcwAYYTaHR0cDovL3JiLnN5bWNkLmNv
+bTAmBggrBgEFBQcwAoYaaHR0cDovL3JiLnN5bWNiLmNvbS9yYi5jcnQwDQYJKoZI
+hvcNAQELBQADggEBAEeBH3C6r7hpIYHQFzhBJ8seuzo3Pft9P6qu/MffnAOnsxQA
+t241FXSp7kfKv/BSvvLFUQxoAh+O5OmdulYv7L1k75OhfrWT4c323C01gsAWgIFL
+PQ4W7K81QqgqycuwgstdVr+xSqfD2nImp5NSODAQ+/3FoUpXhRxP/tHLU7fS1Ju3
+4sTSgeInQYE0sVJhu2iUs9MOwioOuqco+x+3KITRLjAh1FbQWVBGCCpnKlAvCXR0
+vuEbS1oKUf/fWpOKstuzJgow7gKXHiUpyr3TsT9X7yBCiFtdFqBltAkkfVxLXGkU
+Z9ABeAhy2IJH6GY3zWGpoMry5CKFWvZ2QV7CIdg=
+			</X509Certificate>
+		</X509Data>
+	</KeyInfo>
+	<Object>
+		<SignatureProperties>
+			<SignatureProperty Target="#"><issuerCertificate xmlns="namespaceURI">MIIFRzCCBC+gAwIBAgIQfBs1NUrn23TnQV8RacprqDANBgkqhkiG9w0BAQsFADCBvTELMAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMR8wHQYDVQQLExZWZXJpU2lnbiBUcnVzdCBOZXR3b3JrMTowOAYDVQQLEzEoYykgMjAwOCBWZXJpU2lnbiwgSW5jLiAtIEZvciBhdXRob3JpemVkIHVzZSBvbmx5MTgwNgYDVQQDEy9WZXJpU2lnbiBVbml2ZXJzYWwgUm9vdCBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eTAeFw0xNDA3MjIwMDAwMDBaFw0yNDA3MjEyMzU5NTlaMIGEMQswCQYDVQQGEwJVUzEdMBsGA1UEChMUU3ltYW50ZWMgQ29ycG9yYXRpb24xHzAdBgNVBAsTFlN5bWFudGVjIFRydXN0IE5ldHdvcmsxNTAzBgNVBAMTLFN5bWFudGVjIENsYXNzIDMgU0hBMjU2IENvZGUgU2lnbmluZyBDQSAtIEcyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA15VD1NzfZ645+1KktiYxBHDpt45bKro3aTWVj7vAMOeG2HO73+vRdj+KVo7rLUvwVxhOsY2lM9MLdSPVankn3aPT9w6HZbXerRzx9TW0IlGvIqHBXUuQf8BZTqudeakC1x5JsTtNh/7CeKu/71KunK8I2TnlmlE+aV8wEE5xY2xY4fAgMxsPdL5byxLh24zEgJRyu/ZFmp7BJQv7oxye2KYJcHHswEdMj33D3hnOPu4Eco4X0//wsgUyGUzTsByf/qV4IEJwQbAmjG8AyDoAEUF6QbCnipEEoJl49He082Aq5mxQBLcUYP8NUfSoi4T+IdpcXn31KXlPsER0b21y/wIDAQABo4IBeDCCAXQwLgYIKwYBBQUHAQEEIjAgMB4GCCsGAQUFBzABhhJodHRwOi8vcy5zeW1jZC5jb20wEgYDVR0TAQH/BAgwBgEB/wIBADBmBgNVHSAEXzBdMFsGC2CGSAGG+EUBBxcDMEwwIwYIKwYBBQUHAgEWF2h0dHBzOi8vZC5zeW1jYi5jb20vY3BzMCUGCCsGAQUFBwICMBkaF2h0dHBzOi8vZC5zeW1jYi5jb20vcnBhMDYGA1UdHwQvMC0wK6ApoCeGJWh0dHA6Ly9zLnN5bWNiLmNvbS91bml2ZXJzYWwtcm9vdC5jcmwwEwYDVR0lBAwwCgYIKwYBBQUHAwMwDgYDVR0PAQH/BAQDAgEGMCkGA1UdEQQiMCCkHjAcMRowGAYDVQQDExFTeW1hbnRlY1BLSS0xLTcyNDAdBgNVHQ4EFgQU1MAGIknrOUvdk+JcobhHdglyA1gwHwYDVR0jBBgwFoAUtnf6aUhHn1MS1cLqBzJ2B9GXBxkwDQYJKoZIhvcNAQELBQADggEBAH/ryqfqi3ZC6z6OIFQw47e53PpIPhbHD0WVEM0nhqNm8wLtcfiqwlWXkXCD+VJ+Umk8yfHglEaAGLuh1KRWpvMdAJHVhvNIh+DLxDRoIF60y/kF7ZyvcFMnueg+flGgaXGL3FHtgDolMp9Er25DKNMhdbuX2IuLjP6pBEYEhfcVnEsRjcQsF/7Vbn+a4laS8ZazrS359N/aiZnOsjhEwPdHe8olufoqaDObUHLeqJ/UzSwLNL2LMHhA4I2OJxuQbxq+CBWBXesv4lHnUR7JeCnnHmW/OO8BSgEJJA4WxBR5wUE3NNA9kVKUneFo7wjw4mmcZ26QCxqTcdQmAsPAWiM=</issuerCertificate>
+			</SignatureProperty>
+		</SignatureProperties>
+	</Object>
+</Signature>
+</ImControllerSubscription>

@@ -1,0 +1,94 @@
+[Lenovo System Update build: 2021-05-07 2.0.0.1]	28/07/2021 21:58:57
+
+Info	2021-07-28 , 09:58:57.804
+	at Tvsu.Environment.EnvironmentManager..ctor()
+	Message: Starting Environment Manager...
+
+Info	2021-07-28 , 09:58:57.974
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder.UpdateADPolicySettings()
+	Message: ScheduleFile is exist , ScheduleTask is exist ,Use ScheduleTask  create ScheduleFile
+
+Info	2021-07-28 , 09:58:57.974
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Task ScheduleInfo info: DayOfWeekSch Thursday, DayOfMonthSch , UTCTimeToCheck 18:45:51, SchedulerAbility OFF
+
+Info	2021-07-28 , 09:58:58.265
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Settings in UpdateSchedule.xml is same with task, not need to update
+
+Info	2021-07-28 , 09:58:58.267
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: Request ScheduleInfo info: Frequency , PackageType , DayOfWeek , DayOfMonth , UTCTimeToCheck , SchedulerAbility , RecommendedAutoUpdates , Notify 
+
+Info	2021-07-28 , 09:58:58.267
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: UpdateSchedule.xml ScheduleInfo info: Frequency Weekly, PackageType Critical, DayOfWeek Thursday, DayOfMonth , UTCTimeToCheck 18:45:51, SchedulerAbility OFF, RecommendedAutoUpdatesOFF, Notify DownloadAndInstallIfNoReboot
+
+Info	2021-07-28 , 09:58:58.267
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder..ctor()
+	Message: Combine ScheduleInfo info: Frequency Weekly, PackageType Critical, DayOfWeek Thursday, DayOfMonth , UTCTimeToCheck 18:45:51, SchedulerAbility OFF, RecommendedAutoUpdates OFF, Notify DownloadAndInstallIfNoReboot
+
+Info	2021-07-28 , 09:58:58.395
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder.<OnUserLoginEventAsync>d__43.MoveNext()
+	Message: MetricsEnabled is NO
+
+Info	2021-07-28 , 09:58:58.395
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.RequestResponder.<OnUserLoginEventAsync>d__43.MoveNext()
+	Message: ScheduleFile is exist , ScheduleTask is exist ,Use ScheduleTask  create ScheduleFile
+
+Info	2021-07-28 , 09:58:58.395
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Task ScheduleInfo info: DayOfWeekSch Thursday, DayOfMonthSch , UTCTimeToCheck 18:45:51, SchedulerAbility OFF
+
+Info	2021-07-28 , 09:58:58.395
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.CreateSchedule()
+	Message: Settings in UpdateSchedule.xml is same with task, not need to update
+
+Info	2021-07-28 , 09:58:58.411
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.<OnUserLoginEvent>d__112.MoveNext()
+	Message: schedule flag isNone
+
+Info	2021-07-28 , 09:58:58.411
+	at Tvsu.Engine.UpateTaskListDataBase.get_Instance()
+	Message: InitUpdateTaskListDataBase from file: C:\ProgramData\Lenovo\ImController\SystemPluginData\LenovoSystemUpdatePlugin\session\UpdateTaskList.xml
+
+Info	2021-07-28 , 09:58:58.443
+	at Tvsu.Egather.EgatherManager.GetEgatherParser(String type)
+	Message: Running egather complete.....
+
+Info	2021-07-28 , 09:59:02.743
+	at Tvsu.Gur.GUR2.EvaluateDetectInstall()
+	Message: Evaluating rule
+
+Info	2021-07-28 , 09:59:02.790
+	at Tvsu.Gur.EgatherDetectionMethods.EvalDriverVersionByHardwareIDByVersion(String[] hardwareId, String pattern, String date, Boolean& isInboxDriver)
+	Message: HardwareId Value to Evaluate: System.String[], Validation xmlversion: 1.0.2.0^, getVersion: 1.0.4.6, Validation xmldate: 2020-05-19, getdate: 20210222, Result: True
+
+Info	2021-07-28 , 09:59:02.790
+	at Tvsu.Gur.RuleEvaluator.EvaluateDetectionMethod(IRule rule, Boolean isForSeverityOverride, Boolean& isInboxDriver)
+	Message: Detection method evaluated: _Driver Result-> True
+
+Info	2021-07-28 , 09:59:02.790
+	at Tvsu.Gur.GUR2.EvaluateDetectInstall()
+	Message: Rule result: True
+
+Info	2021-07-28 , 09:59:02.790
+	at Tvsu.Engine.UpateTaskListDataBase.get_Instance()
+	Message: start to CheckAndNotify! CheckNotifyFlag is true
+
+Info	2021-07-28 , 09:59:02.811
+	at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start[TStateMachine](TStateMachine& stateMachine)
+	Message: CheckUpdateTasklist get stage is idle
+
+Info	2021-07-28 , 09:59:02.811
+	at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start[TStateMachine](TStateMachine& stateMachine)
+	Message: OnUserLoginEvent wait 5 minutes to unload.
+
+Info	2021-07-28 , 10:04:02.829
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.<OnUserLoginEvent>d__112.MoveNext()
+	Message: Unload SystemUpdatePlugin
+
+Info	2021-07-28 , 10:04:02.832
+	at Lenovo.Modern.Plugins.SystemUpdatePlugin.SystemUpdateAgent.<OnUserLoginEvent>d__112.MoveNext()
+	Message: CheckThirdRequestRunning: False
+

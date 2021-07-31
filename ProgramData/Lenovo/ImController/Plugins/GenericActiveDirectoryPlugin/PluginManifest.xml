@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginManifest>
+    <PackageInformation name="GenericActiveDirectoryPlugin" version="1.2.26.0" location="GenericActiveDirectoryPlugin.cab" lastModified="2016-07-14T17:22:59" customEventMonitor="">
+    </PackageInformation>
+    <ApplicabilityFilter>
+        <Filter>true</Filter>
+    </ApplicabilityFilter>
+    <ContractMappingList>
+        <ContractMapping name="SystemUtilities.ActiveDirectory" version="1.0.0.0" runas="user" plugin="GenericActiveDirectoryPlugin" />
+    </ContractMappingList>
+    <EventSubscriptionList />
+    <SettingList />
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>WOVC252YKOS9zpSatuGxsfF7Ucc=</DigestValue></Reference></SignedInfo><SignatureValue>TLO2ltd0Iw1PCShwm3mbiYVnyrdvNcKfjY3D5YGKVM1PVNh6+5dx0xhfMa5acAZwrysdaMOBUr6v99seL7iPHM1yAh3NJkfxhM34QsdO2cFCW7eaZAuOr6e2Y0nXZuPs+RXyYx9A0ty+IAFVs2pfAwN7FRWDvOj27n89dMJQhf55UBMqMXzQB/BBW/wATKNPqgh4CiCnfYzAsHgOuNWMfHULPHmZHkQvTysYA3hDICeslmaa0t6aXpqzIuWCQAaJG3oGD8vXSC2mq4MKADxsBNHyhw/IYtrY4NMOyvxlb9Yv/fdQ/9uF+nSH47irj0UZI3JspYaZYro1rCiZ+D4hSg==</SignatureValue></Signature></PluginManifest>

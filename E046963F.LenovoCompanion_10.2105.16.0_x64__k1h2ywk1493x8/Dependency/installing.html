@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+
+        @media screen and (-ms-high-contrast: black-on-white) {
+            .bar-unfill {
+                -ms-high-contrast-adjust: none;
+                background: black !important;
+            }
+
+            .bar-fill {
+                -ms-high-contrast-adjust: none;
+                background: black !important;
+            }
+        }
+
+        @media screen and (-ms-high-contrast: white-on-black) {
+            .bar-unfill {
+                -ms-high-contrast-adjust: none;
+                background: white !important;
+            }
+
+            .bar-fill {
+                -ms-high-contrast-adjust: none;
+                background: white !important;
+            }
+        }
+
+        html, body {
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .content {
+            font-family: 'Segoe UI',sans-serif;
+        }
+
+        #downloadLnk {
+            background-color: #336aE9;
+            color: white;
+            padding: 0.1em 2.0em;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Segoe UI',sans-serif;
+            border-radius: 15px;
+        }
+
+        .container {
+            width: 70%;
+            margin: 48px auto;
+        }
+
+        .bar-unfill {
+            width: 100%;
+            height: 2px;
+            background: #E6EAEB;
+        }
+
+        .bar-fill {
+            position: relative;
+            height: 8px;
+            width: 0%;
+            background: linear-gradient(90deg, #5BE8AA 0%, #2ECC71 100%);
+            border-radius: 4px;
+            transform: translateY(-50%);
+        }
+
+        #percentage-value {
+            text-align: right;
+        }
+
+            #percentage-value span:first-child {
+                font-family: 'Segoe UI', Semilight !important;
+                color: #34495E;
+                font-size: 34px;
+            }
+
+            #percentage-value span:nth-child(2) {
+                font-size: 14px;
+                font-weight: bold;
+            }
+    </style>
+    <script src="i18n.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div id="msg" role="article" align="center"></div>
+        <div id="addition-msg" role="article" align="center"></div>
+        <div id="addition-msg2" role="article" align="center"></div>
+        <div id="downloadBtn" align="center" margin-top="10">
+            <br />
+            <a id="downloadLnk" href="https://filedownload.lenovo.com/enm/vantage30/service/Lenovo.Vantage.ServiceSetup.exe" target="_blank">DOWNLOAD</a>
+        </div>
+
+        <div id="progressContainer" role="article" class="container">
+            <div class="bar-unfill">
+                <div class="bar-fill" id="progress-indicator"></div>
+            </div>
+            <div id="percentage-value">
+                <span id="percent-val">0</span>
+                <span>%</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        function getLanguage() {
+            if (window.navigator.languages) {
+                return window.navigator.languages[0];
+            } else {
+                return window.navigator.userLanguage || window.navigator.language;
+            }
+        }
+
+        function getText(resId) {
+            let text = "";
+            if (resId && typeof (resId) == "string") {
+                let language = getLanguage();
+                if (language.toLowerCase() === "zh-cn") {
+                    language = "zh-Hans";
+                } else if (language.toLowerCase() === "zh-tw" || language.toLowerCase() === "zh-hk") {
+                    language = "zh-Hant";
+                } else if (language.toLowerCase() === "pt-br") {
+                    language = "pt-BR";
+                } else if (language.toLowerCase().startsWith("no")) {
+                    language = "nb";
+                } else {
+                    language = language.substr(0, 2);
+                }
+
+                text = strings[language][resId];
+                if (!text) {
+                    text = strings["en"][resId];
+                }
+            }
+            return text;
+        }
+
+        function updatePercent(percent) {
+            if (percent <= 100) {
+                document.getElementById("progress-indicator").style.width = percent + "%";
+                document.getElementById("percent-val").innerText = percent;
+            }
+        }
+
+        function startListenProgress() {
+            if (window.VantageShellExtension) {
+                window.VantageShellExtension.VantageStub.instance.ondependencyprogressreported = (percent) => {
+                    updatePercent(percent);
+                }
+            }
+        }
+
+        window.onload = function () {
+            let msgId = "msg";
+            if (window.location.search.substring(1) === "failed=true") {
+                document.getElementById('progressContainer').setAttribute("style", "display:none");
+                document.getElementById('downloadLnk').innerText = getText("download");
+                msgId = "msg-failed";
+            } else if (window.location.search.substring(1) === "upgrade=true") {
+                msgId = "msg-upgrade";
+                document.getElementById('downloadBtn').setAttribute("style", "display:none");
+            } else {
+                document.getElementById('addition-msg').innerHTML = getText("addition-msg");
+                document.getElementById('addition-msg2').innerHTML = getText("addition-msg2");
+                document.getElementById('downloadBtn').setAttribute("style", "display:none");
+            }
+
+            document.getElementById("msg").innerHTML = getText(msgId);
+
+            startListenProgress();
+        }
+    </script>
+</body>
+</html>

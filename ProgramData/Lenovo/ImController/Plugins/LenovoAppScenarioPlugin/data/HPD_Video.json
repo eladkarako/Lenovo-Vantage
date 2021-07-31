@@ -1,0 +1,38 @@
+﻿{
+	"hpd_viedo_pause_support_list": [{
+			"process_name": "wmplayer",
+			"hotkey_pause": "0x11+0x50",
+			"app_name": "Windows Media Player",
+			"app_type": "Desktop",
+			"can_audio_session_sync_immediately": true
+		},
+		{
+			"process_name": "vlc",
+			"hotkey_pause": "0x20",
+			"app_name": "VLC Player",
+			"app_type": "Desktop",
+			"can_audio_session_sync_immediately": true
+		},
+		{
+			"process_name": "PotPlayerMini64",
+			"hotkey_pause": "0x20",
+			"app_name": "Pot Player",
+			"app_type": "Desktop",
+			"can_audio_session_sync_immediately": false
+		},
+		{
+			"process_name": "GOM",
+			"hotkey_pause": "0x20",
+			"app_name": "GOM Player",
+			"app_type": "Desktop",
+			"can_audio_session_sync_immediately": false
+		},
+		{
+			"process_name": "5KPlayer",
+			"hotkey_pause": "0x20",
+			"app_name": "5K Player",
+			"app_type": "Desktop",
+			"can_audio_session_sync_immediately": false
+		}
+	]
+}

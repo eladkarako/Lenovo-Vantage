@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginManifest>
+  <PackageInformation name="GenericTelemetryPlugin" version="1.0.0.0" location="GenericTelemetryPlugin.cab" lastModified="2019-02-28T16:00:00" customEventMonitor="">
+  </PackageInformation>
+  <ApplicabilityFilter>
+    <Filter manufacturer="lenovo">true</Filter>
+    <Filter>false</Filter>
+  </ApplicabilityFilter>
+  <ContractMappingList>
+  </ContractMappingList>
+  <EventSubscriptionList>
+    <!-- Run when the user logs in.  This may be infrequent -->
+    <EventSubscription monitor="SystemEventMonitor" trigger="User-Login" runas="system">
+		<Parameter>
+			<![CDATA[ ]]>
+		</Parameter>
+	</EventSubscription>
+    <!-- Run when the device resumes from sleep state -->
+    <EventSubscription monitor="WindowMessageMonitor" trigger="PowerChange" runas="system">
+      <Parameter>
+        <![CDATA[<?xml version="1.0" encoding="utf-16"?>
+			<PowerBroadcastEventSubscription>
+				<PbtValueList>
+					<PbtValue>18</PbtValue>
+				</PbtValueList>
+				<PowerSettingGuidList />
+			</PowerBroadcastEventSubscription>]]>
+      </Parameter>
+    </EventSubscription>
+    <!-- Run every day at a random time.  -->
+    <EventSubscription monitor="TimeBasedMonitor" trigger="TimeBaseChange" runas="system">
+      <Parameter>
+        <![CDATA[<?xml version="1.0" encoding="utf-16"?>
+			<TimeBasedEventSubscription>
+			<FriendlyName>RunDailyEvent</FriendlyName>
+			<OOBEProximity>false</OOBEProximity>
+			<RandomDelay>PT3H</RandomDelay>
+			<RequireNetworkConnection>true</RequireNetworkConnection>
+			<RepeatIntervalUnit>Daily</RepeatIntervalUnit>
+			<RepeatInterval>1</RepeatInterval>
+			<StartDateTime>2020-01-31T09:00:10</StartDateTime>
+			</TimeBasedEventSubscription>]]>
+      </Parameter>
+    </EventSubscription>
+  </EventSubscriptionList>
+  <SettingList>
+        <Setting key="ImController.Association.Device">
+        </Setting>
+        <Setting key="Telemetry.Config.V1.BundleQuantity">20</Setting>
+        <Setting key="Telemetry.Config.V1.Channel.Core"><![CDATA[{"ProviderName":"Lenovo-Sif-Core","IsEnabled":true,"DataPolicies":[{"Classification":"Device","PolicyConditions":[{"container":"HKEY_LOCAL_MACHINE\\SOFTWARE\\Lenovo\\AnonymousMetrics","disabledValue":"0","enabledValue":"1","item":"Enabled","method":"RegistryValue","type":"SystemPolicy"},{"container":"HKEY_CURRENT_USER\\Software\\Lenovo\\Metrics","disabledValue":"0","enabledValue":"1","item":"com.lenovo.companion","method":"RegistryValue","type":"UserPreference"},{"container":"HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Lenovo\\ImController","disabledValue":"1","enabledValue":"0","item":"DisableSystemInterfaceUsageStats","method":"RegistryValue","type":"SystemPolicy"}]}],"LudpConfig":{"GeoMap":[{"geo":"*","uri":"https:\/\/chifsr.lenovomm.com\/PCJson"}],"isEnabled":true,"productMap":[{"appKey":"DR5Q2D85DB67","logName":"imc","ludpName":"imc"},{"appKey":"DR5Q2D85DB67","logName":"lsif","ludpName":"imc"}]}}]]></Setting>
+        <Setting key="Telemetry.Config.V1.Channel.Companion"><![CDATA[{"ProviderName":"Lenovo-Sif-Companion","IsEnabled":true,"DataPolicies":[{"Classification":"User","PolicyConditions":[{"container":"HKEY_CURRENT_USER\\Software\\Lenovo\\Metrics","disabledValue":"0","enabledValue":"1","item":"com.lenovo.companion","method":"RegistryValue","type":"UserPreference"},{"container":"HKEY_LOCAL_MACHINE\\Software\\Policies\\Lenovo\\E046963F.LenovoCompanion_k1h2ywk1493x8","disabledValue":"0","enabledValue":"1","item":"422FDE50-51D5-4A5B-9A44-7B19BCD03A29","method":"RegistryValue","type":"SystemPolicy"}]}],"LudpConfig":{"GeoMap":[{"geo":"*","uri":"https:\/\/chifsr.lenovomm.com\/PCJson"}],"isEnabled":true,"productMap":[{"appKey":"SW9XFRH45924","logName":"Companion","ludpName":"Companion"},{"appKey":"JCI32DET5030","logName":"LenovoCompanionAppPlugin","ludpName":"LenovoCompanionAppPlugin"},{"appKey":"JCI32DET5030","logName":"GenericMessagingPlugin","ludpName":"GenericMessagingPlugin"},{"appKey":"JCI32DET5030","logName":"GenericTelemetryPlugin","ludpName":"GenericTelemetryPlugin"},{"appKey":"JCI32DET5030","logName":"LenovoSystemUpdatePlugin","ludpName":"LenovoSystemUpdatePlugin"},{"appKey":"JCI32DET5030","logName":"ThinkMultimodeDetectPlugin","ludpName":"ThinkMultimodeDetectPlugin"},{"appKey":"JCI32DET5030","logName":"ThinkIntelligentSensingPackage","ludpName":"ThinkIntelligentSensingPackage"},{"appKey":"JCI32DET5030","logName":"GenericDisplayPlugin","ludpName":"GenericDisplayPlugin"},{"appKey":"JCI32DET5030","logName":"LenovoAudioPlugin","ludpName":"LenovoAudioPlugin"},{"appKey":"JCI32DET5030","logName":"LenovoAppScenarioPlugin","ludpName":"LenovoAppScenarioPlugin"},{"appKey":"JCI32DET5030","logName":"LenovoBatteryGaugePackage","ludpName":"LenovoBatteryGaugePackage"},{"appKey":"JCI32DET5030","logName":"LenovoWiFiSecurityPlugin","ludpName":"LenovoWiFiSecurityPlugin"},{"appKey":"JCI32DET5030","logName":"ThinkMultimodeDetectPlugin","ludpName":"ThinkMultimodeDetectPlugin"},{"appKey":"JCI32DET5030","logName":"ThinkIntelligentSensingPackage","ludpName":"ThinkIntelligentSensingPackage"},{"appKey":"JCI32DET5030","logName":"LenovoGamingSystemPlugin","ludpName":"LenovoGamingSystemPlugin"},{"appKey":"JCI32DET5030","logName":"LenovoGamingUserPlugin","ludpName":"LenovoGamingUserPlugin"},{"appKey":"JCI32DET5030","logName":"BetterTogetherPlugin","ludpName":"BetterTogetherPlugin"}]}}]]></Setting>
+    </SettingList>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>RPFNvbG0BMLCcqvUgcL/wFvEWHA=</DigestValue></Reference></SignedInfo><SignatureValue>N/1hI2RtMoHU5ImJ+CduikfWTHOLYNmwj4v3NBnQQFeayGFO9hsbN8awJcE6QWdw8RyQvIkVz1ZznSyzR20vNtzW3pcuSETD/Xg1Kqa5TYRFwwOoY9hseOCZwgcJDFkO3QJfnqUERqkXcvWQivdqw+MzFVI6Qnf6XWVnRq5+dRFg/JpVyw+mkj2n4M4k9B2OEySxWBISkCjRQN6TDufESCpQQL3RXRrcTpLl8Zoqbg/sg/godN5MtDPEelcnFQAewdtoLr6Eb5kTyad0IIcWCaIpXpFTSpIr5tTNHCAJQGBxwPDQbII33QOb8hbORRh6Di94+fFn0b47p4Qxc6Wtcw==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIEuzCCA6OgAwIBAgIQR3ZVyInxomlCtfZfiBnjdzANBgkqhkiG9w0BAQsFADCBhDELMAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVjIENvcnBvcmF0aW9uMR8wHQYDVQQLExZTeW1hbnRlYyBUcnVzdCBOZXR3b3JrMTUwMwYDVQQDEyxTeW1hbnRlYyBDbGFzcyAzIFNIQTI1NiBDb2RlIFNpZ25pbmcgQ0EgLSBHMjAeFw0xOTA5MjcwMDAwMDBaFw0yMDExMjcyMzU5NTlaMGwxCzAJBgNVBAYTAlVTMRcwFQYDVQQIDA5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEBwwLTW9ycmlzdmlsbGUxDzANBgNVBAoMBkxlbm92bzEMMAoGA1UECwwDRzA4MQ8wDQYDVQQDDAZMZW5vdm8wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDHUhZm3P6QS2ul7w882Oh61NzqAmBNamYKRzm1wqwUhtWBEKmVCPQJIIwdSeiTofMzZbLo6Z7p8/JK8RIoOkvaOv1EKu4Ul6FueBPS4g3m8whaWFXBhg83U6NGGvqnB9U+50d9KxMnSPovSEwPs2dRuhKiG8DigGVuPUtNNmazl8QaUWpyojyHEETRfZwt53Pgu2jMCfIQsM+Y880zoEB+aW8+sJYHZgBlIUwokp6fWM9YOQoIQPQTo77uI3+RJrOan41uk/DjYkn5n7UKyQE8P+0Nlmx2T6UdJ/xAk0r036WNarYvWnQGnA5x/jQBtG/PrSafuRyEWMfC/kZGpWl5AgMBAAGjggE+MIIBOjAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzBhBgNVHSAEWjBYMFYGBmeBDAEEATBMMCMGCCsGAQUFBwIBFhdodHRwczovL2Quc3ltY2IuY29tL2NwczAlBggrBgEFBQcCAjAZDBdodHRwczovL2Quc3ltY2IuY29tL3JwYTAfBgNVHSMEGDAWgBTUwAYiSes5S92T4lyhuEd2CXIDWDArBgNVHR8EJDAiMCCgHqAchhpodHRwOi8vcmIuc3ltY2IuY29tL3JiLmNybDBXBggrBgEFBQcBAQRLMEkwHwYIKwYBBQUHMAGGE2h0dHA6Ly9yYi5zeW1jZC5jb20wJgYIKwYBBQUHMAKGGmh0dHA6Ly9yYi5zeW1jYi5jb20vcmIuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQBK3zlAI2olZ3eHWmUWRRzjD/6J7Kp0ViFf5K+2qYfxK7b7XjotgLL/HS5rvadCKKwEFsSuzKdvSxI5/VXmChL1ggQKExGeSn3sDRDBivrkAhHQblZ8mYw9MI1Jqr5e+fnU40slyd2RGRObSVdPj7u0N8Ee7x3ujoJGpy+QSCd/pSrqeusoca95sH29YNv9yirsaZHZu7hMbnkU7RXwiyVALy6eHl/NvSa6s6PMq901fT2dJvR7Z3HHfgJe7+x6YvM1iklt8WPzdBfd9GT0iyee+wRbja6u6UT0uovWQBTmaN/nRPw15Dx5hcUueYNMnWNFa3WFKuPPZFElWvmykV/x</X509Certificate></X509Data></KeyInfo></Signature></PluginManifest>

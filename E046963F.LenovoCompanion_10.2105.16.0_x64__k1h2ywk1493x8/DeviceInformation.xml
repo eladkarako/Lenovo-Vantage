@@ -1,0 +1,866 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+    <assembly>
+        <name>DeviceInformation</name>
+    </assembly>
+    <members>
+        <member name="T:DeviceInformation.RegionHelper">
+            <summary>
+            RegionHelper.
+            </summary>
+        </member>
+        <member name="T:DeviceInformation.RegionHelper.SYSGEOTYPE">
+            <summary>
+            ReSharper disable once InconsistentNaming.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.RegionHelper.SYSGEOTYPE.GEO_NATION">
+            <summary>
+            GEO_NATION.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.RegionHelper.SYSGEOTYPE.GEO_LATITUDE">
+            <summary>
+            GEO_LATITUDE.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.RegionHelper.SYSGEOTYPE.GEO_LONGITUDE">
+            <summary>
+            GEO_LONGITUDE.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.RegionHelper.SYSGEOTYPE.GEO_ISO2">
+            <summary>
+            GEO_ISO2.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.RegionHelper.SYSGEOTYPE.GEO_ISO3">
+            <summary>
+            GEO_ISO3.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.RegionHelper.SYSGEOTYPE.GEO_RFC1766">
+            <summary>
+            GEO_RFC1766.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.RegionHelper.SYSGEOTYPE.GEO_LCID">
+            <summary>
+            GEO_LCID.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.RegionHelper.SYSGEOTYPE.GEO_FRIENDLYNAME">
+            <summary>
+            GEO_FRIENDLYNAME.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.RegionHelper.SYSGEOTYPE.GEO_OFFICIALNAME">
+            <summary>
+            GEO_OFFICIALNAME.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.RegionHelper.SYSGEOTYPE.GEO_TIMEZONES">
+            <summary>
+            GEO_TIMEZONES.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.RegionHelper.SYSGEOTYPE.GEO_OFFICIALLANGUAGES">
+            <summary>
+            GEO_OFFICIALLANGUAGES.
+            </summary>
+        </member>
+        <member name="M:DeviceInformation.RegionHelper.GetMachineCurrentLocation">
+            <summary>
+            Returns machine current location as specified in Region and Language settings.
+            </summary>
+            <returns>string.</returns>
+        </member>
+        <member name="T:DeviceInformation.Smbios.EnclosureType">
+            <summary>
+            Types of system enclosures.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.EnclosureType.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.EnclosureType.Notebook">
+            <summary>
+            Notebook
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.EnclosureType.Laptop">
+            <summary>
+            Laptop
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.EnclosureType.Desktop">
+            <summary>
+            Desktop
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.EnclosureType.Tower">
+            <summary>
+            Tower
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.EnclosureType.AllInOne">
+            <summary>
+            AllInOne
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.EnclosureType.Workstation">
+            <summary>
+            Workstation
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.EnclosureType.HandHeld">
+            <summary>
+            HandHeld
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.EnclosureType.Tablet">
+            <summary>
+            Tablet
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.EnclosureType.Convertible">
+            <summary>
+            Do not reference, WINAPPFRAM-1213
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.EnclosureType.Detachable">
+            <summary>
+            Do not reference, WINAPPFRAM-1213
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.EnclosureType.StickPc">
+            <summary>
+            Do not reference, WINAPPFRAM-1213
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.EnclosureType.MiniPc">
+            <summary>
+            Do not reference, WINAPPFRAM-1213
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.EnclosureType.Other">
+            <summary>
+            Other
+            </summary>
+        </member>
+        <member name="T:DeviceInformation.Smbios.BrandType">
+            <summary>
+            Brands.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.BrandType.None">
+            <summary>
+            Default empty value
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.BrandType.Other">
+            <summary>
+            Other
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.BrandType.Lenovo">
+            <summary>
+            Think
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.BrandType.Think">
+            <summary>
+            Think
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.BrandType.Idea">
+            <summary>
+            Idea
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.BrandType.IdeaTab">
+            <summary>
+            Idea
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.BrandType.NecConsumer">
+            <summary>
+            NEC Consumer
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.BrandType.NecCommercial">
+            <summary>
+            NEC Consumer
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.BrandType.Medion">
+            <summary>
+            Medion
+            </summary>
+        </member>
+        <member name="T:DeviceInformation.Smbios.FamilyParser">
+            <summary>
+            .
+            </summary>
+        </member>
+        <member name="T:DeviceInformation.Smbios.ISmbInfo">
+            <summary>
+            .
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.ISmbInfo.BiosVersion">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.ISmbInfo.BiosDate">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.ISmbInfo.ECVersion">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.ISmbInfo.Brand">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.ISmbInfo.Family">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.ISmbInfo.MTM">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.ISmbInfo.MT">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.ISmbInfo.Manufacturer">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.ISmbInfo.SerialNumber">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.ISmbInfo.SKU">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.ISmbInfo.SubBrand">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.ISmbInfo.ProductName">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.ISmbInfo.IdeaSerialNumber">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.ISmbInfo.Enclosure">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.ISmbInfo.Memorys">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="T:DeviceInformation.Smbios.MemoryInfo">
+            <summary>
+            MemoryInfo.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.MemoryInfo.Manufacturer">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.MemoryInfo.MemoryType">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.MemoryInfo.SizeInByte">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.MemoryInfo.SerialNumber">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.MemoryInfo.ConfiguredMemoryClockSpeed">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.MemoryInfo.DeviceLocator">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.MemoryInfo.PartNumber">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="T:DeviceInformation.Smbios.SkuKeys">
+            <summary>
+            .
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.SkuKeys.Mt">
+            <summary>
+            .
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.SkuKeys.Family">
+            <summary>
+            .
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.SkuKeys.Brand">
+            <summary>
+            .
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.SkuKeys.Manufacturer">
+            <summary>
+            .
+            </summary>
+        </member>
+        <member name="T:DeviceInformation.Smbios.SkuParser">
+            <summary>
+            .
+            </summary>
+        </member>
+        <member name="M:DeviceInformation.Smbios.SkuParser.ParseFromSku(System.String)">
+            <summary>
+            .
+            </summary>
+            <param name="sku">sku.</param>
+            <returns>Dictionary.</returns>
+        </member>
+        <member name="T:DeviceInformation.Smbios.SmbInformation">
+            <summary>
+            .
+            </summary>
+        </member>
+        <member name="M:DeviceInformation.Smbios.SmbInformation.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DeviceInformation.Smbios.SmbInformation" /> class.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.SmbInformation.BiosVersion">
+            <inheritdoc />
+        </member>
+        <member name="P:DeviceInformation.Smbios.SmbInformation.BiosDate">
+            <inheritdoc />
+        </member>
+        <member name="P:DeviceInformation.Smbios.SmbInformation.ECVersion">
+            <inheritdoc />
+        </member>
+        <member name="P:DeviceInformation.Smbios.SmbInformation.Brand">
+            <inheritdoc />
+        </member>
+        <member name="P:DeviceInformation.Smbios.SmbInformation.Family">
+            <inheritdoc />
+        </member>
+        <member name="P:DeviceInformation.Smbios.SmbInformation.MTM">
+            <inheritdoc />
+        </member>
+        <member name="P:DeviceInformation.Smbios.SmbInformation.MT">
+            <inheritdoc />
+        </member>
+        <member name="P:DeviceInformation.Smbios.SmbInformation.Manufacturer">
+            <inheritdoc />
+        </member>
+        <member name="P:DeviceInformation.Smbios.SmbInformation.SerialNumber">
+            <inheritdoc />
+        </member>
+        <member name="P:DeviceInformation.Smbios.SmbInformation.SKU">
+            <inheritdoc />
+        </member>
+        <member name="P:DeviceInformation.Smbios.SmbInformation.SubBrand">
+            <inheritdoc />
+        </member>
+        <member name="P:DeviceInformation.Smbios.SmbInformation.ProductName">
+            <inheritdoc />
+        </member>
+        <member name="P:DeviceInformation.Smbios.SmbInformation.IdeaSerialNumber">
+            <inheritdoc />
+        </member>
+        <member name="P:DeviceInformation.Smbios.SmbInformation.Enclosure">
+            <inheritdoc />
+        </member>
+        <member name="P:DeviceInformation.Smbios.SmbInformation.CPUIdentifier">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.SmbInformation.CPUVendor">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Smbios.SmbInformation.Memorys">
+            <inheritdoc />
+        </member>
+        <member name="T:DeviceInformation.Smbios.SubBrands">
+            <summary>
+            SubBrands.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.SubBrands.ThinkPad">
+            <summary>
+            ThinkPad.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.SubBrands.ThinkCentre">
+            <summary>
+            ThinkCentre.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.SubBrands.ThinkCenter">
+            <summary>
+            ThinkCentre.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.SubBrands.ThinkStation">
+            <summary>
+            Erazer.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.SubBrands.Erazer">
+            <summary>
+            ThinkCentre.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.SubBrands.IdeaPad">
+            <summary>
+            IdeaPad.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.SubBrands.IdeaCentre">
+            <summary>
+            IdeaCentre.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.SubBrands.IdeaCenter">
+            <summary>
+            IdeaCenter.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.SubBrands.IdeaTab">
+            <summary>
+            IdeaTab.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.SubBrands.EdgeSuffix">
+            <summary>
+            EdgeSuffix.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.SubBrands.Medion">
+            <summary>
+            Medion.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.SubBrands.Miix">
+            <summary>
+            Miix.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.SubBrands.Yoga">
+            <summary>
+            Yoga.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.SubBrands.Lenovo">
+            <summary>
+            Lenovo.
+            </summary>
+        </member>
+        <member name="F:DeviceInformation.Smbios.SubBrands.Other">
+            <summary>
+            Other.
+            </summary>
+        </member>
+        <member name="T:DeviceInformation.Contract.BiosInfo">
+            <summary>
+            add document here.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.BiosInfo.Manufacturer">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.BiosInfo.BiosVersion">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.BiosInfo.BiosDate">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.BiosInfo.EcVersion">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.BiosInfo.Family">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.BiosInfo.Sku">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.BiosInfo.EnclosureType">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.BiosInfo.Mtm">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.BiosInfo.Mt">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.BiosInfo.Brand">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.BiosInfo.SubBrand">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.BiosInfo.SerialNumber">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="M:DeviceInformation.Contract.BiosInfo.FromJson(System.String)">
+            <summary>
+            Gets or sets.
+            </summary>
+            <param name="jsonPayload">jsonPayload.</param>
+            <returns>BiosInfo.</returns>
+        </member>
+        <member name="M:DeviceInformation.Contract.BiosInfo.ToString">
+            <summary>
+            Gets or sets.
+            </summary>
+            <returns>string.</returns>
+        </member>
+        <member name="M:DeviceInformation.Contract.BiosInfo.ToJson">
+            <summary>
+            Gets or sets.
+            </summary>
+            <returns>string.</returns>
+        </member>
+        <member name="T:DeviceInformation.Contract.CPUInfo">
+            <summary>
+            CPUInfo.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.CPUInfo.Name">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.CPUInfo.Vendor">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.CPUInfo.Type">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.CPUInfo.AddressWidth">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="M:DeviceInformation.Contract.CPUInfo.FromJson(System.String)">
+            <summary>
+            Gets or sets.
+            </summary>
+            <returns>CPUInfo.</returns>
+            <param name="jsonPayload">jsonPayload.</param>
+        </member>
+        <member name="M:DeviceInformation.Contract.CPUInfo.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:DeviceInformation.Contract.CPUInfo.ToJson">
+            <summary>
+            Gets or sets.
+            </summary>
+            <returns>string.</returns>
+        </member>
+        <member name="T:DeviceInformation.Contract.MachineInfo">
+            <summary>
+            MachineInfo.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.MachineInfo.DeviceId">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.MachineInfo.Bios">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.MachineInfo.Cpu">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.MachineInfo.Os">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.MachineInfo.Memories">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="M:DeviceInformation.Contract.MachineInfo.FromJson(System.String)">
+            <summary>
+            FromJson.
+            </summary>
+            <param name="jsonPayload">jsonPayload.</param>
+            <returns>MachineInfo.</returns>
+        </member>
+        <member name="M:DeviceInformation.Contract.MachineInfo.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:DeviceInformation.Contract.MachineInfo.ToJson">
+            <summary>
+            ToJson.
+            </summary>
+            <returns>string.</returns>
+        </member>
+        <member name="M:DeviceInformation.Contract.MachineInfo.ToIntendedJson">
+            <summary>
+            ToIntendedJson.
+            </summary>
+            <returns>string.</returns>
+        </member>
+        <member name="T:DeviceInformation.Contract.MemoryInfo">
+            <summary>
+            MemoryInfo.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.MemoryInfo.Type">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.MemoryInfo.SizeInBytes">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.MemoryInfo.SerialNumber">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="M:DeviceInformation.Contract.MemoryInfo.FromJson(System.String)">
+            <summary>
+            .
+            </summary>
+            <param name="jsonPayload">jsonPayload.</param>
+            <returns>MemoryInfo.</returns>
+        </member>
+        <member name="M:DeviceInformation.Contract.MemoryInfo.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:DeviceInformation.Contract.MemoryInfo.ToJson">
+            <summary>
+            .
+            </summary>
+            <returns>string.</returns>
+        </member>
+        <member name="T:DeviceInformation.Contract.MemoryUsageInfo">
+            <summary>
+            MemoryUsageInfo.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.MemoryUsageInfo.TotalSizeInBytes">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.MemoryUsageInfo.AvaliableSize">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="M:DeviceInformation.Contract.MemoryUsageInfo.FromJson(System.String)">
+            <summary>
+            .
+            </summary>
+            <param name="jsonPayload">jsonPayload.</param>
+            <returns>MemoryUsageInfo.</returns>
+        </member>
+        <member name="M:DeviceInformation.Contract.MemoryUsageInfo.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:DeviceInformation.Contract.MemoryUsageInfo.ToJson">
+            <summary>
+            .
+            </summary>
+            <returns>string.</returns>
+        </member>
+        <member name="T:DeviceInformation.Contract.OperatingSystemInfo">
+            <summary>
+            .
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.OperatingSystemInfo.Sku">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.OperatingSystemInfo.Name">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.OperatingSystemInfo.Version">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.OperatingSystemInfo.Bitness">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.OperatingSystemInfo.Geo">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.OperatingSystemInfo.Locale">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.Contract.OperatingSystemInfo.IsSMode">
+            <summary>
+            Gets or sets a value indicating whether gets or sets.
+            </summary>
+        </member>
+        <member name="M:DeviceInformation.Contract.OperatingSystemInfo.FromJson(System.String)">
+            <summary>
+            .
+            </summary>
+            <param name="jsonPayload">jsonPayload.</param>
+            <returns>OperatingSystemInfo.</returns>
+        </member>
+        <member name="M:DeviceInformation.Contract.OperatingSystemInfo.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:DeviceInformation.Contract.OperatingSystemInfo.ToJson">
+            <summary>
+            .
+            </summary>
+            <returns>string.</returns>
+        </member>
+        <member name="T:DeviceInformation.DeviceInfo">
+            <summary>
+            DeviceInfo.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.DeviceInfo.DeviceId">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.DeviceInfo.Bios">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.DeviceInfo.Memories">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.DeviceInfo.Os">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="P:DeviceInformation.DeviceInfo.Cpu">
+            <summary>
+            Gets.
+            </summary>
+        </member>
+        <member name="M:DeviceInformation.DeviceInfo.GetMachineInfo">
+            <summary>
+            GetMachineInfo.
+            </summary>
+            <returns>MachineInfo.</returns>
+        </member>
+        <member name="T:DeviceInformation.StringExtensions">
+            <summary>
+            StringExtensions.
+            </summary>
+        </member>
+        <member name="M:DeviceInformation.StringExtensions.Sanitize(System.String)">
+            <summary>
+            Sanitize.
+            </summary>
+            <param name="text">text.</param>
+            <returns>string.</returns>
+        </member>
+        <member name="M:DeviceInformation.StringExtensions.RemoveAllWhiteSpace(System.String)">
+            <summary>
+            RemoveAllWhiteSpace.
+            </summary>
+            <param name="text">text.</param>
+            <returns>string.</returns>
+        </member>
+    </members>
+</doc>

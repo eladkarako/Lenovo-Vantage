@@ -1,0 +1,274 @@
+{
+    "AUDIO": {
+        "default": {
+            "AUDIO_PLAYBACK_TEST": 20,
+            "MICROPHONE_INTERACTIVE_TEST": 20
+        }
+    },
+    "AUDIO_CONTROLLER": {
+        "default": {
+            "CORB_STATUS_TEST": 1,
+            "INPUT_STREAM_TEST": 6,
+            "OUTPUT_STREAM_TEST": 6
+        }
+    },
+    "BATTERY": {
+        "default": {
+            "BATTERY_CHARGE_TEST": 600,
+            "BATTERY_DISCHARGE_TEST": 600,
+            "BATTERY_HEALTH_TEST": 1,
+            "BATTERY_TEMPERATURE_TEST": 1
+        }
+    },
+    "BLUETOOTH": {
+        "default": {
+            "SCAN_TEST": 11
+        }
+    },
+    "CAMERA": {
+        "default": {
+            "CAMERA_CAPTURE_TEST": 25
+        }
+    },
+    "CPU": {
+        "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz - INTEL (0)": {
+            "CPU_AES_TEST": 0,
+            "CPU_BT_INSTRUCTION_TEST": 0,
+            "CPU_MMX_TEST": 0,
+            "CPU_SSE_FAMILY_TEST": 0,
+            "CPU_X87_FLOATING_POINT_TEST": 0
+        },
+        "default": {
+            "CPU_3DNOW_TEST": 1,
+            "CPU_AES_TEST": 1,
+            "CPU_BT_INSTRUCTION_TEST": 1,
+            "CPU_MMX_TEST": 1,
+            "CPU_SSE_FAMILY_TEST": 1,
+            "CPU_STRESS_TEST": 600,
+            "CPU_X87_FLOATING_POINT_TEST": 1
+        }
+    },
+    "DISPLAY": {
+        "default": {
+            "DISPLAY_BLACK_PURITY_TEST": 15,
+            "DISPLAY_BLUE_PURITY_TEST": 15,
+            "DISPLAY_COLOR_TRANSITION_TEST": 15,
+            "DISPLAY_GENERAL_DISPLAY_INTERACTIVE_TEST": 60,
+            "DISPLAY_GREEN_PURITY_TEST": 15,
+            "DISPLAY_INVERTED_MONOCHROMATIC_MESH_TEST": 15,
+            "DISPLAY_MONOCHROMATIC_MESH_TEST": 15,
+            "DISPLAY_RED_PURITY_TEST": 15,
+            "DISPLAY_RESOLUTION_FITTING_TEST": 1,
+            "DISPLAY_SHARPNESS_TEST": 15,
+            "DISPLAY_WHITE_PURITY_TEST": 15,
+            "RESOLUTION_FITTING_TEST": 1
+        }
+    },
+    "DISPLAY_INTERFACE": {
+        "default": {
+            "DISPLAY_COMMUNICATION_TEST": 4,
+            "EDID_CHECKSUM_TEST": 1
+        }
+    },
+    "FAN": {
+        "default": {
+            "FAN_CONTROL_TEST": 22
+        }
+    },
+    "FINGERPRINT": {
+        "default": {
+            "RECOGNITION_TEST": 10
+        }
+    },
+    "KEYBOARD": {
+        "default": {
+            "ADVANCED_TEST": 120,
+            "KEYCODE_TEST_INPUT_TEST": 120,
+            "KEYCODE_VERIFICATION_TEST": 120,
+            "PS2_KEYBOARD_TEST": 6,
+            "USB_KEYBOARD_TEST": 1
+        }
+    },
+    "MEMORY": {
+        "PHYSICAL_MEMORY": {
+            "QUICK_RANDOM_PATTERN_TEST": 37
+        },
+        "default": {
+            "ADDRESS_TEST": 12,
+            "ADVANCED_INTEGRITY_TEST": 21,
+            "BIT_HIGH_TEST": 17,
+            "BIT_LOW_TEST": 17,
+            "BLOCK_MOVE_TEST": 140,
+            "MODULO_20_TEST": 254,
+            "MOVING_INVERSIONS_32_BIT_TEST": 203,
+            "MOVING_INVERSIONS_8_BIT_TEST": 186,
+            "NIBBLE_MOVE_TEST": 36,
+            "QUICK_RANDOM_PATTERN_TEST": 74,
+            "RANDOM_NUMBER_SEQUENCE_TEST": 423,
+            "RANDOM_PATTERN_TEST": 242,
+            "WALKING_ONES_LEFT_TEST": 96,
+            "WALKING_ONES_RIGHT_TEST": 96
+        }
+    },
+    "MOTHERBOARD": {
+        "default": {
+            "MOTHERBOARD_CHIPSET_TEST": 4,
+            "MOTHERBOARD_PCI_/_PCI-E_TEST": 3,
+            "MOTHERBOARD_RTC_TEST": 15,
+            "MOTHERBOARD_USB_TEST": 1
+        }
+    },
+    "MOUSE_DEVICES": {
+        "default": {
+            "CLICK_TEST": 30,
+            "PRECISION_TEST": 30,
+            "PRESS_PRECISION_TEST": 30
+        }
+    },
+    "OPTICAL_DRIVE": {
+        "default": {
+            "FUNNEL_SEEK_TEST": 120,
+            "LINEAR_SEEK_TEST": 126,
+            "MEDIA-LESS_OPTICAL_SELF-|TEST": 22,
+            "RANDOM_SEEK_TEST": 120,
+            "READ_AND_COMPARE_TEST": 120,
+            "WRITE_TEST": 950
+        }
+    },
+    "PCI_EXPRESS": {
+        "default": {
+            "PCI_EXPRESS_STATUS_TEST": 1
+        }
+    },
+    "RAID": {
+        "default": {
+            "BATTERY_STATUS_TEST": 1,
+            "CHECK_CONSISTENCY_TEST": 750,
+            "ENCLOSURES_STATUS_TEST": 1,
+            "LOGICAL_DRIVES_STATUS_TEST": 1,
+            "RAID_STATUS_TEST": 1
+        }
+    },
+    "SENSORS": {
+        "default": {
+            "ACCELEROMETER_INTERACTIVE_TEST": 90,
+            "ACCELEROMETER_NOISE_TEST": 10,
+            "COMPASS_INTERACTIVE_TEST": 6,
+            "COMPASS_NOISE_TEST": 10,
+            "GPS_COMMUNICATION_TEST": 5,
+            "GPS_INTERACTIVE_TEST": 5,
+            "GPS_LOCK_TEST": 1,
+            "GYROMETER_INTERACTIVE_TEST": 90,
+            "GYROMETER_NOISE_TEST": 10,
+            "LID_CLOSURE_TEST": 20
+        }
+    },
+    "STORAGE": {
+        "Seagate-ST1000LM035-1RK172-WKPKS1QQ": {
+            "DRIVE_SELF_TEST": 143,
+            "FUNNEL_SEEK_TEST": 4,
+            "RANDOM_SEEK_TEST": 9,
+            "SHORT_SELF_TEST": 62,
+            "SMART_STATUS_TEST": 1,
+            "TARGETED_READ_TEST": 1
+        },
+        "UMISRPJTJ256MEE1OWX-SS1B60641Z1CD12S203J": {
+            "DEVICE_READ_TEST": 6,
+            "SMART_RELIABILITY_TEST": 0,
+            "SMART_SPARE_SPACE_TEST": 0,
+            "SMART_TEMPERATURE_TEST": 0,
+            "SMART_WEAROUT_TEST": 0
+        },
+        "defaultatassd": {
+            "FULL_DISK_SCAN_TEST": 738,
+            "FUNNEL_SEEK_TEST": 2,
+            "LINEAR_READ_TEST": 153,
+            "RANDOM_SEEK_TEST": 1,
+            "SMART_STATUS_TEST": 1,
+            "SMART_WEAROUT_TEST": 1,
+            "TARGETED_READ_TEST": 2
+        },
+        "defaulthdd": {
+            "CONVEYANCE_SELF_TEST": 190,
+            "DEFAULT_SELF_TEST": 1,
+            "DRIVE_SELF_TEST": 148,
+            "EXTENDED_FUNNEL_SEEK_TEST": 245,
+            "EXTENDED_RANDOM_SEEK_TEST": 195,
+            "EXTENDED_SELF_TEST": 1837,
+            "FULL_DISK_SCAN_TEST": 10576,
+            "FUNNEL_SEEK_TEST": 57,
+            "LINEAR_READ_TEST": 2259,
+            "RANDOM_SEEK_TEST": 68,
+            "SHORT_SELF_TEST": 103,
+            "SMART_HEALTH_TEST": 1,
+            "SMART_STATUS_TEST": 1,
+            "TARGETED_READ_TEST": 2
+        },
+        "defaultnvme": {
+            "DEVICE_READ_TEST": 6,
+            "DEVICE_WRITE_TEST": 109,
+            "FULL_DISK_SCAN_TEST": 105,
+            "LINEAR_READ_TEST": 57,
+            "NVME_CONTROLLER_STATUS_TEST": 1,
+            "NVME_SMART_RELIABILITY_TEST": 1,
+            "NVME_SMART_SPARE_SPACE_TEST": 1,
+            "NVME_SMART_TEMPERATURE_TEST": 1,
+            "SMART_WEAROUT_TEST": 1
+        }
+    },
+    "TOUCHPAD_DEVICES": {
+        "default": {
+            "CLICK_TEST": 30,
+            "PRECISION_TEST": 30,
+            "PRESS_PRECISION_TEST": 30
+        }
+    },
+    "TOUCHSCREEN": {
+        "default": {
+            "ACCURACY_TEST": 10,
+            "BASIC_TOUCH_TEST": 10,
+            "DIAGONAL_TEST": 10,
+            "GRID_TEST": 45,
+            "MULTI_TOUCH_TEST": 10
+        }
+    },
+    "VIDEO_CARD": {
+        "default": {
+            "CUDA_ADDRESS_TEST": 4,
+            "CUDA_ADVANCED_MATHEMATICAL_OPERATIONS_TEST": 1,
+            "CUDA_BLOCK_MOVE_TEST": 7,
+            "CUDA_MEMORY_FAULT_TEST": 38,
+            "CUDA_MODULO_X_TEST": 71,
+            "CUDA_MOVING_INVERSION_TEST": 12,
+            "CUDA_RANDOM_NUMBER_SEQUENCE_TEST": 17,
+            "CUDA_STANDARD_MATHEMATICAL_OPERATIONS_TEST": 1,
+            "DIRECTCOMPUTE_ADVANCED_MATHEMATICAL_OPERATIONS_TEST": 1,
+            "DIRECTCOMPUTE_STANDARD_MATHEMATICAL_OPERATIONS_TEST": 1,
+            "EXTENDED_VIDEO_MEMORY_TEST": 55,
+            "MATHEMATICAL_OPERATIONS_TEST": 73,
+            "STRESS_TEST": 300,
+            "TEXTURE_PIPELINE_TEST": 25,
+            "VIDEO_MEMORY_TEST": 5,
+            "WIREFRAME_STRESS_TEST": 300
+        }
+    },
+    "WIRED_ETHERNET": {
+        "default": {
+            "INTERNET_CONNECTION_TEST": 6,
+            "LINK_TEST": 6
+        }
+    },
+    "WIRELESS": {
+        "IntelCorporation-Intel(R)Wi-Fi6AX201160MHz-40:1C:83:38:78:B3": {
+            "NETWORK_SCAN_TEST": 1,
+            "RADIO_ENABLED_TEST": 0,
+            "SIGNAL_STRENGTH_TEST": 0
+        },
+        "default": {
+            "CONNECTION_TEST": 90,
+            "NETWORK_SCAN_TEST": 2,
+            "RADIO_ENABLED_TEST": 2,
+            "SIGNAL_STRENGTH_TEST": 2
+        }
+    }
+}
